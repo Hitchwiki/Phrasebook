@@ -1,0 +1,57 @@
+.header-favicon {
+    padding-right: 5px;
+}
+
+#strings {
+    white-space: normal;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: moz-none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#strings .original,
+#strings .translation {
+    display: block;
+    white-space: normal !important;
+}
+#strings .original {
+    padding: 5px 0 2px 0;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000;
+    text-decoration: none;
+}
+#strings .translation {
+    padding: 5px 0;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: normal;
+    display: none;
+}
+#strings .subtranslation {
+    padding: 0 0 0 15px;
+    margin: 0;
+    list-style: none;
+}
+#strings .di {
+    color: #ccc;
+    display: inline;
+}
+#strings h3,
+#strings .ui-li-heading {
+    white-space: normal !important;
+}
+#strings .translationOpen {
+    background: #fff;
+}
+
+#info-table th,
+#info-table td {
+    padding: 5px;
+}
+#info-table th {
+    text-align: right;
+}

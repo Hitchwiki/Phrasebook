@@ -1,0 +1,758 @@
+# Translation of Phrasebook in Swedish
+# This file is distributed under the same license as the Phrasebook package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2013-07-18 01:41+0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.5.7\n"
+"Project-Id-Version: Phrasebook\n"
+"POT-Creation-Date: \n"
+"Last-Translator: Mikael Korpela <mikael@ihminen.org>\n"
+"Language-Team: \n"
+
+#: ../languages.py:89
+msgid "Speak slower, please?"
+msgstr "Skulle du kunna tala långsammare?"
+
+#: ../languages.py:81
+msgid "Sometimes"
+msgstr ""
+
+#: ../languages.py:87
+msgid "For free?"
+msgstr "Är det gratis?"
+
+#: ../languages.py:59
+msgid "Are you going towards ...?"
+msgstr "Åker du mot ...?"
+
+#: ../languages.py:62
+msgid "just before"
+msgstr ""
+
+#: ../languages.py:63
+msgid "just after"
+msgstr ""
+
+#: ../languages.py:66
+msgid "a lay-by"
+msgstr "en parkeringsplats"
+
+#: ../languages.py:66
+msgid "rest area"
+msgstr "en rastplats"
+
+#: ../languages.py:68
+msgid "roundabout"
+msgstr ""
+
+#: ../languages.py:69
+msgid "the junction"
+msgstr ""
+
+#: ../languages.py:70
+msgid "the T-junction"
+msgstr ""
+
+#: ../languages.py:71
+msgid "the crossroads"
+msgstr ""
+
+#: ../languages.py:72
+msgid "on the ring road"
+msgstr ""
+
+#: ../languages.py:73
+msgid "across the road"
+msgstr ""
+
+#: ../languages.py:81
+msgid "Rarely"
+msgstr ""
+
+#: ../languages.py:93
+msgid "OK"
+msgstr ""
+
+#: ../languages.py:93
+msgid "cool"
+msgstr ""
+
+#: ../languages.py:94
+msgid "I'm not in a hurry"
+msgstr ""
+
+#: ../languages.py:99
+msgid "I am studying to be a ..."
+msgstr "Jag ska bli ..."
+
+#: ../languages.py:101
+msgid "I'm visiting friends in ..."
+msgstr ""
+
+#: ../languages.py:103
+msgid "I will stay for ... days/weeks"
+msgstr ""
+
+#: ../languages.py:104
+msgid "I'm going back to ..."
+msgstr ""
+
+#: ../languages.py:108
+msgid "I have already texted my father."
+msgstr ""
+
+#: ../languages.py:111
+msgid "Pull over I'm going to puke!"
+msgstr ""
+
+#: ../languages.py:121
+msgid "the toll road to ..."
+msgstr ""
+
+#: ../languages.py:122
+msgid "the small road to ..."
+msgstr ""
+
+#: ../languages.py:123
+msgid "city centre"
+msgstr "centrumet"
+
+#: ../languages.py:124
+msgid "tourist office"
+msgstr ""
+
+#: ../languages.py:128
+msgid "the fruit market"
+msgstr ""
+
+#: ../languages.py:130
+msgid "a camp-site"
+msgstr "en campingplats"
+
+#: ../languages.py:137
+msgid "a public Wi-Fi / Internet"
+msgstr ""
+
+#: ../languages.py:140
+msgid "Drink"
+msgstr ""
+
+#: ../languages.py:150
+msgid "Eat"
+msgstr ""
+
+#: ../languages.py:153
+msgid "Fruit"
+msgstr ""
+
+#: ../languages.py:155
+msgid "Vegan"
+msgstr ""
+
+#: ../languages.py:161
+msgid "I'm tired"
+msgstr ""
+
+#: ../languages.py:166
+msgid "Smoke"
+msgstr ""
+
+#: ../languages.py:171
+msgid "Room"
+msgstr ""
+
+#: ../languages.py:172
+msgid "Hotel"
+msgstr ""
+
+#: ../languages.py:54
+msgid "Info"
+msgstr ""
+
+#: ../languages.py:60
+msgid "Could I get a lift to ...?"
+msgstr ""
+
+#: ../languages.py:88
+msgid "Do you speak ...?"
+msgstr "Talar du ...?"
+
+#: ../languages.py:95
+msgid "I'm going to ..."
+msgstr "Jag ska till ..."
+
+#: ../languages.py:96
+msgid "My name is ..."
+msgstr ""
+
+#: ../languages.py:97
+msgid "I'm from ..."
+msgstr ""
+
+#: ../languages.py:98
+msgid "I'm ... years old."
+msgstr "Jag är ... år gammal."
+
+#: ../languages.py:99
+msgid "I study ..."
+msgstr "Jag studerar ..."
+
+#: ../languages.py:99
+msgid "I'm in my ... year."
+msgstr ""
+
+#: ../languages.py:102
+msgid "I'm hitchhiking around ..."
+msgstr ""
+
+#: ../languages.py:117
+msgid "Where can I find ...?"
+msgstr ""
+
+#: ../languages.py:120
+msgid "the highway to ..."
+msgstr ""
+
+#: ../languages.py:87
+msgid "I can't pay."
+msgstr "Jag kan inte betala."
+
+#: ../languages.py:93
+msgid "That's great"
+msgstr "Vad bra!"
+
+#: ../languages.py:100
+msgid "I'm on holiday."
+msgstr ""
+
+#: ../languages.py:109
+msgid "Don't touch me!"
+msgstr "Rör mig inte!"
+
+#: ../languages.py:131
+msgid "an internet cafe"
+msgstr ""
+
+#: ../languages.py:132
+msgid "a cash-machine"
+msgstr ""
+
+#: ../languages.py:134
+msgid "a metro-station"
+msgstr ""
+
+#: ../languages.py:135
+msgid "a bus-station"
+msgstr ""
+
+#: ../languages.py:136
+msgid "a train-station"
+msgstr ""
+
+#: ../languages.py:156
+msgid "I don't eat meat"
+msgstr ""
+
+#: ../languages.py:149
+msgid "I'm hungry"
+msgstr "Jag är hungrig"
+
+#: ../languages.py:139
+msgid "I'm thirsty"
+msgstr ""
+
+#: ../languages.py:162
+msgid "I'm fine"
+msgstr ""
+
+#: ../languages.py:163
+msgid "I'm cold"
+msgstr "Jag är kall"
+
+#: ../languages.py:164
+msgid "I'm hot"
+msgstr "Jag är varm"
+
+#: ../languages.py:165
+msgid "I'm sick"
+msgstr ""
+
+#: ../languages.py:169
+msgid "I'm looking for a place to sleep."
+msgstr ""
+
+#: ../languages.py:202
+msgid "Hundred"
+msgstr ""
+
+#: ../languages.py:203
+msgid "Thousand"
+msgstr ""
+
+#: ../languages.py:64
+msgid "a petrol station"
+msgstr "en bensinmack"
+
+#: ../languages.py:77
+msgid "Right"
+msgstr ""
+
+#: ../languages.py:51
+msgid "Phrasebook"
+msgstr ""
+
+#: ../languages.py:52
+msgid "Interface"
+msgstr ""
+
+#: ../languages.py:53
+msgid "Search..."
+msgstr ""
+
+#: ../languages.py:57
+msgid "Hello"
+msgstr "Hej"
+
+#: ../languages.py:58
+msgid "Excuse me..."
+msgstr "Ursäkta..."
+
+#: ../languages.py:65
+msgid "a service area"
+msgstr ""
+
+#: ../languages.py:67
+msgid "along the highway"
+msgstr "längs motorvägen"
+
+#: ../languages.py:88
+msgid "any other languages"
+msgstr "några andra språk"
+
+#: ../languages.py:90
+msgid "I don't understand"
+msgstr "Jag förstår inte"
+
+#: ../languages.py:91
+msgid "I don't know"
+msgstr "Jag vet inte"
+
+#: ../languages.py:92
+msgid "Yes"
+msgstr "Ja"
+
+#: ../languages.py:92
+msgid "No"
+msgstr "Nej"
+
+#: ../languages.py:92
+msgid "Maybe"
+msgstr "Kanske"
+
+#: ../languages.py:92
+msgid "No thanks"
+msgstr "Nej tack"
+
+#: ../languages.py:93
+msgid "perfect"
+msgstr "härligt"
+
+#: ../languages.py:93
+msgid "bad"
+msgstr "dåligt"
+
+#: ../languages.py:93
+msgid "no problem"
+msgstr "inga problem"
+
+#: ../languages.py:95
+msgid "Where are you going to?"
+msgstr "Vart ska du?"
+
+#: ../languages.py:96
+msgid "What's your name?"
+msgstr ""
+
+#: ../languages.py:97
+msgid "Where are you from?"
+msgstr ""
+
+#: ../languages.py:98
+msgid "How old are you?"
+msgstr "Hur gammal är du?"
+
+#: ../languages.py:106
+msgid "I have a boy-friend/a girl-friend."
+msgstr "Jag har pojkvän/flickvän."
+
+#: ../languages.py:107
+msgid "I'm married."
+msgstr "Jag är gift."
+
+#: ../languages.py:105
+msgid "Can you drop me off here?"
+msgstr "Kan du släppa av mig här?"
+
+#: ../languages.py:110
+msgid "Let me out!"
+msgstr "Släpp ut mig!"
+
+#: ../languages.py:112
+msgid "Stop!"
+msgstr "Stanna!"
+
+#: ../languages.py:113
+msgid "Help!"
+msgstr "Hjälp!"
+
+#: ../languages.py:114
+msgid "Thank you!"
+msgstr "Tack!"
+
+#: ../languages.py:116
+msgid "Have a nice day/trip!"
+msgstr "Ha en trevlig dag/resa!"
+
+#: ../languages.py:125
+msgid "a map"
+msgstr "en karta"
+
+#: ../languages.py:126
+msgid "a toilet"
+msgstr "en toalett"
+
+#: ../languages.py:127
+msgid "a supermarket"
+msgstr "en mataffär"
+
+#: ../languages.py:129
+msgid "a pharmacy"
+msgstr "ett apotek"
+
+#: ../languages.py:133
+msgid "a bank"
+msgstr ""
+
+#: ../languages.py:119
+msgid "a good hitchhiking spot"
+msgstr ""
+
+#: ../languages.py:141
+msgid "Water"
+msgstr "Vatten"
+
+#: ../languages.py:142
+msgid "(Herbal) tea"
+msgstr "(Ört-) te"
+
+#: ../languages.py:143
+msgid "Hot chocolate"
+msgstr "Varm choklad"
+
+#: ../languages.py:144
+msgid "Coffee"
+msgstr "Kaffe"
+
+#: ../languages.py:145
+msgid "Juice"
+msgstr ""
+
+#: ../languages.py:146
+msgid "Beer"
+msgstr "Öl"
+
+#: ../languages.py:147
+msgid "(Red, white) wine"
+msgstr "(Rött, vitt) vin"
+
+#: ../languages.py:154
+msgid "Vegetarian"
+msgstr "Vegetarian"
+
+#: ../languages.py:152
+msgid "Bread"
+msgstr "Bröd"
+
+#: ../languages.py:157
+msgid "A cheap restaurant"
+msgstr "En billig restaurang"
+
+#: ../languages.py:115 ../languages.py:148
+msgid "Cheers!"
+msgstr "Skål!"
+
+#: ../languages.py:158
+msgid "Enjoy your meal!"
+msgstr "Smaklig måltid!"
+
+#: ../languages.py:159
+msgid "Dumpster diving"
+msgstr ""
+
+#: ../languages.py:75
+msgid "Hour"
+msgstr ""
+
+#: ../languages.py:75
+msgid "Day"
+msgstr ""
+
+#: ../languages.py:75
+msgid "Week"
+msgstr ""
+
+#: ../languages.py:75
+msgid "Month"
+msgstr ""
+
+#: ../languages.py:76
+msgid "Kilometre"
+msgstr "Kilometer"
+
+#: ../languages.py:77
+msgid "Left"
+msgstr ""
+
+#: ../languages.py:78
+msgid "Straight on"
+msgstr ""
+
+#: ../languages.py:79
+msgid "Before"
+msgstr ""
+
+#: ../languages.py:79
+msgid "After"
+msgstr ""
+
+#: ../languages.py:80
+msgid "This"
+msgstr ""
+
+#: ../languages.py:80
+msgid "Next"
+msgstr ""
+
+#: ../languages.py:80
+msgid "Last"
+msgstr ""
+
+#: ../languages.py:81
+msgid "Often"
+msgstr ""
+
+#: ../languages.py:81
+msgid "Never"
+msgstr ""
+
+#: ../languages.py:82
+msgid "Long"
+msgstr ""
+
+#: ../languages.py:82
+msgid "Short"
+msgstr ""
+
+#: ../languages.py:83
+msgid "Up"
+msgstr "Upp"
+
+#: ../languages.py:83
+msgid "Down"
+msgstr "Ner"
+
+#: ../languages.py:84
+msgid "Over"
+msgstr "Över"
+
+#: ../languages.py:84
+msgid "Under"
+msgstr "Under"
+
+#: ../languages.py:85
+msgid "How far is it (on foot)?"
+msgstr "Hur långt är det (till fots)?"
+
+#: ../languages.py:86
+msgid "Where are we?"
+msgstr ""
+
+#: ../languages.py:167
+msgid "How much does it cost?"
+msgstr ""
+
+#: ../languages.py:168
+msgid "What time is it?"
+msgstr ""
+
+#: ../languages.py:170
+msgid "Tent"
+msgstr ""
+
+#: ../languages.py:173
+msgid "Where can we buy a ticket?"
+msgstr "Var kan man köpa biljett?"
+
+#: ../languages.py:174
+msgid "Who?"
+msgstr ""
+
+#: ../languages.py:174
+msgid "What?"
+msgstr ""
+
+#: ../languages.py:174
+msgid "Where?"
+msgstr ""
+
+#: ../languages.py:174
+msgid "Why?"
+msgstr ""
+
+#: ../languages.py:174
+msgid "When?"
+msgstr ""
+
+#: ../languages.py:175
+msgid "How?"
+msgstr ""
+
+#: ../languages.py:175
+msgid "How much?"
+msgstr ""
+
+#: ../languages.py:175
+msgid "How long?"
+msgstr ""
+
+#: ../languages.py:175
+msgid "Which?"
+msgstr ""
+
+#: ../languages.py:176
+msgid "North"
+msgstr "Norr"
+
+#: ../languages.py:176
+msgid "East"
+msgstr "Öster"
+
+#: ../languages.py:176
+msgid "South"
+msgstr "Söder"
+
+#: ../languages.py:176
+msgid "West"
+msgstr "Väster"
+
+#: ../languages.py:177
+msgid "Yesterday"
+msgstr "Igår"
+
+#: ../languages.py:177
+msgid "Today"
+msgstr "Idag"
+
+#: ../languages.py:177
+msgid "Tomorrow"
+msgstr "Imorgon"
+
+#: ../languages.py:178
+msgid "Zero"
+msgstr "Noll"
+
+#: ../languages.py:180
+msgid "One"
+msgstr "Ett"
+
+#: ../languages.py:181
+msgid "Two"
+msgstr "Två"
+
+#: ../languages.py:182
+msgid "Three"
+msgstr "Tre"
+
+#: ../languages.py:183
+msgid "Four"
+msgstr "Fyra"
+
+#: ../languages.py:184
+msgid "Five"
+msgstr "Fem"
+
+#: ../languages.py:185
+msgid "Six"
+msgstr "Sex"
+
+#: ../languages.py:186
+msgid "Seven"
+msgstr "Sju"
+
+#: ../languages.py:187
+msgid "Eight"
+msgstr "Åtta"
+
+#: ../languages.py:188
+msgid "Nine"
+msgstr "Nio"
+
+#: ../languages.py:189
+msgid "Ten"
+msgstr "Tio"
+
+#: ../languages.py:190
+msgid "Eleven"
+msgstr "Elva"
+
+#: ../languages.py:191
+msgid "Twelve"
+msgstr "Tolv"
+
+#: ../languages.py:192
+msgid "Thirteen"
+msgstr "Tretton"
+
+#: ../languages.py:193
+msgid "Fourteen"
+msgstr "Fjorton"
+
+#: ../languages.py:194
+msgid "Fifteen"
+msgstr "Femton"
+
+#: ../languages.py:195
+msgid "Sixteen"
+msgstr "Sexton"
+
+#: ../languages.py:196
+msgid "Seventeen"
+msgstr "Sjutton"
+
+#: ../languages.py:197
+msgid "Eighteen"
+msgstr "Arton"
+
+#: ../languages.py:198
+msgid "Nineteen"
+msgstr "Nitton"
+
+#: ../languages.py:199
+msgid "Twenty"
+msgstr "Tjugo"
+
+#: ../languages.py:200
+msgid "Twenty-one"
+msgstr "Tjugoett"
+
+#: ../languages.py:201
+msgid "Thirty"
+msgstr "Trettio"
+
+#: ../languages.py:205
+msgid "Free hugs"
+msgstr ""
