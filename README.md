@@ -23,11 +23,13 @@ Project is prepared for [Cordova](http://cordova.apache.org/) supported platform
 - Install Cordova
 - Install SDK's you'd need
 - Follow [instructions from Cordova documentation](http://docs.phonegap.com/en/2.9.0/guide_cli_index.md.html#The%20Cordova%20Command-line%20Interface_build_the_app):
-``cordova create Phrasebook com.hitchwiki.phrasebook "Phrasebook"``
-``cd Phrasebook``
-``cordova platform add ios``
-``cordova platform add android``
-``cordova emulate ios``
+```
+cordova create Phrasebook com.hitchwiki.phrasebook "Phrasebook"
+cd Phrasebook
+cordova platform add ios
+cordova platform add android
+cordova emulate ios
+```
 - Copy files from this repository to Phrasebook project folder (override ./www/)
 
 
