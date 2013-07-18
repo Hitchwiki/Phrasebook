@@ -25,7 +25,7 @@ Project is prepared for [Cordova](http://cordova.apache.org/) supported platform
 - Follow [instructions from Cordova documentation](http://docs.phonegap.com/en/2.9.0/guide_cli_index.md.html#The%20Cordova%20Command-line%20Interface_build_the_app):
 
 ```bash
-cordova create Phrasebook com.hitchwiki.phrasebook "Phrasebook"
+$ cordova create Phrasebook com.hitchwiki.phrasebook "Phrasebook"
 $ cd Phrasebook
 $ cordova platform add ios
 $ cordova platform add android
