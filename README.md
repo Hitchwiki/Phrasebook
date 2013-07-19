@@ -38,7 +38,7 @@ $ cordova emulate ios
 ### Translate
 - [Translation tool](http://hitchwiki.org/translate/projects/phrasebook)
 - Add new languages or text strings directly to languages.py
-- Produce fresh languages.js by typing `python languages.py`. Script will write to ./www/assets/js/languages.js
+- Produce fresh languages.js by typing `python languages.py`. Script will download files from GlotPress and write translations as json to ./www/assets/js/languages.js
 
 
 ### Run in browser

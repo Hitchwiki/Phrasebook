@@ -1,783 +1,783 @@
-# Translation of Phrasebook in Finnish
+# Translation of Phrasebook in French (France)
 # This file is distributed under the same license as the Phrasebook package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2013-07-19 10:19:24+0000\n"
+"PO-Revision-Date: 2013-07-19 10:19:23+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: GlotPress/0.1\n"
 "Project-Id-Version: Phrasebook\n"
 
 #: ../languages.py:140
 msgid "Sorry"
-msgstr "Sori / Anteeksi"
+msgstr "Pardon"
 
 #: ../languages.py:260
 msgid "Can I leave my bag here for a while?"
-msgstr "Voinko jättää reppuni hetkeksi tähän?"
+msgstr "Puis-je laisser mon sac ici pour un moment?"
 
 #: ../languages.py:213
 msgid "ATM"
-msgstr "Automaatti"
+msgstr "un distributeur de billets"
 
 #: ../languages.py:218
 msgid "a train station"
-msgstr "juna-asema"
+msgstr "une gare"
 
 #: ../languages.py:217
 msgid "a bus station"
-msgstr "bussiasema"
+msgstr "une gare routière"
 
 #: ../languages.py:216
 msgid "a metro station"
-msgstr "metroasema"
+msgstr "une station de métro"
 
 #: ../languages.py:213
 msgid "a cash machine"
-msgstr "raha-automaatti / pankkiautomaatti"
+msgstr "un distributeur de billets"
 
 #: ../languages.py:215
 msgid "a bus stop"
-msgstr "bussipysäkki"
+msgstr "un arrêt de bus"
 
 #: ../languages.py:157
 msgid "Year"
-msgstr "Vuosi"
+msgstr "Une année / Un an"
 
 #: ../languages.py:205
 msgid "the tourist office"
-msgstr "turisti-info"
+msgstr "l'office du tourisme"
 
 #: ../languages.py:212
 msgid "an internet café"
-msgstr "nettikahvila"
+msgstr "un cyber café"
 
 #: ../languages.py:256
 msgid "Hostel"
-msgstr "Hostelli"
+msgstr "Un hôtel de jeunesse"
 
 #: ../languages.py:238
 msgid "Meat"
-msgstr "Liha"
+msgstr "La viande"
 
 #: ../languages.py:171
 msgid "Speak slower, please?"
-msgstr "Puhuisitko hitaammin?"
+msgstr "Pouvez-vous parler plus lentement s'il vous plaît?"
 
 #: ../languages.py:163
 msgid "Sometimes"
-msgstr "Joskus"
+msgstr "Des fois"
 
 #: ../languages.py:169
 msgid "For free?"
-msgstr "Ilmaiseksi?"
+msgstr "Gratuitement ?"
 
 #: ../languages.py:141
 msgid "Are you going towards ...?"
-msgstr "Oletko menossa ... suuntaan?"
+msgstr "Allez-vous vers ...?"
 
 #: ../languages.py:144
 msgid "just before"
-msgstr "juuri ennen"
+msgstr "juste avant"
 
 #: ../languages.py:145
 msgid "just after"
-msgstr "juuri jälkeen"
+msgstr "juste après"
 
 #: ../languages.py:148
 msgid "a lay-by"
-msgstr "pysähdyspaikka"
+msgstr "une aire de stationnement / un endroit où se garer"
 
 #: ../languages.py:148
 msgid "rest area"
-msgstr "levähdyspaikka"
+msgstr "une aire de repos"
 
 #: ../languages.py:150
 msgid "roundabout"
-msgstr "liikenneympyrä"
+msgstr "un rond-point"
 
 #: ../languages.py:151
 msgid "the junction"
-msgstr "risteys"
+msgstr "un carrefour"
 
 #: ../languages.py:152
 msgid "the T-junction"
-msgstr "T-risteys"
+msgstr "un carrefour en T"
 
 #: ../languages.py:153
 msgid "the crossroads"
-msgstr "risteys"
+msgstr "le carrefour, le croisement"
 
 #: ../languages.py:154
 msgid "on the ring road"
-msgstr "kiertotie"
+msgstr "sur le périphérique / sur la rocade"
 
 #: ../languages.py:155
 msgid "across the road"
-msgstr "tien yli"
+msgstr "de l'autre côté de la route"
 
 #: ../languages.py:163
 msgid "Rarely"
-msgstr "Harvoin"
+msgstr "Rarement"
 
 #: ../languages.py:175
 msgid "OK"
-msgstr "OK"
+msgstr "d'accord / OK"
 
 #: ../languages.py:175
 msgid "cool"
-msgstr "makeeta"
+msgstr "cool"
 
 #: ../languages.py:176
 msgid "I'm not in a hurry"
-msgstr "En ole kiireessä"
+msgstr "Je ne suis pas pressé"
 
 #: ../languages.py:181
 msgid "I am studying to be a ..."
-msgstr "Minusta tulee ..."
+msgstr "J'étudie pour être ..."
 
 #: ../languages.py:183
 msgid "I'm visiting friends in ..."
-msgstr "Käyn kavereiden luona ...ssa"
+msgstr "Je rends visite à des amis en (+pays, région) / à (+ville) ..."
 
 #: ../languages.py:185
 msgid "I will stay for ... days/weeks"
-msgstr "Aion viipyä ... päivää/viikkoa"
+msgstr "Je vais rester ... jours/semaines"
 
 #: ../languages.py:186
 msgid "I'm going back to ..."
-msgstr "Menen takaisin ..aan"
+msgstr "Je rentre en (pays, région) / à (ville) ..."
 
 #: ../languages.py:190
 msgid "I have already texted my father."
-msgstr "Lähetin jo tekstarin isälleni."
+msgstr "J'ai déjà envoyé un texto/SMS/message à mon père."
 
 #: ../languages.py:193
 msgid "Pull over I'm going to puke!"
-msgstr "Pysähdy minua oksettaa!"
+msgstr "Garez-vous je vais vomir!"
 
 #: ../languages.py:202
 msgid "the toll road to ..."
-msgstr "maksullinen tie ...aan"
+msgstr "l'autoroute pour aller à ..."
 
 #: ../languages.py:203
 msgid "the small road to ..."
-msgstr "pieni tie ...aan"
+msgstr "la petite route pour aller à ..."
 
 #: ../languages.py:204
 msgid "city centre"
-msgstr "kaupungin keskusta"
+msgstr "centre-ville"
 
 #: ../languages.py:209
 msgid "the fruit market"
-msgstr "hedelmämarketti"
+msgstr "le marché aux fruits"
 
 #: ../languages.py:211
 msgid "a camp-site"
-msgstr "leirintäalue"
+msgstr "un camping"
 
 #: ../languages.py:219
 msgid "a public Wi-Fi / Internet"
-msgstr "Julkinen Wi-Fi / Internet"
+msgstr "un Wi-Fi / Internet public"
 
 #: ../languages.py:222
 msgid "Drink"
-msgstr "Juoda"
+msgstr "Boire"
 
 #: ../languages.py:234
 msgid "Eat"
-msgstr "Syödä"
+msgstr "Manger"
 
 #: ../languages.py:237
 msgid "Fruit"
-msgstr "Hedelmä"
+msgstr "Un fruit"
 
 #: ../languages.py:241
 msgid "Vegan"
-msgstr "Vegaani"
+msgstr "Végétalien"
 
 #: ../languages.py:246
 msgid "I'm tired"
-msgstr "Olen väsynyt"
+msgstr "Je suis fatigué"
 
 #: ../languages.py:251
 msgid "Smoke"
-msgstr "Polttaa"
+msgstr "Fumer"
 
 #: ../languages.py:257
 msgid "Room"
-msgstr "Huone"
+msgstr "une chambre"
 
 #: ../languages.py:258
 msgid "Hotel"
-msgstr "Hotelli"
+msgstr "un hôtel"
 
 #: ../languages.py:136
 msgid "Info"
-msgstr "Tietoa"
+msgstr "Infos"
 
 #: ../languages.py:142
 msgid "Could I get a lift to ...?"
-msgstr "Voisinko saada kyydin ...aan?"
+msgstr "Pouvez-vous m'emmener à ...?"
 
 #: ../languages.py:170
 msgid "Do you speak ...?"
-msgstr "Puhutko ...?"
+msgstr "Parlez-vous ...?"
 
 #: ../languages.py:177
 msgid "I'm going to ..."
-msgstr "Menen ...aan"
+msgstr "Je vais à ..."
 
 #: ../languages.py:178
 msgid "My name is ..."
-msgstr "Nimen on ..."
+msgstr "Je m'appelle ..."
 
 #: ../languages.py:179
 msgid "I'm from ..."
-msgstr "Olen ...sta"
+msgstr "Je suis de ..."
 
 #: ../languages.py:180
 msgid "I'm ... years old."
-msgstr "Olen ... vuotta vanha."
+msgstr "J'ai ... ans."
 
 #: ../languages.py:181
 msgid "I study ..."
-msgstr "Opiskelen ..."
+msgstr "J'étudie ..."
 
 #: ../languages.py:181
 msgid "I'm in my ... year."
-msgstr "...lla vuodella."
+msgstr "J'en suis à ma ... année."
 
 #: ../languages.py:184
 msgid "I'm hitchhiking around ..."
-msgstr "Liftaan ympäri ..."
+msgstr "Je fais de l'auto-stop autour de ..."
 
 #: ../languages.py:198
 msgid "Where can I find ...?"
-msgstr "Mistä löydän ...?"
+msgstr "Où puis-je trouver ...?"
 
 #: ../languages.py:201
 msgid "the highway to ..."
-msgstr "valtatien ...aan"
+msgstr "la route pour aller à ..."
 
 #: ../languages.py:169
 msgid "I can't pay."
-msgstr "En voi maksaa."
+msgstr "Je ne peux pas payer."
 
 #: ../languages.py:175
 msgid "That's great"
-msgstr "Hienoa!"
+msgstr "C'est super / génial"
 
 #: ../languages.py:182
 msgid "I'm on holiday."
-msgstr "Olen lomalla."
+msgstr "Je suis en vacances."
 
 #: ../languages.py:191
 msgid "Don't touch me!"
-msgstr "Älä koske minuun!"
+msgstr "Ne me touchez pas !"
 
 #: ../languages.py:242
 msgid "I don't eat meat"
-msgstr "En syö lihaa"
+msgstr "Je ne mange pas de viande"
 
 #: ../languages.py:233
 msgid "I'm hungry"
-msgstr "Minulla on nälkä"
+msgstr "J'ai faim"
 
 #: ../languages.py:221
 msgid "I'm thirsty"
-msgstr "Olen janoinen"
+msgstr "J'ai soif"
 
 #: ../languages.py:247
 msgid "I'm fine"
-msgstr "Olen okei"
+msgstr "Je vais bien / Ça va"
 
 #: ../languages.py:248
 msgid "I'm cold"
-msgstr "Minulla on kylmä"
+msgstr "J'ai froid"
 
 #: ../languages.py:249
 msgid "I'm hot"
-msgstr "Minulla on kuuma"
+msgstr "J'ai chaud"
 
 #: ../languages.py:250
 msgid "I'm sick"
-msgstr "Olen sairas"
+msgstr "Je suis malade"
 
 #: ../languages.py:253
 msgid "I'm looking for a place to sleep."
-msgstr "Etsin nukkumapaikkaa."
+msgstr "Je cherche un endroit où dormir."
 
 #: ../languages.py:291
 msgid "Hundred"
-msgstr "Sata"
+msgstr "Cent"
 
 #: ../languages.py:292
 msgid "Thousand"
-msgstr "Tuhat"
+msgstr "Mille"
 
 #: ../languages.py:146
 msgid "a petrol station"
-msgstr "bensa-asema / huoltoasema"
+msgstr "une station essence"
 
 #: ../languages.py:159
 msgid "Right"
-msgstr "Oikea"
+msgstr "Droite"
 
 #: ../languages.py:133
 msgid "Phrasebook"
-msgstr "Sanakirja"
+msgstr "Guide de conversation"
 
 #: ../languages.py:134
 msgid "Interface"
-msgstr "Käyttöliittymä"
+msgstr "Interface"
 
 #: ../languages.py:135
 msgid "Search..."
-msgstr "Etsi..."
+msgstr "Rechercher..."
 
 #: ../languages.py:139
 msgid "Hello"
-msgstr "Hei! / Moi!"
+msgstr "Bonjour"
 
 #: ../languages.py:140
 msgid "Excuse me..."
-msgstr "Anteeksi..."
+msgstr "Excusez-moi..."
 
 #: ../languages.py:147
 msgid "a service area"
-msgstr "liikenneasema"
+msgstr "une aire de service"
 
 #: ../languages.py:149
 msgid "along the highway"
-msgstr "moottoritietä pitkin"
+msgstr "le long de la route"
 
 #: ../languages.py:170
 msgid "any other languages"
-msgstr "mitään muita kieliä"
+msgstr "d'autres langues"
 
 #: ../languages.py:172
 msgid "I don't understand"
-msgstr "En ymmärrä"
+msgstr "Je ne comprends pas"
 
 #: ../languages.py:173
 msgid "I don't know"
-msgstr "En tiedä"
+msgstr "Je ne sais pas"
 
 #: ../languages.py:174
 msgid "Yes"
-msgstr "Kyllä / Joo"
+msgstr "Oui"
 
 #: ../languages.py:174
 msgid "No"
-msgstr "Ei"
+msgstr "Non"
 
 #: ../languages.py:174
 msgid "Maybe"
-msgstr "Ehkä"
+msgstr "Peut-être"
 
 #: ../languages.py:174
 msgid "No thanks"
-msgstr "Ei kiitos"
+msgstr "Non merci"
 
 #: ../languages.py:175
 msgid "perfect"
-msgstr "täydellistä"
+msgstr "parfait"
 
 #: ../languages.py:175
 msgid "bad"
-msgstr "huono"
+msgstr "mauvais"
 
 #: ../languages.py:175
 msgid "no problem"
-msgstr "Ei ongelmaa"
+msgstr "pas de problème"
 
 #: ../languages.py:177
 msgid "Where are you going to?"
-msgstr "Mihin olet menossa?"
+msgstr "Où allez-vous?"
 
 #: ../languages.py:178
 msgid "What's your name?"
-msgstr "Mikä sinun nimi on?"
+msgstr "Comment vous appelez-vous?"
 
 #: ../languages.py:179
 msgid "Where are you from?"
-msgstr "Mistä olet kotoisin?"
+msgstr "D'où venez-vous ?"
 
 #: ../languages.py:180
 msgid "How old are you?"
-msgstr "Kuinka vanha olet?"
+msgstr "Quel âge avez-vous ?"
 
 #: ../languages.py:188
 msgid "I have a boy-friend/a girl-friend."
-msgstr "Minulla on poikaystävä/tyttöystävä."
+msgstr "J'ai un petit ami / une petite amie."
 
 #: ../languages.py:189
 msgid "I'm married."
-msgstr "Olen naimisissa."
+msgstr "Je suis marié."
 
 #: ../languages.py:187
 msgid "Can you drop me off here?"
-msgstr "Jättäisitkö minut pois tässä?"
+msgstr "Pouvez-vous me déposer ici ?"
 
 #: ../languages.py:192
 msgid "Let me out!"
-msgstr "Päästä minut ulos!"
+msgstr "Laissez-moi sortir !"
 
 #: ../languages.py:194
 msgid "Stop!"
-msgstr "Lopeta!"
+msgstr "Stop !"
 
 #: ../languages.py:195
 msgid "Help!"
-msgstr "Apua!"
+msgstr "À l'aide ! / Au secours !"
 
 #: ../languages.py:196
 msgid "Thank you!"
-msgstr "Kiitos!"
+msgstr "Merci !"
 
 #: ../languages.py:197
 msgid "Have a nice day/trip!"
-msgstr "Hauskaa päivää/matkaa!"
+msgstr "Bonne journée / Bon voyage !"
 
 #: ../languages.py:206
 msgid "a map"
-msgstr "kartan"
+msgstr "une carte"
 
 #: ../languages.py:207
 msgid "a toilet"
-msgstr "vessan"
+msgstr "les toilettes"
 
 #: ../languages.py:208
 msgid "a supermarket"
-msgstr "supermarketin"
+msgstr "un supermarché"
 
 #: ../languages.py:210
 msgid "a pharmacy"
-msgstr "apteekki"
+msgstr "une pharmacie"
 
 #: ../languages.py:214
 msgid "a bank"
-msgstr "pankki"
+msgstr "une banque"
 
 #: ../languages.py:200
 msgid "a good hitchhiking spot"
-msgstr "hyvän liftauspaikan"
+msgstr "un bon coin pour faire du stop"
 
 #: ../languages.py:224
 msgid "Water"
-msgstr "Vesi"
+msgstr "de l'eau"
 
 #: ../languages.py:225
 msgid "(Herbal) tea"
-msgstr "(Yrtti) tee"
+msgstr "un thé (/une tisane)"
 
 #: ../languages.py:226
 msgid "Hot chocolate"
-msgstr "Kaakao"
+msgstr "un chocolat chaud"
 
 #: ../languages.py:227
 msgid "Coffee"
-msgstr "Kahvi"
+msgstr "un café"
 
 #: ../languages.py:228
 msgid "Juice"
-msgstr "Mehu"
+msgstr "un jus de fruit"
 
 #: ../languages.py:229
 msgid "Beer"
-msgstr "Olut / Kalja"
+msgstr "une bière"
 
 #: ../languages.py:230
 msgid "(Red, white) wine"
-msgstr "(Puna-, valko-) viini"
+msgstr "un vin (rouge, blanc)"
 
 #: ../languages.py:240
 msgid "Vegetarian"
-msgstr "Kasvissyöjä / Kasvis"
+msgstr "Végétarien"
 
 #: ../languages.py:236
 msgid "Bread"
-msgstr "Leipä"
+msgstr "du pain"
 
 #: ../languages.py:243
 msgid "A cheap restaurant"
-msgstr "Halpa ravintola"
+msgstr "Un restaurant bon marché"
 
 #: ../languages.py:232
 msgid "Cheers!"
-msgstr "Kippis!"
+msgstr "Santé !"
 
 #: ../languages.py:244
 msgid "Enjoy your meal!"
-msgstr "Hyvää ruokahalua!"
+msgstr "Bon appétit !"
 
 #: ../languages.py:245
 msgid "Dumpster diving"
-msgstr "Dyykkaus"
+msgstr "faire les poubelles"
 
 #: ../languages.py:157
 msgid "Hour"
-msgstr "Tunti"
+msgstr "une heure"
 
 #: ../languages.py:157
 msgid "Day"
-msgstr "Päivä"
+msgstr "un jour"
 
 #: ../languages.py:157
 msgid "Week"
-msgstr "Viikko"
+msgstr "une semaine"
 
 #: ../languages.py:157
 msgid "Month"
-msgstr "Kuukausi"
+msgstr "un mois"
 
 #: ../languages.py:158
 msgid "Kilometre"
-msgstr "Kilometri"
+msgstr "un kilomètre"
 
 #: ../languages.py:159
 msgid "Left"
-msgstr "Vasen"
+msgstr "Gauche"
 
 #: ../languages.py:160
 msgid "Straight on"
-msgstr "Suoraan"
+msgstr "Tout droit"
 
 #: ../languages.py:161
 msgid "Before"
-msgstr "Ennen"
+msgstr "Avant"
 
 #: ../languages.py:161
 msgid "After"
-msgstr "Jälkeen"
+msgstr "Après"
 
 #: ../languages.py:162
 msgid "This"
-msgstr "Tämä"
+msgstr "Ce (m.) / Cette (f.)"
 
 #: ../languages.py:162
 msgid "Next"
-msgstr "Seuraava"
+msgstr "Prochain(e)"
 
 #: ../languages.py:162
 msgid "Last"
-msgstr "Edellinen"
+msgstr "Dernier(-ère)"
 
 #: ../languages.py:163
 msgid "Often"
-msgstr "Usein"
+msgstr "Souvent"
 
 #: ../languages.py:163
 msgid "Never"
-msgstr "Koskaan"
+msgstr "Jamais"
 
 #: ../languages.py:164
 msgid "Long"
-msgstr "Pitkä"
+msgstr "Long"
 
 #: ../languages.py:164
 msgid "Short"
-msgstr "Lyhyt"
+msgstr "Court"
 
 #: ../languages.py:165
 msgid "Up"
-msgstr "Ylös"
+msgstr "En haut"
 
 #: ../languages.py:165
 msgid "Down"
-msgstr "Alas"
+msgstr "En bas"
 
 #: ../languages.py:166
 msgid "Over"
-msgstr "Yli"
+msgstr "Sur"
 
 #: ../languages.py:166
 msgid "Under"
-msgstr "Ali"
+msgstr "Sous"
 
 #: ../languages.py:167
 msgid "How far is it (on foot)?"
-msgstr "Kuinka kaukana se on (kävellen)?"
+msgstr "C'est à quelle distance (à pied) ?"
 
 #: ../languages.py:168
 msgid "Where are we?"
-msgstr "Missä olemme?"
+msgstr "Où sommes-nous ?"
 
 #: ../languages.py:261
 msgid "How much does it cost?"
-msgstr "Kuinka paljon se maksaa?"
+msgstr "Combien ça coûte ?"
 
 #: ../languages.py:252
 msgid "What time is it?"
-msgstr "Paljonko kello on?"
+msgstr "Quelle heure est-il ?"
 
 #: ../languages.py:255
 msgid "Tent"
-msgstr "Teltta"
+msgstr "Une tente"
 
 #: ../languages.py:266
 msgid "Where can we buy a ticket?"
-msgstr "Mistä voin ostaa lipun?"
+msgstr "Où pouvons-nous acheter un billet ?"
 
 #: ../languages.py:262
 msgid "Who?"
-msgstr "Kuka?"
+msgstr "Qui ?"
 
 #: ../languages.py:262
 msgid "What?"
-msgstr "Mitä?"
+msgstr "Quoi ?"
 
 #: ../languages.py:262
 msgid "Where?"
-msgstr "Missä?"
+msgstr "Où ?"
 
 #: ../languages.py:262
 msgid "Why?"
-msgstr "Miksi?"
+msgstr "Pourquoi ?"
 
 #: ../languages.py:262
 msgid "When?"
-msgstr "Koska?"
+msgstr "Quand ?"
 
 #: ../languages.py:263
 msgid "How?"
-msgstr "Kuinka?"
+msgstr "Comment ?"
 
 #: ../languages.py:263
 msgid "How much?"
-msgstr "Kuinka paljon?"
+msgstr "Combien ?"
 
 #: ../languages.py:263
 msgid "How long?"
-msgstr "Kuinka kauan?"
+msgstr "Combien de temps ?"
 
 #: ../languages.py:263
 msgid "Which?"
-msgstr "Mikä?"
+msgstr "Quel (m.) / Quelle (f.) ?"
 
 #: ../languages.py:264
 msgid "North"
-msgstr "Pohjoinen"
+msgstr "Nord"
 
 #: ../languages.py:264
 msgid "East"
-msgstr "Itä"
+msgstr "Est"
 
 #: ../languages.py:264
 msgid "South"
-msgstr "Etelä"
+msgstr "Sud"
 
 #: ../languages.py:264
 msgid "West"
-msgstr "Länsi"
+msgstr "Ouest"
 
 #: ../languages.py:265
 msgid "Yesterday"
-msgstr "Eilen"
+msgstr "Hier"
 
 #: ../languages.py:265
 msgid "Today"
-msgstr "Tänään"
+msgstr "Aujourd'hui"
 
 #: ../languages.py:265
 msgid "Tomorrow"
-msgstr "Huomenna"
+msgstr "Demain"
 
 #: ../languages.py:267
 msgid "Zero"
-msgstr "Nolla"
+msgstr "Zéro"
 
 #: ../languages.py:269
 msgid "One"
-msgstr "Yksi"
+msgstr "Un"
 
 #: ../languages.py:270
 msgid "Two"
-msgstr "Kaksi"
+msgstr "Deux"
 
 #: ../languages.py:271
 msgid "Three"
-msgstr "Kolme"
+msgstr "Trois"
 
 #: ../languages.py:272
 msgid "Four"
-msgstr "Neljä"
+msgstr "Quatre"
 
 #: ../languages.py:273
 msgid "Five"
-msgstr "Viisi"
+msgstr "Cinq"
 
 #: ../languages.py:274
 msgid "Six"
-msgstr "Kuusi"
+msgstr "Six"
 
 #: ../languages.py:275
 msgid "Seven"
-msgstr "Seitsemän"
+msgstr "Sept"
 
 #: ../languages.py:276
 msgid "Eight"
-msgstr "Kahdeksan"
+msgstr "Huit"
 
 #: ../languages.py:277
 msgid "Nine"
-msgstr "Yhdeksän"
+msgstr "Neuf"
 
 #: ../languages.py:278
 msgid "Ten"
-msgstr "Kymmenen"
+msgstr "Dix"
 
 #: ../languages.py:279
 msgid "Eleven"
-msgstr "Yksitoista"
+msgstr "Onze"
 
 #: ../languages.py:280
 msgid "Twelve"
-msgstr "Kaksitoista"
+msgstr "Douze"
 
 #: ../languages.py:281
 msgid "Thirteen"
-msgstr "Kolmetoista"
+msgstr "Treize"
 
 #: ../languages.py:282
 msgid "Fourteen"
-msgstr "Neljätoista"
+msgstr "Quatorze"
 
 #: ../languages.py:283
 msgid "Fifteen"
-msgstr "Viisitoista"
+msgstr "Quinze"
 
 #: ../languages.py:284
 msgid "Sixteen"
-msgstr "Kuusitoista"
+msgstr "Seize"
 
 #: ../languages.py:285
 msgid "Seventeen"
-msgstr "Seitsemäntoista"
+msgstr "Dix-sept"
 
 #: ../languages.py:286
 msgid "Eighteen"
-msgstr "Kahdeksantoista"
+msgstr "Dix-huit"
 
 #: ../languages.py:287
 msgid "Nineteen"
-msgstr "Yhdeksäntoista"
+msgstr "Dix-neuf"
 
 #: ../languages.py:288
 msgid "Twenty"
-msgstr "Kaksikymmentä"
+msgstr "Vingt"
 
 #: ../languages.py:289
 msgid "Twenty-one"
-msgstr "Kaksikymmentäyksi"
+msgstr "Vingt et un"
 
 #: ../languages.py:290
 msgid "Thirty"
-msgstr "Kolmekymmentä"
+msgstr "Trente"
 
 #: ../languages.py:294
 msgid "Free hugs"
-msgstr "Ilmaisia haleja"
+msgstr "Câlins gratuits"

@@ -2,6 +2,23 @@
 # -*- coding: UTF-8 -*-
 
 # Produces languages.js and puts it under ./www/assets/js/
+import gettext
+import json
+import time
+import os
+import urllib2
+
+
+#
+# Configuration
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+
+# Path to GlotPress
+glotpress = 'http://hitchwiki.org/translate/';
+
+# Project name at GlotPress
+projectname = 'phrasebook';
 
 # Define languages here
 # Make sure you have .mo file in place under ./locale/
@@ -17,19 +34,89 @@ languages = [
         "English (US)"
     ],
     [
-        "fi_FI", 
-        "Finnish", 
-        "Suomi"
+        "sq_AL",
+        "Albanian",
+        "Gjuha shqipe"
     ],
     [
-        "se_SE", 
-        "Swedish", 
-        "Svenska"
+        "hr_HR",
+        "Croatian",
+        "Hrvatski"
     ],
     [
         "de_DE", 
         "German", 
         "Deutch"
+    ],
+    [
+        "es_ES", 
+        "Spanish", 
+        "Español"
+    ],
+    [
+        "fr_FR", 
+        "French", 
+        "Français"
+    ],
+    [
+        "fi_FI", 
+        "Finnish", 
+        "Suomi"
+    ],
+    [
+        "hu_HU", 
+        "Hungarian", 
+        "Magyar"
+    ],
+    [
+        "it_IT", 
+        "Italian", 
+        "Italiano"
+    ],
+    [
+        "lv_LV", 
+        "Latvian", 
+        "Latviešu"
+    ],
+    [
+        "lt_LT", 
+        "Lithuanian", 
+        "Lietuvių"
+    ],
+    [
+        "nl_NL", 
+        "Dutch", 
+        "Nederlands"
+    ],
+    [
+        "pl_PL", 
+        "Polish", 
+        "Polski"
+    ],
+    [
+        "pt_PT", 
+        "Portuguese", 
+        "Português"
+    ],
+    [
+        "ro_RO",
+        "Romanian",
+        "Română"
+    ],
+    [
+        "sk_SK", 
+        "Slovakian", 
+        "Slovenčina"
+    ],
+    [
+        "sv_SE", 
+        "Swedish", 
+        "Svenska"
+    ],
+    [
+        "tr_TR", 
+        "Turkish", 
+        "Türkçe"
     ]
 ]
 
@@ -40,23 +127,66 @@ divider = ' | '
 
 languageJsonFile = './www/assets/js/languages.js'
 
-import gettext
-import json
-import time
-import os.path
 
-package = {}
+#
+# Download and save .po and .mo files
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+print "Downloading and saving language files from GlotPress..."
+
+for language in languages:
+
+    if not origLang == language[0]:
+
+        # Path where to save files
+        directory = './locale/%s/LC_MESSAGES/' % language[0]
+        
+        # If language directory doesn't exist, create it
+        if not os.path.isdir(directory):
+            print directory + " doesn't exist, creating it."
+            os.makedirs(directory)
+        
+        # Format url from where to fetch files 
+        fetchURL = glotpress + 'projects/' + projectname + '/' + language[0][:2].lower() + '/' + language[0] + '/export-translations?format='
+        
+        print "Processing: "+language[0]+" ("+language[1]+")"
+
+        # Fetch .po file
+        response = urllib2.urlopen( fetchURL + 'po' )
+        poContents = response.read()
+        
+        # Save language files
+        fp = open(directory + projectname + '.po', 'w')
+        fp.write(poContents)
+        fp.close()
+
+        response = urllib2.urlopen( fetchURL + 'mo' )
+        moContents = response.read()
+        
+        fp = open(directory + projectname + '.mo', 'w')
+        fp.write(moContents)
+        fp.close()
+        
+        # Clear variables for this loop
+        del fetchURL
+        del directory
+
+
+#
+# Procude language json with downloaded .mo files
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+print "Creating languages.js from downloaded language files..."
+
+languagesJson = {}
 
 for language in languages:
 
     # Does translation file exist?
-    if origLang == language[0] or os.path.isfile('./locale/'+language[0]+'/LC_MESSAGES/phrasebook.mo'):
+    if origLang == language[0] or os.path.isfile('./locale/'+language[0]+'/LC_MESSAGES/'+projectname+'.mo'):
 
-        if origLang == language[0]:
-            print "Default language: "+language[0]
-    
         # Prepare gettext for this language
-        translation = gettext.translation('phrasebook', "./locale", languages=[language[0]], fallback=True)
+        translation = gettext.translation(projectname, "./locale", languages=[language[0]], fallback=True)
         
         translation.install()
         
@@ -77,7 +207,7 @@ for language in languages:
             },
             'strings': [
                 _("Hello"),
-                _("Excuse me..."),
+                _("Excuse me...")+divider+_("Sorry"),
                 _("Are you going towards ...?"),
                 _("Could I get a lift to ...?"),
                 [
@@ -150,7 +280,7 @@ for language in languages:
                     _("a pharmacy"),
                     _("a camp-site"),
                     _("an internet café"),
-                    _("a cash machine"),
+                    _("a cash machine")+divider+_("ATM"),
                     _("a bank"),
                     _("a bus stop"),
                     _("a metro station"),
@@ -197,6 +327,7 @@ for language in languages:
                     _("Room"),
                     _("Hotel")
                 ],
+                _("Can I leave my bag here for a while?"),
                 _("How much does it cost?"),
                 _("Who?")+divider+_("What?")+divider+_("Where?")+divider+_("Why?")+divider+_("When?"),
                 _("How?")+divider+_("How much?")+divider+_("How long?")+divider+_("Which?"),
@@ -234,21 +365,22 @@ for language in languages:
             ]
         }
         
+        # Clear variables for this loop
         del _
         del translation
         
-        package[language[0]] = language_chunk
+        # Add This language to the json
+        languagesJson[language[0]] = language_chunk
     
     else:
     
-        print "Error: "+language[0]+" ("+language[1]+") - can't file translation file (./locale/"+language[0]+"/LC_MESSAGES/phrasebook.mo). Skipping..."
+        print "Error: "+language[0]+" ("+language[1]+") - can't file translation file (./locale/"+language[0]+"/LC_MESSAGES/"+projectname+".mo). Skipping..."
 
-languagesJson = "var languagesVer="+str(int(time.time()))+",languages="+json.dumps(package);
 
 print "Writing to "+languageJsonFile+"..."
 
 fp = open(languageJsonFile, 'w')
-fp.write(languagesJson)
+fp.write("var languagesVer="+str(int(time.time()))+",languages="+json.dumps(languagesJson))
 fp.close()
 
-print "Done."
+print "Done!"

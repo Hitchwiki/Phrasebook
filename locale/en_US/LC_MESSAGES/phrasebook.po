@@ -1,776 +1,783 @@
+# Translation of Phrasebook in English
+# This file is distributed under the same license as the Phrasebook package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Phrasebook\n"
-"POT-Creation-Date: 2013-07-18 11:32+0200\n"
-"PO-Revision-Date: 2013-07-18 11:33+0200\n"
-"Last-Translator: Mikael Korpela <mikael@ihminen.org>\n"
-"Language-Team: Hitchwiki <maps@hitchwiki.org>\n"
-"Language: en_US\n"
+"PO-Revision-Date: 2013-07-19 10:19:21+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.7\n"
-"X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
-"X-Poedit-Basepath: .\n"
-"X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-SearchPath-0: ../../..\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/0.1\n"
+"Project-Id-Version: Phrasebook\n"
 
-#: ../../../languages.py:61
-msgid "Phrasebook"
+#: ../languages.py:140
+msgid "Sorry"
 msgstr ""
 
-#: ../../../languages.py:62
-msgid "Interface"
-msgstr ""
+#: ../languages.py:260
+msgid "Can I leave my bag here for a while?"
+msgstr "Can I leave my bag here for a while?"
 
-#: ../../../languages.py:63
-msgid "Search..."
-msgstr ""
+#: ../languages.py:213
+msgid "ATM"
+msgstr "ATM"
 
-#: ../../../languages.py:64
-msgid "Info"
-msgstr ""
+#: ../languages.py:218
+msgid "a train station"
+msgstr "a train station"
 
-#: ../../../languages.py:67
-msgid "Hello"
-msgstr ""
+#: ../languages.py:217
+msgid "a bus station"
+msgstr "a bus station"
 
-#: ../../../languages.py:68
-msgid "Excuse me..."
-msgstr ""
+#: ../languages.py:216
+msgid "a metro station"
+msgstr "a subway station/a metro station"
 
-#: ../../../languages.py:69
+#: ../languages.py:213
+msgid "a cash machine"
+msgstr "an ATM/a cash machine"
+
+#: ../languages.py:215
+msgid "a bus stop"
+msgstr "a bus stop"
+
+#: ../languages.py:157
+msgid "Year"
+msgstr "Year"
+
+#: ../languages.py:205
+msgid "the tourist office"
+msgstr "visitor information center/tourist office"
+
+#: ../languages.py:212
+msgid "an internet café"
+msgstr "an internet café"
+
+#: ../languages.py:256
+msgid "Hostel"
+msgstr "Hostel"
+
+#: ../languages.py:238
+msgid "Meat"
+msgstr "Meat"
+
+#: ../languages.py:171
+msgid "Speak slower, please?"
+msgstr "Speak slower, please?"
+
+#: ../languages.py:163
+msgid "Sometimes"
+msgstr "Sometimes"
+
+#: ../languages.py:169
+msgid "For free?"
+msgstr "For free?"
+
+#: ../languages.py:141
 msgid "Are you going towards ...?"
-msgstr ""
+msgstr "Are you going towards ...?"
 
-#: ../../../languages.py:70
-msgid "Could I get a lift to ...?"
-msgstr "Could I get a ride to ...?"
-
-#: ../../../languages.py:72
+#: ../languages.py:144
 msgid "just before"
-msgstr ""
+msgstr "just before"
 
-#: ../../../languages.py:73
+#: ../languages.py:145
 msgid "just after"
-msgstr ""
+msgstr "just after"
 
-#: ../../../languages.py:74
-msgid "a petrol station"
-msgstr "a gas station"
-
-#: ../../../languages.py:75
-msgid "a service area"
-msgstr ""
-
-#: ../../../languages.py:76
+#: ../languages.py:148
 msgid "a lay-by"
-msgstr "Turnout / pullout"
+msgstr "a pull-off "
 
-#: ../../../languages.py:76
+#: ../languages.py:148
 msgid "rest area"
-msgstr ""
+msgstr "rest area"
 
-#: ../../../languages.py:77
-msgid "along the highway"
-msgstr ""
-
-#: ../../../languages.py:78
+#: ../languages.py:150
 msgid "roundabout"
 msgstr "roundabout / traffic circle"
 
-#: ../../../languages.py:79
+#: ../languages.py:151
 msgid "the junction"
-msgstr ""
+msgstr "the intersection"
 
-#: ../../../languages.py:80
+#: ../languages.py:152
 msgid "the T-junction"
-msgstr ""
+msgstr "the T-intersection"
 
-#: ../../../languages.py:81
+#: ../languages.py:153
 msgid "the crossroads"
-msgstr ""
+msgstr "the intersection (city) / the crossroads (rural)"
 
-#: ../../../languages.py:82
+#: ../languages.py:154
 msgid "on the ring road"
-msgstr ""
+msgstr "beltway / outer belt"
 
-#: ../../../languages.py:83
+#: ../languages.py:155
 msgid "across the road"
-msgstr ""
+msgstr "across the road"
 
-#: ../../../languages.py:85
-msgid "Hour"
-msgstr ""
-
-#: ../../../languages.py:85
-msgid "Day"
-msgstr ""
-
-#: ../../../languages.py:85
-msgid "Week"
-msgstr ""
-
-#: ../../../languages.py:85
-msgid "Month"
-msgstr ""
-
-#: ../../../languages.py:85
-msgid "Year"
-msgstr ""
-
-#: ../../../languages.py:86
-msgid "Kilometre"
-msgstr ""
-
-#: ../../../languages.py:87
-msgid "Left"
-msgstr ""
-
-#: ../../../languages.py:87
-msgid "Right"
-msgstr ""
-
-#: ../../../languages.py:88
-msgid "Straight on"
-msgstr ""
-
-#: ../../../languages.py:89
-msgid "Before"
-msgstr ""
-
-#: ../../../languages.py:89
-msgid "After"
-msgstr ""
-
-#: ../../../languages.py:90
-msgid "This"
-msgstr ""
-
-#: ../../../languages.py:90
-msgid "Next"
-msgstr ""
-
-#: ../../../languages.py:90
-msgid "Last"
-msgstr ""
-
-#: ../../../languages.py:91
-msgid "Often"
-msgstr ""
-
-#: ../../../languages.py:91
-msgid "Never"
-msgstr ""
-
-#: ../../../languages.py:91
-msgid "Sometimes"
-msgstr ""
-
-#: ../../../languages.py:91
+#: ../languages.py:163
 msgid "Rarely"
-msgstr ""
+msgstr "Rarely"
 
-#: ../../../languages.py:92
-msgid "Long"
-msgstr ""
-
-#: ../../../languages.py:92
-msgid "Short"
-msgstr ""
-
-#: ../../../languages.py:93
-msgid "Up"
-msgstr ""
-
-#: ../../../languages.py:93
-msgid "Down"
-msgstr ""
-
-#: ../../../languages.py:94
-msgid "Over"
-msgstr ""
-
-#: ../../../languages.py:94
-msgid "Under"
-msgstr ""
-
-#: ../../../languages.py:95
-msgid "How far is it (on foot)?"
-msgstr ""
-
-#: ../../../languages.py:96
-msgid "Where are we?"
-msgstr ""
-
-#: ../../../languages.py:97
-msgid "For free?"
-msgstr ""
-
-#: ../../../languages.py:97
-msgid "I can't pay."
-msgstr ""
-
-#: ../../../languages.py:98
-msgid "Do you speak ...?"
-msgstr ""
-
-#: ../../../languages.py:98
-msgid "any other languages"
-msgstr ""
-
-#: ../../../languages.py:99
-msgid "Speak slower, please?"
-msgstr ""
-
-#: ../../../languages.py:100
-msgid "I don't understand"
-msgstr ""
-
-#: ../../../languages.py:101
-msgid "I don't know"
-msgstr ""
-
-#: ../../../languages.py:102
-msgid "Yes"
-msgstr ""
-
-#: ../../../languages.py:102
-msgid "No"
-msgstr ""
-
-#: ../../../languages.py:102
-msgid "Maybe"
-msgstr ""
-
-#: ../../../languages.py:102
-msgid "No thanks"
-msgstr ""
-
-#: ../../../languages.py:103
-msgid "That's great"
-msgstr ""
-
-#: ../../../languages.py:103
-msgid "perfect"
-msgstr ""
-
-#: ../../../languages.py:103
-msgid "bad"
-msgstr ""
-
-#: ../../../languages.py:103
-msgid "no problem"
-msgstr ""
-
-#: ../../../languages.py:103
+#: ../languages.py:175
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
-#: ../../../languages.py:103
+#: ../languages.py:175
 msgid "cool"
-msgstr ""
+msgstr "cool"
 
-#: ../../../languages.py:104
+#: ../languages.py:176
 msgid "I'm not in a hurry"
-msgstr ""
+msgstr "I'm not in a hurry"
 
-#: ../../../languages.py:105
-msgid "I'm going to ..."
-msgstr ""
-
-#: ../../../languages.py:105
-msgid "Where are you going to?"
-msgstr ""
-
-#: ../../../languages.py:106
-msgid "My name is ..."
-msgstr ""
-
-#: ../../../languages.py:106
-msgid "What's your name?"
-msgstr ""
-
-#: ../../../languages.py:107
-msgid "I'm from ..."
-msgstr ""
-
-#: ../../../languages.py:107
-msgid "Where are you from?"
-msgstr ""
-
-#: ../../../languages.py:108
-msgid "I'm ... years old."
-msgstr ""
-
-#: ../../../languages.py:108
-msgid "How old are you?"
-msgstr ""
-
-#: ../../../languages.py:109
-msgid "I study ..."
-msgstr ""
-
-#: ../../../languages.py:109
-msgid "I'm in my ... year."
-msgstr ""
-
-#: ../../../languages.py:109
+#: ../languages.py:181
 msgid "I am studying to be a ..."
-msgstr ""
+msgstr "I am studying to be a ..."
 
-#: ../../../languages.py:110
-msgid "I'm on holiday."
-msgstr ""
-
-#: ../../../languages.py:111
+#: ../languages.py:183
 msgid "I'm visiting friends in ..."
-msgstr ""
+msgstr "I'm visiting friends in ..."
 
-#: ../../../languages.py:112
-msgid "I'm hitchhiking around ..."
-msgstr ""
-
-#: ../../../languages.py:113
+#: ../languages.py:185
 msgid "I will stay for ... days/weeks"
-msgstr ""
+msgstr "I will stay for ... days/weeks"
 
-#: ../../../languages.py:114
+#: ../languages.py:186
 msgid "I'm going back to ..."
-msgstr ""
+msgstr "I'm going back to ..."
 
-#: ../../../languages.py:115
-msgid "Can you drop me off here?"
-msgstr ""
-
-#: ../../../languages.py:116
-msgid "I have a boy-friend/a girl-friend."
-msgstr ""
-
-#: ../../../languages.py:117
-msgid "I'm married."
-msgstr ""
-
-#: ../../../languages.py:118
+#: ../languages.py:190
 msgid "I have already texted my father."
-msgstr ""
+msgstr "I have already texted my father."
 
-#: ../../../languages.py:119
-msgid "Don't touch me!"
-msgstr ""
-
-#: ../../../languages.py:120
-msgid "Let me out!"
-msgstr ""
-
-#: ../../../languages.py:121
+#: ../languages.py:193
 msgid "Pull over I'm going to puke!"
-msgstr ""
+msgstr "Pull over I'm going to puke!"
 
-#: ../../../languages.py:122
-msgid "Stop!"
-msgstr ""
-
-#: ../../../languages.py:123
-msgid "Help!"
-msgstr ""
-
-#: ../../../languages.py:124
-msgid "Thank you!"
-msgstr ""
-
-#: ../../../languages.py:125 ../../../languages.py:161
-msgid "Cheers!"
-msgstr ""
-
-#: ../../../languages.py:126
-msgid "Have a nice day/trip!"
-msgstr ""
-
-#: ../../../languages.py:127
-msgid "Where can I find ...?"
-msgstr ""
-
-#: ../../../languages.py:129
-msgid "a good hitchhiking spot"
-msgstr ""
-
-#: ../../../languages.py:130
-msgid "the highway to ..."
-msgstr ""
-
-#: ../../../languages.py:131
+#: ../languages.py:202
 msgid "the toll road to ..."
-msgstr ""
+msgstr "the tollway/turnpike/toll road to..."
 
-#: ../../../languages.py:132
+#: ../languages.py:203
 msgid "the small road to ..."
-msgstr ""
+msgstr "the small road to ..."
 
-#: ../../../languages.py:133
+#: ../languages.py:204
 msgid "city centre"
-msgstr ""
+msgstr "downtown / city center"
 
-#: ../../../languages.py:134
-msgid "the tourist office"
-msgstr ""
-
-#: ../../../languages.py:135
-msgid "a map"
-msgstr ""
-
-#: ../../../languages.py:136
-msgid "a toilet"
-msgstr ""
-
-#: ../../../languages.py:137
-msgid "a supermarket"
-msgstr ""
-
-#: ../../../languages.py:138
+#: ../languages.py:209
 msgid "the fruit market"
-msgstr ""
+msgstr "the fruit market"
 
-#: ../../../languages.py:139
-msgid "a pharmacy"
-msgstr ""
-
-#: ../../../languages.py:140
+#: ../languages.py:211
 msgid "a camp-site"
-msgstr ""
+msgstr "a campground / a place to put up a tent"
 
-#: ../../../languages.py:141
-msgid "an internet café"
-msgstr ""
-
-#: ../../../languages.py:142
-msgid "a cash machine"
-msgstr "a cash machine, ATM, automated"
-
-#: ../../../languages.py:143
-msgid "a bank"
-msgstr ""
-
-#: ../../../languages.py:144
-msgid "a bus stop"
-msgstr ""
-
-#: ../../../languages.py:145
-msgid "a metro station"
-msgstr ""
-
-#: ../../../languages.py:146
-msgid "a bus station"
-msgstr ""
-
-#: ../../../languages.py:147
-msgid "a train station"
-msgstr ""
-
-#: ../../../languages.py:148
+#: ../languages.py:219
 msgid "a public Wi-Fi / Internet"
-msgstr ""
+msgstr "a public Wi-Fi / Internet"
 
-#: ../../../languages.py:150
-msgid "I'm thirsty"
-msgstr ""
-
-#: ../../../languages.py:151
+#: ../languages.py:222
 msgid "Drink"
-msgstr ""
+msgstr "Drink"
 
-#: ../../../languages.py:153
-msgid "Water"
-msgstr ""
-
-#: ../../../languages.py:154
-msgid "(Herbal) tea"
-msgstr ""
-
-#: ../../../languages.py:155
-msgid "Hot chocolate"
-msgstr ""
-
-#: ../../../languages.py:156
-msgid "Coffee"
-msgstr ""
-
-#: ../../../languages.py:157
-msgid "Juice"
-msgstr ""
-
-#: ../../../languages.py:158
-msgid "Beer"
-msgstr ""
-
-#: ../../../languages.py:159
-msgid "(Red, white) wine"
-msgstr ""
-
-#: ../../../languages.py:162
-msgid "I'm hungry"
-msgstr ""
-
-#: ../../../languages.py:163
+#: ../languages.py:234
 msgid "Eat"
-msgstr ""
+msgstr "Eat"
 
-#: ../../../languages.py:165
-msgid "Bread"
-msgstr ""
-
-#: ../../../languages.py:166
+#: ../languages.py:237
 msgid "Fruit"
-msgstr ""
+msgstr "Fruit"
 
-#: ../../../languages.py:167
-msgid "Meat"
-msgstr ""
-
-#: ../../../languages.py:169
-msgid "Vegetarian"
-msgstr ""
-
-#: ../../../languages.py:170
+#: ../languages.py:241
 msgid "Vegan"
-msgstr ""
+msgstr "Vegan"
 
-#: ../../../languages.py:171
-msgid "I don't eat meat"
-msgstr ""
-
-#: ../../../languages.py:172
-msgid "A cheap restaurant"
-msgstr ""
-
-#: ../../../languages.py:173
-msgid "Enjoy your meal!"
-msgstr ""
-
-#: ../../../languages.py:174
-msgid "Dumpster diving"
-msgstr ""
-
-#: ../../../languages.py:175
+#: ../languages.py:246
 msgid "I'm tired"
-msgstr ""
+msgstr "I'm tired"
 
-#: ../../../languages.py:176
-msgid "I'm fine"
-msgstr ""
-
-#: ../../../languages.py:177
-msgid "I'm cold"
-msgstr ""
-
-#: ../../../languages.py:178
-msgid "I'm hot"
-msgstr ""
-
-#: ../../../languages.py:179
-msgid "I'm sick"
-msgstr ""
-
-#: ../../../languages.py:180
+#: ../languages.py:251
 msgid "Smoke"
-msgstr ""
+msgstr "Smoke"
 
-#: ../../../languages.py:181
-msgid "How much does it cost?"
-msgstr ""
-
-#: ../../../languages.py:182
-msgid "What time is it?"
-msgstr ""
-
-#: ../../../languages.py:183
-msgid "I'm looking for a place to sleep."
-msgstr ""
-
-#: ../../../languages.py:185
-msgid "Tent"
-msgstr ""
-
-#: ../../../languages.py:186
-msgid "Hostel"
-msgstr ""
-
-#: ../../../languages.py:187
+#: ../languages.py:257
 msgid "Room"
-msgstr ""
+msgstr "Room"
 
-#: ../../../languages.py:188
+#: ../languages.py:258
 msgid "Hotel"
-msgstr ""
+msgstr "Hotel"
 
-#: ../../../languages.py:190
-msgid "Who?"
-msgstr ""
+#: ../languages.py:136
+msgid "Info"
+msgstr "Info"
 
-#: ../../../languages.py:190
-msgid "What?"
-msgstr ""
+#: ../languages.py:142
+msgid "Could I get a lift to ...?"
+msgstr "Could I get a ride to ...?"
 
-#: ../../../languages.py:190
-msgid "Where?"
-msgstr ""
+#: ../languages.py:170
+msgid "Do you speak ...?"
+msgstr "Do you speak ...?"
 
-#: ../../../languages.py:190
-msgid "Why?"
-msgstr ""
+#: ../languages.py:177
+msgid "I'm going to ..."
+msgstr "I'm going to ..."
 
-#: ../../../languages.py:190
-msgid "When?"
-msgstr ""
+#: ../languages.py:178
+msgid "My name is ..."
+msgstr "My name is ..."
 
-#: ../../../languages.py:191
-msgid "How?"
-msgstr ""
+#: ../languages.py:179
+msgid "I'm from ..."
+msgstr "I'm from ..."
 
-#: ../../../languages.py:191
-msgid "How much?"
-msgstr ""
+#: ../languages.py:180
+msgid "I'm ... years old."
+msgstr "I'm ... years old."
 
-#: ../../../languages.py:191
-msgid "How long?"
-msgstr ""
+#: ../languages.py:181
+msgid "I study ..."
+msgstr "I study ..."
 
-#: ../../../languages.py:191
-msgid "Which?"
-msgstr ""
+#: ../languages.py:181
+msgid "I'm in my ... year."
+msgstr "I'm in my ... year."
 
-#: ../../../languages.py:192
-msgid "North"
-msgstr ""
+#: ../languages.py:184
+msgid "I'm hitchhiking around ..."
+msgstr "I'm hitchhiking around ..."
 
-#: ../../../languages.py:192
-msgid "East"
-msgstr ""
+#: ../languages.py:198
+msgid "Where can I find ...?"
+msgstr "Where can I find ...?"
 
-#: ../../../languages.py:192
-msgid "South"
-msgstr ""
+#: ../languages.py:201
+msgid "the highway to ..."
+msgstr "the highway to ..."
 
-#: ../../../languages.py:192
-msgid "West"
-msgstr ""
+#: ../languages.py:169
+msgid "I can't pay."
+msgstr "I can't pay."
 
-#: ../../../languages.py:193
-msgid "Yesterday"
-msgstr ""
+#: ../languages.py:175
+msgid "That's great"
+msgstr "That's great / That's awesome"
 
-#: ../../../languages.py:193
-msgid "Today"
-msgstr ""
+#: ../languages.py:182
+msgid "I'm on holiday."
+msgstr "I'm on vacation/break."
 
-#: ../../../languages.py:193
-msgid "Tomorrow"
-msgstr ""
+#: ../languages.py:191
+msgid "Don't touch me!"
+msgstr "Don't touch me!"
 
-#: ../../../languages.py:194
-msgid "Where can we buy a ticket?"
-msgstr ""
+#: ../languages.py:242
+msgid "I don't eat meat"
+msgstr "I don't eat meat"
 
-#: ../../../languages.py:195
-msgid "Zero"
-msgstr ""
+#: ../languages.py:233
+msgid "I'm hungry"
+msgstr "I'm hungry"
 
-#: ../../../languages.py:197
-msgid "One"
-msgstr ""
+#: ../languages.py:221
+msgid "I'm thirsty"
+msgstr "I'm thirsty"
 
-#: ../../../languages.py:198
-msgid "Two"
-msgstr ""
+#: ../languages.py:247
+msgid "I'm fine"
+msgstr "I'm fine"
 
-#: ../../../languages.py:199
-msgid "Three"
-msgstr ""
+#: ../languages.py:248
+msgid "I'm cold"
+msgstr "I'm cold"
 
-#: ../../../languages.py:200
-msgid "Four"
-msgstr ""
+#: ../languages.py:249
+msgid "I'm hot"
+msgstr "I'm hot"
 
-#: ../../../languages.py:201
-msgid "Five"
-msgstr ""
+#: ../languages.py:250
+msgid "I'm sick"
+msgstr "I'm sick"
 
-#: ../../../languages.py:202
-msgid "Six"
-msgstr ""
+#: ../languages.py:253
+msgid "I'm looking for a place to sleep."
+msgstr "I'm looking for a place to sleep."
 
-#: ../../../languages.py:203
-msgid "Seven"
-msgstr ""
-
-#: ../../../languages.py:204
-msgid "Eight"
-msgstr ""
-
-#: ../../../languages.py:205
-msgid "Nine"
-msgstr ""
-
-#: ../../../languages.py:206
-msgid "Ten"
-msgstr ""
-
-#: ../../../languages.py:207
-msgid "Eleven"
-msgstr ""
-
-#: ../../../languages.py:208
-msgid "Twelve"
-msgstr ""
-
-#: ../../../languages.py:209
-msgid "Thirteen"
-msgstr ""
-
-#: ../../../languages.py:210
-msgid "Fourteen"
-msgstr ""
-
-#: ../../../languages.py:211
-msgid "Fifteen"
-msgstr ""
-
-#: ../../../languages.py:212
-msgid "Sixteen"
-msgstr ""
-
-#: ../../../languages.py:213
-msgid "Seventeen"
-msgstr ""
-
-#: ../../../languages.py:214
-msgid "Eighteen"
-msgstr ""
-
-#: ../../../languages.py:215
-msgid "Nineteen"
-msgstr ""
-
-#: ../../../languages.py:216
-msgid "Twenty"
-msgstr ""
-
-#: ../../../languages.py:217
-msgid "Twenty-one"
-msgstr ""
-
-#: ../../../languages.py:218
-msgid "Thirty"
-msgstr ""
-
-#: ../../../languages.py:219
+#: ../languages.py:291
 msgid "Hundred"
-msgstr ""
+msgstr "Hundred"
 
-#: ../../../languages.py:220
+#: ../languages.py:292
 msgid "Thousand"
-msgstr ""
+msgstr "Thousand"
 
-#: ../../../languages.py:222
+#: ../languages.py:146
+msgid "a petrol station"
+msgstr "a gas station"
+
+#: ../languages.py:159
+msgid "Right"
+msgstr "Right"
+
+#: ../languages.py:133
+msgid "Phrasebook"
+msgstr "Phrasebook"
+
+#: ../languages.py:134
+msgid "Interface"
+msgstr "Interface"
+
+#: ../languages.py:135
+msgid "Search..."
+msgstr "Search..."
+
+#: ../languages.py:139
+msgid "Hello"
+msgstr "Hi / Hello (form.)"
+
+#: ../languages.py:140
+msgid "Excuse me..."
+msgstr "Excuse me..."
+
+#: ../languages.py:147
+msgid "a service area"
+msgstr "a rest area / wayside / service area"
+
+#: ../languages.py:149
+msgid "along the highway"
+msgstr "along the highway"
+
+#: ../languages.py:170
+msgid "any other languages"
+msgstr "any other languages"
+
+#: ../languages.py:172
+msgid "I don't understand"
+msgstr "I don't understand"
+
+#: ../languages.py:173
+msgid "I don't know"
+msgstr "I don't know"
+
+#: ../languages.py:174
+msgid "Yes"
+msgstr "Yes"
+
+#: ../languages.py:174
+msgid "No"
+msgstr "No"
+
+#: ../languages.py:174
+msgid "Maybe"
+msgstr "Maybe"
+
+#: ../languages.py:174
+msgid "No thanks"
+msgstr "No thanks"
+
+#: ../languages.py:175
+msgid "perfect"
+msgstr "perfect"
+
+#: ../languages.py:175
+msgid "bad"
+msgstr "bad"
+
+#: ../languages.py:175
+msgid "no problem"
+msgstr "no problem"
+
+#: ../languages.py:177
+msgid "Where are you going to?"
+msgstr "Where are you going to?"
+
+#: ../languages.py:178
+msgid "What's your name?"
+msgstr "What's your name?"
+
+#: ../languages.py:179
+msgid "Where are you from?"
+msgstr "Where are you from?"
+
+#: ../languages.py:180
+msgid "How old are you?"
+msgstr "How old are you?"
+
+#: ../languages.py:188
+msgid "I have a boy-friend/a girl-friend."
+msgstr "I have a boy-friend/a girl-friend."
+
+#: ../languages.py:189
+msgid "I'm married."
+msgstr "I'm married."
+
+#: ../languages.py:187
+msgid "Can you drop me off here?"
+msgstr "Can you drop me off here?"
+
+#: ../languages.py:192
+msgid "Let me out!"
+msgstr "Let me out!"
+
+#: ../languages.py:194
+msgid "Stop!"
+msgstr "Stop!"
+
+#: ../languages.py:195
+msgid "Help!"
+msgstr "Help!"
+
+#: ../languages.py:196
+msgid "Thank you!"
+msgstr "Thank you / Thanks!"
+
+#: ../languages.py:197
+msgid "Have a nice day/trip!"
+msgstr "Have a nice day/trip!"
+
+#: ../languages.py:206
+msgid "a map"
+msgstr "a map"
+
+#: ../languages.py:207
+msgid "a toilet"
+msgstr "a restroom (public) / a bathroom (private)"
+
+#: ../languages.py:208
+msgid "a supermarket"
+msgstr "a grocery store / store / supermarket"
+
+#: ../languages.py:210
+msgid "a pharmacy"
+msgstr "a drugstore / pharmacy"
+
+#: ../languages.py:214
+msgid "a bank"
+msgstr "a bank"
+
+#: ../languages.py:200
+msgid "a good hitchhiking spot"
+msgstr "a good hitchhiking spot"
+
+#: ../languages.py:224
+msgid "Water"
+msgstr "Water"
+
+#: ../languages.py:225
+msgid "(Herbal) tea"
+msgstr "(Herbal) tea"
+
+#: ../languages.py:226
+msgid "Hot chocolate"
+msgstr "Hot chocolate"
+
+#: ../languages.py:227
+msgid "Coffee"
+msgstr "Coffee"
+
+#: ../languages.py:228
+msgid "Juice"
+msgstr "Juice"
+
+#: ../languages.py:229
+msgid "Beer"
+msgstr "Beer"
+
+#: ../languages.py:230
+msgid "(Red, white) wine"
+msgstr "(Red, white) wine"
+
+#: ../languages.py:240
+msgid "Vegetarian"
+msgstr "Vegetarian"
+
+#: ../languages.py:236
+msgid "Bread"
+msgstr "Bread"
+
+#: ../languages.py:243
+msgid "A cheap restaurant"
+msgstr "A cheap restaurant"
+
+#: ../languages.py:232
+msgid "Cheers!"
+msgstr "Cheers ! (only for drinks)"
+
+#: ../languages.py:244
+msgid "Enjoy your meal!"
+msgstr "Enjoy your meal!"
+
+#: ../languages.py:245
+msgid "Dumpster diving"
+msgstr "Dumpster diving"
+
+#: ../languages.py:157
+msgid "Hour"
+msgstr "Hour"
+
+#: ../languages.py:157
+msgid "Day"
+msgstr "Day"
+
+#: ../languages.py:157
+msgid "Week"
+msgstr "Week"
+
+#: ../languages.py:157
+msgid "Month"
+msgstr "Month"
+
+#: ../languages.py:158
+msgid "Kilometre"
+msgstr "Kilometer (1 mile = 1.6 km) (1 mile = 0.62 km)"
+
+#: ../languages.py:159
+msgid "Left"
+msgstr "Left"
+
+#: ../languages.py:160
+msgid "Straight on"
+msgstr "Straight on"
+
+#: ../languages.py:161
+msgid "Before"
+msgstr "Before"
+
+#: ../languages.py:161
+msgid "After"
+msgstr "After"
+
+#: ../languages.py:162
+msgid "This"
+msgstr "This"
+
+#: ../languages.py:162
+msgid "Next"
+msgstr "Next"
+
+#: ../languages.py:162
+msgid "Last"
+msgstr "Last"
+
+#: ../languages.py:163
+msgid "Often"
+msgstr "Often"
+
+#: ../languages.py:163
+msgid "Never"
+msgstr "Never"
+
+#: ../languages.py:164
+msgid "Long"
+msgstr "Long"
+
+#: ../languages.py:164
+msgid "Short"
+msgstr "Short"
+
+#: ../languages.py:165
+msgid "Up"
+msgstr "Up"
+
+#: ../languages.py:165
+msgid "Down"
+msgstr "Down"
+
+#: ../languages.py:166
+msgid "Over"
+msgstr "Over"
+
+#: ../languages.py:166
+msgid "Under"
+msgstr "Under"
+
+#: ../languages.py:167
+msgid "How far is it (on foot)?"
+msgstr "How far is it (on foot)?"
+
+#: ../languages.py:168
+msgid "Where are we?"
+msgstr "Where are we?"
+
+#: ../languages.py:261
+msgid "How much does it cost?"
+msgstr "How much does it cost?"
+
+#: ../languages.py:252
+msgid "What time is it?"
+msgstr "What time is it?"
+
+#: ../languages.py:255
+msgid "Tent"
+msgstr "Tent"
+
+#: ../languages.py:266
+msgid "Where can we buy a ticket?"
+msgstr "Where can we buy a ticket?"
+
+#: ../languages.py:262
+msgid "Who?"
+msgstr "Who?"
+
+#: ../languages.py:262
+msgid "What?"
+msgstr "What?"
+
+#: ../languages.py:262
+msgid "Where?"
+msgstr "Where?"
+
+#: ../languages.py:262
+msgid "Why?"
+msgstr "Why?"
+
+#: ../languages.py:262
+msgid "When?"
+msgstr "When?"
+
+#: ../languages.py:263
+msgid "How?"
+msgstr "How?"
+
+#: ../languages.py:263
+msgid "How much?"
+msgstr "How much?"
+
+#: ../languages.py:263
+msgid "How long?"
+msgstr "How long?"
+
+#: ../languages.py:263
+msgid "Which?"
+msgstr "Which?"
+
+#: ../languages.py:264
+msgid "North"
+msgstr "North"
+
+#: ../languages.py:264
+msgid "East"
+msgstr "East"
+
+#: ../languages.py:264
+msgid "South"
+msgstr "South"
+
+#: ../languages.py:264
+msgid "West"
+msgstr "West"
+
+#: ../languages.py:265
+msgid "Yesterday"
+msgstr "Yesterday"
+
+#: ../languages.py:265
+msgid "Today"
+msgstr "Today"
+
+#: ../languages.py:265
+msgid "Tomorrow"
+msgstr "Tomorrow"
+
+#: ../languages.py:267
+msgid "Zero"
+msgstr "Zero"
+
+#: ../languages.py:269
+msgid "One"
+msgstr "One"
+
+#: ../languages.py:270
+msgid "Two"
+msgstr "Two"
+
+#: ../languages.py:271
+msgid "Three"
+msgstr "Three"
+
+#: ../languages.py:272
+msgid "Four"
+msgstr "Four"
+
+#: ../languages.py:273
+msgid "Five"
+msgstr "Five"
+
+#: ../languages.py:274
+msgid "Six"
+msgstr "Six"
+
+#: ../languages.py:275
+msgid "Seven"
+msgstr "Seven"
+
+#: ../languages.py:276
+msgid "Eight"
+msgstr "Eight"
+
+#: ../languages.py:277
+msgid "Nine"
+msgstr "Nine"
+
+#: ../languages.py:278
+msgid "Ten"
+msgstr "Ten"
+
+#: ../languages.py:279
+msgid "Eleven"
+msgstr "Eleven"
+
+#: ../languages.py:280
+msgid "Twelve"
+msgstr "Twelve"
+
+#: ../languages.py:281
+msgid "Thirteen"
+msgstr "Thirteen"
+
+#: ../languages.py:282
+msgid "Fourteen"
+msgstr "Fourteen"
+
+#: ../languages.py:283
+msgid "Fifteen"
+msgstr "Fifteen"
+
+#: ../languages.py:284
+msgid "Sixteen"
+msgstr "Sixteen"
+
+#: ../languages.py:285
+msgid "Seventeen"
+msgstr "Seventeen"
+
+#: ../languages.py:286
+msgid "Eighteen"
+msgstr "Eighteen"
+
+#: ../languages.py:287
+msgid "Nineteen"
+msgstr "Nineteen"
+
+#: ../languages.py:288
+msgid "Twenty"
+msgstr "Twenty"
+
+#: ../languages.py:289
+msgid "Twenty-one"
+msgstr "Twenty-one"
+
+#: ../languages.py:290
+msgid "Thirty"
+msgstr "Thirty"
+
+#: ../languages.py:294
 msgid "Free hugs"
-msgstr ""
+msgstr "Free hugs"
