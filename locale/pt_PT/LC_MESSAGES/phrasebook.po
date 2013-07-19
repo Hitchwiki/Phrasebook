@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Phrasebook package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2013-07-19 10:19:28+0000\n"
+"PO-Revision-Date: 2013-07-19 15:07:50+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -12,7 +12,7 @@ msgstr ""
 
 #: ../languages.py:140
 msgid "Sorry"
-msgstr ""
+msgstr "Desculpa"
 
 #: ../languages.py:260
 msgid "Can I leave my bag here for a while?"
@@ -76,708 +76,708 @@ msgstr "De graça ?"
 
 #: ../languages.py:141
 msgid "Are you going towards ...?"
-msgstr ""
+msgstr "Você vai na direcção de ...?"
 
 #: ../languages.py:144
 msgid "just before"
-msgstr ""
+msgstr "logo antes"
 
 #: ../languages.py:145
 msgid "just after"
-msgstr ""
+msgstr "logo depois"
 
 #: ../languages.py:148
 msgid "a lay-by"
-msgstr ""
+msgstr "paragem"
 
 #: ../languages.py:148
 msgid "rest area"
-msgstr ""
+msgstr "area de descanso"
 
 #: ../languages.py:150
 msgid "roundabout"
-msgstr ""
+msgstr "rotunda"
 
 #: ../languages.py:151
 msgid "the junction"
-msgstr ""
+msgstr "junção"
 
 #: ../languages.py:152
 msgid "the T-junction"
-msgstr ""
+msgstr "entroncamento"
 
 #: ../languages.py:153
 msgid "the crossroads"
-msgstr ""
+msgstr "cruzamento"
 
 #: ../languages.py:154
 msgid "on the ring road"
-msgstr ""
+msgstr "circular"
 
 #: ../languages.py:155
 msgid "across the road"
-msgstr ""
+msgstr "do outro lado da estrada"
 
 #: ../languages.py:163
 msgid "Rarely"
-msgstr ""
+msgstr "raramento"
 
 #: ../languages.py:175
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: ../languages.py:175
 msgid "cool"
-msgstr ""
+msgstr "fixe"
 
 #: ../languages.py:176
 msgid "I'm not in a hurry"
-msgstr ""
+msgstr "Não estou com pressa"
 
 #: ../languages.py:181
 msgid "I am studying to be a ..."
-msgstr ""
+msgstr "Estou a estudar para ser ..."
 
 #: ../languages.py:183
 msgid "I'm visiting friends in ..."
-msgstr ""
+msgstr "Estou a visitar amigos em ..."
 
 #: ../languages.py:185
 msgid "I will stay for ... days/weeks"
-msgstr ""
+msgstr "Vou ficar durante ... dias/semanas"
 
 #: ../languages.py:186
 msgid "I'm going back to ..."
-msgstr ""
+msgstr "Estou a voltar para ..."
 
 #: ../languages.py:190
 msgid "I have already texted my father."
-msgstr ""
+msgstr "Já mandei mensagem ao meu pai."
 
 #: ../languages.py:193
 msgid "Pull over I'm going to puke!"
-msgstr ""
+msgstr "Pare, eu vou vomitar!"
 
 #: ../languages.py:202
 msgid "the toll road to ..."
-msgstr ""
+msgstr "a auto-estrada para ..."
 
 #: ../languages.py:203
 msgid "the small road to ..."
-msgstr ""
+msgstr "a pequena estrada para ..."
 
 #: ../languages.py:204
 msgid "city centre"
-msgstr ""
+msgstr "centro da cidade"
 
 #: ../languages.py:209
 msgid "the fruit market"
-msgstr ""
+msgstr "mercado de frutas"
 
 #: ../languages.py:211
 msgid "a camp-site"
-msgstr ""
+msgstr "acampamento"
 
 #: ../languages.py:219
 msgid "a public Wi-Fi / Internet"
-msgstr ""
+msgstr "uma Wireless / Internet publica"
 
 #: ../languages.py:222
 msgid "Drink"
-msgstr ""
+msgstr "Beber"
 
 #: ../languages.py:234
 msgid "Eat"
-msgstr ""
+msgstr "Comer"
 
 #: ../languages.py:237
 msgid "Fruit"
-msgstr ""
+msgstr "Fruta"
 
 #: ../languages.py:241
 msgid "Vegan"
-msgstr ""
+msgstr "Vegan"
 
 #: ../languages.py:246
 msgid "I'm tired"
-msgstr ""
+msgstr "Estou cansado"
 
 #: ../languages.py:251
 msgid "Smoke"
-msgstr ""
+msgstr "Fumar"
 
 #: ../languages.py:257
 msgid "Room"
-msgstr ""
+msgstr "Quarto"
 
 #: ../languages.py:258
 msgid "Hotel"
-msgstr ""
+msgstr "Hotel"
 
 #: ../languages.py:136
 msgid "Info"
-msgstr ""
+msgstr "Informação"
 
 #: ../languages.py:142
 msgid "Could I get a lift to ...?"
-msgstr ""
+msgstr "Posso ir de boleia até ... ?"
 
 #: ../languages.py:170
 msgid "Do you speak ...?"
-msgstr ""
+msgstr "Você fala ...? Falas ...?"
 
 #: ../languages.py:177
 msgid "I'm going to ..."
-msgstr ""
+msgstr "Eu vou para ..."
 
 #: ../languages.py:178
 msgid "My name is ..."
-msgstr ""
+msgstr "O meu nome é ..."
 
 #: ../languages.py:179
 msgid "I'm from ..."
-msgstr ""
+msgstr "Eu sou de ...."
 
 #: ../languages.py:180
 msgid "I'm ... years old."
-msgstr ""
+msgstr "Tenho ... anos"
 
 #: ../languages.py:181
 msgid "I study ..."
-msgstr ""
+msgstr "Eu estudo ..."
 
 #: ../languages.py:181
 msgid "I'm in my ... year."
-msgstr ""
+msgstr "Estou no meu ... ano"
 
 #: ../languages.py:184
 msgid "I'm hitchhiking around ..."
-msgstr ""
+msgstr "Estou a andar á boleia por volta de  ..."
 
 #: ../languages.py:198
 msgid "Where can I find ...?"
-msgstr ""
+msgstr "Onde posso encontrar ... ?"
 
 #: ../languages.py:201
 msgid "the highway to ..."
-msgstr ""
+msgstr "A auto-estrada para ..."
 
 #: ../languages.py:169
 msgid "I can't pay."
-msgstr ""
+msgstr "Não consigo pagar."
 
 #: ../languages.py:175
 msgid "That's great"
-msgstr ""
+msgstr "Isso é ótimo."
 
 #: ../languages.py:182
 msgid "I'm on holiday."
-msgstr ""
+msgstr "Estou de férias."
 
 #: ../languages.py:191
 msgid "Don't touch me!"
-msgstr ""
+msgstr "Não me toque!"
 
 #: ../languages.py:242
 msgid "I don't eat meat"
-msgstr ""
+msgstr "Não como carne."
 
 #: ../languages.py:233
 msgid "I'm hungry"
-msgstr ""
+msgstr "Estou com fome."
 
 #: ../languages.py:221
 msgid "I'm thirsty"
-msgstr ""
+msgstr "Estou com sede."
 
 #: ../languages.py:247
 msgid "I'm fine"
-msgstr ""
+msgstr "Estou bem."
 
 #: ../languages.py:248
 msgid "I'm cold"
-msgstr ""
+msgstr "Estou com frio."
 
 #: ../languages.py:249
 msgid "I'm hot"
-msgstr ""
+msgstr "Estou com calor."
 
 #: ../languages.py:250
 msgid "I'm sick"
-msgstr ""
+msgstr "Estou doente."
 
 #: ../languages.py:253
 msgid "I'm looking for a place to sleep."
-msgstr ""
+msgstr "Procuro um lugar para dormir."
 
 #: ../languages.py:291
 msgid "Hundred"
-msgstr ""
+msgstr "Cem"
 
 #: ../languages.py:292
 msgid "Thousand"
-msgstr ""
+msgstr "Mil"
 
 #: ../languages.py:146
 msgid "a petrol station"
-msgstr ""
+msgstr "Estação de gasolina"
 
 #: ../languages.py:159
 msgid "Right"
-msgstr ""
+msgstr "Direita."
 
 #: ../languages.py:133
 msgid "Phrasebook"
-msgstr ""
+msgstr "Livro de frases"
 
 #: ../languages.py:134
 msgid "Interface"
-msgstr ""
+msgstr "Interface"
 
 #: ../languages.py:135
 msgid "Search..."
-msgstr ""
+msgstr "Procura ..."
 
 #: ../languages.py:139
 msgid "Hello"
-msgstr ""
+msgstr "Olá"
 
 #: ../languages.py:140
 msgid "Excuse me..."
-msgstr ""
+msgstr "Com licença"
 
 #: ../languages.py:147
 msgid "a service area"
-msgstr ""
+msgstr "Estação de serviço"
 
 #: ../languages.py:149
 msgid "along the highway"
-msgstr ""
+msgstr "ao longo de auto-estrada"
 
 #: ../languages.py:170
 msgid "any other languages"
-msgstr ""
+msgstr "alguma outra lingua"
 
 #: ../languages.py:172
 msgid "I don't understand"
-msgstr ""
+msgstr "Não percebo / entendo"
 
 #: ../languages.py:173
 msgid "I don't know"
-msgstr ""
+msgstr "Não sei"
 
 #: ../languages.py:174
 msgid "Yes"
-msgstr ""
+msgstr "Sim"
 
 #: ../languages.py:174
 msgid "No"
-msgstr ""
+msgstr "Não"
 
 #: ../languages.py:174
 msgid "Maybe"
-msgstr ""
+msgstr "Talvez"
 
 #: ../languages.py:174
 msgid "No thanks"
-msgstr ""
+msgstr "Não Obrigado"
 
 #: ../languages.py:175
 msgid "perfect"
-msgstr ""
+msgstr "perfeito"
 
 #: ../languages.py:175
 msgid "bad"
-msgstr ""
+msgstr "mau"
 
 #: ../languages.py:175
 msgid "no problem"
-msgstr ""
+msgstr "sem problema"
 
 #: ../languages.py:177
 msgid "Where are you going to?"
-msgstr ""
+msgstr "Para onde você vai?"
 
 #: ../languages.py:178
 msgid "What's your name?"
-msgstr ""
+msgstr "Qual é o seu nome?"
 
 #: ../languages.py:179
 msgid "Where are you from?"
-msgstr ""
+msgstr "De onde és?"
 
 #: ../languages.py:180
 msgid "How old are you?"
-msgstr ""
+msgstr "Quantos anos tens?"
 
 #: ../languages.py:188
 msgid "I have a boy-friend/a girl-friend."
-msgstr ""
+msgstr "Eu tenho um / uma namorado / namorada."
 
 #: ../languages.py:189
 msgid "I'm married."
-msgstr ""
+msgstr "Sou casado (M) / casada (F)"
 
 #: ../languages.py:187
 msgid "Can you drop me off here?"
-msgstr ""
+msgstr "Pode me deixar aqui?"
 
 #: ../languages.py:192
 msgid "Let me out!"
-msgstr ""
+msgstr "Deixa-me sair!"
 
 #: ../languages.py:194
 msgid "Stop!"
-msgstr ""
+msgstr "PÁRA!"
 
 #: ../languages.py:195
 msgid "Help!"
-msgstr ""
+msgstr "Ajuda!"
 
 #: ../languages.py:196
 msgid "Thank you!"
-msgstr ""
+msgstr "Obrigado!"
 
 #: ../languages.py:197
 msgid "Have a nice day/trip!"
-msgstr ""
+msgstr "Tenha um bom dia! / Tenha uma boa viajem!"
 
 #: ../languages.py:206
 msgid "a map"
-msgstr ""
+msgstr "um mapa"
 
 #: ../languages.py:207
 msgid "a toilet"
-msgstr ""
+msgstr "casa-de-banho"
 
 #: ../languages.py:208
 msgid "a supermarket"
-msgstr ""
+msgstr "super mercado"
 
 #: ../languages.py:210
 msgid "a pharmacy"
-msgstr ""
+msgstr "farmácia"
 
 #: ../languages.py:214
 msgid "a bank"
-msgstr ""
+msgstr "banco"
 
 #: ../languages.py:200
 msgid "a good hitchhiking spot"
-msgstr ""
+msgstr "um bom sitio para andar á boleia"
 
 #: ../languages.py:224
 msgid "Water"
-msgstr ""
+msgstr "Água"
 
 #: ../languages.py:225
 msgid "(Herbal) tea"
-msgstr ""
+msgstr "Chá (de ervas)"
 
 #: ../languages.py:226
 msgid "Hot chocolate"
-msgstr ""
+msgstr "Chocolate quente"
 
 #: ../languages.py:227
 msgid "Coffee"
-msgstr ""
+msgstr "Café"
 
 #: ../languages.py:228
 msgid "Juice"
-msgstr ""
+msgstr "Sumo"
 
 #: ../languages.py:229
 msgid "Beer"
-msgstr ""
+msgstr "Cerveja"
 
 #: ../languages.py:230
 msgid "(Red, white) wine"
-msgstr ""
+msgstr "Vinho (tinto, branco)"
 
 #: ../languages.py:240
 msgid "Vegetarian"
-msgstr ""
+msgstr "Vegetariano"
 
 #: ../languages.py:236
 msgid "Bread"
-msgstr ""
+msgstr "Pão"
 
 #: ../languages.py:243
 msgid "A cheap restaurant"
-msgstr ""
+msgstr "Um restaurante barato"
 
 #: ../languages.py:232
 msgid "Cheers!"
-msgstr ""
+msgstr "Saúde!"
 
 #: ../languages.py:244
 msgid "Enjoy your meal!"
-msgstr ""
+msgstr "Bom apetite!"
 
 #: ../languages.py:245
 msgid "Dumpster diving"
-msgstr ""
+msgstr "procurar no lixo"
 
 #: ../languages.py:157
 msgid "Hour"
-msgstr ""
+msgstr "hora"
 
 #: ../languages.py:157
 msgid "Day"
-msgstr ""
+msgstr "dia"
 
 #: ../languages.py:157
 msgid "Week"
-msgstr ""
+msgstr "semana"
 
 #: ../languages.py:157
 msgid "Month"
-msgstr ""
+msgstr "mês"
 
 #: ../languages.py:158
 msgid "Kilometre"
-msgstr ""
+msgstr "quilometro"
 
 #: ../languages.py:159
 msgid "Left"
-msgstr ""
+msgstr "esquerda"
 
 #: ../languages.py:160
 msgid "Straight on"
-msgstr ""
+msgstr "em frente"
 
 #: ../languages.py:161
 msgid "Before"
-msgstr ""
+msgstr "antes"
 
 #: ../languages.py:161
 msgid "After"
-msgstr ""
+msgstr "depois"
 
 #: ../languages.py:162
 msgid "This"
-msgstr ""
+msgstr "este"
 
 #: ../languages.py:162
 msgid "Next"
-msgstr ""
+msgstr "Próximo"
 
 #: ../languages.py:162
 msgid "Last"
-msgstr ""
+msgstr "Ultimo"
 
 #: ../languages.py:163
 msgid "Often"
-msgstr ""
+msgstr "Frequente"
 
 #: ../languages.py:163
 msgid "Never"
-msgstr ""
+msgstr "Nunca"
 
 #: ../languages.py:164
 msgid "Long"
-msgstr ""
+msgstr "Longo"
 
 #: ../languages.py:164
 msgid "Short"
-msgstr ""
+msgstr "Curto"
 
 #: ../languages.py:165
 msgid "Up"
-msgstr ""
+msgstr "Cima"
 
 #: ../languages.py:165
 msgid "Down"
-msgstr ""
+msgstr "Baixo"
 
 #: ../languages.py:166
 msgid "Over"
-msgstr ""
+msgstr "Por cima"
 
 #: ../languages.py:166
 msgid "Under"
-msgstr ""
+msgstr "Por baixo"
 
 #: ../languages.py:167
 msgid "How far is it (on foot)?"
-msgstr ""
+msgstr "Qual a distância (a pé)?"
 
 #: ../languages.py:168
 msgid "Where are we?"
-msgstr ""
+msgstr "Onde estamos?"
 
 #: ../languages.py:261
 msgid "How much does it cost?"
-msgstr ""
+msgstr "Quanto custa?"
 
 #: ../languages.py:252
 msgid "What time is it?"
-msgstr ""
+msgstr "Que horas são?"
 
 #: ../languages.py:255
 msgid "Tent"
-msgstr ""
+msgstr "Tenda"
 
 #: ../languages.py:266
 msgid "Where can we buy a ticket?"
-msgstr ""
+msgstr "Onde posso comprar bilhetes?"
 
 #: ../languages.py:262
 msgid "Who?"
-msgstr ""
+msgstr "Quem?"
 
 #: ../languages.py:262
 msgid "What?"
-msgstr ""
+msgstr "O quê?"
 
 #: ../languages.py:262
 msgid "Where?"
-msgstr ""
+msgstr "Onde?"
 
 #: ../languages.py:262
 msgid "Why?"
-msgstr ""
+msgstr "Porquê?"
 
 #: ../languages.py:262
 msgid "When?"
-msgstr ""
+msgstr "Quando?"
 
 #: ../languages.py:263
 msgid "How?"
-msgstr ""
+msgstr "Como?"
 
 #: ../languages.py:263
 msgid "How much?"
-msgstr ""
+msgstr "Quanto?"
 
 #: ../languages.py:263
 msgid "How long?"
-msgstr ""
+msgstr "Quanto tempo? (time)"
 
 #: ../languages.py:263
 msgid "Which?"
-msgstr ""
+msgstr "Qual?"
 
 #: ../languages.py:264
 msgid "North"
-msgstr ""
+msgstr "Norte"
 
 #: ../languages.py:264
 msgid "East"
-msgstr ""
+msgstr "Este"
 
 #: ../languages.py:264
 msgid "South"
-msgstr ""
+msgstr "Sul"
 
 #: ../languages.py:264
 msgid "West"
-msgstr ""
+msgstr "Oeste"
 
 #: ../languages.py:265
 msgid "Yesterday"
-msgstr ""
+msgstr "Ontem"
 
 #: ../languages.py:265
 msgid "Today"
-msgstr ""
+msgstr "Hoje"
 
 #: ../languages.py:265
 msgid "Tomorrow"
-msgstr ""
+msgstr "Amanhã"
 
 #: ../languages.py:267
 msgid "Zero"
-msgstr ""
+msgstr "Zero"
 
 #: ../languages.py:269
 msgid "One"
-msgstr ""
+msgstr "Um"
 
 #: ../languages.py:270
 msgid "Two"
-msgstr ""
+msgstr "Dois"
 
 #: ../languages.py:271
 msgid "Three"
-msgstr ""
+msgstr "Três"
 
 #: ../languages.py:272
 msgid "Four"
-msgstr ""
+msgstr "Quatro"
 
 #: ../languages.py:273
 msgid "Five"
-msgstr ""
+msgstr "Cinco"
 
 #: ../languages.py:274
 msgid "Six"
-msgstr ""
+msgstr "Seis"
 
 #: ../languages.py:275
 msgid "Seven"
-msgstr ""
+msgstr "Sete"
 
 #: ../languages.py:276
 msgid "Eight"
-msgstr ""
+msgstr "Oito"
 
 #: ../languages.py:277
 msgid "Nine"
-msgstr ""
+msgstr "Nove"
 
 #: ../languages.py:278
 msgid "Ten"
-msgstr ""
+msgstr "Dez"
 
 #: ../languages.py:279
 msgid "Eleven"
-msgstr ""
+msgstr "Onze"
 
 #: ../languages.py:280
 msgid "Twelve"
-msgstr ""
+msgstr "Doze"
 
 #: ../languages.py:281
 msgid "Thirteen"
-msgstr ""
+msgstr "Treze"
 
 #: ../languages.py:282
 msgid "Fourteen"
-msgstr ""
+msgstr "Catorze"
 
 #: ../languages.py:283
 msgid "Fifteen"
-msgstr ""
+msgstr "Quinze"
 
 #: ../languages.py:284
 msgid "Sixteen"
-msgstr ""
+msgstr "Dezasseis"
 
 #: ../languages.py:285
 msgid "Seventeen"
-msgstr ""
+msgstr "Dezassete"
 
 #: ../languages.py:286
 msgid "Eighteen"
-msgstr ""
+msgstr "Dezoito"
 
 #: ../languages.py:287
 msgid "Nineteen"
-msgstr ""
+msgstr "Dezanove"
 
 #: ../languages.py:288
 msgid "Twenty"
-msgstr ""
+msgstr "Vinte"
 
 #: ../languages.py:289
 msgid "Twenty-one"
-msgstr ""
+msgstr "Vinte e um"
 
 #: ../languages.py:290
 msgid "Thirty"
-msgstr ""
+msgstr "Trinta"
 
 #: ../languages.py:294
 msgid "Free hugs"
-msgstr ""
+msgstr "Abraços grátis"

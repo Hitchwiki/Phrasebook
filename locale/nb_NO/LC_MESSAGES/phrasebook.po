@@ -1,90 +1,90 @@
-# Translation of Phrasebook in Turkish
+# Translation of Phrasebook in Norwegian (Bokmål)
 # This file is distributed under the same license as the Phrasebook package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2013-07-19 15:07:53+0000\n"
+"PO-Revision-Date: 2013-07-19 15:07:48+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: GlotPress/0.1\n"
 "Project-Id-Version: Phrasebook\n"
 
 #: ../languages.py:140
 msgid "Sorry"
-msgstr ""
+msgstr "Beklager"
 
 #: ../languages.py:260
 msgid "Can I leave my bag here for a while?"
-msgstr ""
+msgstr "Kan jeg la min pose her for en stund?"
 
 #: ../languages.py:213
 msgid "ATM"
-msgstr "bankamatik"
+msgstr "Minibank"
 
 #: ../languages.py:218
 msgid "a train station"
-msgstr "bir gar"
+msgstr "en togstasjon"
 
 #: ../languages.py:217
 msgid "a bus station"
-msgstr "bir otogar"
+msgstr "en busstajon"
 
 #: ../languages.py:216
 msgid "a metro station"
-msgstr "bir metro durağı"
+msgstr "en T-Banestajon"
 
 #: ../languages.py:213
 msgid "a cash machine"
-msgstr "bir bankamatik"
+msgstr "en minibank"
 
 #: ../languages.py:215
 msgid "a bus stop"
-msgstr "bir otobus durağı"
+msgstr "en busstop"
 
 #: ../languages.py:157
 msgid "Year"
-msgstr "Yıl"
+msgstr "År"
 
 #: ../languages.py:205
 msgid "the tourist office"
-msgstr "turizm ofisi"
+msgstr "en turistkontoret"
 
 #: ../languages.py:212
 msgid "an internet café"
-msgstr "bir internet kafe"
+msgstr "en internett-kafé"
 
 #: ../languages.py:256
 msgid "Hostel"
-msgstr "Pansiyon"
+msgstr "vandrerhjem / Hostel"
 
 #: ../languages.py:238
 msgid "Meat"
-msgstr "Et"
+msgstr "Kjøtt"
 
 #: ../languages.py:171
 msgid "Speak slower, please?"
-msgstr "Yavaş konuşun lüften."
+msgstr "Snakke saktere, vær så snill"
 
 #: ../languages.py:163
 msgid "Sometimes"
-msgstr "Bazen"
+msgstr "Noen ganger"
 
 #: ../languages.py:169
 msgid "For free?"
-msgstr "Bedava mı?"
+msgstr "Gratis? for fri?"
 
 #: ../languages.py:141
 msgid "Are you going towards ...?"
-msgstr "... ' a gidiyor musun?"
+msgstr "Skal du mot ... ?"
 
 #: ../languages.py:144
 msgid "just before"
-msgstr "hemen önce"
+msgstr "rett før"
 
 #: ../languages.py:145
 msgid "just after"
-msgstr "hemen sonra"
+msgstr "rett etter"
 
 #: ../languages.py:148
 msgid "a lay-by"
@@ -92,71 +92,71 @@ msgstr ""
 
 #: ../languages.py:148
 msgid "rest area"
-msgstr "dinlenme alanı"
+msgstr "hvileområde"
 
 #: ../languages.py:150
 msgid "roundabout"
-msgstr ""
+msgstr "rundkjøring"
 
 #: ../languages.py:151
 msgid "the junction"
-msgstr "kavşak"
+msgstr "krysset"
 
 #: ../languages.py:152
 msgid "the T-junction"
-msgstr ""
+msgstr "T-kryss"
 
 #: ../languages.py:153
 msgid "the crossroads"
-msgstr "dörtyol ağzı"
+msgstr "veiskille"
 
 #: ../languages.py:154
 msgid "on the ring road"
-msgstr "çevru yolunda"
+msgstr "på ringveien"
 
 #: ../languages.py:155
 msgid "across the road"
-msgstr "yolun karşısında"
+msgstr "tvers over veien"
 
 #: ../languages.py:163
 msgid "Rarely"
-msgstr "Nadiren"
+msgstr "sjelden"
 
 #: ../languages.py:175
 msgid "OK"
-msgstr "Tamam"
+msgstr "ok"
 
 #: ../languages.py:175
 msgid "cool"
-msgstr ""
+msgstr "kult / kjølig"
 
 #: ../languages.py:176
 msgid "I'm not in a hurry"
-msgstr "Acelem değilim."
+msgstr "Jeg er ikke i en hast"
 
 #: ../languages.py:181
 msgid "I am studying to be a ..."
-msgstr "Ben bir ... olmak için okuyorum."
+msgstr "Jeg studerer til å bli en ..."
 
 #: ../languages.py:183
 msgid "I'm visiting friends in ..."
-msgstr "... arkadaşlarımı ziyaret edeceğim."
+msgstr "Jeg besøker venner i ..."
 
 #: ../languages.py:185
 msgid "I will stay for ... days/weeks"
-msgstr "Ben ... gün/hafta süreyle kalacağım."
+msgstr "Jeg vil bli her for ... døgn/uker"
 
 #: ../languages.py:186
 msgid "I'm going back to ..."
-msgstr "Ben ... geri dönüyorum."
+msgstr "Jeg skall tilbake til ..."
 
 #: ../languages.py:190
 msgid "I have already texted my father."
-msgstr "Zaten babama mesaj attım."
+msgstr ""
 
 #: ../languages.py:193
 msgid "Pull over I'm going to puke!"
-msgstr "Dur, kusacağım!"
+msgstr ""
 
 #: ../languages.py:202
 msgid "the toll road to ..."
@@ -164,35 +164,35 @@ msgstr ""
 
 #: ../languages.py:203
 msgid "the small road to ..."
-msgstr "...-a / -e küçük yol"
+msgstr ""
 
 #: ../languages.py:204
 msgid "city centre"
-msgstr "şehir merkezi"
+msgstr ""
 
 #: ../languages.py:209
 msgid "the fruit market"
-msgstr "pazar / sebze pazarı [vegetable market]"
+msgstr ""
 
 #: ../languages.py:211
 msgid "a camp-site"
-msgstr "bir kamp alanı"
+msgstr ""
 
 #: ../languages.py:219
 msgid "a public Wi-Fi / Internet"
-msgstr "bir bedava (wifi / kablosuz)) internet"
+msgstr ""
 
 #: ../languages.py:222
 msgid "Drink"
-msgstr "İçmek"
+msgstr ""
 
 #: ../languages.py:234
 msgid "Eat"
-msgstr "Yemek"
+msgstr ""
 
 #: ../languages.py:237
 msgid "Fruit"
-msgstr "Meyve"
+msgstr ""
 
 #: ../languages.py:241
 msgid "Vegan"
@@ -204,35 +204,35 @@ msgstr ""
 
 #: ../languages.py:251
 msgid "Smoke"
-msgstr "Sigara içmek"
+msgstr ""
 
 #: ../languages.py:257
 msgid "Room"
-msgstr "Oda"
+msgstr ""
 
 #: ../languages.py:258
 msgid "Hotel"
-msgstr "Otel"
+msgstr ""
 
 #: ../languages.py:136
 msgid "Info"
-msgstr "Enformasyon"
+msgstr ""
 
 #: ../languages.py:142
 msgid "Could I get a lift to ...?"
-msgstr "Beni ...-a / -e götürebilir misin?"
+msgstr ""
 
 #: ../languages.py:170
 msgid "Do you speak ...?"
-msgstr "... biliyor musun?"
+msgstr ""
 
 #: ../languages.py:177
 msgid "I'm going to ..."
-msgstr "Ben ...-a / -e gidiyorum."
+msgstr ""
 
 #: ../languages.py:178
 msgid "My name is ..."
-msgstr "Benim adım ..."
+msgstr ""
 
 #: ../languages.py:179
 msgid "I'm from ..."
@@ -240,11 +240,11 @@ msgstr ""
 
 #: ../languages.py:180
 msgid "I'm ... years old."
-msgstr "Ben ... yaşındayım."
+msgstr ""
 
 #: ../languages.py:181
 msgid "I study ..."
-msgstr "Ben ... okuyorum."
+msgstr ""
 
 #: ../languages.py:181
 msgid "I'm in my ... year."
@@ -252,51 +252,51 @@ msgstr ""
 
 #: ../languages.py:184
 msgid "I'm hitchhiking around ..."
-msgstr "Ben ... otostopla geziyorum."
+msgstr ""
 
 #: ../languages.py:198
 msgid "Where can I find ...?"
-msgstr "Nerede ... bulabilirim?"
+msgstr ""
 
 #: ../languages.py:201
 msgid "the highway to ..."
-msgstr "...-a / -e karayolu"
+msgstr ""
 
 #: ../languages.py:169
 msgid "I can't pay."
-msgstr "Ben ödeyemem."
+msgstr ""
 
 #: ../languages.py:175
 msgid "That's great"
-msgstr "Harika"
+msgstr ""
 
 #: ../languages.py:182
 msgid "I'm on holiday."
-msgstr "Tatildeyim."
+msgstr ""
 
 #: ../languages.py:191
 msgid "Don't touch me!"
-msgstr "Bana dokunma!"
+msgstr ""
 
 #: ../languages.py:242
 msgid "I don't eat meat"
-msgstr "Ben et yemem."
+msgstr ""
 
 #: ../languages.py:233
 msgid "I'm hungry"
-msgstr "Açım"
+msgstr ""
 
 #: ../languages.py:221
 msgid "I'm thirsty"
-msgstr "Susadım"
+msgstr ""
 
 #: ../languages.py:247
 msgid "I'm fine"
-msgstr "İyiyim"
+msgstr ""
 
 #: ../languages.py:248
 msgid "I'm cold"
-msgstr "Üşüdüm"
+msgstr ""
 
 #: ../languages.py:249
 msgid "I'm hot"
@@ -304,27 +304,27 @@ msgstr ""
 
 #: ../languages.py:250
 msgid "I'm sick"
-msgstr "Ben hastayım"
+msgstr ""
 
 #: ../languages.py:253
 msgid "I'm looking for a place to sleep."
-msgstr "Uyumak için bir yer arıyorum."
+msgstr ""
 
 #: ../languages.py:291
 msgid "Hundred"
-msgstr "yüz"
+msgstr ""
 
 #: ../languages.py:292
 msgid "Thousand"
-msgstr "bin"
+msgstr ""
 
 #: ../languages.py:146
 msgid "a petrol station"
-msgstr "bir benzin istasyonu"
+msgstr ""
 
 #: ../languages.py:159
 msgid "Right"
-msgstr "Sağ"
+msgstr ""
 
 #: ../languages.py:133
 msgid "Phrasebook"
@@ -336,91 +336,91 @@ msgstr ""
 
 #: ../languages.py:135
 msgid "Search..."
-msgstr "Ara..."
+msgstr ""
 
 #: ../languages.py:139
 msgid "Hello"
-msgstr "Merhaba / Selam"
+msgstr ""
 
 #: ../languages.py:140
 msgid "Excuse me..."
-msgstr "Afedersiniz"
+msgstr ""
 
 #: ../languages.py:147
 msgid "a service area"
-msgstr "bir servis alanı"
+msgstr ""
 
 #: ../languages.py:149
 msgid "along the highway"
-msgstr "karayolu yanında"
+msgstr ""
 
 #: ../languages.py:170
 msgid "any other languages"
-msgstr "başka bir dil"
+msgstr ""
 
 #: ../languages.py:172
 msgid "I don't understand"
-msgstr "Anlamıyorum."
+msgstr ""
 
 #: ../languages.py:173
 msgid "I don't know"
-msgstr "Bilmiyorum"
+msgstr ""
 
 #: ../languages.py:174
 msgid "Yes"
-msgstr "Evet"
+msgstr ""
 
 #: ../languages.py:174
 msgid "No"
-msgstr "Hayır"
+msgstr ""
 
 #: ../languages.py:174
 msgid "Maybe"
-msgstr "Belki"
+msgstr ""
 
 #: ../languages.py:174
 msgid "No thanks"
-msgstr "Hayır, teşekkürler"
+msgstr ""
 
 #: ../languages.py:175
 msgid "perfect"
-msgstr "mükemmel"
+msgstr ""
 
 #: ../languages.py:175
 msgid "bad"
-msgstr "kötü"
+msgstr ""
 
 #: ../languages.py:175
 msgid "no problem"
-msgstr "sorun değil"
+msgstr ""
 
 #: ../languages.py:177
 msgid "Where are you going to?"
-msgstr "Nereye gidiyor musun?"
+msgstr ""
 
 #: ../languages.py:178
 msgid "What's your name?"
-msgstr "Senin adın ne?"
+msgstr ""
 
 #: ../languages.py:179
 msgid "Where are you from?"
-msgstr "Nerelisin?"
+msgstr ""
 
 #: ../languages.py:180
 msgid "How old are you?"
-msgstr "Kaç yaşındasın?"
+msgstr ""
 
 #: ../languages.py:188
 msgid "I have a boy-friend/a girl-friend."
-msgstr "Benim erkek/kız arkadaşım var."
+msgstr ""
 
 #: ../languages.py:189
 msgid "I'm married."
-msgstr "Ben evliyim."
+msgstr ""
 
 #: ../languages.py:187
 msgid "Can you drop me off here?"
-msgstr "Beni burada bırakabilir misin?"
+msgstr ""
 
 #: ../languages.py:192
 msgid "Let me out!"
@@ -428,7 +428,7 @@ msgstr ""
 
 #: ../languages.py:194
 msgid "Stop!"
-msgstr "Dur!"
+msgstr ""
 
 #: ../languages.py:195
 msgid "Help!"
@@ -436,83 +436,83 @@ msgstr ""
 
 #: ../languages.py:196
 msgid "Thank you!"
-msgstr "Teşekkür ederim!"
+msgstr ""
 
 #: ../languages.py:197
 msgid "Have a nice day/trip!"
-msgstr "İyi günler/yolculuklar!"
+msgstr ""
 
 #: ../languages.py:206
 msgid "a map"
-msgstr "bir harita"
+msgstr ""
 
 #: ../languages.py:207
 msgid "a toilet"
-msgstr "bir tuvalet"
+msgstr ""
 
 #: ../languages.py:208
 msgid "a supermarket"
-msgstr "bir süpermarket"
+msgstr ""
 
 #: ../languages.py:210
 msgid "a pharmacy"
-msgstr "bir eczane"
+msgstr ""
 
 #: ../languages.py:214
 msgid "a bank"
-msgstr "bir bank"
+msgstr ""
 
 #: ../languages.py:200
 msgid "a good hitchhiking spot"
-msgstr "iyi bir otostop yeri"
+msgstr ""
 
 #: ../languages.py:224
 msgid "Water"
-msgstr "su"
+msgstr ""
 
 #: ../languages.py:225
 msgid "(Herbal) tea"
-msgstr "(bitkisel) çay"
+msgstr ""
 
 #: ../languages.py:226
 msgid "Hot chocolate"
-msgstr "Sıçak çikolata"
+msgstr ""
 
 #: ../languages.py:227
 msgid "Coffee"
-msgstr "Kahve"
+msgstr ""
 
 #: ../languages.py:228
 msgid "Juice"
-msgstr "Meyve suyu"
+msgstr ""
 
 #: ../languages.py:229
 msgid "Beer"
-msgstr "Bira"
+msgstr ""
 
 #: ../languages.py:230
 msgid "(Red, white) wine"
-msgstr "(kırmızı, beyaz) şarap"
+msgstr ""
 
 #: ../languages.py:240
 msgid "Vegetarian"
-msgstr "Vejetaryen"
+msgstr ""
 
 #: ../languages.py:236
 msgid "Bread"
-msgstr "Ekmek"
+msgstr ""
 
 #: ../languages.py:243
 msgid "A cheap restaurant"
-msgstr "ucuz bir restoran / lokanta"
+msgstr ""
 
 #: ../languages.py:232
 msgid "Cheers!"
-msgstr "Şerefe!"
+msgstr ""
 
 #: ../languages.py:244
 msgid "Enjoy your meal!"
-msgstr "Afiyet olsun!"
+msgstr ""
 
 #: ../languages.py:245
 msgid "Dumpster diving"
@@ -520,91 +520,91 @@ msgstr ""
 
 #: ../languages.py:157
 msgid "Hour"
-msgstr "Saat"
+msgstr ""
 
 #: ../languages.py:157
 msgid "Day"
-msgstr "Gün"
+msgstr ""
 
 #: ../languages.py:157
 msgid "Week"
-msgstr "Hafta"
+msgstr ""
 
 #: ../languages.py:157
 msgid "Month"
-msgstr "Ay"
+msgstr ""
 
 #: ../languages.py:158
 msgid "Kilometre"
-msgstr "Kilometre"
+msgstr ""
 
 #: ../languages.py:159
 msgid "Left"
-msgstr "Sol"
+msgstr ""
 
 #: ../languages.py:160
 msgid "Straight on"
-msgstr "Düz"
+msgstr ""
 
 #: ../languages.py:161
 msgid "Before"
-msgstr "Önce"
+msgstr ""
 
 #: ../languages.py:161
 msgid "After"
-msgstr "Sonra"
+msgstr ""
 
 #: ../languages.py:162
 msgid "This"
-msgstr "Bu"
+msgstr ""
 
 #: ../languages.py:162
 msgid "Next"
-msgstr "Sonkraki"
+msgstr ""
 
 #: ../languages.py:162
 msgid "Last"
-msgstr "Son"
+msgstr ""
 
 #: ../languages.py:163
 msgid "Often"
-msgstr "sık sık"
+msgstr ""
 
 #: ../languages.py:163
 msgid "Never"
-msgstr "Asla"
+msgstr ""
 
 #: ../languages.py:164
 msgid "Long"
-msgstr "Uzak"
+msgstr ""
 
 #: ../languages.py:164
 msgid "Short"
-msgstr "Kısa"
+msgstr ""
 
 #: ../languages.py:165
 msgid "Up"
-msgstr "Yukarı"
+msgstr ""
 
 #: ../languages.py:165
 msgid "Down"
-msgstr "Aşağı"
+msgstr ""
 
 #: ../languages.py:166
 msgid "Over"
-msgstr "Üzerinde"
+msgstr ""
 
 #: ../languages.py:166
 msgid "Under"
-msgstr "Altında"
+msgstr ""
 
 #: ../languages.py:167
 msgid "How far is it (on foot)?"
-msgstr "Ne kadar uzakta (yürüyerek)?"
+msgstr ""
 
 #: ../languages.py:168
 msgid "Where are we?"
-msgstr "Biz neredeyiz?"
+msgstr ""
 
 #: ../languages.py:261
 msgid "How much does it cost?"
@@ -612,172 +612,172 @@ msgstr ""
 
 #: ../languages.py:252
 msgid "What time is it?"
-msgstr "Saat kaç"
+msgstr ""
 
 #: ../languages.py:255
 msgid "Tent"
-msgstr "Çadır"
+msgstr ""
 
 #: ../languages.py:266
 msgid "Where can we buy a ticket?"
-msgstr "Nerede bilet alabilir miyiz?"
+msgstr ""
 
 #: ../languages.py:262
 msgid "Who?"
-msgstr "Kim?"
+msgstr ""
 
 #: ../languages.py:262
 msgid "What?"
-msgstr "Ne?"
+msgstr ""
 
 #: ../languages.py:262
 msgid "Where?"
-msgstr "Nerede?"
+msgstr ""
 
 #: ../languages.py:262
 msgid "Why?"
-msgstr "Neden?"
+msgstr ""
 
 #: ../languages.py:262
 msgid "When?"
-msgstr "Ne zaman?"
+msgstr ""
 
 #: ../languages.py:263
 msgid "How?"
-msgstr "Nasıl?"
+msgstr ""
 
 #: ../languages.py:263
 msgid "How much?"
-msgstr "Ne kadar? / Kaç para?"
+msgstr ""
 
 #: ../languages.py:263
 msgid "How long?"
-msgstr "Ne kadar süre?"
+msgstr ""
 
 #: ../languages.py:263
 msgid "Which?"
-msgstr "Hangi?"
+msgstr ""
 
 #: ../languages.py:264
 msgid "North"
-msgstr "Küzey"
+msgstr ""
 
 #: ../languages.py:264
 msgid "East"
-msgstr "Doğu"
+msgstr ""
 
 #: ../languages.py:264
 msgid "South"
-msgstr "Güney"
+msgstr ""
 
 #: ../languages.py:264
 msgid "West"
-msgstr "Batı"
+msgstr ""
 
 #: ../languages.py:265
 msgid "Yesterday"
-msgstr "Dün"
+msgstr ""
 
 #: ../languages.py:265
 msgid "Today"
-msgstr "Bugün"
+msgstr ""
 
 #: ../languages.py:265
 msgid "Tomorrow"
-msgstr "yarın"
+msgstr ""
 
 #: ../languages.py:267
 msgid "Zero"
-msgstr "sıfır"
+msgstr ""
 
 #: ../languages.py:269
 msgid "One"
-msgstr "bir"
+msgstr ""
 
 #: ../languages.py:270
 msgid "Two"
-msgstr "iki"
+msgstr ""
 
 #: ../languages.py:271
 msgid "Three"
-msgstr "üç"
+msgstr ""
 
 #: ../languages.py:272
 msgid "Four"
-msgstr "dört"
+msgstr ""
 
 #: ../languages.py:273
 msgid "Five"
-msgstr "beş"
+msgstr ""
 
 #: ../languages.py:274
 msgid "Six"
-msgstr "altı"
+msgstr ""
 
 #: ../languages.py:275
 msgid "Seven"
-msgstr "yedi"
+msgstr ""
 
 #: ../languages.py:276
 msgid "Eight"
-msgstr "sekiz"
+msgstr ""
 
 #: ../languages.py:277
 msgid "Nine"
-msgstr "dokuz"
+msgstr ""
 
 #: ../languages.py:278
 msgid "Ten"
-msgstr "on"
+msgstr ""
 
 #: ../languages.py:279
 msgid "Eleven"
-msgstr "on bir"
+msgstr ""
 
 #: ../languages.py:280
 msgid "Twelve"
-msgstr "on iki"
+msgstr ""
 
 #: ../languages.py:281
 msgid "Thirteen"
-msgstr "on üç"
+msgstr ""
 
 #: ../languages.py:282
 msgid "Fourteen"
-msgstr "on dört"
+msgstr ""
 
 #: ../languages.py:283
 msgid "Fifteen"
-msgstr "on beş"
+msgstr ""
 
 #: ../languages.py:284
 msgid "Sixteen"
-msgstr "on altı"
+msgstr ""
 
 #: ../languages.py:285
 msgid "Seventeen"
-msgstr "on yedi"
+msgstr ""
 
 #: ../languages.py:286
 msgid "Eighteen"
-msgstr "on sekiz"
+msgstr ""
 
 #: ../languages.py:287
 msgid "Nineteen"
-msgstr "on dokuz"
+msgstr ""
 
 #: ../languages.py:288
 msgid "Twenty"
-msgstr "yirmi"
+msgstr ""
 
 #: ../languages.py:289
 msgid "Twenty-one"
-msgstr "yirmi bir"
+msgstr ""
 
 #: ../languages.py:290
 msgid "Thirty"
-msgstr "otuz"
+msgstr ""
 
 #: ../languages.py:294
 msgid "Free hugs"
-msgstr "Sarılmak serbest"
+msgstr ""

@@ -261,7 +261,7 @@ var translationView = Backbone.View.extend({
 	showTranslation: function (event) {
 	
         // Hide all previously open translations
-        $(".translation:visible").slideUp('fast');
+        $(".translation:visible").hide();
         $(".translationOpen").removeClass("translationOpen");
 
         // Make sure we're not clicking divider
@@ -273,7 +273,7 @@ var translationView = Backbone.View.extend({
         // Show translation
         if($translation.is(":hidden")) {
             $translationRow.addClass("translationOpen");
-            $translation.slideDown('fast');
+            $translation.show();
         }
 	
 	},

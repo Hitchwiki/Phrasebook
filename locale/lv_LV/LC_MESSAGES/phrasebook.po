@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Phrasebook package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2013-07-19 10:19:26+0000\n"
+"PO-Revision-Date: 2013-07-19 15:07:46+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -12,7 +12,7 @@ msgstr ""
 
 #: ../languages.py:140
 msgid "Sorry"
-msgstr ""
+msgstr "Atvainojiet"
 
 #: ../languages.py:260
 msgid "Can I leave my bag here for a while?"
@@ -40,11 +40,11 @@ msgstr ""
 
 #: ../languages.py:215
 msgid "a bus stop"
-msgstr ""
+msgstr "autobusu pietura"
 
 #: ../languages.py:157
 msgid "Year"
-msgstr ""
+msgstr "gads"
 
 #: ../languages.py:205
 msgid "the tourist office"
@@ -56,7 +56,7 @@ msgstr ""
 
 #: ../languages.py:256
 msgid "Hostel"
-msgstr ""
+msgstr "hostelis"
 
 #: ../languages.py:238
 msgid "Meat"
@@ -120,7 +120,7 @@ msgstr ""
 
 #: ../languages.py:163
 msgid "Rarely"
-msgstr ""
+msgstr "reti"
 
 #: ../languages.py:175
 msgid "OK"
@@ -132,7 +132,7 @@ msgstr ""
 
 #: ../languages.py:176
 msgid "I'm not in a hurry"
-msgstr ""
+msgstr "Es nesteidzos"
 
 #: ../languages.py:181
 msgid "I am studying to be a ..."
@@ -184,7 +184,7 @@ msgstr ""
 
 #: ../languages.py:222
 msgid "Drink"
-msgstr ""
+msgstr "dzert"
 
 #: ../languages.py:234
 msgid "Eat"
@@ -200,7 +200,7 @@ msgstr ""
 
 #: ../languages.py:246
 msgid "I'm tired"
-msgstr ""
+msgstr "esmu noguris"
 
 #: ../languages.py:251
 msgid "Smoke"
@@ -208,7 +208,7 @@ msgstr ""
 
 #: ../languages.py:257
 msgid "Room"
-msgstr ""
+msgstr "istaba"
 
 #: ../languages.py:258
 msgid "Hotel"
@@ -232,15 +232,15 @@ msgstr ""
 
 #: ../languages.py:178
 msgid "My name is ..."
-msgstr ""
+msgstr "Mani sauc ..."
 
 #: ../languages.py:179
 msgid "I'm from ..."
-msgstr ""
+msgstr "Esmu no ..."
 
 #: ../languages.py:180
 msgid "I'm ... years old."
-msgstr ""
+msgstr "Man ir ... gadi."
 
 #: ../languages.py:181
 msgid "I study ..."
@@ -268,7 +268,7 @@ msgstr ""
 
 #: ../languages.py:175
 msgid "That's great"
-msgstr ""
+msgstr "Lieliski"
 
 #: ../languages.py:182
 msgid "I'm on holiday."
@@ -276,7 +276,7 @@ msgstr ""
 
 #: ../languages.py:191
 msgid "Don't touch me!"
-msgstr ""
+msgstr "Neaiztieciet mani!"
 
 #: ../languages.py:242
 msgid "I don't eat meat"
@@ -284,7 +284,7 @@ msgstr ""
 
 #: ../languages.py:233
 msgid "I'm hungry"
-msgstr ""
+msgstr "Esmu izsalcis"
 
 #: ../languages.py:221
 msgid "I'm thirsty"
@@ -296,15 +296,15 @@ msgstr ""
 
 #: ../languages.py:248
 msgid "I'm cold"
-msgstr ""
+msgstr "Man ir auksti"
 
 #: ../languages.py:249
 msgid "I'm hot"
-msgstr ""
+msgstr "Man ir karsti"
 
 #: ../languages.py:250
 msgid "I'm sick"
-msgstr ""
+msgstr "Man ir slikti"
 
 #: ../languages.py:253
 msgid "I'm looking for a place to sleep."
@@ -312,7 +312,7 @@ msgstr ""
 
 #: ../languages.py:291
 msgid "Hundred"
-msgstr ""
+msgstr "simts"
 
 #: ../languages.py:292
 msgid "Thousand"
@@ -324,7 +324,7 @@ msgstr ""
 
 #: ../languages.py:159
 msgid "Right"
-msgstr ""
+msgstr "Pa labi"
 
 #: ../languages.py:133
 msgid "Phrasebook"
@@ -340,11 +340,11 @@ msgstr ""
 
 #: ../languages.py:139
 msgid "Hello"
-msgstr ""
+msgstr "Sveiki"
 
 #: ../languages.py:140
 msgid "Excuse me..."
-msgstr ""
+msgstr "Atvainojiet..."
 
 #: ../languages.py:147
 msgid "a service area"
@@ -360,11 +360,11 @@ msgstr ""
 
 #: ../languages.py:172
 msgid "I don't understand"
-msgstr ""
+msgstr "Es nesaprotu"
 
 #: ../languages.py:173
 msgid "I don't know"
-msgstr ""
+msgstr "Es nezinu"
 
 #: ../languages.py:174
 msgid "Yes"
@@ -384,11 +384,11 @@ msgstr ""
 
 #: ../languages.py:175
 msgid "perfect"
-msgstr ""
+msgstr "perfekti"
 
 #: ../languages.py:175
 msgid "bad"
-msgstr ""
+msgstr "slikti"
 
 #: ../languages.py:175
 msgid "no problem"
@@ -424,11 +424,11 @@ msgstr ""
 
 #: ../languages.py:192
 msgid "Let me out!"
-msgstr ""
+msgstr "Izlaidiet mani!"
 
 #: ../languages.py:194
 msgid "Stop!"
-msgstr ""
+msgstr "Stop!"
 
 #: ../languages.py:195
 msgid "Help!"
@@ -436,7 +436,7 @@ msgstr ""
 
 #: ../languages.py:196
 msgid "Thank you!"
-msgstr ""
+msgstr "Paldies!"
 
 #: ../languages.py:197
 msgid "Have a nice day/trip!"
@@ -444,15 +444,15 @@ msgstr ""
 
 #: ../languages.py:206
 msgid "a map"
-msgstr ""
+msgstr "karte"
 
 #: ../languages.py:207
 msgid "a toilet"
-msgstr ""
+msgstr "tualete"
 
 #: ../languages.py:208
 msgid "a supermarket"
-msgstr ""
+msgstr "lielveikals"
 
 #: ../languages.py:210
 msgid "a pharmacy"
@@ -460,7 +460,7 @@ msgstr ""
 
 #: ../languages.py:214
 msgid "a bank"
-msgstr ""
+msgstr "banka"
 
 #: ../languages.py:200
 msgid "a good hitchhiking spot"
@@ -480,15 +480,15 @@ msgstr ""
 
 #: ../languages.py:227
 msgid "Coffee"
-msgstr ""
+msgstr "kafija"
 
 #: ../languages.py:228
 msgid "Juice"
-msgstr ""
+msgstr "sula"
 
 #: ../languages.py:229
 msgid "Beer"
-msgstr ""
+msgstr "alus"
 
 #: ../languages.py:230
 msgid "(Red, white) wine"
@@ -500,7 +500,7 @@ msgstr ""
 
 #: ../languages.py:236
 msgid "Bread"
-msgstr ""
+msgstr "maize"
 
 #: ../languages.py:243
 msgid "A cheap restaurant"
@@ -520,11 +520,11 @@ msgstr ""
 
 #: ../languages.py:157
 msgid "Hour"
-msgstr ""
+msgstr "stunda"
 
 #: ../languages.py:157
 msgid "Day"
-msgstr ""
+msgstr "diena"
 
 #: ../languages.py:157
 msgid "Week"
@@ -536,19 +536,19 @@ msgstr ""
 
 #: ../languages.py:158
 msgid "Kilometre"
-msgstr ""
+msgstr "kilometrs"
 
 #: ../languages.py:159
 msgid "Left"
-msgstr ""
+msgstr "pa kreisi"
 
 #: ../languages.py:160
 msgid "Straight on"
-msgstr ""
+msgstr "taisni"
 
 #: ../languages.py:161
 msgid "Before"
-msgstr ""
+msgstr "pirms"
 
 #: ../languages.py:161
 msgid "After"
@@ -572,7 +572,7 @@ msgstr ""
 
 #: ../languages.py:163
 msgid "Never"
-msgstr ""
+msgstr "nekad"
 
 #: ../languages.py:164
 msgid "Long"
@@ -588,7 +588,7 @@ msgstr ""
 
 #: ../languages.py:165
 msgid "Down"
-msgstr ""
+msgstr "uz leju"
 
 #: ../languages.py:166
 msgid "Over"
@@ -596,7 +596,7 @@ msgstr ""
 
 #: ../languages.py:166
 msgid "Under"
-msgstr ""
+msgstr "zem"
 
 #: ../languages.py:167
 msgid "How far is it (on foot)?"
@@ -604,23 +604,23 @@ msgstr ""
 
 #: ../languages.py:168
 msgid "Where are we?"
-msgstr ""
+msgstr "Kur mes esam?"
 
 #: ../languages.py:261
 msgid "How much does it cost?"
-msgstr ""
+msgstr "Cik tas maksa?"
 
 #: ../languages.py:252
 msgid "What time is it?"
-msgstr ""
+msgstr "Cik pulkstens?"
 
 #: ../languages.py:255
 msgid "Tent"
-msgstr ""
+msgstr "telts"
 
 #: ../languages.py:266
 msgid "Where can we buy a ticket?"
-msgstr ""
+msgstr "Kur var nopirkt bileti?"
 
 #: ../languages.py:262
 msgid "Who?"
@@ -628,11 +628,11 @@ msgstr ""
 
 #: ../languages.py:262
 msgid "What?"
-msgstr ""
+msgstr "kas?"
 
 #: ../languages.py:262
 msgid "Where?"
-msgstr ""
+msgstr "kur?"
 
 #: ../languages.py:262
 msgid "Why?"
@@ -640,7 +640,7 @@ msgstr ""
 
 #: ../languages.py:262
 msgid "When?"
-msgstr ""
+msgstr "kad?"
 
 #: ../languages.py:263
 msgid "How?"
@@ -648,11 +648,11 @@ msgstr ""
 
 #: ../languages.py:263
 msgid "How much?"
-msgstr ""
+msgstr "cik?"
 
 #: ../languages.py:263
 msgid "How long?"
-msgstr ""
+msgstr "cik ilgi?"
 
 #: ../languages.py:263
 msgid "Which?"
@@ -676,7 +676,7 @@ msgstr ""
 
 #: ../languages.py:265
 msgid "Yesterday"
-msgstr ""
+msgstr "vakar"
 
 #: ../languages.py:265
 msgid "Today"
@@ -688,15 +688,15 @@ msgstr ""
 
 #: ../languages.py:267
 msgid "Zero"
-msgstr ""
+msgstr "nulle"
 
 #: ../languages.py:269
 msgid "One"
-msgstr ""
+msgstr "viens"
 
 #: ../languages.py:270
 msgid "Two"
-msgstr ""
+msgstr "divi"
 
 #: ../languages.py:271
 msgid "Three"
@@ -708,7 +708,7 @@ msgstr ""
 
 #: ../languages.py:273
 msgid "Five"
-msgstr ""
+msgstr "pieci"
 
 #: ../languages.py:274
 msgid "Six"
@@ -728,19 +728,19 @@ msgstr ""
 
 #: ../languages.py:278
 msgid "Ten"
-msgstr ""
+msgstr "desmit"
 
 #: ../languages.py:279
 msgid "Eleven"
-msgstr ""
+msgstr "vienpadsmit"
 
 #: ../languages.py:280
 msgid "Twelve"
-msgstr ""
+msgstr "divpadsmit"
 
 #: ../languages.py:281
 msgid "Thirteen"
-msgstr ""
+msgstr "trispadsmit"
 
 #: ../languages.py:282
 msgid "Fourteen"
@@ -748,7 +748,7 @@ msgstr ""
 
 #: ../languages.py:283
 msgid "Fifteen"
-msgstr ""
+msgstr "piecpadsmit"
 
 #: ../languages.py:284
 msgid "Sixteen"
@@ -768,16 +768,16 @@ msgstr ""
 
 #: ../languages.py:288
 msgid "Twenty"
-msgstr ""
+msgstr "divdesmit"
 
 #: ../languages.py:289
 msgid "Twenty-one"
-msgstr ""
+msgstr "divdesmit viens"
 
 #: ../languages.py:290
 msgid "Thirty"
-msgstr ""
+msgstr "trisdesmit"
 
 #: ../languages.py:294
 msgid "Free hugs"
-msgstr ""
+msgstr "bezmaksas apskavieni"

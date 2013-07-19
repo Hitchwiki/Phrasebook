@@ -23,103 +23,31 @@ projectname = 'phrasebook';
 # Define languages here
 # Make sure you have .mo file in place under ./locale/
 languages = [
-    [
-        "en_UK", 
-        "English (UK)", 
-        "English (UK)"
-    ],
-    [
-        "en_US", 
-        "English (US)", 
-        "English (US)"
-    ],
-    [
-        "sq_AL",
-        "Albanian",
-        "Gjuha shqipe"
-    ],
-    [
-        "hr_HR",
-        "Croatian",
-        "Hrvatski"
-    ],
-    [
-        "de_DE", 
-        "German", 
-        "Deutch"
-    ],
-    [
-        "es_ES", 
-        "Spanish", 
-        "Español"
-    ],
-    [
-        "fr_FR", 
-        "French", 
-        "Français"
-    ],
-    [
-        "fi_FI", 
-        "Finnish", 
-        "Suomi"
-    ],
-    [
-        "hu_HU", 
-        "Hungarian", 
-        "Magyar"
-    ],
-    [
-        "it_IT", 
-        "Italian", 
-        "Italiano"
-    ],
-    [
-        "lv_LV", 
-        "Latvian", 
-        "Latviešu"
-    ],
-    [
-        "lt_LT", 
-        "Lithuanian", 
-        "Lietuvių"
-    ],
-    [
-        "nl_NL", 
-        "Dutch", 
-        "Nederlands"
-    ],
-    [
-        "pl_PL", 
-        "Polish", 
-        "Polski"
-    ],
-    [
-        "pt_PT", 
-        "Portuguese", 
-        "Português"
-    ],
-    [
-        "ro_RO",
-        "Romanian",
-        "Română"
-    ],
-    [
-        "sk_SK", 
-        "Slovakian", 
-        "Slovenčina"
-    ],
-    [
-        "sv_SE", 
-        "Swedish", 
-        "Svenska"
-    ],
-    [
-        "tr_TR", 
-        "Turkish", 
-        "Türkçe"
-    ]
+    # Code     English name             Original name       # transliteration/phonetic
+    [ "en_UK", "English (UK)",          "English (UK)"      ],
+    [ "en_US", "English (US)",          "English (US)"      ],
+    [ "sq_AL", "Albanian",              "Gjuha shqipe"      ],
+    [ "hr_HR", "Croatian",              "Hrvatski"          ],
+    [ "de_DE", "German",                "Deutch"            ],
+    [ "es_ES", "Spanish",               "Español"           ],
+    [ "fr_FR", "French",                "Français"          ],
+    [ "fi_FI", "Finnish",               "Suomi"             ],
+    [ "hu_HU", "Hungarian",             "Magyar"            ],
+    [ "it_IT", "Italian",               "Italiano"          ],
+    [ "lv_LV", "Latvian",               "Latviešu"          ],
+    [ "lt_LT", "Lithuanian",            "Lietuvių"          ],
+    [ "nl_NL", "Dutch",                 "Nederlands"        ],
+    [ "nb_NO", "Norwegian (Bokmål)",    "Norsk (Bokmål)"    ],
+    [ "ru_RU", "Russian",               "Русский",          ['transliteration'] ],
+    [ "pl_PL", "Polish",                "Polski"            ],
+    [ "pt_PT", "Portuguese",            "Português"         ],
+    [ "ro_RO", "Romanian",              "Română"            ],
+    [ "sk_SK", "Slovakian",             "Slovenčina"        ],
+    [ "sv_SE", "Swedish",               "Svenska"           ],
+    [ "tr_TR", "Turkish",               "Türkçe"            ]
 ]
 
+# Language of original strings
 origLang = 'en_UK'
 
 # Divider to be used between translations for same line
@@ -129,83 +57,54 @@ languageJsonFile = './www/assets/js/languages.js'
 
 
 #
-# Download and save .po and .mo files
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# Function to download and save language files from GlotPress
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+def fetchLanguage(language):
 
-print "Downloading and saving language files from GlotPress..."
+    print "Processing: "+language[0]+" ("+language[1]+")"
+    
+    # Path where to save files
+    directory = './locale/%s/LC_MESSAGES/' % language[0]
+    
+    # If language directory doesn't exist, create it
+    if not os.path.isdir(directory):
+        print directory + " doesn't exist, creating it."
+        os.makedirs(directory)
+    
+    # Format url from where to fetch files 
+    fetchURL = glotpress + 'projects/' + projectname + '/' + language[0][:2].lower() + '/' + language[0] + '/export-translations?format='
 
-for language in languages:
+    # Download and save files in two formats
+    for fileformat in ['po', 'mo']:
 
-    if not origLang == language[0]:
-
-        # Path where to save files
-        directory = './locale/%s/LC_MESSAGES/' % language[0]
-        
-        # If language directory doesn't exist, create it
-        if not os.path.isdir(directory):
-            print directory + " doesn't exist, creating it."
-            os.makedirs(directory)
-        
-        # Format url from where to fetch files 
-        fetchURL = glotpress + 'projects/' + projectname + '/' + language[0][:2].lower() + '/' + language[0] + '/export-translations?format='
-        
-        print "Processing: "+language[0]+" ("+language[1]+")"
-
-        # Fetch .po file
-        response = urllib2.urlopen( fetchURL + 'po' )
+        # Fetch language file
+        response = urllib2.urlopen( fetchURL + fileformat)
         poContents = response.read()
         
-        # Save language files
-        fp = open(directory + projectname + '.po', 'w')
+        # Save language file
+        fp = open(directory + projectname + '.' + fileformat, 'w')
         fp.write(poContents)
         fp.close()
 
-        response = urllib2.urlopen( fetchURL + 'mo' )
-        moContents = response.read()
-        
-        fp = open(directory + projectname + '.mo', 'w')
-        fp.write(moContents)
-        fp.close()
-        
-        # Clear variables for this loop
-        del fetchURL
-        del directory
+    return True
+
 
 
 #
-# Procude language json with downloaded .mo files
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # #
-
-print "Creating languages.js from downloaded language files..."
-
-languagesJson = {}
-
-for language in languages:
-
-    # Does translation file exist?
-    if origLang == language[0] or os.path.isfile('./locale/'+language[0]+'/LC_MESSAGES/'+projectname+'.mo'):
-
-        # Prepare gettext for this language
-        translation = gettext.translation(projectname, "./locale", languages=[language[0]], fallback=True)
-        
-        translation.install()
-        
-        _ = translation.gettext
-        
-        print "Translating: "+language[0]+" ("+language[1]+")"
-        
-        # Produce chunk of json
-        language_chunk = {
-            'flag': language[0][-2:].lower(),
-            'name': language[1],
-            'origName': language[2],
-            'ui': {
-                'phrasebook': _("Phrasebook"),
-                'interface': _("Interface"),
-                'search': _("Search..."),
-                'info': _("Info")
-            },
-            'strings': [
+# Returns chunk of translated texts in one langauge as an array
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+def translateLanguage(language, onlyStrings):
+    
+    # Prepare gettext for this language
+    translation = gettext.translation(projectname, "./locale", languages=[language[0]], fallback=True)
+    
+    translation.install()
+    
+    _ = translation.gettext
+    
+    print "Translating: "+language[0]+" ("+language[1]+")"
+    
+    strings = [
                 _("Hello"),
                 _("Excuse me...")+divider+_("Sorry"),
                 _("Are you going towards ...?"),
@@ -362,20 +261,102 @@ for language in languages:
                     _("Thousand")
                 ],
                 _("Free hugs")
-            ]
-        }
-        
-        # Clear variables for this loop
-        del _
-        del translation
-        
-        # Add This language to the json
-        languagesJson[language[0]] = language_chunk
+    ]
+
+    # Produce chunk of json
+    if onlyStrings:
+
+        language_chunk = strings
     
+    else:
+    
+        language_chunk = {
+            'flag': language[0][-2:].lower(),
+            'name': language[1],
+            'origName': language[2],
+            'ui': {
+                'phrasebook': _("Phrasebook"),
+                'interface': _("Interface"),
+                'search': _("Search..."),
+                'info': _("Info")
+            },
+            'strings': strings
+        }
+    
+    # Clear variables for this loop
+    del _
+    del translation
+    del strings
+
+    return language_chunk
+
+
+
+
+#
+# Download and save .po and .mo files
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+print "Downloading and saving language files from GlotPress..."
+
+for language in languages:
+
+    if not origLang == language[0]:
+
+        fetchLanguage(language)
+
+        # Check if this language has attached transliterations/phonetics
+        try:
+            language[3]
+
+            for languageExtra in language[3]:
+
+                fetchLanguage([language[0] + '@' + languageExtra, language[1], language[2]])
+
+        except IndexError:
+            pass
+
+
+
+#
+# Procude language json with downloaded .mo files
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+print "Creating languages.js from downloaded language files..."
+
+languagesJson = {}
+
+for language in languages:
+
+    # Does translation file exist?
+    if origLang == language[0] or os.path.isfile('./locale/'+language[0]+'/LC_MESSAGES/'+projectname+'.mo'):
+
+        # Add This language to the json
+        languagesJson.update({ language[0]: translateLanguage(language, False) });
+        
+        #languagesJson.insert(language[0], translateLanguage(language))
+
+        # Check if this language has attached transliterations/phonetics
+        try:
+            language[3]
+
+            # Yay, we found transliterations/phonetics. Loop them trough.
+            for languageExtra in language[3]:
+
+                languagesJson[language[0]].update({languageExtra: translateLanguage([language[0] + '@' + languageExtra, language[1], language[2]], True) })
+
+        except IndexError:
+            pass
+
     else:
     
         print "Error: "+language[0]+" ("+language[1]+") - can't file translation file (./locale/"+language[0]+"/LC_MESSAGES/"+projectname+".mo). Skipping..."
 
+
+
+#
+# Write produced json to the app's ./www/ folder
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
 print "Writing to "+languageJsonFile+"..."
 
@@ -383,4 +364,4 @@ fp = open(languageJsonFile, 'w')
 fp.write("var languagesVer="+str(int(time.time()))+",languages="+json.dumps(languagesJson))
 fp.close()
 
-print "Done!"
+print "Done! Happy Hitchhiking!"
