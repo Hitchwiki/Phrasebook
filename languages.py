@@ -111,7 +111,7 @@ def translateLanguage(language, onlyStrings):
                 _("Hitchhike"),
                 _("Hitchhiker"),
                 _("Hello"),
-                _("Excuse me...")+divider+_("Sorry"),
+                _("Excuse me..."),#+divider+_("Sorry"),
                 _("Are you going towards ...?"),
                 _("Could I get a lift to ...?"),
                 [
@@ -362,12 +362,15 @@ for language in languages:
 
 #
 # Write produced json to the app's ./www/ folder
+#
+# Note: for some reason json was full of nullbytes (\u0000) 
+# at the end of strings. That's why replace()
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
 print "Writing to "+languageJsonFile+"..."
 
 fp = open(languageJsonFile, 'w')
-fp.write("var languagesVer="+str(int(time.time()))+",languages="+json.dumps(languagesJson))
+fp.write("var languagesVer="+str(int(time.time()))+",languages="+json.dumps(languagesJson, ensure_ascii=False).replace('\u0000',''))
 fp.close()
 
 print "Done! Happy Hitchhiking!"
