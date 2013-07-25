@@ -1,785 +1,783 @@
-# Translation of Phrasebook in Russian
+# Translation of Phrasebook in Danish
 # This file is distributed under the same license as the Phrasebook package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2013-07-25 07:46:02+0000\n"
+"PO-Revision-Date: 2013-07-25 07:45:56+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: GlotPress/0.1\n"
 "Project-Id-Version: Phrasebook\n"
 
 #: ../languages.py:140
 msgid "Sorry"
-msgstr "извините"
+msgstr "Undskyld\n"
 
 #: ../languages.py:260
 msgid "Can I leave my bag here for a while?"
-msgstr "Можно оставить здесь свой рюкзак ненадолго?"
+msgstr "Kan jeg stille min taske her?"
 
 #: ../languages.py:213
 msgid "ATM"
-msgstr "банкомат"
+msgstr "Bankautomat "
 
 #: ../languages.py:218
 msgid "a train station"
-msgstr "вокзал"
+msgstr "Togstation "
 
 #: ../languages.py:217
 msgid "a bus station"
-msgstr "автовокзал"
+msgstr "Busterminal"
 
 #: ../languages.py:216
 msgid "a metro station"
-msgstr "метро"
+msgstr "Metrostation"
 
 #: ../languages.py:213
 msgid "a cash machine"
-msgstr "банкомат"
+msgstr "Bankautomat "
 
 #: ../languages.py:215
 msgid "a bus stop"
-msgstr "Автобусная остановка"
+msgstr "Busstoppested / stoppested for busser"
 
 #: ../languages.py:157
 msgid "Year"
-msgstr "год/лет"
+msgstr "År"
 
 #: ../languages.py:205
 msgid "the tourist office"
-msgstr "Туристический офис"
+msgstr "Touristinformation"
 
 #: ../languages.py:212
 msgid "an internet café"
-msgstr "интернет кафе"
+msgstr "Internetcafé"
 
 #: ../languages.py:256
 msgid "Hostel"
-msgstr "Хостел"
+msgstr "Hostel / vandrehjem"
 
 #: ../languages.py:238
 msgid "Meat"
-msgstr "мясо"
+msgstr "Kød"
 
 #: ../languages.py:171
 msgid "Speak slower, please?"
-msgstr "Говорите помедленней, пожалуйста?"
+msgstr "Tal lidt langsommere"
 
 #: ../languages.py:163
 msgid "Sometimes"
-msgstr "иногда"
+msgstr "Nogen gange"
 
 #: ../languages.py:169
 msgid "For free?"
-msgstr "бесплатно?"
+msgstr "Gratis?"
 
 #: ../languages.py:141
 msgid "Are you going towards ...?"
-msgstr "вы едете в сторону ... ?"
+msgstr "Er du på vej mod...?"
 
 #: ../languages.py:144
 msgid "just before"
-msgstr "Перед"
+msgstr "Lige inden"
 
 #: ../languages.py:145
 msgid "just after"
-msgstr "Сразу после"
+msgstr "Lige efter"
 
 #: ../languages.py:148
 msgid "a lay-by"
-msgstr "Придорожное место для парковки"
+msgstr "Rasteplads"
 
 #: ../languages.py:148
 msgid "rest area"
-msgstr "Зона отдыха"
+msgstr "Rasteplads"
 
 #: ../languages.py:150
 msgid "roundabout"
-msgstr "Дорога с круговым движением"
+msgstr "Rundkørsel\n"
 
 #: ../languages.py:151
 msgid "the junction"
-msgstr "Перекресток"
+msgstr "Krydset"
 
 #: ../languages.py:152
 msgid "the T-junction"
-msgstr "Т-образный перекресток"
+msgstr "T-krydset"
 
 #: ../languages.py:153
 msgid "the crossroads"
-msgstr "перекрёсток"
+msgstr "Vejkrydset"
 
 #: ../languages.py:154
 msgid "on the ring road"
-msgstr "На круговой дороге"
+msgstr "På ringevejen"
 
 #: ../languages.py:155
 msgid "across the road"
-msgstr "через дорогу"
+msgstr "Lige over vejen"
 
 #: ../languages.py:163
 msgid "Rarely"
-msgstr "Редко"
+msgstr "Sjældent"
 
 #: ../languages.py:175
 msgid "OK"
-msgstr "Ладно"
+msgstr "Okay / I orden"
 
 #: ../languages.py:175
 msgid "cool"
-msgstr "Круто"
+msgstr "godt"
 
 #: ../languages.py:176
 msgid "I'm not in a hurry"
-msgstr "я не спешу"
+msgstr "Jeg har ikke travlt"
 
 #: ../languages.py:181
 msgid "I am studying to be a ..."
-msgstr "Я учусь на..."
+msgstr "Jeg studerer.. (insert subject)"
 
 #: ../languages.py:183
 msgid "I'm visiting friends in ..."
-msgstr "я навещаю друзей в ..."
+msgstr "Jeg skal besøge venner i..."
 
 #: ../languages.py:185
 msgid "I will stay for ... days/weeks"
-msgstr "я останусь на ... день/недели"
+msgstr "Jeg vil være der i ... dage/uger"
 
 #: ../languages.py:186
 msgid "I'm going back to ..."
-msgstr "я возвращаюсь в ..."
+msgstr "Jeg er på vej tilbage til..."
 
 #: ../languages.py:190
 msgid "I have already texted my father."
-msgstr "я уже написала своему отцу."
+msgstr "Jeg har allerede skrevet en besked til min far"
 
 #: ../languages.py:193
 msgid "Pull over I'm going to puke!"
-msgstr "остоновитесь, меня тошнит!"
+msgstr "Hold ind, jeg skal kaste op!"
 
 #: ../languages.py:202
 msgid "the toll road to ..."
-msgstr "Платная дорога на ..."
+msgstr "Betalingsvejen mod.. (None of these in Denmark)"
 
 #: ../languages.py:203
 msgid "the small road to ..."
-msgstr "Маленькая дорога на ..."
+msgstr "Den lille vej mod...."
 
 #: ../languages.py:204
 msgid "city centre"
-msgstr "центр города"
+msgstr "Bycentrum / bymidte"
 
 #: ../languages.py:209
 msgid "the fruit market"
-msgstr "фруктовый рынок"
+msgstr "Frugtmarkedet"
 
 #: ../languages.py:211
 msgid "a camp-site"
-msgstr "кемпинг"
+msgstr "Campingplads / sted til campering"
 
 #: ../languages.py:219
 msgid "a public Wi-Fi / Internet"
-msgstr "Общественный wi-fi/интернет"
+msgstr "Gratis Wi-fi / Internet"
 
 #: ../languages.py:222
 msgid "Drink"
-msgstr "пить"
+msgstr "Verb: Drikke / Noun: En drink"
 
 #: ../languages.py:234
 msgid "Eat"
-msgstr "кушать"
+msgstr "Spise"
 
 #: ../languages.py:237
 msgid "Fruit"
-msgstr "фрукт"
+msgstr "Frugt"
 
 #: ../languages.py:241
 msgid "Vegan"
-msgstr "веган"
+msgstr "Noun: Veganer / Adjective: Veganisk"
 
 #: ../languages.py:246
 msgid "I'm tired"
-msgstr "я устал"
+msgstr "Jeg er træt / jeg er søvnig"
 
 #: ../languages.py:251
 msgid "Smoke"
-msgstr "курить"
+msgstr "Verb: Ryge / Noun: Røg"
 
 #: ../languages.py:257
 msgid "Room"
-msgstr "комната"
+msgstr "Værelse"
 
 #: ../languages.py:258
 msgid "Hotel"
-msgstr "гостиница"
+msgstr "Hotel"
 
 #: ../languages.py:136
 msgid "Info"
-msgstr "Информация"
+msgstr "Information"
 
 #: ../languages.py:142
 msgid "Could I get a lift to ...?"
-msgstr "Можете подвезти меня до...?"
+msgstr "Kan jeg få et lift til...?"
 
 #: ../languages.py:170
 msgid "Do you speak ...?"
-msgstr "вы говорите ...?"
+msgstr "Taler du... ?"
 
 #: ../languages.py:177
 msgid "I'm going to ..."
-msgstr "я еду в ..."
+msgstr "Jeg er på vej mod..."
 
 #: ../languages.py:178
 msgid "My name is ..."
-msgstr "Меня зовут ..."
+msgstr "Mit navn er..."
 
 #: ../languages.py:179
 msgid "I'm from ..."
-msgstr "я из ..."
+msgstr "Jeg er fra..."
 
 #: ../languages.py:180
 msgid "I'm ... years old."
-msgstr "Мне ... лет"
+msgstr "Jeg er ... år gammel"
 
 #: ../languages.py:181
 msgid "I study ..."
-msgstr "Я изучаю ..."
+msgstr "Jeg studerer ..."
 
 #: ../languages.py:181
 msgid "I'm in my ... year."
-msgstr "Я на ... году обучения"
+msgstr "Jeg er i mit ... år"
 
 #: ../languages.py:184
 msgid "I'm hitchhiking around ..."
-msgstr "я автостоплю вокруг..."
+msgstr "Jeg blaffer rundt i ..."
 
 #: ../languages.py:198
 msgid "Where can I find ...?"
-msgstr "Где я могу найти...?"
+msgstr "Hvor kan jeg finde ...?"
 
 #: ../languages.py:201
 msgid "the highway to ..."
-msgstr "дорога/автострада на ..."
+msgstr "Motorvejen mod.."
 
 #: ../languages.py:169
 msgid "I can't pay."
-msgstr "Я не могу заплатить"
+msgstr "Jeg kan ikke betale / Jeg har ingen penge"
 
 #: ../languages.py:175
 msgid "That's great"
-msgstr "здорово"
+msgstr "Det lyder godt"
 
 #: ../languages.py:182
 msgid "I'm on holiday."
-msgstr "Я на каникулах"
+msgstr "Jeg er på ferie"
 
 #: ../languages.py:191
 msgid "Don't touch me!"
-msgstr "Не трогайте меня"
+msgstr "Rør mig ikke!"
 
 #: ../languages.py:242
 msgid "I don't eat meat"
-msgstr "Я не ем мясо"
+msgstr "Jeg spiser ikke kød"
 
 #: ../languages.py:233
 msgid "I'm hungry"
-msgstr "я голоден"
+msgstr "Jeg er sulten"
 
 #: ../languages.py:221
 msgid "I'm thirsty"
-msgstr "Я хочу пить"
+msgstr "Jeg er tørstig"
 
 #: ../languages.py:247
 msgid "I'm fine"
-msgstr "Все хорошо"
+msgstr "Jeg har det godt"
 
 #: ../languages.py:248
 msgid "I'm cold"
-msgstr "Я замерз"
+msgstr "Jeg fryser"
 
 #: ../languages.py:249
 msgid "I'm hot"
-msgstr "мне жарко"
+msgstr "Jeg har det varmt"
 
 #: ../languages.py:250
 msgid "I'm sick"
-msgstr "я болен"
+msgstr "Jeg er syg"
 
 #: ../languages.py:253
 msgid "I'm looking for a place to sleep."
-msgstr "Я ищу где переночевать"
+msgstr "Jeg leder efter et sted at sove"
 
 #: ../languages.py:291
 msgid "Hundred"
-msgstr "сто"
+msgstr "Hundrede"
 
 #: ../languages.py:292
 msgid "Thousand"
-msgstr "тысяча"
+msgstr "Tusind"
 
 #: ../languages.py:146
 msgid "a petrol station"
-msgstr "Заправка"
+msgstr "En tankstation"
 
 #: ../languages.py:159
 msgid "Right"
-msgstr "(direction) право"
+msgstr "Højre"
 
 #: ../languages.py:133
 msgid "Phrasebook"
-msgstr "Разговорник"
+msgstr "En parlør"
 
 #: ../languages.py:134
 msgid "Interface"
-msgstr "Интерфейс"
+msgstr "Interface"
 
 #: ../languages.py:135
 msgid "Search..."
-msgstr "поиск"
+msgstr "Søg..."
 
 #: ../languages.py:139
 msgid "Hello"
-msgstr "(formal) здравствуйте"
+msgstr "Hej / goddag / hey"
 
 #: ../languages.py:140
 msgid "Excuse me..."
-msgstr "извините"
+msgstr "Undskyld mig..."
 
 #: ../languages.py:147
 msgid "a service area"
-msgstr "Сервисная зона"
+msgstr "Rasteplads / tankstation"
 
 #: ../languages.py:149
 msgid "along the highway"
-msgstr "Вдоль шоссе"
+msgstr "Langs motorvejen"
 
 #: ../languages.py:170
 msgid "any other languages"
-msgstr "Какие-нибудь другие языки"
+msgstr "nogen andre sprog"
 
 #: ../languages.py:172
 msgid "I don't understand"
-msgstr "не понимаю"
+msgstr "Jeg forstår ikke"
 
 #: ../languages.py:173
 msgid "I don't know"
-msgstr "не знаю"
+msgstr "Jeg ved det ikke"
 
 #: ../languages.py:174
 msgid "Yes"
-msgstr "да"
+msgstr "Ja"
 
 #: ../languages.py:174
 msgid "No"
-msgstr "нет"
+msgstr "Nej"
 
 #: ../languages.py:174
 msgid "Maybe"
-msgstr "может быть"
+msgstr "Måske"
 
 #: ../languages.py:174
 msgid "No thanks"
-msgstr "нет спасибо"
+msgstr "Nej tak"
 
 #: ../languages.py:175
 msgid "perfect"
-msgstr "Великолепно"
+msgstr "Perfekt"
 
 #: ../languages.py:175
 msgid "bad"
-msgstr "плохой"
+msgstr "Skidt / dårligt"
 
 #: ../languages.py:175
 msgid "no problem"
-msgstr "нет проблем / без проблем"
+msgstr "intet problem / ingen årsag"
 
 #: ../languages.py:177
 msgid "Where are you going to?"
-msgstr "куда вы едите?"
+msgstr "Hvor er du på vej hen?"
 
 #: ../languages.py:178
 msgid "What's your name?"
-msgstr "как вас зовут?"
+msgstr "Hvad hedder du? "
 
 #: ../languages.py:179
 msgid "Where are you from?"
-msgstr "откуда вы?"
+msgstr "Hvor er du fra?"
 
 #: ../languages.py:180
 msgid "How old are you?"
-msgstr "сколько тебе лет?"
+msgstr "Hvor gammel er du?"
 
 #: ../languages.py:188
 msgid "I have a boy-friend/a girl-friend."
-msgstr "У меня есть молодой человек/девушка"
+msgstr "Jeg har en kæreste (kæreste used for both genders)"
 
 #: ../languages.py:189
 msgid "I'm married."
-msgstr "Я женат (m)/ я замужем (f)"
+msgstr "Jeg er gift"
 
 #: ../languages.py:187
 msgid "Can you drop me off here?"
-msgstr "Можете оставить меня здесь?"
+msgstr "Kan du smide mig af her?"
 
 #: ../languages.py:192
 msgid "Let me out!"
-msgstr "выпустите!"
+msgstr "Jeg vil ud!"
 
 #: ../languages.py:194
 msgid "Stop!"
-msgstr "Стоп/ остановитесь!"
+msgstr "Stop!"
 
 #: ../languages.py:195
 msgid "Help!"
-msgstr "Помогите!"
+msgstr "Hjælp!"
 
 #: ../languages.py:196
 msgid "Thank you!"
-msgstr "спасибо"
+msgstr "Tak!"
 
 #: ../languages.py:197
 msgid "Have a nice day/trip!"
-msgstr "Хорошего дня/пути!"
+msgstr "Hav en god dag/rejse!"
 
 #: ../languages.py:206
 msgid "a map"
-msgstr "карта"
+msgstr "et kort"
 
 #: ../languages.py:207
 msgid "a toilet"
-msgstr "туалет"
+msgstr "et toilet"
 
 #: ../languages.py:208
 msgid "a supermarket"
-msgstr "супермаркет"
+msgstr "et supermarked"
 
 #: ../languages.py:210
 msgid "a pharmacy"
-msgstr "аптека"
+msgstr "et apotek"
 
 #: ../languages.py:214
 msgid "a bank"
-msgstr "банк"
+msgstr "en bank"
 
 #: ../languages.py:200
 msgid "a good hitchhiking spot"
-msgstr "Хорошее место для автостопа"
+msgstr "et godt blaffersted"
 
 #: ../languages.py:224
 msgid "Water"
-msgstr "вода"
+msgstr "vand"
 
 #: ../languages.py:225
 msgid "(Herbal) tea"
-msgstr "чай"
+msgstr "(Urte) te"
 
 #: ../languages.py:226
 msgid "Hot chocolate"
-msgstr "Горячий шоколад"
+msgstr "Varm chokolade"
 
 #: ../languages.py:227
 msgid "Coffee"
-msgstr "кофе"
+msgstr "Kaffe"
 
 #: ../languages.py:228
 msgid "Juice"
-msgstr "сок"
+msgstr "Juice"
 
 #: ../languages.py:229
 msgid "Beer"
-msgstr "пиво"
+msgstr "Øl"
 
 #: ../languages.py:230
 msgid "(Red, white) wine"
-msgstr "(Красное, белое) вино"
+msgstr "(Rød, hvid) vin"
 
 #: ../languages.py:240
 msgid "Vegetarian"
-msgstr "Вегетарианец"
+msgstr "Vegetarisk"
 
 #: ../languages.py:236
 msgid "Bread"
-msgstr "хлеб"
+msgstr "Brød"
 
 #: ../languages.py:243
 msgid "A cheap restaurant"
-msgstr "Дешевый ресторан"
+msgstr "En billig restaurant"
 
 #: ../languages.py:232
 msgid "Cheers!"
-msgstr ""
-"За знакомство (for meeting)\n"
-"На здоровье! "
+msgstr "Skål! "
 
 #: ../languages.py:244
 msgid "Enjoy your meal!"
-msgstr "Приятного аппетита! "
+msgstr "God appetit! / velbekomme!"
 
 #: ../languages.py:245
 msgid "Dumpster diving"
-msgstr "Дампстер дайвинг (we use English word)"
+msgstr "At skralde / dumpster diving"
 
 #: ../languages.py:157
 msgid "Hour"
-msgstr "час"
+msgstr "Time"
 
 #: ../languages.py:157
 msgid "Day"
-msgstr "день"
+msgstr "Dag"
 
 #: ../languages.py:157
 msgid "Week"
-msgstr "неделя"
+msgstr "Uge"
 
 #: ../languages.py:157
 msgid "Month"
-msgstr "Месяц"
+msgstr "Måned"
 
 #: ../languages.py:158
 msgid "Kilometre"
-msgstr "километр"
+msgstr "Kilometer"
 
 #: ../languages.py:159
 msgid "Left"
-msgstr "лево"
+msgstr "Venstre"
 
 #: ../languages.py:160
 msgid "Straight on"
-msgstr "Прямо"
+msgstr "Ligeud"
 
 #: ../languages.py:161
 msgid "Before"
-msgstr "Раньше/ перед"
+msgstr "Før"
 
 #: ../languages.py:161
 msgid "After"
-msgstr "после"
+msgstr "Efter"
 
 #: ../languages.py:162
 msgid "This"
-msgstr "Этот"
+msgstr "Denne"
 
 #: ../languages.py:162
 msgid "Next"
-msgstr "следующий"
+msgstr "Næste"
 
 #: ../languages.py:162
 msgid "Last"
-msgstr "последний"
+msgstr "Sidste"
 
 #: ../languages.py:163
 msgid "Often"
-msgstr "Часто"
+msgstr "Ofte"
 
 #: ../languages.py:163
 msgid "Never"
-msgstr "Никогда"
+msgstr "Aldrig"
 
 #: ../languages.py:164
 msgid "Long"
-msgstr "длиный (adjective)"
+msgstr "Lang"
 
 #: ../languages.py:164
 msgid "Short"
-msgstr "короткий"
+msgstr "Kort"
 
 #: ../languages.py:165
 msgid "Up"
-msgstr "Вверх"
+msgstr "Op"
 
 #: ../languages.py:165
 msgid "Down"
-msgstr "вниз"
+msgstr "Ned"
 
 #: ../languages.py:166
 msgid "Over"
-msgstr "над"
+msgstr "Over"
 
 #: ../languages.py:166
 msgid "Under"
-msgstr "под"
+msgstr "Under"
 
 #: ../languages.py:167
 msgid "How far is it (on foot)?"
-msgstr "насколко далеко пешком?"
+msgstr "Hvor lang err det (til fods)?"
 
 #: ../languages.py:168
 msgid "Where are we?"
-msgstr "где мы?"
+msgstr "Hvor er vi?"
 
 #: ../languages.py:261
 msgid "How much does it cost?"
-msgstr "Сколько это стоит?"
+msgstr "Hvor meget koster den?"
 
 #: ../languages.py:252
 msgid "What time is it?"
-msgstr "Сколько сейчас времени?"
+msgstr "Hvad er klokken?"
 
 #: ../languages.py:255
 msgid "Tent"
-msgstr "палатка"
+msgstr "Telt"
 
 #: ../languages.py:266
 msgid "Where can we buy a ticket?"
-msgstr "где купить билет?"
+msgstr "Hvor kan vi købe en billet?"
 
 #: ../languages.py:262
 msgid "Who?"
-msgstr "кто"
+msgstr "Hvem?"
 
 #: ../languages.py:262
 msgid "What?"
-msgstr "что"
+msgstr "Hvad?"
 
 #: ../languages.py:262
 msgid "Where?"
-msgstr "где"
+msgstr "Hvor?"
 
 #: ../languages.py:262
 msgid "Why?"
-msgstr "Почему?"
+msgstr "Hvorfor?"
 
 #: ../languages.py:262
 msgid "When?"
-msgstr "когда"
+msgstr "Hvornår?"
 
 #: ../languages.py:263
 msgid "How?"
-msgstr "как"
+msgstr "Hvordan?"
 
 #: ../languages.py:263
 msgid "How much?"
-msgstr "Сколько?"
+msgstr "Hvor meget?"
 
 #: ../languages.py:263
 msgid "How long?"
-msgstr "Как долго?"
+msgstr "Hvor længe/hvor lang?"
 
 #: ../languages.py:263
 msgid "Which?"
-msgstr "какой"
+msgstr "Hvilken?"
 
 #: ../languages.py:264
 msgid "North"
-msgstr "север"
+msgstr "Nord"
 
 #: ../languages.py:264
 msgid "East"
-msgstr "восток"
+msgstr "Øst"
 
 #: ../languages.py:264
 msgid "South"
-msgstr "юг"
+msgstr "Syd"
 
 #: ../languages.py:264
 msgid "West"
-msgstr "запад"
+msgstr "Vest"
 
 #: ../languages.py:265
 msgid "Yesterday"
-msgstr "вчера"
+msgstr "Igår"
 
 #: ../languages.py:265
 msgid "Today"
-msgstr "Сегодня"
+msgstr "Idag"
 
 #: ../languages.py:265
 msgid "Tomorrow"
-msgstr "Завтра"
+msgstr "Imorgen"
 
 #: ../languages.py:267
 msgid "Zero"
-msgstr "нол"
+msgstr "Nul"
 
 #: ../languages.py:269
 msgid "One"
-msgstr "Один"
+msgstr "En"
 
 #: ../languages.py:270
 msgid "Two"
-msgstr "два"
+msgstr "To\n"
 
 #: ../languages.py:271
 msgid "Three"
-msgstr "три"
+msgstr "Tre"
 
 #: ../languages.py:272
 msgid "Four"
-msgstr "четыре"
+msgstr "Fire"
 
 #: ../languages.py:273
 msgid "Five"
-msgstr "пять"
+msgstr "Fem"
 
 #: ../languages.py:274
 msgid "Six"
-msgstr "шесть"
+msgstr "Seks"
 
 #: ../languages.py:275
 msgid "Seven"
-msgstr "семь"
+msgstr "Syv"
 
 #: ../languages.py:276
 msgid "Eight"
-msgstr "восемь"
+msgstr "Otte"
 
 #: ../languages.py:277
 msgid "Nine"
-msgstr "Девять"
+msgstr "Ni"
 
 #: ../languages.py:278
 msgid "Ten"
-msgstr "десять"
+msgstr "Ti"
 
 #: ../languages.py:279
 msgid "Eleven"
-msgstr "Одиннадцать"
+msgstr "Elleve"
 
 #: ../languages.py:280
 msgid "Twelve"
-msgstr "Двенадцать"
+msgstr "Tolv"
 
 #: ../languages.py:281
 msgid "Thirteen"
-msgstr "Тринадцать"
+msgstr "Tretten"
 
 #: ../languages.py:282
 msgid "Fourteen"
-msgstr "Четырнадцать"
+msgstr "Fjorten"
 
 #: ../languages.py:283
 msgid "Fifteen"
-msgstr "Пятнадцать"
+msgstr "Femten"
 
 #: ../languages.py:284
 msgid "Sixteen"
-msgstr "Шестнадцать"
+msgstr "Seksten"
 
 #: ../languages.py:285
 msgid "Seventeen"
-msgstr "Семнадцать"
+msgstr "Sytten"
 
 #: ../languages.py:286
 msgid "Eighteen"
-msgstr "Восемнадцать"
+msgstr "Atten"
 
 #: ../languages.py:287
 msgid "Nineteen"
-msgstr "Девятнадцать"
+msgstr "Nitten"
 
 #: ../languages.py:288
 msgid "Twenty"
-msgstr "Двадцать"
+msgstr "Tyve"
 
 #: ../languages.py:289
 msgid "Twenty-one"
-msgstr "Двадцать один"
+msgstr "En-og-tyve"
 
 #: ../languages.py:290
 msgid "Thirty"
-msgstr "Тридцать"
+msgstr "Tredive"
 
 #: ../languages.py:294
 msgid "Free hugs"
-msgstr "Бесплатные объятия"
+msgstr "Gratis kram"

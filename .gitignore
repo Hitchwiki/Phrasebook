@@ -3,3 +3,4 @@
 merges/*
 platforms/*
 plugins/*
+platforms/android/local.properties

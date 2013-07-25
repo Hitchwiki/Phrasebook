@@ -23,28 +23,31 @@ projectname = 'phrasebook';
 # Define languages here
 # Make sure you have .mo file in place under ./locale/
 languages = [
-    # Code     English name             Original name       # transliteration/phonetic
-    [ "en_UK", "English (UK)",          "English (UK)"      ],
-    [ "en_US", "English (US)",          "English (US)"      ],
-    [ "sq_AL", "Albanian",              "Gjuha shqipe"      ],
-    [ "hr_HR", "Croatian",              "Hrvatski"          ],
-    [ "de_DE", "German",                "Deutch"            ],
-    [ "es_ES", "Spanish",               "Español"           ],
-    [ "fr_FR", "French",                "Français"          ],
-    [ "fi_FI", "Finnish",               "Suomi"             ],
-    [ "hu_HU", "Hungarian",             "Magyar"            ],
-    [ "it_IT", "Italian",               "Italiano"          ],
-    [ "lv_LV", "Latvian",               "Latviešu"          ],
-    [ "lt_LT", "Lithuanian",            "Lietuvių"          ],
-    [ "nl_NL", "Dutch",                 "Nederlands"        ],
-    [ "nb_NO", "Norwegian (Bokmål)",    "Norsk (Bokmål)"    ],
-    [ "ru_RU", "Russian",               "Русский",          ['transliteration'] ],
-    [ "pl_PL", "Polish",                "Polski"            ],
-    [ "pt_PT", "Portuguese",            "Português"         ],
-    [ "ro_RO", "Romanian",              "Română"            ],
-    [ "sk_SK", "Slovakian",             "Slovenčina"        ],
-    [ "sv_SE", "Swedish",               "Svenska"           ],
-    [ "tr_TR", "Turkish",               "Türkçe"            ]
+    # Code     English name             Original name        RTL?       # transliteration/phonetic
+    [ "en_UK", "English (UK)",          "English (UK)",      False      ],
+    [ "en_US", "English (US)",          "English (US)",      False      ],
+    [ "sq_AL", "Albanian",              "Gjuha shqipe",      False      ],
+    [ "hr_HR", "Croatian",              "Hrvatski",          False      ],
+    [ "da_DK", "Danish",                "Dansk",             False      ],
+    [ "de_DE", "German",                "Deutch",            False      ],
+    [ "es_ES", "Spanish",               "Español",           False      ],
+    [ "fr_FR", "French",                "Français",          False      ],
+    [ "fi_FI", "Finnish",               "Suomi",             False      ],
+    [ "hu_HU", "Hungarian",             "Magyar",            False      ],
+    [ "it_IT", "Italian",               "Italiano",          False      ],
+#   [ "lv_LV", "Latvian",               "Latviešu",          False      ],
+    [ "lt_LT", "Lithuanian",            "Lietuvių",          False      ],
+    [ "nl_NL", "Dutch",                 "Nederlands",        False      ],
+    [ "nb_NO", "Norwegian (Bokmål)",    "Norsk (Bokmål)",    False      ],
+    [ "ru_RU", "Russian",               "Русский",           False      ],# ['transliteration'] ],
+#   [ "fa_IR", "Persian",               "فارسی",               True,       ['transliteration'] ],
+    [ "pl_PL", "Polish",                "Polski",            False      ],
+    [ "pt_PT", "Portuguese",            "Português",         False      ],
+    [ "ro_RO", "Romanian",              "Română",            False      ],
+    [ "sk_SK", "Slovakian",             "Slovenčina",        False      ],
+#   [ "sl_SI", "Slovenian",             "Slovenščina",       False      ],
+    [ "sv_SE", "Swedish",               "Svenska",           False      ],
+    [ "tr_TR", "Turkish",               "Türkçe",            False      ]
 ]
 
 # Language of original strings
@@ -105,6 +108,8 @@ def translateLanguage(language, onlyStrings):
     print "Translating: "+language[0]+" ("+language[1]+")"
     
     strings = [
+                _("Hitchhike"),
+                _("Hitchhiker"),
                 _("Hello"),
                 _("Excuse me...")+divider+_("Sorry"),
                 _("Are you going towards ...?"),
@@ -274,6 +279,7 @@ def translateLanguage(language, onlyStrings):
             'flag': language[0][-2:].lower(),
             'name': language[1],
             'origName': language[2],
+            'RTL': language[3],
             'ui': {
                 'phrasebook': _("Phrasebook"),
                 'interface': _("Interface"),
@@ -307,9 +313,9 @@ for language in languages:
 
         # Check if this language has attached transliterations/phonetics
         try:
-            language[3]
+            language[4]
 
-            for languageExtra in language[3]:
+            for languageExtra in language[4]:
 
                 fetchLanguage([language[0] + '@' + languageExtra, language[1], language[2]])
 
@@ -338,10 +344,10 @@ for language in languages:
 
         # Check if this language has attached transliterations/phonetics
         try:
-            language[3]
+            language[4]
 
             # Yay, we found transliterations/phonetics. Loop them trough.
-            for languageExtra in language[3]:
+            for languageExtra in language[4]:
 
                 languagesJson[language[0]].update({languageExtra: translateLanguage([language[0] + '@' + languageExtra, language[1], language[2]], True) })
 

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Phrasebook package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2013-07-19 15:07:52+0000\n"
+"PO-Revision-Date: 2013-07-25 07:46:05+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -12,63 +12,63 @@ msgstr ""
 
 #: ../languages.py:140
 msgid "Sorry"
-msgstr ""
+msgstr "Förlåt"
 
 #: ../languages.py:260
 msgid "Can I leave my bag here for a while?"
-msgstr ""
+msgstr "Kan jag lämna min ryggsäck här ett tag?"
 
 #: ../languages.py:213
 msgid "ATM"
-msgstr ""
+msgstr "bankomat"
 
 #: ../languages.py:218
 msgid "a train station"
-msgstr ""
+msgstr "tågstationen"
 
 #: ../languages.py:217
 msgid "a bus station"
-msgstr ""
+msgstr "busstationen"
 
 #: ../languages.py:216
 msgid "a metro station"
-msgstr ""
+msgstr "en tunnelbanestation"
 
 #: ../languages.py:213
 msgid "a cash machine"
-msgstr ""
+msgstr "en bankomat"
 
 #: ../languages.py:215
 msgid "a bus stop"
-msgstr ""
+msgstr "en busshållplats"
 
 #: ../languages.py:157
 msgid "Year"
-msgstr ""
+msgstr "År"
 
 #: ../languages.py:205
 msgid "the tourist office"
-msgstr ""
+msgstr "turistbyrån"
 
 #: ../languages.py:212
 msgid "an internet café"
-msgstr ""
+msgstr "ett internetkafé"
 
 #: ../languages.py:256
 msgid "Hostel"
-msgstr ""
+msgstr "Hostel"
 
 #: ../languages.py:238
 msgid "Meat"
-msgstr ""
+msgstr "Kött"
 
 #: ../languages.py:171
 msgid "Speak slower, please?"
-msgstr "Skulle du kunna tala långsammare?"
+msgstr "Kan du tala långsammare?"
 
 #: ../languages.py:163
 msgid "Sometimes"
-msgstr ""
+msgstr "Ibland"
 
 #: ../languages.py:169
 msgid "For free?"
@@ -80,11 +80,11 @@ msgstr "Åker du mot ...?"
 
 #: ../languages.py:144
 msgid "just before"
-msgstr ""
+msgstr "precis innan"
 
 #: ../languages.py:145
 msgid "just after"
-msgstr ""
+msgstr "precis efter"
 
 #: ../languages.py:148
 msgid "a lay-by"
@@ -96,7 +96,7 @@ msgstr "en rastplats"
 
 #: ../languages.py:150
 msgid "roundabout"
-msgstr ""
+msgstr "rondell"
 
 #: ../languages.py:151
 msgid "the junction"
@@ -108,23 +108,23 @@ msgstr ""
 
 #: ../languages.py:153
 msgid "the crossroads"
-msgstr ""
+msgstr "korsningen"
 
 #: ../languages.py:154
 msgid "on the ring road"
-msgstr ""
+msgstr "på ringvägen"
 
 #: ../languages.py:155
 msgid "across the road"
-msgstr ""
+msgstr "på andra sidan vägen"
 
 #: ../languages.py:163
 msgid "Rarely"
-msgstr ""
+msgstr "Sällan"
 
 #: ../languages.py:175
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: ../languages.py:175
 msgid "cool"
@@ -132,7 +132,7 @@ msgstr ""
 
 #: ../languages.py:176
 msgid "I'm not in a hurry"
-msgstr ""
+msgstr "Jag har inte bråttom"
 
 #: ../languages.py:181
 msgid "I am studying to be a ..."
@@ -140,23 +140,23 @@ msgstr "Jag ska bli ..."
 
 #: ../languages.py:183
 msgid "I'm visiting friends in ..."
-msgstr ""
+msgstr "Jag ska träffa vänner i ..."
 
 #: ../languages.py:185
 msgid "I will stay for ... days/weeks"
-msgstr ""
+msgstr "Jag kommer att stanna i ... dagar/veckor"
 
 #: ../languages.py:186
 msgid "I'm going back to ..."
-msgstr ""
+msgstr "Jag är på väg tillbaka till ..."
 
 #: ../languages.py:190
 msgid "I have already texted my father."
-msgstr ""
+msgstr "Jag har redan "
 
 #: ../languages.py:193
 msgid "Pull over I'm going to puke!"
-msgstr ""
+msgstr "Stanna, jag behöver kräkas!"
 
 #: ../languages.py:202
 msgid "the toll road to ..."
@@ -164,63 +164,63 @@ msgstr ""
 
 #: ../languages.py:203
 msgid "the small road to ..."
-msgstr ""
+msgstr "den mindre vägen till ..."
 
 #: ../languages.py:204
 msgid "city centre"
-msgstr "centrumet"
+msgstr "centrum"
 
 #: ../languages.py:209
 msgid "the fruit market"
-msgstr ""
+msgstr "frukt marknaden"
 
 #: ../languages.py:211
 msgid "a camp-site"
-msgstr "en campingplats"
+msgstr "en ampingplats"
 
 #: ../languages.py:219
 msgid "a public Wi-Fi / Internet"
-msgstr ""
+msgstr "ett öppet trådlöst nät"
 
 #: ../languages.py:222
 msgid "Drink"
-msgstr ""
+msgstr "Dricka"
 
 #: ../languages.py:234
 msgid "Eat"
-msgstr ""
+msgstr "Äta"
 
 #: ../languages.py:237
 msgid "Fruit"
-msgstr ""
+msgstr "Frukt"
 
 #: ../languages.py:241
 msgid "Vegan"
-msgstr ""
+msgstr "Vegan"
 
 #: ../languages.py:246
 msgid "I'm tired"
-msgstr ""
+msgstr "Jag är trött"
 
 #: ../languages.py:251
 msgid "Smoke"
-msgstr ""
+msgstr "Röka"
 
 #: ../languages.py:257
 msgid "Room"
-msgstr ""
+msgstr "Rum"
 
 #: ../languages.py:258
 msgid "Hotel"
-msgstr ""
+msgstr "Hotell"
 
 #: ../languages.py:136
 msgid "Info"
-msgstr ""
+msgstr "Information"
 
 #: ../languages.py:142
 msgid "Could I get a lift to ...?"
-msgstr ""
+msgstr "Kan jag få lift till ...?"
 
 #: ../languages.py:170
 msgid "Do you speak ...?"
@@ -232,11 +232,11 @@ msgstr "Jag ska till ..."
 
 #: ../languages.py:178
 msgid "My name is ..."
-msgstr ""
+msgstr "Jag heter ..."
 
 #: ../languages.py:179
 msgid "I'm from ..."
-msgstr ""
+msgstr "Jag kommer från ..."
 
 #: ../languages.py:180
 msgid "I'm ... years old."
@@ -248,19 +248,19 @@ msgstr "Jag studerar ..."
 
 #: ../languages.py:181
 msgid "I'm in my ... year."
-msgstr ""
+msgstr "Jag är på mitt ... år."
 
 #: ../languages.py:184
 msgid "I'm hitchhiking around ..."
-msgstr ""
+msgstr "Jag liftar runt ..."
 
 #: ../languages.py:198
 msgid "Where can I find ...?"
-msgstr ""
+msgstr "Var finns ...?"
 
 #: ../languages.py:201
 msgid "the highway to ..."
-msgstr ""
+msgstr "motorvägen till ..."
 
 #: ../languages.py:169
 msgid "I can't pay."
@@ -272,7 +272,7 @@ msgstr "Vad bra!"
 
 #: ../languages.py:182
 msgid "I'm on holiday."
-msgstr ""
+msgstr "Jag är på semester"
 
 #: ../languages.py:191
 msgid "Don't touch me!"
@@ -280,7 +280,7 @@ msgstr "Rör mig inte!"
 
 #: ../languages.py:242
 msgid "I don't eat meat"
-msgstr ""
+msgstr "Jag äter inte kött"
 
 #: ../languages.py:233
 msgid "I'm hungry"
@@ -288,15 +288,15 @@ msgstr "Jag är hungrig"
 
 #: ../languages.py:221
 msgid "I'm thirsty"
-msgstr ""
+msgstr "Jag är törstig"
 
 #: ../languages.py:247
 msgid "I'm fine"
-msgstr ""
+msgstr "Jag mår bra"
 
 #: ../languages.py:248
 msgid "I'm cold"
-msgstr "Jag är kall"
+msgstr "Jag fryser"
 
 #: ../languages.py:249
 msgid "I'm hot"
@@ -304,19 +304,19 @@ msgstr "Jag är varm"
 
 #: ../languages.py:250
 msgid "I'm sick"
-msgstr ""
+msgstr "Jag är sjuk"
 
 #: ../languages.py:253
 msgid "I'm looking for a place to sleep."
-msgstr ""
+msgstr "Jag letar efter nånstans att sova."
 
 #: ../languages.py:291
 msgid "Hundred"
-msgstr ""
+msgstr "Hundra"
 
 #: ../languages.py:292
 msgid "Thousand"
-msgstr ""
+msgstr "Tusen"
 
 #: ../languages.py:146
 msgid "a petrol station"
@@ -324,19 +324,19 @@ msgstr "en bensinmack"
 
 #: ../languages.py:159
 msgid "Right"
-msgstr ""
+msgstr "Höger"
 
 #: ../languages.py:133
 msgid "Phrasebook"
-msgstr ""
+msgstr "Parlör"
 
 #: ../languages.py:134
 msgid "Interface"
-msgstr ""
+msgstr "Gränssnitt"
 
 #: ../languages.py:135
 msgid "Search..."
-msgstr ""
+msgstr "Sök..."
 
 #: ../languages.py:139
 msgid "Hello"
@@ -348,7 +348,7 @@ msgstr "Ursäkta..."
 
 #: ../languages.py:147
 msgid "a service area"
-msgstr ""
+msgstr "en serviceanläggning"
 
 #: ../languages.py:149
 msgid "along the highway"
@@ -384,7 +384,7 @@ msgstr "Nej tack"
 
 #: ../languages.py:175
 msgid "perfect"
-msgstr "härligt"
+msgstr "perfekt"
 
 #: ../languages.py:175
 msgid "bad"
@@ -400,11 +400,11 @@ msgstr "Vart ska du?"
 
 #: ../languages.py:178
 msgid "What's your name?"
-msgstr ""
+msgstr "Vad heter du?"
 
 #: ../languages.py:179
 msgid "Where are you from?"
-msgstr ""
+msgstr "Var kommer du ifrån?"
 
 #: ../languages.py:180
 msgid "How old are you?"
@@ -460,11 +460,11 @@ msgstr "ett apotek"
 
 #: ../languages.py:214
 msgid "a bank"
-msgstr ""
+msgstr "en bank"
 
 #: ../languages.py:200
 msgid "a good hitchhiking spot"
-msgstr ""
+msgstr "en bra lifta spot"
 
 #: ../languages.py:224
 msgid "Water"
@@ -472,7 +472,7 @@ msgstr "Vatten"
 
 #: ../languages.py:225
 msgid "(Herbal) tea"
-msgstr "(Ört-) te"
+msgstr "(Ört-)te"
 
 #: ../languages.py:226
 msgid "Hot chocolate"
@@ -484,7 +484,7 @@ msgstr "Kaffe"
 
 #: ../languages.py:228
 msgid "Juice"
-msgstr ""
+msgstr "Jos"
 
 #: ../languages.py:229
 msgid "Beer"
@@ -520,19 +520,19 @@ msgstr "Containerdykning"
 
 #: ../languages.py:157
 msgid "Hour"
-msgstr ""
+msgstr "Timma"
 
 #: ../languages.py:157
 msgid "Day"
-msgstr ""
+msgstr "Dag"
 
 #: ../languages.py:157
 msgid "Week"
-msgstr ""
+msgstr "Vecka"
 
 #: ../languages.py:157
 msgid "Month"
-msgstr ""
+msgstr "Månad"
 
 #: ../languages.py:158
 msgid "Kilometre"
@@ -540,47 +540,47 @@ msgstr "Kilometer"
 
 #: ../languages.py:159
 msgid "Left"
-msgstr ""
+msgstr "Vänster"
 
 #: ../languages.py:160
 msgid "Straight on"
-msgstr ""
+msgstr "Rakt fram"
 
 #: ../languages.py:161
 msgid "Before"
-msgstr ""
+msgstr "Före"
 
 #: ../languages.py:161
 msgid "After"
-msgstr ""
+msgstr "Efter"
 
 #: ../languages.py:162
 msgid "This"
-msgstr ""
+msgstr "Den här"
 
 #: ../languages.py:162
 msgid "Next"
-msgstr ""
+msgstr "Nästa"
 
 #: ../languages.py:162
 msgid "Last"
-msgstr ""
+msgstr "Sista"
 
 #: ../languages.py:163
 msgid "Often"
-msgstr ""
+msgstr "Ofta"
 
 #: ../languages.py:163
 msgid "Never"
-msgstr ""
+msgstr "Aldrig"
 
 #: ../languages.py:164
 msgid "Long"
-msgstr ""
+msgstr "Lång"
 
 #: ../languages.py:164
 msgid "Short"
-msgstr ""
+msgstr "Kort"
 
 #: ../languages.py:165
 msgid "Up"
@@ -604,59 +604,59 @@ msgstr "Hur långt är det (till fots)?"
 
 #: ../languages.py:168
 msgid "Where are we?"
-msgstr ""
+msgstr "Var är vi?"
 
 #: ../languages.py:261
 msgid "How much does it cost?"
-msgstr ""
+msgstr "Mycket mycket kostar den?"
 
 #: ../languages.py:252
 msgid "What time is it?"
-msgstr ""
+msgstr "Vad är klockan?"
 
 #: ../languages.py:255
 msgid "Tent"
-msgstr ""
+msgstr "Tält"
 
 #: ../languages.py:266
 msgid "Where can we buy a ticket?"
-msgstr "Var kan man köpa biljett?"
+msgstr "Var köper man köpa biljett?"
 
 #: ../languages.py:262
 msgid "Who?"
-msgstr ""
+msgstr "Vem?"
 
 #: ../languages.py:262
 msgid "What?"
-msgstr ""
+msgstr "Vad?"
 
 #: ../languages.py:262
 msgid "Where?"
-msgstr ""
+msgstr "Var?"
 
 #: ../languages.py:262
 msgid "Why?"
-msgstr ""
+msgstr "Varför?"
 
 #: ../languages.py:262
 msgid "When?"
-msgstr ""
+msgstr "När?"
 
 #: ../languages.py:263
 msgid "How?"
-msgstr ""
+msgstr "Hur?"
 
 #: ../languages.py:263
 msgid "How much?"
-msgstr ""
+msgstr "Hur mycket?"
 
 #: ../languages.py:263
 msgid "How long?"
-msgstr ""
+msgstr "Hur länge?"
 
 #: ../languages.py:263
 msgid "Which?"
-msgstr ""
+msgstr "Vilken?"
 
 #: ../languages.py:264
 msgid "North"
@@ -780,4 +780,4 @@ msgstr "Trettio"
 
 #: ../languages.py:294
 msgid "Free hugs"
-msgstr ""
+msgstr "Gratis kramar"
