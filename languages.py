@@ -27,7 +27,9 @@ languages = [
     [ "en_UK", "English (UK)",          "English (UK)",      False      ],
     [ "en_US", "English (US)",          "English (US)",      False      ],
     [ "sq_AL", "Albanian",              "Gjuha shqipe",      False      ],
+#    [ "ca_ES", "Catalan",               "Català",            False      ],
     [ "hr_HR", "Croatian",              "Hrvatski",          False      ],
+#   [ "zh_CN", "Chinese",               "中文",               False,     ['transliteration'] ],
     [ "da_DK", "Danish",                "Dansk",             False      ],
     [ "de_DE", "German",                "Deutch",            False      ],
     [ "es_ES", "Spanish",               "Español",           False      ],
@@ -35,7 +37,7 @@ languages = [
     [ "fi_FI", "Finnish",               "Suomi",             False      ],
     [ "hu_HU", "Hungarian",             "Magyar",            False      ],
     [ "it_IT", "Italian",               "Italiano",          False      ],
-#   [ "lv_LV", "Latvian",               "Latviešu",          False      ],
+    [ "lv_LV", "Latvian",               "Latviešu",          False      ],
     [ "lt_LT", "Lithuanian",            "Lietuvių",          False      ],
     [ "nl_NL", "Dutch",                 "Nederlands",        False      ],
     [ "nb_NO", "Norwegian (Bokmål)",    "Norsk (Bokmål)",    False      ],
@@ -53,7 +55,7 @@ languages = [
 # Language of original strings
 origLang = 'en_UK'
 
-# Divider to be used between translations for same line
+# Divider to be used between translations for same lines
 divider = ' | '
 
 languageJsonFile = './www/assets/js/languages.js'
@@ -265,6 +267,7 @@ def translateLanguage(language, onlyStrings):
                     _("Hundred"),
                     _("Thousand")
                 ],
+                _("Busking"),
                 _("Free hugs")
     ]
 

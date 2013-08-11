@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Phrasebook package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2013-07-25 07:46:04+0000\n"
+"PO-Revision-Date: 2013-08-11 11:24:13+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,774 +10,782 @@ msgstr ""
 "X-Generator: GlotPress/0.1\n"
 "Project-Id-Version: Phrasebook\n"
 
-#: ../languages.py:140
+#: ../languages_printable.php:57 ../languages.py:114
 msgid "Sorry"
 msgstr "Scuze/Mă scuzaţi"
 
-#: ../languages.py:260
+#: ../languages_printable.php:177 ../languages.py:234
 msgid "Can I leave my bag here for a while?"
 msgstr "Pot să îmi las puţin bagajul aici?"
 
-#: ../languages.py:213
+#: ../languages_printable.php:130 ../languages.py:187
 msgid "ATM"
 msgstr "bancomat"
 
-#: ../languages.py:218
+#: ../languages_printable.php:135 ../languages.py:192
 msgid "a train station"
 msgstr "o gară"
 
-#: ../languages.py:217
+#: ../languages_printable.php:134 ../languages.py:191
 msgid "a bus station"
 msgstr "o autogară"
 
-#: ../languages.py:216
+#: ../languages_printable.php:133 ../languages.py:190
 msgid "a metro station"
 msgstr "o staţie de metrou"
 
-#: ../languages.py:213
+#: ../languages_printable.php:130 ../languages.py:187
 msgid "a cash machine"
 msgstr "un bancomat"
 
-#: ../languages.py:215
+#: ../languages_printable.php:132 ../languages.py:189
 msgid "a bus stop"
 msgstr "o staţie de autobuz"
 
-#: ../languages.py:157
+#: ../languages_printable.php:74 ../languages.py:131
 msgid "Year"
 msgstr "An"
 
-#: ../languages.py:205
+#: ../languages_printable.php:122 ../languages.py:179
 msgid "the tourist office"
 msgstr "oficiu de informaţii pentru turişti"
 
-#: ../languages.py:212
+#: ../languages_printable.php:129 ../languages.py:186
 msgid "an internet café"
 msgstr "un internet café"
 
-#: ../languages.py:256
+#: ../languages_printable.php:173 ../languages.py:230
 msgid "Hostel"
 msgstr "Hostel"
 
-#: ../languages.py:238
+#: ../languages_printable.php:155 ../languages.py:212
 msgid "Meat"
 msgstr "Carne"
 
-#: ../languages.py:171
+#: ../languages_printable.php:88 ../languages.py:145
 msgid "Speak slower, please?"
 msgstr "Puteţi să vorbiţi mai rar, vă rog?"
 
-#: ../languages.py:163
+#: ../languages_printable.php:80 ../languages.py:137
 msgid "Sometimes"
 msgstr "Uneori"
 
-#: ../languages.py:169
+#: ../languages_printable.php:86 ../languages.py:143
 msgid "For free?"
 msgstr "Gratis?"
 
-#: ../languages.py:141
+#: ../languages_printable.php:58 ../languages.py:115
 msgid "Are you going towards ...?"
 msgstr "Mergeţi spre... ?"
 
-#: ../languages.py:144
+#: ../languages_printable.php:61 ../languages.py:118
 msgid "just before"
 msgstr "chiar înainte de"
 
-#: ../languages.py:145
+#: ../languages_printable.php:62 ../languages.py:119
 msgid "just after"
 msgstr "chiar după"
 
-#: ../languages.py:148
+#: ../languages_printable.php:65 ../languages.py:122
 msgid "a lay-by"
 msgstr "parcare/\"buzunar\" (slang)"
 
-#: ../languages.py:148
+#: ../languages_printable.php:65 ../languages.py:122
 msgid "rest area"
 msgstr "parcare/zonă de servicii"
 
-#: ../languages.py:150
+#: ../languages_printable.php:67 ../languages.py:124
 msgid "roundabout"
 msgstr "sens giratoriu"
 
-#: ../languages.py:151
+#: ../languages_printable.php:68 ../languages.py:125
 msgid "the junction"
 msgstr "intersecţia"
 
-#: ../languages.py:152
+#: ../languages_printable.php:69 ../languages.py:126
 msgid "the T-junction"
 msgstr "intersecţia în formă de T"
 
-#: ../languages.py:153
+#: ../languages_printable.php:70 ../languages.py:127
 msgid "the crossroads"
 msgstr "intersecţia"
 
-#: ../languages.py:154
+#: ../languages_printable.php:71 ../languages.py:128
 msgid "on the ring road"
 msgstr "pe centură/pe \"variantă\" (slang)"
 
-#: ../languages.py:155
+#: ../languages_printable.php:72 ../languages.py:129
 msgid "across the road"
 msgstr "peste drum"
 
-#: ../languages.py:163
+#: ../languages_printable.php:80 ../languages.py:137
 msgid "Rarely"
 msgstr "Rar/Rareori"
 
-#: ../languages.py:175
+#: ../languages_printable.php:92 ../languages.py:149
 msgid "OK"
 msgstr "OK"
 
-#: ../languages.py:175
+#: ../languages_printable.php:92 ../languages.py:149
 msgid "cool"
 msgstr "bine"
 
-#: ../languages.py:176
+#: ../languages_printable.php:93 ../languages.py:150
 msgid "I'm not in a hurry"
 msgstr "Nu mă grăbesc"
 
-#: ../languages.py:181
+#: ../languages_printable.php:98 ../languages.py:155
 msgid "I am studying to be a ..."
 msgstr "Studiez ca să devin ..."
 
-#: ../languages.py:183
+#: ../languages_printable.php:100 ../languages.py:157
 msgid "I'm visiting friends in ..."
 msgstr "Vizitez nişte prieteni în ..."
 
-#: ../languages.py:185
+#: ../languages_printable.php:102 ../languages.py:159
 msgid "I will stay for ... days/weeks"
 msgstr "O să stau ... zile/săptămâni"
 
-#: ../languages.py:186
+#: ../languages_printable.php:103 ../languages.py:160
 msgid "I'm going back to ..."
 msgstr "Mă întorc în ..."
 
-#: ../languages.py:190
+#: ../languages_printable.php:107 ../languages.py:164
 msgid "I have already texted my father."
 msgstr "Deja i-am trimis mesaj lui tata."
 
-#: ../languages.py:193
+#: ../languages_printable.php:110 ../languages.py:167
 msgid "Pull over I'm going to puke!"
 msgstr "Opriţi, îmi vine să vomit!"
 
-#: ../languages.py:202
+#: ../languages_printable.php:119 ../languages.py:176
 msgid "the toll road to ..."
 msgstr "bariera spre ..."
 
-#: ../languages.py:203
+#: ../languages_printable.php:120 ../languages.py:177
 msgid "the small road to ..."
 msgstr "drumul mic spre ..."
 
-#: ../languages.py:204
+#: ../languages_printable.php:121 ../languages.py:178
 msgid "city centre"
 msgstr "centrul oraşului"
 
-#: ../languages.py:209
+#: ../languages_printable.php:126 ../languages.py:183
 msgid "the fruit market"
 msgstr "piaţa"
 
-#: ../languages.py:211
+#: ../languages_printable.php:128 ../languages.py:185
 msgid "a camp-site"
 msgstr "un camping"
 
-#: ../languages.py:219
+#: ../languages_printable.php:136 ../languages.py:193
 msgid "a public Wi-Fi / Internet"
 msgstr "Wi-Fi / Internet"
 
-#: ../languages.py:222
+#: ../languages_printable.php:139 ../languages.py:196
 msgid "Drink"
 msgstr "Băutură"
 
-#: ../languages.py:234
+#: ../languages_printable.php:151 ../languages.py:208
 msgid "Eat"
 msgstr "Mâncare"
 
-#: ../languages.py:237
+#: ../languages_printable.php:154 ../languages.py:211
 msgid "Fruit"
 msgstr "Fructe"
 
-#: ../languages.py:241
+#: ../languages_printable.php:158 ../languages.py:215
 msgid "Vegan"
 msgstr "Vegan"
 
-#: ../languages.py:246
+#: ../languages_printable.php:163 ../languages.py:220
 msgid "I'm tired"
 msgstr "Sunt obosit"
 
-#: ../languages.py:251
+#: ../languages_printable.php:168 ../languages.py:225
 msgid "Smoke"
 msgstr "Fum"
 
-#: ../languages.py:257
+#: ../languages_printable.php:174 ../languages.py:231
 msgid "Room"
 msgstr "Cameră"
 
-#: ../languages.py:258
+#: ../languages_printable.php:175 ../languages.py:232
 msgid "Hotel"
 msgstr "Hotel"
 
-#: ../languages.py:136
+#: ../languages.py:287
 msgid "Info"
 msgstr "Informaţii"
 
-#: ../languages.py:142
+#: ../languages_printable.php:59 ../languages.py:116
 msgid "Could I get a lift to ...?"
 msgstr "Mă puţeti duce până la ...?"
 
-#: ../languages.py:170
+#: ../languages_printable.php:87 ../languages.py:144
 msgid "Do you speak ...?"
 msgstr "Vorbiţi ...?"
 
-#: ../languages.py:177
+#: ../languages_printable.php:94 ../languages.py:151
 msgid "I'm going to ..."
 msgstr "Mă duc la ..."
 
-#: ../languages.py:178
+#: ../languages_printable.php:95 ../languages.py:152
 msgid "My name is ..."
 msgstr "Mă cheamă ..."
 
-#: ../languages.py:179
+#: ../languages_printable.php:96 ../languages.py:153
 msgid "I'm from ..."
 msgstr "Sunt din ..."
 
-#: ../languages.py:180
+#: ../languages_printable.php:97 ../languages.py:154
 msgid "I'm ... years old."
 msgstr "Am ... ani."
 
-#: ../languages.py:181
+#: ../languages_printable.php:98 ../languages.py:155
 msgid "I study ..."
 msgstr "Studiez ..."
 
-#: ../languages.py:181
+#: ../languages_printable.php:98 ../languages.py:155
 msgid "I'm in my ... year."
 msgstr "Sunt în anul ..."
 
-#: ../languages.py:184
+#: ../languages_printable.php:101 ../languages.py:158
 msgid "I'm hitchhiking around ..."
 msgstr "Fac autostopul prin ..."
 
-#: ../languages.py:198
+#: ../languages_printable.php:115 ../languages.py:172
 msgid "Where can I find ...?"
 msgstr "Unde găsesc ...?"
 
-#: ../languages.py:201
+#: ../languages_printable.php:118 ../languages.py:175
 msgid "the highway to ..."
 msgstr "drumul spre ..."
 
-#: ../languages.py:169
+#: ../languages_printable.php:86 ../languages.py:143
 msgid "I can't pay."
 msgstr "Nu am bani."
 
-#: ../languages.py:175
+#: ../languages_printable.php:92 ../languages.py:149
 msgid "That's great"
 msgstr "E super"
 
-#: ../languages.py:182
+#: ../languages_printable.php:99 ../languages.py:156
 msgid "I'm on holiday."
 msgstr "Sunt în vacanţă."
 
-#: ../languages.py:191
+#: ../languages_printable.php:108 ../languages.py:165
 msgid "Don't touch me!"
 msgstr "Nu mă atinge!"
 
-#: ../languages.py:242
+#: ../languages_printable.php:159 ../languages.py:216
 msgid "I don't eat meat"
 msgstr "Nu mănânc carne"
 
-#: ../languages.py:233
+#: ../languages_printable.php:150 ../languages.py:207
 msgid "I'm hungry"
 msgstr "Mi-e foame"
 
-#: ../languages.py:221
+#: ../languages_printable.php:138 ../languages.py:195
 msgid "I'm thirsty"
 msgstr "Mi-e sete"
 
-#: ../languages.py:247
+#: ../languages_printable.php:164 ../languages.py:221
 msgid "I'm fine"
 msgstr "Sunt bine"
 
-#: ../languages.py:248
+#: ../languages_printable.php:165 ../languages.py:222
 msgid "I'm cold"
 msgstr "Mi-e frig"
 
-#: ../languages.py:249
+#: ../languages_printable.php:166 ../languages.py:223
 msgid "I'm hot"
 msgstr "Mi-e cald"
 
-#: ../languages.py:250
+#: ../languages_printable.php:167 ../languages.py:224
 msgid "I'm sick"
 msgstr "Sunt bolnav"
 
-#: ../languages.py:253
+#: ../languages_printable.php:170 ../languages.py:227
 msgid "I'm looking for a place to sleep."
 msgstr "Caut un loc în care să dorm."
 
-#: ../languages.py:291
+#: ../languages_printable.php:208 ../languages.py:265
 msgid "Hundred"
 msgstr "Sută"
 
-#: ../languages.py:292
+#: ../languages_printable.php:209 ../languages.py:266
 msgid "Thousand"
 msgstr "Mie"
 
-#: ../languages.py:146
+#: ../languages_printable.php:63 ../languages.py:120
 msgid "a petrol station"
 msgstr "benzinărie"
 
-#: ../languages.py:159
+#: ../languages_printable.php:76 ../languages.py:133
 msgid "Right"
 msgstr "Dreapta"
 
-#: ../languages.py:133
+#: ../languages.py:111
+msgid "Hitchhike"
+msgstr ""
+
+#: ../languages.py:112
+msgid "Hitchhiker"
+msgstr ""
+
+#: ../languages.py:284
 msgid "Phrasebook"
 msgstr "Ghid de comunicare"
 
-#: ../languages.py:134
+#: ../languages.py:285
 msgid "Interface"
 msgstr "Interfaţă"
 
-#: ../languages.py:135
+#: ../languages.py:286
 msgid "Search..."
 msgstr "Caută..."
 
-#: ../languages.py:139
+#: ../languages_printable.php:56 ../languages.py:113
 msgid "Hello"
 msgstr "Bună ziua"
 
-#: ../languages.py:140
+#: ../languages_printable.php:57 ../languages.py:114
 msgid "Excuse me..."
 msgstr "Nu vă supăraţi..."
 
-#: ../languages.py:147
+#: ../languages_printable.php:64 ../languages.py:121
 msgid "a service area"
 msgstr "zonă de servicii"
 
-#: ../languages.py:149
+#: ../languages_printable.php:66 ../languages.py:123
 msgid "along the highway"
 msgstr "pe şosea/de-a lungul şoselei"
 
-#: ../languages.py:170
+#: ../languages_printable.php:87 ../languages.py:144
 msgid "any other languages"
 msgstr "orice altă limbă"
 
-#: ../languages.py:172
+#: ../languages_printable.php:89 ../languages.py:146
 msgid "I don't understand"
 msgstr "Nu înţeleg"
 
-#: ../languages.py:173
+#: ../languages_printable.php:90 ../languages.py:147
 msgid "I don't know"
 msgstr "Nu ştiu"
 
-#: ../languages.py:174
+#: ../languages_printable.php:91 ../languages.py:148
 msgid "Yes"
 msgstr "Da"
 
-#: ../languages.py:174
+#: ../languages_printable.php:91 ../languages.py:148
 msgid "No"
 msgstr "Nu"
 
-#: ../languages.py:174
+#: ../languages_printable.php:91 ../languages.py:148
 msgid "Maybe"
 msgstr "Poate"
 
-#: ../languages.py:174
+#: ../languages_printable.php:91 ../languages.py:148
 msgid "No thanks"
 msgstr "Nu, mulţumesc"
 
-#: ../languages.py:175
+#: ../languages_printable.php:92 ../languages.py:149
 msgid "perfect"
 msgstr "perfect"
 
-#: ../languages.py:175
+#: ../languages_printable.php:92 ../languages.py:149
 msgid "bad"
 msgstr "rău"
 
-#: ../languages.py:175
+#: ../languages_printable.php:92 ../languages.py:149
 msgid "no problem"
 msgstr "nicio problemă"
 
-#: ../languages.py:177
+#: ../languages_printable.php:94 ../languages.py:151
 msgid "Where are you going to?"
 msgstr "Unde mergeţi?"
 
-#: ../languages.py:178
+#: ../languages_printable.php:95 ../languages.py:152
 msgid "What's your name?"
 msgstr "Cum vă cheamă?"
 
-#: ../languages.py:179
+#: ../languages_printable.php:96 ../languages.py:153
 msgid "Where are you from?"
 msgstr "De unde sunteţi?"
 
-#: ../languages.py:180
+#: ../languages_printable.php:97 ../languages.py:154
 msgid "How old are you?"
 msgstr "Câţi ani aveţi?"
 
-#: ../languages.py:188
+#: ../languages_printable.php:105 ../languages.py:162
 msgid "I have a boy-friend/a girl-friend."
 msgstr "Am prieten/prietenă."
 
-#: ../languages.py:189
+#: ../languages_printable.php:106 ../languages.py:163
 msgid "I'm married."
 msgstr "Sunt căsătorit(males)/căsătorită(females)"
 
-#: ../languages.py:187
+#: ../languages_printable.php:104 ../languages.py:161
 msgid "Can you drop me off here?"
 msgstr "Mă puteţi lăsa aici?"
 
-#: ../languages.py:192
+#: ../languages_printable.php:109 ../languages.py:166
 msgid "Let me out!"
 msgstr "Lăsaţi-mă să ies!"
 
-#: ../languages.py:194
+#: ../languages_printable.php:111 ../languages.py:168
 msgid "Stop!"
 msgstr "Opriţi!"
 
-#: ../languages.py:195
+#: ../languages_printable.php:112 ../languages.py:169
 msgid "Help!"
 msgstr "Ajutor!"
 
-#: ../languages.py:196
+#: ../languages_printable.php:113 ../languages.py:170
 msgid "Thank you!"
 msgstr "Mulţumesc!"
 
-#: ../languages.py:197
+#: ../languages_printable.php:114 ../languages.py:171
 msgid "Have a nice day/trip!"
 msgstr "Călătorie plăcută!"
 
-#: ../languages.py:206
+#: ../languages_printable.php:123 ../languages.py:180
 msgid "a map"
 msgstr "o hartă"
 
-#: ../languages.py:207
+#: ../languages_printable.php:124 ../languages.py:181
 msgid "a toilet"
 msgstr "o toaletă"
 
-#: ../languages.py:208
+#: ../languages_printable.php:125 ../languages.py:182
 msgid "a supermarket"
 msgstr "un supermarket"
 
-#: ../languages.py:210
+#: ../languages_printable.php:127 ../languages.py:184
 msgid "a pharmacy"
 msgstr "o farmacie"
 
-#: ../languages.py:214
+#: ../languages_printable.php:131 ../languages.py:188
 msgid "a bank"
 msgstr "o bancă"
 
-#: ../languages.py:200
+#: ../languages_printable.php:117 ../languages.py:174
 msgid "a good hitchhiking spot"
 msgstr "un loc bun pentru autostop"
 
-#: ../languages.py:224
+#: ../languages_printable.php:141 ../languages.py:198
 msgid "Water"
 msgstr "Apă"
 
-#: ../languages.py:225
+#: ../languages_printable.php:142 ../languages.py:199
 msgid "(Herbal) tea"
 msgstr "Ceai"
 
-#: ../languages.py:226
+#: ../languages_printable.php:143 ../languages.py:200
 msgid "Hot chocolate"
 msgstr "Ciocolată caldă"
 
-#: ../languages.py:227
+#: ../languages_printable.php:144 ../languages.py:201
 msgid "Coffee"
 msgstr "Cafea"
 
-#: ../languages.py:228
+#: ../languages_printable.php:145 ../languages.py:202
 msgid "Juice"
 msgstr "Suc"
 
-#: ../languages.py:229
+#: ../languages_printable.php:146 ../languages.py:203
 msgid "Beer"
 msgstr "Bere"
 
-#: ../languages.py:230
+#: ../languages_printable.php:147 ../languages.py:204
 msgid "(Red, white) wine"
 msgstr "Vin (roşu, alb)"
 
-#: ../languages.py:240
+#: ../languages_printable.php:157 ../languages.py:214
 msgid "Vegetarian"
 msgstr "Vegetarian"
 
-#: ../languages.py:236
+#: ../languages_printable.php:153 ../languages.py:210
 msgid "Bread"
 msgstr "Pâine"
 
-#: ../languages.py:243
+#: ../languages_printable.php:160 ../languages.py:217
 msgid "A cheap restaurant"
 msgstr "Un restaurant ieftin"
 
-#: ../languages.py:232
+#: ../languages_printable.php:149 ../languages.py:206
 msgid "Cheers!"
 msgstr "Noroc!"
 
-#: ../languages.py:244
+#: ../languages_printable.php:161 ../languages.py:218
 msgid "Enjoy your meal!"
 msgstr "Poftă bună!"
 
-#: ../languages.py:245
+#: ../languages_printable.php:162 ../languages.py:219
 msgid "Dumpster diving"
 msgstr "Căutat prin gunoaie"
 
-#: ../languages.py:157
+#: ../languages_printable.php:74 ../languages.py:131
 msgid "Hour"
 msgstr "Oră"
 
-#: ../languages.py:157
+#: ../languages_printable.php:74 ../languages.py:131
 msgid "Day"
 msgstr "Zi"
 
-#: ../languages.py:157
+#: ../languages_printable.php:74 ../languages.py:131
 msgid "Week"
 msgstr "Săptămână"
 
-#: ../languages.py:157
+#: ../languages_printable.php:74 ../languages.py:131
 msgid "Month"
 msgstr "Lună"
 
-#: ../languages.py:158
+#: ../languages_printable.php:75 ../languages.py:132
 msgid "Kilometre"
 msgstr "Kilometru"
 
-#: ../languages.py:159
+#: ../languages_printable.php:76 ../languages.py:133
 msgid "Left"
 msgstr "Stânga"
 
-#: ../languages.py:160
+#: ../languages_printable.php:77 ../languages.py:134
 msgid "Straight on"
 msgstr "Drept"
 
-#: ../languages.py:161
+#: ../languages_printable.php:78 ../languages.py:135
 msgid "Before"
 msgstr "Înainte"
 
-#: ../languages.py:161
+#: ../languages_printable.php:78 ../languages.py:135
 msgid "After"
 msgstr "După"
 
-#: ../languages.py:162
+#: ../languages_printable.php:79 ../languages.py:136
 msgid "This"
 msgstr "Asta"
 
-#: ../languages.py:162
+#: ../languages_printable.php:79 ../languages.py:136
 msgid "Next"
 msgstr "Următoarea"
 
-#: ../languages.py:162
+#: ../languages_printable.php:79 ../languages.py:136
 msgid "Last"
 msgstr "Ultima"
 
-#: ../languages.py:163
+#: ../languages_printable.php:80 ../languages.py:137
 msgid "Often"
 msgstr "Des/Deseori"
 
-#: ../languages.py:163
+#: ../languages_printable.php:80 ../languages.py:137
 msgid "Never"
 msgstr "Niciodată"
 
-#: ../languages.py:164
+#: ../languages_printable.php:81 ../languages.py:138
 msgid "Long"
 msgstr "Lung"
 
-#: ../languages.py:164
+#: ../languages_printable.php:81 ../languages.py:138
 msgid "Short"
 msgstr "Scurt"
 
-#: ../languages.py:165
+#: ../languages_printable.php:82 ../languages.py:139
 msgid "Up"
 msgstr "Sus"
 
-#: ../languages.py:165
+#: ../languages_printable.php:82 ../languages.py:139
 msgid "Down"
 msgstr "Jos"
 
-#: ../languages.py:166
+#: ../languages_printable.php:83 ../languages.py:140
 msgid "Over"
 msgstr "Peste"
 
-#: ../languages.py:166
+#: ../languages_printable.php:83 ../languages.py:140
 msgid "Under"
 msgstr "Sub"
 
-#: ../languages.py:167
+#: ../languages_printable.php:84 ../languages.py:141
 msgid "How far is it (on foot)?"
 msgstr "Cât de departe este (pe jos)?"
 
-#: ../languages.py:168
+#: ../languages_printable.php:85 ../languages.py:142
 msgid "Where are we?"
 msgstr "Unde suntem?"
 
-#: ../languages.py:261
+#: ../languages_printable.php:178 ../languages.py:235
 msgid "How much does it cost?"
 msgstr "Cât costă?"
 
-#: ../languages.py:252
+#: ../languages_printable.php:169 ../languages.py:226
 msgid "What time is it?"
 msgstr "Cât e ceasul?"
 
-#: ../languages.py:255
+#: ../languages_printable.php:172 ../languages.py:229
 msgid "Tent"
 msgstr "Cort"
 
-#: ../languages.py:266
+#: ../languages_printable.php:183 ../languages.py:240
 msgid "Where can we buy a ticket?"
 msgstr "De unde pot să cumpăr bilete?"
 
-#: ../languages.py:262
+#: ../languages_printable.php:179 ../languages.py:236
 msgid "Who?"
 msgstr "Cine?"
 
-#: ../languages.py:262
+#: ../languages_printable.php:179 ../languages.py:236
 msgid "What?"
 msgstr "Ce?"
 
-#: ../languages.py:262
+#: ../languages_printable.php:179 ../languages.py:236
 msgid "Where?"
 msgstr "Unde?"
 
-#: ../languages.py:262
+#: ../languages_printable.php:179 ../languages.py:236
 msgid "Why?"
 msgstr "De ce?"
 
-#: ../languages.py:262
+#: ../languages_printable.php:179 ../languages.py:236
 msgid "When?"
 msgstr "Când?"
 
-#: ../languages.py:263
+#: ../languages_printable.php:180 ../languages.py:237
 msgid "How?"
 msgstr "Cum?"
 
-#: ../languages.py:263
+#: ../languages_printable.php:180 ../languages.py:237
 msgid "How much?"
 msgstr "Cât?"
 
-#: ../languages.py:263
+#: ../languages_printable.php:180 ../languages.py:237
 msgid "How long?"
 msgstr "Cât de mult?"
 
-#: ../languages.py:263
+#: ../languages_printable.php:180 ../languages.py:237
 msgid "Which?"
 msgstr "Care?"
 
-#: ../languages.py:264
+#: ../languages_printable.php:181 ../languages.py:238
 msgid "North"
 msgstr "Nord"
 
-#: ../languages.py:264
+#: ../languages_printable.php:181 ../languages.py:238
 msgid "East"
 msgstr "Est"
 
-#: ../languages.py:264
+#: ../languages_printable.php:181 ../languages.py:238
 msgid "South"
 msgstr "Sud"
 
-#: ../languages.py:264
+#: ../languages_printable.php:181 ../languages.py:238
 msgid "West"
 msgstr "Vest"
 
-#: ../languages.py:265
+#: ../languages_printable.php:182 ../languages.py:239
 msgid "Yesterday"
 msgstr "Ieri"
 
-#: ../languages.py:265
+#: ../languages_printable.php:182 ../languages.py:239
 msgid "Today"
 msgstr "Azi"
 
-#: ../languages.py:265
+#: ../languages_printable.php:182 ../languages.py:239
 msgid "Tomorrow"
 msgstr "Mâine"
 
-#: ../languages.py:267
+#: ../languages_printable.php:184 ../languages.py:241
 msgid "Zero"
 msgstr "Zero"
 
-#: ../languages.py:269
+#: ../languages_printable.php:186 ../languages.py:243
 msgid "One"
 msgstr "Unu"
 
-#: ../languages.py:270
+#: ../languages_printable.php:187 ../languages.py:244
 msgid "Two"
 msgstr "Doi"
 
-#: ../languages.py:271
+#: ../languages_printable.php:188 ../languages.py:245
 msgid "Three"
 msgstr "Trei"
 
-#: ../languages.py:272
+#: ../languages_printable.php:189 ../languages.py:246
 msgid "Four"
 msgstr "Patru"
 
-#: ../languages.py:273
+#: ../languages_printable.php:190 ../languages.py:247
 msgid "Five"
 msgstr "Cinci"
 
-#: ../languages.py:274
+#: ../languages_printable.php:191 ../languages.py:248
 msgid "Six"
 msgstr "Şase"
 
-#: ../languages.py:275
+#: ../languages_printable.php:192 ../languages.py:249
 msgid "Seven"
 msgstr "Şapte"
 
-#: ../languages.py:276
+#: ../languages_printable.php:193 ../languages.py:250
 msgid "Eight"
 msgstr "Opt"
 
-#: ../languages.py:277
+#: ../languages_printable.php:194 ../languages.py:251
 msgid "Nine"
 msgstr "Nouă"
 
-#: ../languages.py:278
+#: ../languages_printable.php:195 ../languages.py:252
 msgid "Ten"
 msgstr "Zece"
 
-#: ../languages.py:279
+#: ../languages_printable.php:196 ../languages.py:253
 msgid "Eleven"
 msgstr "Unşpe"
 
-#: ../languages.py:280
+#: ../languages_printable.php:197 ../languages.py:254
 msgid "Twelve"
 msgstr "Doişpe"
 
-#: ../languages.py:281
+#: ../languages_printable.php:198 ../languages.py:255
 msgid "Thirteen"
 msgstr "Treişpe"
 
-#: ../languages.py:282
+#: ../languages_printable.php:199 ../languages.py:256
 msgid "Fourteen"
 msgstr "Paişpe"
 
-#: ../languages.py:283
+#: ../languages_printable.php:200 ../languages.py:257
 msgid "Fifteen"
 msgstr "Cinşpe"
 
-#: ../languages.py:284
+#: ../languages_printable.php:201 ../languages.py:258
 msgid "Sixteen"
 msgstr "Şaişpe"
 
-#: ../languages.py:285
+#: ../languages_printable.php:202 ../languages.py:259
 msgid "Seventeen"
 msgstr "Şaptişpe"
 
-#: ../languages.py:286
+#: ../languages_printable.php:203 ../languages.py:260
 msgid "Eighteen"
 msgstr "Optişpe"
 
-#: ../languages.py:287
+#: ../languages_printable.php:204 ../languages.py:261
 msgid "Nineteen"
 msgstr "Nouăşpe"
 
-#: ../languages.py:288
+#: ../languages_printable.php:205 ../languages.py:262
 msgid "Twenty"
 msgstr "Douăzeci."
 
-#: ../languages.py:289
+#: ../languages_printable.php:206 ../languages.py:263
 msgid "Twenty-one"
 msgstr "Douăşunu."
 
-#: ../languages.py:290
+#: ../languages_printable.php:207 ../languages.py:264
 msgid "Thirty"
 msgstr "Treizeci"
 
-#: ../languages.py:294
+#: ../languages_printable.php:211 ../languages.py:268
 msgid "Free hugs"
 msgstr "Îmbrăţişări gratis"

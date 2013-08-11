@@ -3,7 +3,7 @@
  */
 
 // App Settings
-var appVer = '1.0.0',
+var appVer = '1.0.1',
     nativeReady = false, // Use cordova to bridge native device?
     defaultUILang = 'en_UK';
 

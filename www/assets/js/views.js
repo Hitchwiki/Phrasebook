@@ -275,7 +275,8 @@ var translationView = Backbone.View.extend({
             $translationRow.addClass("translationOpen");
             $translation.show();
         }
-	
+
+        this.$el.trigger("updatelayout");
 	},
 
 	goLanguagelist: function () {

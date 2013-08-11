@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Phrasebook package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2013-07-25 07:45:57+0000\n"
+"PO-Revision-Date: 2013-08-11 11:24:02+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,776 +10,784 @@ msgstr ""
 "X-Generator: GlotPress/0.1\n"
 "Project-Id-Version: Phrasebook\n"
 
-#: ../languages.py:140
+#: ../languages_printable.php:57 ../languages.py:114
 msgid "Sorry"
 msgstr "Entschuldigung"
 
-#: ../languages.py:260
+#: ../languages_printable.php:177 ../languages.py:234
 msgid "Can I leave my bag here for a while?"
 msgstr "Kann ich meine Tasche hier lassen?"
 
-#: ../languages.py:213
+#: ../languages_printable.php:130 ../languages.py:187
 msgid "ATM"
 msgstr "Bankomat"
 
-#: ../languages.py:218
+#: ../languages_printable.php:135 ../languages.py:192
 msgid "a train station"
 msgstr "Bahnhof"
 
-#: ../languages.py:217
+#: ../languages_printable.php:134 ../languages.py:191
 msgid "a bus station"
 msgstr "Busbahnhof"
 
-#: ../languages.py:216
+#: ../languages_printable.php:133 ../languages.py:190
 msgid "a metro station"
 msgstr "U-Bahn Station"
 
-#: ../languages.py:213
+#: ../languages_printable.php:130 ../languages.py:187
 msgid "a cash machine"
 msgstr "Bankomat / Geldautomat"
 
-#: ../languages.py:215
+#: ../languages_printable.php:132 ../languages.py:189
 msgid "a bus stop"
 msgstr "Bushaltestelle"
 
-#: ../languages.py:157
+#: ../languages_printable.php:74 ../languages.py:131
 msgid "Year"
 msgstr "Jahr"
 
-#: ../languages.py:205
+#: ../languages_printable.php:122 ../languages.py:179
 msgid "the tourist office"
 msgstr "Touristeninformation"
 
-#: ../languages.py:212
+#: ../languages_printable.php:129 ../languages.py:186
 msgid "an internet café"
 msgstr "Internetcafé"
 
-#: ../languages.py:256
+#: ../languages_printable.php:173 ../languages.py:230
 msgid "Hostel"
 msgstr "Jugendherberge/ Hostel"
 
-#: ../languages.py:238
+#: ../languages_printable.php:155 ../languages.py:212
 msgid "Meat"
 msgstr "Fleisch"
 
-#: ../languages.py:171
+#: ../languages_printable.php:88 ../languages.py:145
 msgid "Speak slower, please?"
 msgstr "Können Sie bitte etwas langsamer sprechen?"
 
-#: ../languages.py:163
+#: ../languages_printable.php:80 ../languages.py:137
 msgid "Sometimes"
 msgstr "manchmal"
 
-#: ../languages.py:169
+#: ../languages_printable.php:86 ../languages.py:143
 msgid "For free?"
 msgstr "kostenlos?"
 
-#: ../languages.py:141
+#: ../languages_printable.php:58 ../languages.py:115
 msgid "Are you going towards ...?"
 msgstr "Fahren Sie Richtung ...?"
 
-#: ../languages.py:144
+#: ../languages_printable.php:61 ../languages.py:118
 msgid "just before"
 msgstr "kurz vor"
 
-#: ../languages.py:145
+#: ../languages_printable.php:62 ../languages.py:119
 msgid "just after"
 msgstr "kurz nach"
 
-#: ../languages.py:148
+#: ../languages_printable.php:65 ../languages.py:122
 msgid "a lay-by"
 msgstr "Haltebucht"
 
-#: ../languages.py:148
+#: ../languages_printable.php:65 ../languages.py:122
 msgid "rest area"
 msgstr "Rastplatz"
 
-#: ../languages.py:150
+#: ../languages_printable.php:67 ../languages.py:124
 msgid "roundabout"
 msgstr "Kreisverkehr"
 
-#: ../languages.py:151
+#: ../languages_printable.php:68 ../languages.py:125
 msgid "the junction"
 msgstr "die Kreuzung"
 
-#: ../languages.py:152
+#: ../languages_printable.php:69 ../languages.py:126
 msgid "the T-junction"
 msgstr "T-Kreuzung"
 
-#: ../languages.py:153
+#: ../languages_printable.php:70 ../languages.py:127
 msgid "the crossroads"
 msgstr "Querstraße"
 
-#: ../languages.py:154
+#: ../languages_printable.php:71 ../languages.py:128
 msgid "on the ring road"
 msgstr "auf der Ringstraße"
 
-#: ../languages.py:155
+#: ../languages_printable.php:72 ../languages.py:129
 msgid "across the road"
 msgstr "auf der anderen Straßenseite"
 
-#: ../languages.py:163
+#: ../languages_printable.php:80 ../languages.py:137
 msgid "Rarely"
 msgstr "selten"
 
-#: ../languages.py:175
+#: ../languages_printable.php:92 ../languages.py:149
 msgid "OK"
 msgstr "OK"
 
-#: ../languages.py:175
+#: ../languages_printable.php:92 ../languages.py:149
 msgid "cool"
 msgstr "super"
 
-#: ../languages.py:176
+#: ../languages_printable.php:93 ../languages.py:150
 msgid "I'm not in a hurry"
 msgstr "Ich habe keine Eile"
 
-#: ../languages.py:181
+#: ../languages_printable.php:98 ../languages.py:155
 msgid "I am studying to be a ..."
 msgstr "Ich studiere um .... zu werden."
 
-#: ../languages.py:183
+#: ../languages_printable.php:100 ../languages.py:157
 msgid "I'm visiting friends in ..."
 msgstr "Ich besuche Freunde in ..."
 
-#: ../languages.py:185
+#: ../languages_printable.php:102 ../languages.py:159
 msgid "I will stay for ... days/weeks"
 msgstr "Ich bleibe für ... Tage/Wochen"
 
-#: ../languages.py:186
+#: ../languages_printable.php:103 ../languages.py:160
 msgid "I'm going back to ..."
 msgstr "Ich gehe zurück nach ..."
 
-#: ../languages.py:190
+#: ../languages_printable.php:107 ../languages.py:164
 msgid "I have already texted my father."
 msgstr "Ich habe meinem Vater bereits eine SMS geschrieben."
 
-#: ../languages.py:193
+#: ../languages_printable.php:110 ../languages.py:167
 msgid "Pull over I'm going to puke!"
 msgstr "Halte an, ich muss mich übergeben!"
 
-#: ../languages.py:202
+#: ../languages_printable.php:119 ../languages.py:176
 msgid "the toll road to ..."
 msgstr "die Mautstraße nach ..."
 
-#: ../languages.py:203
+#: ../languages_printable.php:120 ../languages.py:177
 msgid "the small road to ..."
 msgstr "die kleine Straße nach ..."
 
-#: ../languages.py:204
+#: ../languages_printable.php:121 ../languages.py:178
 msgid "city centre"
 msgstr "Stadtzentrum"
 
-#: ../languages.py:209
+#: ../languages_printable.php:126 ../languages.py:183
 msgid "the fruit market"
 msgstr "Obstmarkt"
 
-#: ../languages.py:211
+#: ../languages_printable.php:128 ../languages.py:185
 msgid "a camp-site"
 msgstr "ein Campingplatz"
 
-#: ../languages.py:219
+#: ../languages_printable.php:136 ../languages.py:193
 msgid "a public Wi-Fi / Internet"
 msgstr "ein öffentliches W-LAN / Internet"
 
-#: ../languages.py:222
+#: ../languages_printable.php:139 ../languages.py:196
 msgid "Drink"
 msgstr "trinken"
 
-#: ../languages.py:234
+#: ../languages_printable.php:151 ../languages.py:208
 msgid "Eat"
 msgstr "essen"
 
-#: ../languages.py:237
+#: ../languages_printable.php:154 ../languages.py:211
 msgid "Fruit"
 msgstr "Frucht"
 
-#: ../languages.py:241
+#: ../languages_printable.php:158 ../languages.py:215
 msgid "Vegan"
 msgstr "Vegan"
 
-#: ../languages.py:246
+#: ../languages_printable.php:163 ../languages.py:220
 msgid "I'm tired"
 msgstr "Ich bin müde"
 
-#: ../languages.py:251
+#: ../languages_printable.php:168 ../languages.py:225
 msgid "Smoke"
 msgstr "rauchen"
 
-#: ../languages.py:257
+#: ../languages_printable.php:174 ../languages.py:231
 msgid "Room"
 msgstr "Zimmer"
 
-#: ../languages.py:258
+#: ../languages_printable.php:175 ../languages.py:232
 msgid "Hotel"
 msgstr "Hotel"
 
-#: ../languages.py:136
+#: ../languages.py:287
 msgid "Info"
 msgstr "Information"
 
-#: ../languages.py:142
+#: ../languages_printable.php:59 ../languages.py:116
 msgid "Could I get a lift to ...?"
 msgstr "Könnte ich bei Ihnen bis nach ... mitfahren?/ Können Sie mich bis nach ... mitnehmen?"
 
-#: ../languages.py:170
+#: ../languages_printable.php:87 ../languages.py:144
 msgid "Do you speak ...?"
 msgstr "Sprechen Sie ...?"
 
-#: ../languages.py:177
+#: ../languages_printable.php:94 ../languages.py:151
 msgid "I'm going to ..."
 msgstr "Ich gehe nach ..."
 
-#: ../languages.py:178
+#: ../languages_printable.php:95 ../languages.py:152
 msgid "My name is ..."
 msgstr "Mein Name ist ..."
 
-#: ../languages.py:179
+#: ../languages_printable.php:96 ../languages.py:153
 msgid "I'm from ..."
 msgstr "Ich komme aus ..."
 
-#: ../languages.py:180
+#: ../languages_printable.php:97 ../languages.py:154
 msgid "I'm ... years old."
 msgstr "Ich bin ... Jahre alt."
 
-#: ../languages.py:181
+#: ../languages_printable.php:98 ../languages.py:155
 msgid "I study ..."
 msgstr "Ich studiere ..."
 
-#: ../languages.py:181
+#: ../languages_printable.php:98 ../languages.py:155
 msgid "I'm in my ... year."
 msgstr "Ich bin in meinem ... Jahr."
 
-#: ../languages.py:184
+#: ../languages_printable.php:101 ../languages.py:158
 msgid "I'm hitchhiking around ..."
 msgstr "Ich fahre per Anhalter in ..."
 
-#: ../languages.py:198
+#: ../languages_printable.php:115 ../languages.py:172
 msgid "Where can I find ...?"
 msgstr "Wo kann ich ... finden?"
 
-#: ../languages.py:201
+#: ../languages_printable.php:118 ../languages.py:175
 msgid "the highway to ..."
 msgstr "die Autobahn nach ..."
 
-#: ../languages.py:169
+#: ../languages_printable.php:86 ../languages.py:143
 msgid "I can't pay."
 msgstr "Ich kann nicht bezahlen."
 
-#: ../languages.py:175
+#: ../languages_printable.php:92 ../languages.py:149
 msgid "That's great"
 msgstr ""
 "Germany: Das ist klasse!\n"
 "Austria: Das ist leiwand!"
 
-#: ../languages.py:182
+#: ../languages_printable.php:99 ../languages.py:156
 msgid "I'm on holiday."
 msgstr "Ich bin im Urlaub."
 
-#: ../languages.py:191
+#: ../languages_printable.php:108 ../languages.py:165
 msgid "Don't touch me!"
 msgstr "Fass mich nicht an!"
 
-#: ../languages.py:242
+#: ../languages_printable.php:159 ../languages.py:216
 msgid "I don't eat meat"
 msgstr "Ich esse kein Fleisch."
 
-#: ../languages.py:233
+#: ../languages_printable.php:150 ../languages.py:207
 msgid "I'm hungry"
 msgstr "Ich bin hungrig."
 
-#: ../languages.py:221
+#: ../languages_printable.php:138 ../languages.py:195
 msgid "I'm thirsty"
 msgstr "Ich bin durstig."
 
-#: ../languages.py:247
+#: ../languages_printable.php:164 ../languages.py:221
 msgid "I'm fine"
 msgstr "Mir geht es gut."
 
-#: ../languages.py:248
+#: ../languages_printable.php:165 ../languages.py:222
 msgid "I'm cold"
 msgstr "Mir ist kalt."
 
-#: ../languages.py:249
+#: ../languages_printable.php:166 ../languages.py:223
 msgid "I'm hot"
 msgstr "Mir ist heiß."
 
-#: ../languages.py:250
+#: ../languages_printable.php:167 ../languages.py:224
 msgid "I'm sick"
 msgstr "Ich bin krank."
 
-#: ../languages.py:253
+#: ../languages_printable.php:170 ../languages.py:227
 msgid "I'm looking for a place to sleep."
 msgstr "Ich suche einen Schlafplatz."
 
-#: ../languages.py:291
+#: ../languages_printable.php:208 ../languages.py:265
 msgid "Hundred"
 msgstr "hundert"
 
-#: ../languages.py:292
+#: ../languages_printable.php:209 ../languages.py:266
 msgid "Thousand"
 msgstr "tausend"
 
-#: ../languages.py:146
+#: ../languages_printable.php:63 ../languages.py:120
 msgid "a petrol station"
 msgstr "eine Tankstelle"
 
-#: ../languages.py:159
+#: ../languages_printable.php:76 ../languages.py:133
 msgid "Right"
 msgstr "rechts"
 
-#: ../languages.py:133
+#: ../languages.py:111
+msgid "Hitchhike"
+msgstr ""
+
+#: ../languages.py:112
+msgid "Hitchhiker"
+msgstr ""
+
+#: ../languages.py:284
 msgid "Phrasebook"
 msgstr "Buch mit Redewendungen"
 
-#: ../languages.py:134
+#: ../languages.py:285
 msgid "Interface"
 msgstr "Schnittstelle"
 
-#: ../languages.py:135
+#: ../languages.py:286
 msgid "Search..."
 msgstr "suchen..."
 
-#: ../languages.py:139
+#: ../languages_printable.php:56 ../languages.py:113
 msgid "Hello"
 msgstr "Hallo"
 
-#: ../languages.py:140
+#: ../languages_printable.php:57 ../languages.py:114
 msgid "Excuse me..."
 msgstr "Entschuldigen Sie mich bitte... / Entschuldigung, ..."
 
-#: ../languages.py:147
+#: ../languages_printable.php:64 ../languages.py:121
 msgid "a service area"
 msgstr "ein Raststätte"
 
-#: ../languages.py:149
+#: ../languages_printable.php:66 ../languages.py:123
 msgid "along the highway"
 msgstr "entlang der Autobahn"
 
-#: ../languages.py:170
+#: ../languages_printable.php:87 ../languages.py:144
 msgid "any other languages"
 msgstr "irgendwelche anderen Sprachen"
 
-#: ../languages.py:172
+#: ../languages_printable.php:89 ../languages.py:146
 msgid "I don't understand"
 msgstr "Ich verstehe (Sie) nicht"
 
-#: ../languages.py:173
+#: ../languages_printable.php:90 ../languages.py:147
 msgid "I don't know"
 msgstr "Ich weiß (es) nicht"
 
-#: ../languages.py:174
+#: ../languages_printable.php:91 ../languages.py:148
 msgid "Yes"
 msgstr "Ja"
 
-#: ../languages.py:174
+#: ../languages_printable.php:91 ../languages.py:148
 msgid "No"
 msgstr "Nein"
 
-#: ../languages.py:174
+#: ../languages_printable.php:91 ../languages.py:148
 msgid "Maybe"
 msgstr "Vielleicht"
 
-#: ../languages.py:174
+#: ../languages_printable.php:91 ../languages.py:148
 msgid "No thanks"
 msgstr "Nein, danke"
 
-#: ../languages.py:175
+#: ../languages_printable.php:92 ../languages.py:149
 msgid "perfect"
 msgstr "Perfekt"
 
-#: ../languages.py:175
+#: ../languages_printable.php:92 ../languages.py:149
 msgid "bad"
 msgstr "schlecht"
 
-#: ../languages.py:175
+#: ../languages_printable.php:92 ../languages.py:149
 msgid "no problem"
 msgstr "kein Problem"
 
-#: ../languages.py:177
+#: ../languages_printable.php:94 ../languages.py:151
 msgid "Where are you going to?"
 msgstr "Wohin fahren Sie?"
 
-#: ../languages.py:178
+#: ../languages_printable.php:95 ../languages.py:152
 msgid "What's your name?"
 msgstr "Wie heißen Sie?"
 
-#: ../languages.py:179
+#: ../languages_printable.php:96 ../languages.py:153
 msgid "Where are you from?"
 msgstr "Wo kommen Sie her?"
 
-#: ../languages.py:180
+#: ../languages_printable.php:97 ../languages.py:154
 msgid "How old are you?"
 msgstr "Wie alt sind Sie?"
 
-#: ../languages.py:188
+#: ../languages_printable.php:105 ../languages.py:162
 msgid "I have a boy-friend/a girl-friend."
 msgstr "Ich habe einen Freund / eine Freundin."
 
-#: ../languages.py:189
+#: ../languages_printable.php:106 ../languages.py:163
 msgid "I'm married."
 msgstr "Ich bin verheiratet."
 
-#: ../languages.py:187
+#: ../languages_printable.php:104 ../languages.py:161
 msgid "Can you drop me off here?"
 msgstr "Können Sie mich hier rauslassen?"
 
-#: ../languages.py:192
+#: ../languages_printable.php:109 ../languages.py:166
 msgid "Let me out!"
 msgstr "Lassen Sie mich raus!"
 
-#: ../languages.py:194
+#: ../languages_printable.php:111 ../languages.py:168
 msgid "Stop!"
 msgstr "Stop!"
 
-#: ../languages.py:195
+#: ../languages_printable.php:112 ../languages.py:169
 msgid "Help!"
 msgstr "Hilfe!"
 
-#: ../languages.py:196
+#: ../languages_printable.php:113 ../languages.py:170
 msgid "Thank you!"
 msgstr "Danke!"
 
-#: ../languages.py:197
+#: ../languages_printable.php:114 ../languages.py:171
 msgid "Have a nice day/trip!"
 msgstr "Schönen Tag / Gute Reise!"
 
-#: ../languages.py:206
+#: ../languages_printable.php:123 ../languages.py:180
 msgid "a map"
 msgstr "eine Karte"
 
-#: ../languages.py:207
+#: ../languages_printable.php:124 ../languages.py:181
 msgid "a toilet"
 msgstr "eine Toilette"
 
-#: ../languages.py:208
+#: ../languages_printable.php:125 ../languages.py:182
 msgid "a supermarket"
 msgstr "einen Supermarkt"
 
-#: ../languages.py:210
+#: ../languages_printable.php:127 ../languages.py:184
 msgid "a pharmacy"
 msgstr "eine Apotheke"
 
-#: ../languages.py:214
+#: ../languages_printable.php:131 ../languages.py:188
 msgid "a bank"
 msgstr "eine Bank"
 
-#: ../languages.py:200
+#: ../languages_printable.php:117 ../languages.py:174
 msgid "a good hitchhiking spot"
 msgstr "ein guter Platz zum Trampen"
 
-#: ../languages.py:224
+#: ../languages_printable.php:141 ../languages.py:198
 msgid "Water"
 msgstr "Wasser"
 
-#: ../languages.py:225
+#: ../languages_printable.php:142 ../languages.py:199
 msgid "(Herbal) tea"
 msgstr "(Kräuter-) Tee"
 
-#: ../languages.py:226
+#: ../languages_printable.php:143 ../languages.py:200
 msgid "Hot chocolate"
 msgstr "Heiße Schokolade"
 
-#: ../languages.py:227
+#: ../languages_printable.php:144 ../languages.py:201
 msgid "Coffee"
 msgstr "Kaffee"
 
-#: ../languages.py:228
+#: ../languages_printable.php:145 ../languages.py:202
 msgid "Juice"
 msgstr "Saft"
 
-#: ../languages.py:229
+#: ../languages_printable.php:146 ../languages.py:203
 msgid "Beer"
 msgstr "Bier"
 
-#: ../languages.py:230
+#: ../languages_printable.php:147 ../languages.py:204
 msgid "(Red, white) wine"
 msgstr "(Rot, Weiß) Wein"
 
-#: ../languages.py:240
+#: ../languages_printable.php:157 ../languages.py:214
 msgid "Vegetarian"
 msgstr "Vegetarier"
 
-#: ../languages.py:236
+#: ../languages_printable.php:153 ../languages.py:210
 msgid "Bread"
 msgstr "Brot"
 
-#: ../languages.py:243
+#: ../languages_printable.php:160 ../languages.py:217
 msgid "A cheap restaurant"
 msgstr "ein billiges Restaurant"
 
-#: ../languages.py:232
+#: ../languages_printable.php:149 ../languages.py:206
 msgid "Cheers!"
 msgstr "Prost!"
 
-#: ../languages.py:244
+#: ../languages_printable.php:161 ../languages.py:218
 msgid "Enjoy your meal!"
 msgstr "Guten Appetit!"
 
-#: ../languages.py:245
+#: ../languages_printable.php:162 ../languages.py:219
 msgid "Dumpster diving"
 msgstr "Containern/ Dumpster diving / freegan"
 
-#: ../languages.py:157
+#: ../languages_printable.php:74 ../languages.py:131
 msgid "Hour"
 msgstr "Stunde"
 
-#: ../languages.py:157
+#: ../languages_printable.php:74 ../languages.py:131
 msgid "Day"
 msgstr "Tag"
 
-#: ../languages.py:157
+#: ../languages_printable.php:74 ../languages.py:131
 msgid "Week"
 msgstr "Woche"
 
-#: ../languages.py:157
+#: ../languages_printable.php:74 ../languages.py:131
 msgid "Month"
 msgstr "Monat"
 
-#: ../languages.py:158
+#: ../languages_printable.php:75 ../languages.py:132
 msgid "Kilometre"
 msgstr "Kilometer"
 
-#: ../languages.py:159
+#: ../languages_printable.php:76 ../languages.py:133
 msgid "Left"
 msgstr "links"
 
-#: ../languages.py:160
+#: ../languages_printable.php:77 ../languages.py:134
 msgid "Straight on"
 msgstr "geradeaus"
 
-#: ../languages.py:161
+#: ../languages_printable.php:78 ../languages.py:135
 msgid "Before"
 msgstr "vor"
 
-#: ../languages.py:161
+#: ../languages_printable.php:78 ../languages.py:135
 msgid "After"
 msgstr "nach"
 
-#: ../languages.py:162
+#: ../languages_printable.php:79 ../languages.py:136
 msgid "This"
 msgstr "Dieser"
 
-#: ../languages.py:162
+#: ../languages_printable.php:79 ../languages.py:136
 msgid "Next"
 msgstr "Nächster"
 
-#: ../languages.py:162
+#: ../languages_printable.php:79 ../languages.py:136
 msgid "Last"
 msgstr "letzter"
 
-#: ../languages.py:163
+#: ../languages_printable.php:80 ../languages.py:137
 msgid "Often"
 msgstr "oft"
 
-#: ../languages.py:163
+#: ../languages_printable.php:80 ../languages.py:137
 msgid "Never"
 msgstr "niemals"
 
-#: ../languages.py:164
+#: ../languages_printable.php:81 ../languages.py:138
 msgid "Long"
 msgstr "lang"
 
-#: ../languages.py:164
+#: ../languages_printable.php:81 ../languages.py:138
 msgid "Short"
 msgstr "kurz"
 
-#: ../languages.py:165
+#: ../languages_printable.php:82 ../languages.py:139
 msgid "Up"
 msgstr "hoch"
 
-#: ../languages.py:165
+#: ../languages_printable.php:82 ../languages.py:139
 msgid "Down"
 msgstr "runter"
 
-#: ../languages.py:166
+#: ../languages_printable.php:83 ../languages.py:140
 msgid "Over"
 msgstr "über"
 
-#: ../languages.py:166
+#: ../languages_printable.php:83 ../languages.py:140
 msgid "Under"
 msgstr "unter"
 
-#: ../languages.py:167
+#: ../languages_printable.php:84 ../languages.py:141
 msgid "How far is it (on foot)?"
 msgstr "Wie weit ist es (zu Fuß)?"
 
-#: ../languages.py:168
+#: ../languages_printable.php:85 ../languages.py:142
 msgid "Where are we?"
 msgstr "Wo sind wir?"
 
-#: ../languages.py:261
+#: ../languages_printable.php:178 ../languages.py:235
 msgid "How much does it cost?"
 msgstr "Wieviel kostet es?"
 
-#: ../languages.py:252
+#: ../languages_printable.php:169 ../languages.py:226
 msgid "What time is it?"
 msgstr "Wie spät ist es?"
 
-#: ../languages.py:255
+#: ../languages_printable.php:172 ../languages.py:229
 msgid "Tent"
 msgstr "Zelt"
 
-#: ../languages.py:266
+#: ../languages_printable.php:183 ../languages.py:240
 msgid "Where can we buy a ticket?"
 msgstr "Wo können wir ein Ticket kaufen?"
 
-#: ../languages.py:262
+#: ../languages_printable.php:179 ../languages.py:236
 msgid "Who?"
 msgstr "Wer?"
 
-#: ../languages.py:262
+#: ../languages_printable.php:179 ../languages.py:236
 msgid "What?"
 msgstr "Was?"
 
-#: ../languages.py:262
+#: ../languages_printable.php:179 ../languages.py:236
 msgid "Where?"
 msgstr "Wo?"
 
-#: ../languages.py:262
+#: ../languages_printable.php:179 ../languages.py:236
 msgid "Why?"
 msgstr "Warum? / Wieso?"
 
-#: ../languages.py:262
+#: ../languages_printable.php:179 ../languages.py:236
 msgid "When?"
 msgstr "Wann?"
 
-#: ../languages.py:263
+#: ../languages_printable.php:180 ../languages.py:237
 msgid "How?"
 msgstr "Wie?"
 
-#: ../languages.py:263
+#: ../languages_printable.php:180 ../languages.py:237
 msgid "How much?"
 msgstr "Wieviel?"
 
-#: ../languages.py:263
+#: ../languages_printable.php:180 ../languages.py:237
 msgid "How long?"
 msgstr "Wie lange?"
 
-#: ../languages.py:263
+#: ../languages_printable.php:180 ../languages.py:237
 msgid "Which?"
 msgstr "Welches? Welcher? Welche?"
 
-#: ../languages.py:264
+#: ../languages_printable.php:181 ../languages.py:238
 msgid "North"
 msgstr "Norden"
 
-#: ../languages.py:264
+#: ../languages_printable.php:181 ../languages.py:238
 msgid "East"
 msgstr "Osten"
 
-#: ../languages.py:264
+#: ../languages_printable.php:181 ../languages.py:238
 msgid "South"
 msgstr "Süden"
 
-#: ../languages.py:264
+#: ../languages_printable.php:181 ../languages.py:238
 msgid "West"
 msgstr "Westen"
 
-#: ../languages.py:265
+#: ../languages_printable.php:182 ../languages.py:239
 msgid "Yesterday"
 msgstr "Gestern"
 
-#: ../languages.py:265
+#: ../languages_printable.php:182 ../languages.py:239
 msgid "Today"
 msgstr "Heute"
 
-#: ../languages.py:265
+#: ../languages_printable.php:182 ../languages.py:239
 msgid "Tomorrow"
 msgstr "Morgen"
 
-#: ../languages.py:267
+#: ../languages_printable.php:184 ../languages.py:241
 msgid "Zero"
 msgstr "Null"
 
-#: ../languages.py:269
+#: ../languages_printable.php:186 ../languages.py:243
 msgid "One"
 msgstr "Eins"
 
-#: ../languages.py:270
+#: ../languages_printable.php:187 ../languages.py:244
 msgid "Two"
 msgstr "Zwei (Zwo)"
 
-#: ../languages.py:271
+#: ../languages_printable.php:188 ../languages.py:245
 msgid "Three"
 msgstr "Drei"
 
-#: ../languages.py:272
+#: ../languages_printable.php:189 ../languages.py:246
 msgid "Four"
 msgstr "Vier"
 
-#: ../languages.py:273
+#: ../languages_printable.php:190 ../languages.py:247
 msgid "Five"
 msgstr "Fünf"
 
-#: ../languages.py:274
+#: ../languages_printable.php:191 ../languages.py:248
 msgid "Six"
 msgstr "Sechs"
 
-#: ../languages.py:275
+#: ../languages_printable.php:192 ../languages.py:249
 msgid "Seven"
 msgstr "Sieben"
 
-#: ../languages.py:276
+#: ../languages_printable.php:193 ../languages.py:250
 msgid "Eight"
 msgstr "Acht"
 
-#: ../languages.py:277
+#: ../languages_printable.php:194 ../languages.py:251
 msgid "Nine"
 msgstr "Neun"
 
-#: ../languages.py:278
+#: ../languages_printable.php:195 ../languages.py:252
 msgid "Ten"
 msgstr "Zehn"
 
-#: ../languages.py:279
+#: ../languages_printable.php:196 ../languages.py:253
 msgid "Eleven"
 msgstr "Elf"
 
-#: ../languages.py:280
+#: ../languages_printable.php:197 ../languages.py:254
 msgid "Twelve"
 msgstr "Zwölf"
 
-#: ../languages.py:281
+#: ../languages_printable.php:198 ../languages.py:255
 msgid "Thirteen"
 msgstr "Dreizehn"
 
-#: ../languages.py:282
+#: ../languages_printable.php:199 ../languages.py:256
 msgid "Fourteen"
 msgstr "Vierzehn"
 
-#: ../languages.py:283
+#: ../languages_printable.php:200 ../languages.py:257
 msgid "Fifteen"
 msgstr "Fünfzehn"
 
-#: ../languages.py:284
+#: ../languages_printable.php:201 ../languages.py:258
 msgid "Sixteen"
 msgstr "Sechzehn"
 
-#: ../languages.py:285
+#: ../languages_printable.php:202 ../languages.py:259
 msgid "Seventeen"
 msgstr "Siebzehn"
 
-#: ../languages.py:286
+#: ../languages_printable.php:203 ../languages.py:260
 msgid "Eighteen"
 msgstr "Achtzehn"
 
-#: ../languages.py:287
+#: ../languages_printable.php:204 ../languages.py:261
 msgid "Nineteen"
 msgstr "Neunzehn"
 
-#: ../languages.py:288
+#: ../languages_printable.php:205 ../languages.py:262
 msgid "Twenty"
 msgstr "Zwanzig"
 
-#: ../languages.py:289
+#: ../languages_printable.php:206 ../languages.py:263
 msgid "Twenty-one"
 msgstr "Einundzwanzig"
 
-#: ../languages.py:290
+#: ../languages_printable.php:207 ../languages.py:264
 msgid "Thirty"
 msgstr "Dreißig"
 
-#: ../languages.py:294
+#: ../languages_printable.php:211 ../languages.py:268
 msgid "Free hugs"
 msgstr "Gratisumarmungen"

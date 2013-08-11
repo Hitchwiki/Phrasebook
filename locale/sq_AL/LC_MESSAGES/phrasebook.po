@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Phrasebook package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2013-07-25 07:45:55+0000\n"
+"PO-Revision-Date: 2013-08-11 11:24:00+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,774 +10,782 @@ msgstr ""
 "X-Generator: GlotPress/0.1\n"
 "Project-Id-Version: Phrasebook\n"
 
-#: ../languages.py:140
+#: ../languages_printable.php:57 ../languages.py:114
 msgid "Sorry"
 msgstr ""
 
-#: ../languages.py:260
+#: ../languages_printable.php:177 ../languages.py:234
 msgid "Can I leave my bag here for a while?"
 msgstr "Mund ta lë çantën këtu për pak kohë?"
 
-#: ../languages.py:213
+#: ../languages_printable.php:130 ../languages.py:187
 msgid "ATM"
 msgstr "Bankomat-ATëMë"
 
-#: ../languages.py:218
+#: ../languages_printable.php:135 ../languages.py:192
 msgid "a train station"
 msgstr "stacion treni"
 
-#: ../languages.py:217
+#: ../languages_printable.php:134 ../languages.py:191
 msgid "a bus station"
 msgstr "stacion autobuzi"
 
-#: ../languages.py:216
+#: ../languages_printable.php:133 ../languages.py:190
 msgid "a metro station"
 msgstr "stacion metroie"
 
-#: ../languages.py:213
+#: ../languages_printable.php:130 ../languages.py:187
 msgid "a cash machine"
 msgstr "Bankomat"
 
-#: ../languages.py:215
+#: ../languages_printable.php:132 ../languages.py:189
 msgid "a bus stop"
 msgstr "ndalesë autobuzi"
 
-#: ../languages.py:157
+#: ../languages_printable.php:74 ../languages.py:131
 msgid "Year"
 msgstr "Vit"
 
-#: ../languages.py:205
+#: ../languages_printable.php:122 ../languages.py:179
 msgid "the tourist office"
 msgstr "zyra turistike"
 
-#: ../languages.py:212
+#: ../languages_printable.php:129 ../languages.py:186
 msgid "an internet café"
 msgstr "internet kafe'"
 
-#: ../languages.py:256
+#: ../languages_printable.php:173 ../languages.py:230
 msgid "Hostel"
 msgstr "Hostel"
 
-#: ../languages.py:238
+#: ../languages_printable.php:155 ../languages.py:212
 msgid "Meat"
 msgstr "Mish"
 
-#: ../languages.py:171
+#: ../languages_printable.php:88 ../languages.py:145
 msgid "Speak slower, please?"
 msgstr "fol ngadalë, të lutem"
 
-#: ../languages.py:163
+#: ../languages_printable.php:80 ../languages.py:137
 msgid "Sometimes"
 msgstr "ndonjëherë"
 
-#: ../languages.py:169
+#: ../languages_printable.php:86 ../languages.py:143
 msgid "For free?"
 msgstr "Falas?"
 
-#: ../languages.py:141
+#: ../languages_printable.php:58 ../languages.py:115
 msgid "Are you going towards ...?"
 msgstr "shkon në drejtim të...?"
 
-#: ../languages.py:144
+#: ../languages_printable.php:61 ../languages.py:118
 msgid "just before"
 msgstr "para "
 
-#: ../languages.py:145
+#: ../languages_printable.php:62 ../languages.py:119
 msgid "just after"
 msgstr "pas"
 
-#: ../languages.py:148
+#: ../languages_printable.php:65 ../languages.py:122
 msgid "a lay-by"
 msgstr "shesh"
 
-#: ../languages.py:148
+#: ../languages_printable.php:65 ../languages.py:122
 msgid "rest area"
 msgstr "qëndër pushimi"
 
-#: ../languages.py:150
+#: ../languages_printable.php:67 ../languages.py:124
 msgid "roundabout"
 msgstr "reth-rrotullim"
 
-#: ../languages.py:151
+#: ../languages_printable.php:68 ../languages.py:125
 msgid "the junction"
 msgstr "kryqëzimi"
 
-#: ../languages.py:152
+#: ../languages_printable.php:69 ../languages.py:126
 msgid "the T-junction"
 msgstr "kryqëzim në formë T-je"
 
-#: ../languages.py:153
+#: ../languages_printable.php:70 ../languages.py:127
 msgid "the crossroads"
 msgstr "kryqëzime"
 
-#: ../languages.py:154
+#: ../languages_printable.php:71 ../languages.py:128
 msgid "on the ring road"
 msgstr "në unazë"
 
-#: ../languages.py:155
+#: ../languages_printable.php:72 ../languages.py:129
 msgid "across the road"
 msgstr "matanë rrugës"
 
-#: ../languages.py:163
+#: ../languages_printable.php:80 ../languages.py:137
 msgid "Rarely"
 msgstr "Rrallë"
 
-#: ../languages.py:175
+#: ../languages_printable.php:92 ../languages.py:149
 msgid "OK"
 msgstr "OK"
 
-#: ../languages.py:175
+#: ../languages_printable.php:92 ../languages.py:149
 msgid "cool"
 msgstr "fantastike"
 
-#: ../languages.py:176
+#: ../languages_printable.php:93 ../languages.py:150
 msgid "I'm not in a hurry"
 msgstr "nuk nxitoj"
 
-#: ../languages.py:181
+#: ../languages_printable.php:98 ../languages.py:155
 msgid "I am studying to be a ..."
 msgstr "Studioj për ..."
 
-#: ../languages.py:183
+#: ../languages_printable.php:100 ../languages.py:157
 msgid "I'm visiting friends in ..."
 msgstr "Do takoj disa miq në ...."
 
-#: ../languages.py:185
+#: ../languages_printable.php:102 ../languages.py:159
 msgid "I will stay for ... days/weeks"
 msgstr "Do rri ... ditë/javë"
 
-#: ../languages.py:186
+#: ../languages_printable.php:103 ../languages.py:160
 msgid "I'm going back to ..."
 msgstr "Do kthehem në..."
 
-#: ../languages.py:190
+#: ../languages_printable.php:107 ../languages.py:164
 msgid "I have already texted my father."
 msgstr "kam lajmëruar babain."
 
-#: ../languages.py:193
+#: ../languages_printable.php:110 ../languages.py:167
 msgid "Pull over I'm going to puke!"
 msgstr "Ndalo se do vjell!"
 
-#: ../languages.py:202
+#: ../languages_printable.php:119 ../languages.py:176
 msgid "the toll road to ..."
 msgstr "rruga me pagesë që të çon në..."
 
-#: ../languages.py:203
+#: ../languages_printable.php:120 ../languages.py:177
 msgid "the small road to ..."
 msgstr "rruga dytësore per..."
 
-#: ../languages.py:204
+#: ../languages_printable.php:121 ../languages.py:178
 msgid "city centre"
 msgstr "qëndra e qytetit"
 
-#: ../languages.py:209
+#: ../languages_printable.php:126 ../languages.py:183
 msgid "the fruit market"
 msgstr "tregu fruta-perime"
 
-#: ../languages.py:211
+#: ../languages_printable.php:128 ../languages.py:185
 msgid "a camp-site"
 msgstr "vend kampingu"
 
-#: ../languages.py:219
+#: ../languages_printable.php:136 ../languages.py:193
 msgid "a public Wi-Fi / Internet"
 msgstr "internet falas/whireless"
 
-#: ../languages.py:222
+#: ../languages_printable.php:139 ../languages.py:196
 msgid "Drink"
 msgstr "Pi"
 
-#: ../languages.py:234
+#: ../languages_printable.php:151 ../languages.py:208
 msgid "Eat"
 msgstr "Ha"
 
-#: ../languages.py:237
+#: ../languages_printable.php:154 ../languages.py:211
 msgid "Fruit"
 msgstr "Frut"
 
-#: ../languages.py:241
+#: ../languages_printable.php:158 ../languages.py:215
 msgid "Vegan"
 msgstr "Vegan"
 
-#: ../languages.py:246
+#: ../languages_printable.php:163 ../languages.py:220
 msgid "I'm tired"
 msgstr "Jam i lodhur"
 
-#: ../languages.py:251
+#: ../languages_printable.php:168 ../languages.py:225
 msgid "Smoke"
 msgstr "Duhan"
 
-#: ../languages.py:257
+#: ../languages_printable.php:174 ../languages.py:231
 msgid "Room"
 msgstr "Dhomë"
 
-#: ../languages.py:258
+#: ../languages_printable.php:175 ../languages.py:232
 msgid "Hotel"
 msgstr "Hotel"
 
-#: ../languages.py:136
+#: ../languages.py:287
 msgid "Info"
 msgstr "Informacion"
 
-#: ../languages.py:142
+#: ../languages_printable.php:59 ../languages.py:116
 msgid "Could I get a lift to ...?"
 msgstr "mund të më shoqëroni deri në...?"
 
-#: ../languages.py:170
+#: ../languages_printable.php:87 ../languages.py:144
 msgid "Do you speak ...?"
 msgstr "flet....?"
 
-#: ../languages.py:177
+#: ../languages_printable.php:94 ../languages.py:151
 msgid "I'm going to ..."
 msgstr "Po shkoj në..."
 
-#: ../languages.py:178
+#: ../languages_printable.php:95 ../languages.py:152
 msgid "My name is ..."
 msgstr "Quhem..."
 
-#: ../languages.py:179
+#: ../languages_printable.php:96 ../languages.py:153
 msgid "I'm from ..."
 msgstr "Jam nga ..."
 
-#: ../languages.py:180
+#: ../languages_printable.php:97 ../languages.py:154
 msgid "I'm ... years old."
 msgstr "Jam .... vjeç"
 
-#: ../languages.py:181
+#: ../languages_printable.php:98 ../languages.py:155
 msgid "I study ..."
 msgstr "Studioj ..."
 
-#: ../languages.py:181
+#: ../languages_printable.php:98 ../languages.py:155
 msgid "I'm in my ... year."
 msgstr "Jam në vit të ..."
 
-#: ../languages.py:184
+#: ../languages_printable.php:101 ../languages.py:158
 msgid "I'm hitchhiking around ..."
 msgstr "Shëtis me autostop nëpër ..."
 
-#: ../languages.py:198
+#: ../languages_printable.php:115 ../languages.py:172
 msgid "Where can I find ...?"
 msgstr "ku mund të gjej...?"
 
-#: ../languages.py:201
+#: ../languages_printable.php:118 ../languages.py:175
 msgid "the highway to ..."
 msgstr "autostrada për..."
 
-#: ../languages.py:169
+#: ../languages_printable.php:86 ../languages.py:143
 msgid "I can't pay."
 msgstr "Nuk mund të paguaj."
 
-#: ../languages.py:175
+#: ../languages_printable.php:92 ../languages.py:149
 msgid "That's great"
 msgstr "është shumë mirë"
 
-#: ../languages.py:182
+#: ../languages_printable.php:99 ../languages.py:156
 msgid "I'm on holiday."
 msgstr "Jam me pushime."
 
-#: ../languages.py:191
+#: ../languages_printable.php:108 ../languages.py:165
 msgid "Don't touch me!"
 msgstr "Mos më prek!"
 
-#: ../languages.py:242
+#: ../languages_printable.php:159 ../languages.py:216
 msgid "I don't eat meat"
 msgstr "Nuk ha mish"
 
-#: ../languages.py:233
+#: ../languages_printable.php:150 ../languages.py:207
 msgid "I'm hungry"
 msgstr "Jam i uritur"
 
-#: ../languages.py:221
+#: ../languages_printable.php:138 ../languages.py:195
 msgid "I'm thirsty"
 msgstr "Kam etje"
 
-#: ../languages.py:247
+#: ../languages_printable.php:164 ../languages.py:221
 msgid "I'm fine"
 msgstr "Jam mirë"
 
-#: ../languages.py:248
+#: ../languages_printable.php:165 ../languages.py:222
 msgid "I'm cold"
 msgstr "Kam ftohtë"
 
-#: ../languages.py:249
+#: ../languages_printable.php:166 ../languages.py:223
 msgid "I'm hot"
 msgstr "Kam vapë"
 
-#: ../languages.py:250
+#: ../languages_printable.php:167 ../languages.py:224
 msgid "I'm sick"
 msgstr "Jam sëmurë"
 
-#: ../languages.py:253
+#: ../languages_printable.php:170 ../languages.py:227
 msgid "I'm looking for a place to sleep."
 msgstr "Kerkoj një vend për të fjetur"
 
-#: ../languages.py:291
+#: ../languages_printable.php:208 ../languages.py:265
 msgid "Hundred"
 msgstr "njëqind"
 
-#: ../languages.py:292
+#: ../languages_printable.php:209 ../languages.py:266
 msgid "Thousand"
 msgstr "Njëmijë"
 
-#: ../languages.py:146
+#: ../languages_printable.php:63 ../languages.py:120
 msgid "a petrol station"
 msgstr "karburant"
 
-#: ../languages.py:159
+#: ../languages_printable.php:76 ../languages.py:133
 msgid "Right"
 msgstr "Djathtas"
 
-#: ../languages.py:133
+#: ../languages.py:111
+msgid "Hitchhike"
+msgstr ""
+
+#: ../languages.py:112
+msgid "Hitchhiker"
+msgstr ""
+
+#: ../languages.py:284
 msgid "Phrasebook"
 msgstr "Fjalor shprehjesh"
 
-#: ../languages.py:134
+#: ../languages.py:285
 msgid "Interface"
 msgstr "kryefaqe"
 
-#: ../languages.py:135
+#: ../languages.py:286
 msgid "Search..."
 msgstr "Kërkoj..."
 
-#: ../languages.py:139
+#: ../languages_printable.php:56 ../languages.py:113
 msgid "Hello"
 msgstr "çkemi"
 
-#: ../languages.py:140
+#: ../languages_printable.php:57 ../languages.py:114
 msgid "Excuse me..."
 msgstr "më fal"
 
-#: ../languages.py:147
+#: ../languages_printable.php:64 ../languages.py:121
 msgid "a service area"
 msgstr "zonë pushimi"
 
-#: ../languages.py:149
+#: ../languages_printable.php:66 ../languages.py:123
 msgid "along the highway"
 msgstr "përgjatë autostradës"
 
-#: ../languages.py:170
+#: ../languages_printable.php:87 ../languages.py:144
 msgid "any other languages"
 msgstr "ndonjë gjuhë tjetër"
 
-#: ../languages.py:172
+#: ../languages_printable.php:89 ../languages.py:146
 msgid "I don't understand"
 msgstr "nuk kuptoj"
 
-#: ../languages.py:173
+#: ../languages_printable.php:90 ../languages.py:147
 msgid "I don't know"
 msgstr "Nuk di"
 
-#: ../languages.py:174
+#: ../languages_printable.php:91 ../languages.py:148
 msgid "Yes"
 msgstr "Po"
 
-#: ../languages.py:174
+#: ../languages_printable.php:91 ../languages.py:148
 msgid "No"
 msgstr "jo"
 
-#: ../languages.py:174
+#: ../languages_printable.php:91 ../languages.py:148
 msgid "Maybe"
 msgstr "Ndoshta"
 
-#: ../languages.py:174
+#: ../languages_printable.php:91 ../languages.py:148
 msgid "No thanks"
 msgstr "Jo faleminderit"
 
-#: ../languages.py:175
+#: ../languages_printable.php:92 ../languages.py:149
 msgid "perfect"
 msgstr "mrekulli"
 
-#: ../languages.py:175
+#: ../languages_printable.php:92 ../languages.py:149
 msgid "bad"
 msgstr "keq"
 
-#: ../languages.py:175
+#: ../languages_printable.php:92 ../languages.py:149
 msgid "no problem"
 msgstr "pa problem"
 
-#: ../languages.py:177
+#: ../languages_printable.php:94 ../languages.py:151
 msgid "Where are you going to?"
 msgstr "çfare drejtimi shkon?"
 
-#: ../languages.py:178
+#: ../languages_printable.php:95 ../languages.py:152
 msgid "What's your name?"
 msgstr "si e ke emrin?"
 
-#: ../languages.py:179
+#: ../languages_printable.php:96 ../languages.py:153
 msgid "Where are you from?"
 msgstr "nga je?"
 
-#: ../languages.py:180
+#: ../languages_printable.php:97 ../languages.py:154
 msgid "How old are you?"
 msgstr "sa vjeç je?"
 
-#: ../languages.py:188
+#: ../languages_printable.php:105 ../languages.py:162
 msgid "I have a boy-friend/a girl-friend."
 msgstr "kam të dashur"
 
-#: ../languages.py:189
+#: ../languages_printable.php:106 ../languages.py:163
 msgid "I'm married."
 msgstr "jam martuar."
 
-#: ../languages.py:187
+#: ../languages_printable.php:104 ../languages.py:161
 msgid "Can you drop me off here?"
 msgstr "mund të më lësh këtu?"
 
-#: ../languages.py:192
+#: ../languages_printable.php:109 ../languages.py:166
 msgid "Let me out!"
 msgstr "më zbrit"
 
-#: ../languages.py:194
+#: ../languages_printable.php:111 ../languages.py:168
 msgid "Stop!"
 msgstr "Stop!"
 
-#: ../languages.py:195
+#: ../languages_printable.php:112 ../languages.py:169
 msgid "Help!"
 msgstr "Ndihmë!"
 
-#: ../languages.py:196
+#: ../languages_printable.php:113 ../languages.py:170
 msgid "Thank you!"
 msgstr "faleminderit!"
 
-#: ../languages.py:197
+#: ../languages_printable.php:114 ../languages.py:171
 msgid "Have a nice day/trip!"
 msgstr "ditë/udhëtim te këndshëm!"
 
-#: ../languages.py:206
+#: ../languages_printable.php:123 ../languages.py:180
 msgid "a map"
 msgstr "hart"
 
-#: ../languages.py:207
+#: ../languages_printable.php:124 ../languages.py:181
 msgid "a toilet"
 msgstr "tualet"
 
-#: ../languages.py:208
+#: ../languages_printable.php:125 ../languages.py:182
 msgid "a supermarket"
 msgstr "supermarket"
 
-#: ../languages.py:210
+#: ../languages_printable.php:127 ../languages.py:184
 msgid "a pharmacy"
 msgstr "farmaci"
 
-#: ../languages.py:214
+#: ../languages_printable.php:131 ../languages.py:188
 msgid "a bank"
 msgstr "bank"
 
-#: ../languages.py:200
+#: ../languages_printable.php:117 ../languages.py:174
 msgid "a good hitchhiking spot"
 msgstr "vend i mirë për autostop"
 
-#: ../languages.py:224
+#: ../languages_printable.php:141 ../languages.py:198
 msgid "Water"
 msgstr "Ujë"
 
-#: ../languages.py:225
+#: ../languages_printable.php:142 ../languages.py:199
 msgid "(Herbal) tea"
 msgstr "çaj"
 
-#: ../languages.py:226
+#: ../languages_printable.php:143 ../languages.py:200
 msgid "Hot chocolate"
 msgstr "çokollatë e nxehtë"
 
-#: ../languages.py:227
+#: ../languages_printable.php:144 ../languages.py:201
 msgid "Coffee"
 msgstr "Kafe'"
 
-#: ../languages.py:228
+#: ../languages_printable.php:145 ../languages.py:202
 msgid "Juice"
 msgstr "Lëng frutash"
 
-#: ../languages.py:229
+#: ../languages_printable.php:146 ../languages.py:203
 msgid "Beer"
 msgstr "Birrë"
 
-#: ../languages.py:230
+#: ../languages_printable.php:147 ../languages.py:204
 msgid "(Red, white) wine"
 msgstr "verë (kuqe,bardh)"
 
-#: ../languages.py:240
+#: ../languages_printable.php:157 ../languages.py:214
 msgid "Vegetarian"
 msgstr "vegjetarian"
 
-#: ../languages.py:236
+#: ../languages_printable.php:153 ../languages.py:210
 msgid "Bread"
 msgstr "Bukë"
 
-#: ../languages.py:243
+#: ../languages_printable.php:160 ../languages.py:217
 msgid "A cheap restaurant"
 msgstr "Restorant i lirë"
 
-#: ../languages.py:232
+#: ../languages_printable.php:149 ../languages.py:206
 msgid "Cheers!"
 msgstr "Gëzuar!"
 
-#: ../languages.py:244
+#: ../languages_printable.php:161 ../languages.py:218
 msgid "Enjoy your meal!"
 msgstr "Të bëftë mirë!"
 
-#: ../languages.py:245
+#: ../languages_printable.php:162 ../languages.py:219
 msgid "Dumpster diving"
 msgstr "Kërkoj në kosh plehrash "
 
-#: ../languages.py:157
+#: ../languages_printable.php:74 ../languages.py:131
 msgid "Hour"
 msgstr "Orë"
 
-#: ../languages.py:157
+#: ../languages_printable.php:74 ../languages.py:131
 msgid "Day"
 msgstr "Ditë"
 
-#: ../languages.py:157
+#: ../languages_printable.php:74 ../languages.py:131
 msgid "Week"
 msgstr "Javë"
 
-#: ../languages.py:157
+#: ../languages_printable.php:74 ../languages.py:131
 msgid "Month"
 msgstr "Muaj"
 
-#: ../languages.py:158
+#: ../languages_printable.php:75 ../languages.py:132
 msgid "Kilometre"
 msgstr "Kilometër"
 
-#: ../languages.py:159
+#: ../languages_printable.php:76 ../languages.py:133
 msgid "Left"
 msgstr "Majtas"
 
-#: ../languages.py:160
+#: ../languages_printable.php:77 ../languages.py:134
 msgid "Straight on"
 msgstr "Drejt"
 
-#: ../languages.py:161
+#: ../languages_printable.php:78 ../languages.py:135
 msgid "Before"
 msgstr "Para"
 
-#: ../languages.py:161
+#: ../languages_printable.php:78 ../languages.py:135
 msgid "After"
 msgstr "Mbrapa"
 
-#: ../languages.py:162
+#: ../languages_printable.php:79 ../languages.py:136
 msgid "This"
 msgstr "kjo"
 
-#: ../languages.py:162
+#: ../languages_printable.php:79 ../languages.py:136
 msgid "Next"
 msgstr "tjetra"
 
-#: ../languages.py:162
+#: ../languages_printable.php:79 ../languages.py:136
 msgid "Last"
 msgstr "i/e fundit"
 
-#: ../languages.py:163
+#: ../languages_printable.php:80 ../languages.py:137
 msgid "Often"
 msgstr "shpesh"
 
-#: ../languages.py:163
+#: ../languages_printable.php:80 ../languages.py:137
 msgid "Never"
 msgstr "kurrë"
 
-#: ../languages.py:164
+#: ../languages_printable.php:81 ../languages.py:138
 msgid "Long"
 msgstr "gjatë"
 
-#: ../languages.py:164
+#: ../languages_printable.php:81 ../languages.py:138
 msgid "Short"
 msgstr "shkurtër"
 
-#: ../languages.py:165
+#: ../languages_printable.php:82 ../languages.py:139
 msgid "Up"
 msgstr "Lart"
 
-#: ../languages.py:165
+#: ../languages_printable.php:82 ../languages.py:139
 msgid "Down"
 msgstr "Poshtë"
 
-#: ../languages.py:166
+#: ../languages_printable.php:83 ../languages.py:140
 msgid "Over"
 msgstr "Mbi"
 
-#: ../languages.py:166
+#: ../languages_printable.php:83 ../languages.py:140
 msgid "Under"
 msgstr "poshtë"
 
-#: ../languages.py:167
+#: ../languages_printable.php:84 ../languages.py:141
 msgid "How far is it (on foot)?"
 msgstr "sa larg është (në këmbë)"
 
-#: ../languages.py:168
+#: ../languages_printable.php:85 ../languages.py:142
 msgid "Where are we?"
 msgstr "ku jemi?"
 
-#: ../languages.py:261
+#: ../languages_printable.php:178 ../languages.py:235
 msgid "How much does it cost?"
 msgstr "sa kushton?"
 
-#: ../languages.py:252
+#: ../languages_printable.php:169 ../languages.py:226
 msgid "What time is it?"
 msgstr "sa është ora?"
 
-#: ../languages.py:255
+#: ../languages_printable.php:172 ../languages.py:229
 msgid "Tent"
 msgstr "tend"
 
-#: ../languages.py:266
+#: ../languages_printable.php:183 ../languages.py:240
 msgid "Where can we buy a ticket?"
 msgstr "ku mund të blej biletë?"
 
-#: ../languages.py:262
+#: ../languages_printable.php:179 ../languages.py:236
 msgid "Who?"
 msgstr "kush?"
 
-#: ../languages.py:262
+#: ../languages_printable.php:179 ../languages.py:236
 msgid "What?"
 msgstr "çfarë?"
 
-#: ../languages.py:262
+#: ../languages_printable.php:179 ../languages.py:236
 msgid "Where?"
 msgstr "ku?"
 
-#: ../languages.py:262
+#: ../languages_printable.php:179 ../languages.py:236
 msgid "Why?"
 msgstr "pse?"
 
-#: ../languages.py:262
+#: ../languages_printable.php:179 ../languages.py:236
 msgid "When?"
 msgstr "kur?"
 
-#: ../languages.py:263
+#: ../languages_printable.php:180 ../languages.py:237
 msgid "How?"
 msgstr "si?"
 
-#: ../languages.py:263
+#: ../languages_printable.php:180 ../languages.py:237
 msgid "How much?"
 msgstr "sa?"
 
-#: ../languages.py:263
+#: ../languages_printable.php:180 ../languages.py:237
 msgid "How long?"
 msgstr "sa?"
 
-#: ../languages.py:263
+#: ../languages_printable.php:180 ../languages.py:237
 msgid "Which?"
 msgstr "cili/a?"
 
-#: ../languages.py:264
+#: ../languages_printable.php:181 ../languages.py:238
 msgid "North"
 msgstr "veri"
 
-#: ../languages.py:264
+#: ../languages_printable.php:181 ../languages.py:238
 msgid "East"
 msgstr "lindje"
 
-#: ../languages.py:264
+#: ../languages_printable.php:181 ../languages.py:238
 msgid "South"
 msgstr "jug"
 
-#: ../languages.py:264
+#: ../languages_printable.php:181 ../languages.py:238
 msgid "West"
 msgstr "perëndim"
 
-#: ../languages.py:265
+#: ../languages_printable.php:182 ../languages.py:239
 msgid "Yesterday"
 msgstr "dje"
 
-#: ../languages.py:265
+#: ../languages_printable.php:182 ../languages.py:239
 msgid "Today"
 msgstr "sot"
 
-#: ../languages.py:265
+#: ../languages_printable.php:182 ../languages.py:239
 msgid "Tomorrow"
 msgstr "nesër"
 
-#: ../languages.py:267
+#: ../languages_printable.php:184 ../languages.py:241
 msgid "Zero"
 msgstr "zero"
 
-#: ../languages.py:269
+#: ../languages_printable.php:186 ../languages.py:243
 msgid "One"
 msgstr "nje"
 
-#: ../languages.py:270
+#: ../languages_printable.php:187 ../languages.py:244
 msgid "Two"
 msgstr "dy"
 
-#: ../languages.py:271
+#: ../languages_printable.php:188 ../languages.py:245
 msgid "Three"
 msgstr "tre"
 
-#: ../languages.py:272
+#: ../languages_printable.php:189 ../languages.py:246
 msgid "Four"
 msgstr "katër"
 
-#: ../languages.py:273
+#: ../languages_printable.php:190 ../languages.py:247
 msgid "Five"
 msgstr "pesë"
 
-#: ../languages.py:274
+#: ../languages_printable.php:191 ../languages.py:248
 msgid "Six"
 msgstr "gjashtë"
 
-#: ../languages.py:275
+#: ../languages_printable.php:192 ../languages.py:249
 msgid "Seven"
 msgstr "shtatë"
 
-#: ../languages.py:276
+#: ../languages_printable.php:193 ../languages.py:250
 msgid "Eight"
 msgstr "tetë"
 
-#: ../languages.py:277
+#: ../languages_printable.php:194 ../languages.py:251
 msgid "Nine"
 msgstr "nëntë"
 
-#: ../languages.py:278
+#: ../languages_printable.php:195 ../languages.py:252
 msgid "Ten"
 msgstr "dhjetë"
 
-#: ../languages.py:279
+#: ../languages_printable.php:196 ../languages.py:253
 msgid "Eleven"
 msgstr "njëmbëdhjetë"
 
-#: ../languages.py:280
+#: ../languages_printable.php:197 ../languages.py:254
 msgid "Twelve"
 msgstr "dymbëdhjtë"
 
-#: ../languages.py:281
+#: ../languages_printable.php:198 ../languages.py:255
 msgid "Thirteen"
 msgstr "trembëdhjetë"
 
-#: ../languages.py:282
+#: ../languages_printable.php:199 ../languages.py:256
 msgid "Fourteen"
 msgstr "katërmbëdhjetë"
 
-#: ../languages.py:283
+#: ../languages_printable.php:200 ../languages.py:257
 msgid "Fifteen"
 msgstr "pesmbëdhjtë"
 
-#: ../languages.py:284
+#: ../languages_printable.php:201 ../languages.py:258
 msgid "Sixteen"
 msgstr "gjashtëmbëdhjetë"
 
-#: ../languages.py:285
+#: ../languages_printable.php:202 ../languages.py:259
 msgid "Seventeen"
 msgstr "shtatëmbëdhjetë"
 
-#: ../languages.py:286
+#: ../languages_printable.php:203 ../languages.py:260
 msgid "Eighteen"
 msgstr "tetmbëdhjetë"
 
-#: ../languages.py:287
+#: ../languages_printable.php:204 ../languages.py:261
 msgid "Nineteen"
 msgstr "nëntëmbëdhjetë"
 
-#: ../languages.py:288
+#: ../languages_printable.php:205 ../languages.py:262
 msgid "Twenty"
 msgstr "njëzet"
 
-#: ../languages.py:289
+#: ../languages_printable.php:206 ../languages.py:263
 msgid "Twenty-one"
 msgstr "njëzet e një"
 
-#: ../languages.py:290
+#: ../languages_printable.php:207 ../languages.py:264
 msgid "Thirty"
 msgstr "tridhjetë"
 
-#: ../languages.py:294
+#: ../languages_printable.php:211 ../languages.py:268
 msgid "Free hugs"
 msgstr "përqafime falas"
