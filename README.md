@@ -51,17 +51,17 @@ cordova emulate ios
 ### Platforms
 Project is prepared for [Cordova](http://cordova.apache.org/) supported platforms:
 
-* Android (tested)
-* iOS (tested)
-* Bada
-* Blackberry
-* Mac OS X
-* QT
-* Tizen
-* WebOS
-* Windows (desktop)
-* Windows Phone 7
-* Windows Phone 8
+- [x] Android
+- [x] iOS
+- [ ] Bada
+- [ ] Blackberry
+- [ ] Mac OS X
+- [ ] QT
+- [ ] Tizen
+- [ ] WebOS
+- [ ] Windows (desktop)
+- [ ] Windows Phone 7
+- [ ] Windows Phone 8
 
 # Translate
 * [Translation tool](http://hitchwiki.org/translate/projects/phrasebook)
@@ -75,6 +75,7 @@ Project is prepared for [Cordova](http://cordova.apache.org/) supported platform
 # License
 * Program code is licensed under MIT.
 * Translations are lisenced under [Creative Commons Attribution-ShareAlike](http://creativecommons.org/licenses/by-sa/3.0/) license.
+
 See [LICENSE](LICENSE) for more info.
 
 # Contacts
