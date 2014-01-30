@@ -1,0 +1,22 @@
+{
+  "name": "Phrasebook",
+  "version": "2.0.0",
+  "dependencies": {
+    "bootstrap": "3",
+    "font-awesome": "4",
+    "jquery": "2",
+    "angular": "1.2",
+    "angular-animate": "latest",
+    "angular-route": "latest",
+    "angular-resource": "latest",
+    "angular-touch": "latest",
+    "angular-cookies": "latest"
+  },
+  "devDependencies": {},
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components",
+    "font-awesome/src"
+  ]
+}
