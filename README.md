@@ -13,6 +13,7 @@ cd Phrasebook
 * [NPM](https://npmjs.org/)
 * [Grunt](http://gruntjs.com/)
 * [Bower](http://bower.io/)
+* [Python](http://www.python.org/)
 
 ### Run
 ```bash
@@ -20,20 +21,20 @@ npm install
 grunt
 ```
 
-Open `./www/index.html` in your browser. Live demo: [hitchwiki.org/phrasebook](http://hitchwiki.org/phrasebook/)
+Point your server to `./www/`.
+
+Live demo: [hitchwiki.org/phrasebook-v2](http://hitchwiki.org/phrasebook-v2/)
 
 If you want to do development, run:
 ```bash
 grunt watch
 ```
 
-
-
 ## Native mobile apps with Cordova
 ### Requirements
-** [Cordova](http://cordova.apache.org/) (wrap html to native app)
-** [Xcode](https://developer.apple.com/xcode/) (producing Cordova iOS app)
-** [Eclipse](https://www.eclipse.org/) (producing Cordova Android app)
+* [Cordova](http://cordova.apache.org/) (wrap html to native app)
+* [Xcode](https://developer.apple.com/xcode/) (producing Cordova iOS app)
+* [Eclipse](https://www.eclipse.org/) (producing Cordova Android app)
 
 ### Run
 ```bash
@@ -44,8 +45,8 @@ cordova platform add android
 cordova emulate ios
 ```
 
-* Follow [instructions from Cordova documentation](http://docs.phonegap.com/en/2.9.0/guide_cli_index.md.html#The%20Cordova%20Command-line%20Interface_build_the_app):
-* Copy files from this repository to Phrasebook project folder (override ./www/)
+* Follow [instructions from Cordova documentation](http://docs.phonegap.com/en/3.3.0/guide_cli_index.md.html#The%20Command-Line%20Interface):
+* Copy files from this repository to your Cordova Phrasebook project folder (override ./www/)
 
 ### Platforms
 Project is prepared for [Cordova](http://cordova.apache.org/) supported platforms:
@@ -72,7 +73,9 @@ Project is prepared for [Cordova](http://cordova.apache.org/) supported platform
 * [ISO country flags SVG collection](https://github.com/koppi/iso-country-flags-svg-collection)
 
 # License
-Code and translations are licensed under MIT. See LICENSE for more info.
+* Program code is licensed under MIT.
+* Translations are lisenced under [Creative Commons Attribution-ShareAlike](http://creativecommons.org/licenses/by-sa/3.0/) license.
+See [LICENSE](LICENSE) for more info.
 
 # Contacts
 * [Hitchwiki](http://hitchwiki.org/contact/)
