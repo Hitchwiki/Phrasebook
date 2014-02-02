@@ -1,7 +1,6 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 
-# Produces languages.js and puts it under ./www/assets/js/
 import gettext
 import json
 import datetime
@@ -20,44 +19,58 @@ glotpress = 'http://hitchwiki.org/translate/';
 # Project name at GlotPress
 projectname = 'phrasebook';
 
-# Where to store language json files
-localeDir = './www/assets/locale/';
+# Where to store language .mo and .po files
+localeSrcDir = 'src/locale/';
+
+# Where to store language .json files
+localeJsonDir = 'src/locale-json/';
+
+# Where to store language list .js file
+localesListFile = 'src/js/locales.js';
 
 # Define languages here
 # Make sure you have .mo file in place under ./locale/
 languages = [
-    # Code     English name             Original name        RTL?       # transliteration/phonetic
-    [ "en_UK", "English (UK)",          "English (UK)",      False      ],
-    [ "en_US", "English (US)",          "English (US)",      False      ],
-    [ "sq_AL", "Albanian",              "Gjuha shqipe",      False      ],
-    [ "ca_ES", "Catalan",               "Català",            False      ],
-    [ "hr_HR", "Croatian",              "Hrvatski",          False      ],
-#   [ "zh_CN", "Chinese",               "中文",               False,     ['transliteration'] ],
-    [ "da_DK", "Danish",                "Dansk",             False      ],
-    [ "de_DE", "German",                "Deutch",            False      ],
-    [ "es_ES", "Spanish",               "Español",           False      ],
-    [ "fr_FR", "French",                "Français",          False      ],
-    [ "fi_FI", "Finnish",               "Suomi",             False      ],
-    [ "hu_HU", "Hungarian",             "Magyar",            False      ],
-    [ "it_IT", "Italian",               "Italiano",          False      ],
-    [ "lv_LV", "Latvian",               "Latviešu",          False      ],
-    [ "lt_LT", "Lithuanian",            "Lietuvių",          False      ],
-    [ "nl_NL", "Dutch",                 "Nederlands",        False      ],
-    [ "nb_NO", "Norwegian (Bokmål)",    "Norsk (Bokmål)",    False      ],
-    [ "ru_RU", "Russian",               "Русский",           False      ],# ['transliteration'] ],
-#   [ "fa_IR", "Persian",               "فارسی",               True,       ['transliteration'] ],
-    [ "pl_PL", "Polish",                "Polski",            False      ],
-    [ "pt_PT", "Portuguese",            "Português",         False      ],
-    [ "ro_RO", "Romanian",              "Română",            False      ],
-    [ "sk_SK", "Slovakian",             "Slovenčina",        False      ],
-#   [ "sl_SI", "Slovenian",             "Slovenščina",       False      ],
-    [ "sv_SE", "Swedish",               "Svenska",           False      ],
-#   [ "tl_PH", "Tagalog",               "Tagalog",           False      ],
-    [ "tr_TR", "Turkish",               "Türkçe",            False      ]
+
+    # Code     GP-path  English name              Original name            RTL?     # transliteration/phonetic
+    [ "ca_ES", "ca",    "Catalan",                "Català",                False    ],
+    [ "cs_CZ", "cs",    "Czech",                  "Čeština",               False    ],
+    [ "da_DK", "da",    "Danish",                 "Dansk",                 False    ],
+    [ "de_DE", "de",    "German",                 "Deutch",                False    ],
+    [ "en_UK", "en-gb", "English (UK)",           "English (UK)",          False    ],
+    [ "en_US", "en",    "English (US)",           "English (US)",          False    ],
+    [ "es_ES", "es",    "Spanish",                "Español",               False    ],
+    [ "fi_FI", "fi",    "Finnish",                "Suomi",                 False    ],
+    [ "fr_FR", "fr",    "French",                 "Français",              False    ],
+    [ "hr_HR", "hr",    "Croatian",               "Hrvatski",              False    ],
+    [ "hu_HU", "hu",    "Hungarian",              "Magyar",                False    ],
+    [ "it_IT", "it",    "Italian",                "Italiano",              False    ],
+    [ "lt_LT", "lt",    "Lithuanian",             "Lietuvių",              False    ],
+    [ "lv_LV", "lv",    "Latvian",                "Latviešu",              False    ],
+    [ "nb_NO", "nb",    "Norwegian (Bokmål)",     "Norsk (Bokmål)",        False    ],
+    [ "nl_NL", "nl",    "Dutch",                  "Nederlands",            False    ],
+    [ "pl_PL", "pl",    "Polish",                 "Polski",                False    ],
+    [ "pt_PT", "pt",    "Portuguese",             "Português",             False    ],
+    [ "pt_BR", "pt-br", "Portuguese (Brazil)",    "Português (Brazil)",    False    ],
+    [ "ro_RO", "ro",    "Romanian",               "Română",                False    ],
+    [ "ru_RU", "ru",    "Russian",                "Русский",               False    ],# ['transliteration'] ],
+    [ "sk_SK", "sk",    "Slovakian",              "Slovenčina",            False    ],
+    [ "sq_AL", "sq",    "Albanian",               "Gjuha shqipe",          False    ],
+    [ "sv_SE", "sv",    "Swedish",                "Svenska",               False    ],
+    [ "tr_TR", "tr",    "Turkish",                "Türkçe",                False    ]
+#   [ "sr_RS", "sr",    "Serbian",                "српски",                False    ['transliteration'] ],
+#   [ "bg_BG", "bg",    "Bulgarian",              "български език",        False    ['transliteration'] ],
+#   [ "ar",    "ar",    "Arabic",                 "العربية",                   True     ['transliteration'] ],
+#   [ "fa_IR", "fa",    "Persian",                "فارسی",                   True     ['transliteration'] ],
+#   [ "sl_SI", "sl",    "Slovenian",              "Slovenščina",           False    ],
+#   [ "tl_PH", "tl",    "Tagalog",                "Tagalog",               False    ],
+#   [ "ms_MY", "ms",    "Malaysian",              "Bahasa Melayu",         False    ],
+#   [ "zh_CN", "zh",    "Chinese",                "中文",                   False,   ['transliteration'] ],
+
 ]
 
 # Language of original strings
-origLang = 'en_UK'
+localesOrig = 'en_UK'
 
 
 #
@@ -68,15 +81,15 @@ def fetchLanguage(language):
     print "Downloading..."
 
     # Path where to save files
-    directory = './locale/%s/LC_MESSAGES/' % language[0]
+    srcDirectory = localeSrcDir+'%s/LC_MESSAGES/' % language[0]
 
     # If language directory doesn't exist, create it
-    if not os.path.isdir(directory):
-        print directory + " doesn't exist, creating it."
-        os.makedirs(directory)
+    if not os.path.isdir(srcDirectory):
+        print srcDirectory + " doesn't exist, creating it."
+        os.makedirs(srcDirectory)
 
-    # Format url from where to fetch files
-    fetchURL = glotpress + 'projects/' + projectname + '/' + language[0][:2].lower() + '/' + language[0] + '/export-translations?format='
+    # URL for fetching translation sources
+    fetchURL = glotpress + 'projects/' + projectname + '/' + language[1] + '/' + language[0] + '/export-translations?format='
 
     # Download and save files in two formats
     for fileformat in ['po', 'mo']:
@@ -86,7 +99,7 @@ def fetchLanguage(language):
         poContents = response.read()
 
         # Save language file
-        fp = open(directory + projectname + '.' + fileformat, 'w')
+        fp = open(srcDirectory + projectname + '.' + fileformat, 'w')
         fp.write(poContents)
         fp.close()
 
@@ -101,7 +114,11 @@ def fetchLanguage(language):
 def translateLanguage(language, onlyStrings):
 
     # Prepare gettext for this language
-    translation = gettext.translation(projectname, "./locale", languages=[language[0]], fallback=True)
+    try:
+        translation = gettext.translation(projectname, localeSrcDir, languages=[language[0]], fallback=True)
+    except IOError:
+        print "Locale not found. Using default messages."
+        translation = gettext.NullTranslations()
 
     translation.install()
 
@@ -337,7 +354,8 @@ def translateLanguage(language, onlyStrings):
                     'n21': _("Twenty-one"),
                     'n30': _("Thirty"),
                     'n100': _("Hundred"),
-                    'n1000': _("Thousand")
+                    'n1000': _("Thousand"),
+                    'n1000000': _("Million")
                 },
                 "busking": _("Busking"),
                 "free_hugs": _("Free hugs")
@@ -352,14 +370,14 @@ def translateLanguage(language, onlyStrings):
 
 
 #
-# Write produced json to the app's ./www/ folder
+# Write produced json to the app's ./build/ folder
 #
 # Note: for some reason json was full of nullbytes (\u0000)
 # at the end of strings. That's why replace()
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 def saveLangJSON(filename, json):
     print "Writing to "+filename+"..."
-    fp = open(localeDir+filename, 'w')
+    fp = open(localeJsonDir+filename, 'w')
     fp.write(json)
     fp.close()
     return True
@@ -376,18 +394,24 @@ for language in languages:
 
     localeList.update({language[0]: {
             'code': language[0],
-            'name': language[1],
-            'orig': language[2],
-            'RTL': language[3]
+            'name': language[2],
+            'orig': language[3],
+            'RTL': language[4]
            #'flag': language[0][-2:].lower(),
     }});
 
 today = datetime.date.today()
 
-fp = open('src/js/locales.js', 'w')
-fp.write( 'var localesVer="'+today.strftime('%Y-%m-%d')+'",locales='+json.dumps(localeList, ensure_ascii=False).replace('\u0000','') )
+fp = open(localesListFile, 'w')
+fp.write( 'var localesOrig="'+localesOrig+'",localesVer="'+today.strftime('%Y-%m-%d')+'",locales='+json.dumps(localeList, ensure_ascii=False).replace('\u0000','') )
 fp.close()
 
+
+
+# If directory for json doesn't exist, create it
+if not os.path.isdir(localeJsonDir):
+    print localeJsonDir + " doesn't exist, creating it."
+    os.makedirs(localeJsonDir)
 
 #
 # Process and save each locale to json files
@@ -395,22 +419,22 @@ fp.close()
 for language in languages:
 
     print
-    print language[1]+" ("+language[0]+"):";
+    print language[2]+" ("+language[0]+"):";
 
     #
     # Download and save .po and .mo files from GlotPress
     #
-    if not origLang == language[0]:
+    if not localesOrig == language[0]:
 
         fetchLanguage(language)
 
         # Check if this language has attached transliterations/phonetics
         try:
-            language[4]
+            language[5]
 
-            for languageExtra in language[4]:
+            for languageExtra in language[5]:
 
-                fetchLanguage([language[0] + '@' + languageExtra, language[1], language[2]])
+                fetchLanguage([language[0] + '@' + languageExtra, language[2], language[3]])
 
         except IndexError:
             pass
@@ -419,32 +443,31 @@ for language in languages:
     #
     # Produce language json with downloaded .mo files and save them to json files
     #
-    if origLang == language[0] or os.path.isfile('./locale/'+language[0]+'/LC_MESSAGES/'+projectname+'.mo'):
+    if localesOrig == language[0] or os.path.isfile(localeSrcDir+language[0]+'/LC_MESSAGES/'+projectname+'.mo'):
 
-        # Save This language to the json
         languageTranslated = translateLanguage(language, False);
+
+        # Save This translation to the json
         saveLangJSON(language[0]+'.json', json.dumps(languageTranslated, ensure_ascii=False).replace('\u0000',''));
-        #languagesJson.update({ language[0]: translateLanguage(language, False) });
-        #languagesJson.insert(language[0], translateLanguage(language))
 
         # Check if this language has attached transliterations/phonetics
         try:
-            language[4]
+            language[5]
 
             # Yay, we found transliterations/phonetics. Loop them trough.
-            for languageExtra in language[4]:
+            for languageExtra in language[5]:
 
-                languageTranslated = translateLanguage([language[0] + '@' + languageExtra, language[1], language[2]], True);
+                languageTranslated = translateLanguage([language[0] + '@' + languageExtra, language[2], language[3]], True);
                 saveLangJSON('locale-'+language[0]+'@'+languageExtra+'.json', json.dumps(languageTranslated, ensure_ascii=False).replace('\u0000',''));
-                #languagesJson[language[0]].update({languageExtra: translateLanguage([language[0] + '@' + languageExtra, language[1], language[2]], True) })
+                #languagesJson[language[0]].update({languageExtra: translateLanguage([language[0] + '@' + languageExtra, language[2], language[3]], True) })
 
         except IndexError:
             pass
 
     else:
 
-        print "Error: "+language[0]+" ("+language[1]+") - can't file translation file (./locale/"+language[0]+"/LC_MESSAGES/"+projectname+".mo). Skipping..."
+        print "Error: "+language[0]+" ("+language[2]+") - can't file translation file ("+localeSrcDir+language[0]+"/LC_MESSAGES/"+projectname+".mo). Skipping..."
 
 
 print
-print "Done! Happy Hitching!"
+print "Done with translations."

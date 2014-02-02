@@ -1,55 +1,86 @@
 # Hitchwiki Phrasebook for mobile.
 
-# Building
+[hitchwiki.org/phrasebook-v2](http://hitchwiki.org/phrasebook-v2/)
 
-Clone repository (requires [Git](http://git-scm.com/))
+
+## Building
+
+Tested on OSX, it should work on Linux and it just might work on Windows as well.
+
+Clone repository (you need to have [git](http://git-scm.com/) on your path.)
 ```bash
 git clone https://github.com/Hitchwiki/Phrasebook.git
-cd Phrasebook
 ```
 
-## HTML version
-### Requirements
-* [NPM](https://npmjs.org/)
+Note that currently THIS version is in branch `v2`.
+
+#### Requirements
+* [NodeJS](http://nodejs.org/) & [NPM](https://npmjs.org/)
 * [Grunt](http://gruntjs.com/)
 * [Bower](http://bower.io/)
 * [Python](http://www.python.org/)
+* [ImageMagick](http://www.imagemagick.org/)
 
-### Run
+You can install requirements by running —
+
+OSX with [Homebrew](http://brew.sh/):
 ```bash
-npm install
-grunt
+brew install node
+brew install imagemagic
 ```
 
-Point your server to `./www/`.
+Debian:
+```bash
+apt-get install nodejs python imagemagic
+```
 
-Live demo: [hitchwiki.org/phrasebook-v2](http://hitchwiki.org/phrasebook-v2/)
+Running `npm install` in project directory will take care the rest requirements.
+
+
+### HTML version
+
+#### Install dependencies and build:
+```bash
+cd Phrasebook
+npm install
+grunt build
+```
+
+You'll get an optimized, production-ready version of the app to run in browser. Point your server to `./build/`.
 
 If you want to do development, run:
 ```bash
-grunt watch
+grunt dev
 ```
+It waits for changes in js/less/html files and runs needed tasks after each save.
 
-## Native mobile apps with Cordova
-### Requirements
+### Native mobile apps with Cordova
+#### Requirements
+* First build HTML version
 * [Cordova](http://cordova.apache.org/) (wrap html to native app)
-* [Xcode](https://developer.apple.com/xcode/) (producing Cordova iOS app)
-* [Eclipse](https://www.eclipse.org/) (producing Cordova Android app)
+* SDKs for every platform you wish to support
+** *[iOS SDK](http://developer.apple.com/)* with the latest Xcode and Xcode Command Line Tools
+** *[Android SDK](http://developer.android.com/)* - NOTE This tool will not work unless you have the absolute latest updates for all Android SDK components. Also you will need the SDK's tools and platform-tools directories on your system path otherwise Android support will fail.
+** *[BlackBerry 10 WebWorks SDK](http://developer.blackberry.com/html5/download/).* Make sure you have the dependencies/tools/bin folder inside the SDK directory added to your path!
+** *[Windows Phone SDK](http://dev.windowsphone.com/en-us/downloadsdk)* - NOTE This tool will not work unless you have msbuild on your system path otherwise Windows Phone support will fail (msbuild.exe is generally located in C:\Windows\Microsoft.NET\Framework\v4.0.30319).
 
-### Run
+#### Build
 ```bash
 cordova create Phrasebook com.hitchwiki.phrasebook "Phrasebook"
 cd Phrasebook
 cordova platform add ios
-cordova platform add android
 cordova emulate ios
+```
+```bash
+cordova platform add android
+cordova emulate android
 ```
 
 * Follow [instructions from Cordova documentation](http://docs.phonegap.com/en/3.3.0/guide_cli_index.md.html#The%20Command-Line%20Interface):
-* Copy files from this repository to your Cordova Phrasebook project folder (override ./www/)
+* Copy files from this repository to your Cordova Phrasebook project folder (Copy contents from ./build/ to ./www/)
 
-### Platforms
-Project is prepared for [Cordova](http://cordova.apache.org/) supported platforms:
+#### Platforms
+Project is prepared (and tested [x]) for [Cordova](http://cordova.apache.org/) supported platforms:
 
 - [x] Android
 - [x] iOS
@@ -63,21 +94,29 @@ Project is prepared for [Cordova](http://cordova.apache.org/) supported platform
 - [ ] Windows Phone 7
 - [ ] Windows Phone 8
 
-# Translate
+### Reset
+
+If you want to clean all directories to pre-build state, run:
+```bash
+grunt reset
+```
+
+
+## Translate
 * [Translation tool](http://hitchwiki.org/translate/projects/phrasebook)
 * Add new languages or text strings directly to fetch-translations.py
-* Produce fresh languages.js by typing `python fetch-translations.py`. Script will download files from GlotPress and write translation json files under `./www/assets/locale/` and a list of locales to `./src/js/locales.js`
+* Produce fresh translation files by typing `python scripts/fetch-translations.py`. Script will download files from GlotPress and write translation source (.po/mo) files under `./src/assets/locale/`, json files to `./src/assets/locale-json/` and the list of locales to `./src/js/locales.js`
 
-# Thanks a bunch!
+## Thanks a bunch!
 * Thanks to all translators who helped us! (See About page from the app)
 * [ISO country flags SVG collection](https://github.com/koppi/iso-country-flags-svg-collection)
 
-# License
+## License
 * Program code is licensed under MIT.
 * Translations are lisenced under [Creative Commons Attribution-ShareAlike](http://creativecommons.org/licenses/by-sa/3.0/) license.
 
 See [LICENSE](LICENSE) for more info.
 
-# Contacts
+## Contacts
 * [Hitchwiki](http://hitchwiki.org/contact/)
 * [Mikael](https://github.com/simison)

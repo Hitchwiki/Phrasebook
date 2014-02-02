@@ -1,18 +1,34 @@
 module.exports = function(grunt) {
+
+  var // HTML templates
+      templates = {
+          'build/index.html':                'src/views/index.html',
+          'build/partials/about.html':       'src/views/partials/about.html',
+          'build/partials/phrasebook.html':  'src/views/partials/phrasebook.html',
+          'build/partials/translate.html':   'src/views/partials/translate.html',
+        };
+
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+    templates: templates,
     watch: {
       files: [
-        'src/js/<%= pkg.name %>.src.js',
-        'src/less/<%= pkg.name %>.less',
-        'src/js/locales.js',
+        'src/less/*',
+        'src/js/*',
+        'src/js/controllers/*',
+        'src/views/*',
+        'src/views/partials/*',
         'GruntFile.js'
       ],
-      tasks: ['less', 'concat', 'uglify']
+      tasks: [
+        'preprocess:dev',
+        'less:dev',
+        'concat',
+      ]
     },
     shell: {
       fetchtranslations: {
-        command: 'python fetch-translations.py',
+        command: 'python scripts/fetch-translations.py',
         options: {
           stdout: true
         }
@@ -24,22 +40,64 @@ module.exports = function(grunt) {
         command: 'git clone https://github.com/koppi/iso-country-flags-svg-collection.git src/libs/iso-country-flags-svg-collection/'
       }
     },
-    less: {
-      development: {
-        options: {
-          paths: ["www/assets/css"]
-        },
-        files: {
-          "www/assets/css/<%= pkg.name %>.css": "src/less/<%= pkg.name %>.less"
+    favicons: {
+      options: {
+        trueColor: true,
+        tileColor: '#f3c936',
+        appleTouchBackgroundColor: '#f3c936',
+        html: 'src/views/icons.html',
+        HTMLPrefix: 'assets/img/icons/'
+      },
+      icons: {
+        src: 'src/img/icon.png',
+        dest: 'build/assets/img/icons'
+      }
+    },
+    preprocess : {
+      options: {
+        context : {
+          NAME: '<%= pkg.name %>',
+          AUTHOR: '<%= pkg.author %>',
+          VERSION: '<%= pkg.version %>',
+          CACHEBUSTER: '<%= grunt.template.today("mdhMs") %>',
+          DESCRIPTION: '<%= pkg.description %>',
+          OG_IMG: 'assets/img/og_image.png',
+          HOMEPAGE: '<%= pkg.homepage %>'
         }
       },
-      production: {
+      prod : {
         options: {
-          paths: ["www/assets/css"],
+          context : {
+            ENV : 'prod',
+          }
+        },
+        files : templates
+      },
+      dev : {
+        options: {
+          context : {
+            ENV : 'dev',
+          }
+        },
+        files : templates
+      }
+    },
+    less: {
+      dev: {
+        options: {
+          paths: ['build/assets/css']
+        },
+        files: {
+          'build/assets/css/app.css': 'src/less/app.less'
+        }
+      },
+      prod: {
+        options: {
+          paths: ['build/assets/css'],
           cleancss: true
         },
         files: {
-          "www/assets/css/<%= pkg.name %>.min.css": "src/less/<%= pkg.name %>.less"
+          'build/assets/css/app.min.css': 'src/less/app.less'
         }
       }
     },
@@ -57,11 +115,17 @@ module.exports = function(grunt) {
           'src/vendor/angular-sanitize/angular-sanitize.js',
           'src/vendor/angular-touch/angular-touch.js',
           'src/vendor/angular-cookies/angular-cookies.js',
+          'src/vendor/bootstrap/js/button.js',
           'src/vendor/bootstrap/js/dropdown.js',
           'src/js/locales.js',
-          'src/js/<%= pkg.name %>.src.js'
+          'src/js/app.js',
+          'src/js/configs.js',
+          'src/js/controllers/navigation.js',
+          'src/js/controllers/list.js',
+          'src/js/controllers/about.js',
+          'src/js/controllers/translate.js'
           ],
-        dest: 'www/assets/js/<%= pkg.name %>.js'
+        dest: 'build/assets/js/app.js'
       }
     },
     uglify: {
@@ -70,49 +134,102 @@ module.exports = function(grunt) {
         banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
       },
       build: {
-        src: 'www/assets/js/<%= pkg.name %>.js',
-        dest: 'www/assets/js/<%= pkg.name %>.min.js'
+        src: 'build/assets/js/app.js',
+        dest: 'build/assets/js/app.min.js'
       }
     },
     copy: {
       main: {
         files: [
             {
+                src: 'src/img/og_image.png',
+                dest: 'build/assets/img/og_image.png'
+            },
+            {
+                src: 'src/img/hitchwiki.png',
+                dest: 'build/assets/img/hitchwiki.png'
+            },/*
+            {
+                expand: true,
+                flatten: true,
+                filter: 'isFile',
+                src: 'src/views/partials/*',
+                dest: 'build/partials'
+            },*/
+            {
+                expand: true,
+                flatten: true,
+                filter: 'isFile',
+                src: 'src/locale-json/*',
+                dest: 'build/assets/locale/'
+            },
+            {
                 expand: true,
                 flatten: true,
                 filter: 'isFile',
                 src: 'src/vendor/font-awesome/fonts/*',
-                dest: 'www/assets/fonts/',
+                dest: 'build/assets/fonts/'
             },
             {
                 expand: true,
                 flatten: true,
                 filter: 'isFile',
                 src: 'src/libs/iso-country-flags-svg-collection/svg/country-squared/*',
-                dest: 'www/assets/img/flags/',
+                dest: 'build/assets/img/flags/'
             }/*,
             {
                 src: 'src/libs/iso-country-flags-svg-collection/iso-3166-1.json',
-                dest: 'www/assets/locale/iso-3166-1.json',
+                dest: 'build/assets/locale/iso-3166-1.json',
             }*/
 
         ]
       },
+    },
+    clean: {
+      reset: [
+        "build",
+        "src/libs",
+        "src/vendor",
+        "src/locale",
+        "src/locale-json",
+        "src/js/locales.js",
+        "src/views/icons.html"
+      ]
     },
   });
 
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('grunt-preprocess');
+  grunt.loadNpmTasks('grunt-favicons');
   grunt.loadNpmTasks('grunt-shell');
 
-  grunt.registerTask('default', [
+  grunt.registerTask('reset', [
+                       'clean'
+                     ]);
+
+  grunt.registerTask('dev', [
+                       'preprocess:dev',
+                       'less:dev',
+                       'concat',
+                       'watch'
+                     ]);
+
+  grunt.registerTask('build', [
                        'shell',
-                       'less',
+                       'favicons',
+                       'preprocess:prod',
+                       'less:prod',
                        'concat',
                        'uglify',
                        'copy'
                      ]);
+
+    // Default task
+    grunt.registerTask('default', 'build');
+
 };

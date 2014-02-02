@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="Phrasebook">
+<head>
+    <meta charset="utf-8">
+    <title><!-- @echo NAME --></title>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <!-- @if ENV='prod' -->
+    <link href="assets/css/app.min.css?v=<!-- @echo CACHEBUSTER -->" rel="stylesheet">
+    <!-- @endif -->
+    <!-- @if ENV='dev' -->
+    <link href="assets/css/app.css?v=<!-- @echo CACHEBUSTER -->" rel="stylesheet">
+    <!-- @endif -->
+    <meta name="fragment" content="!">
+    <meta name="format-detection" content="telephone=no">
+	<meta name="description" content="<!-- @echo DESCRIPTION -->">
+    <meta name="author" content="<!-- @echo AUTHOR -->">
+	<meta property="og:title" content="<!-- @echo NAME -->">
+	<meta property="og:site_name" content="<!-- @echo AUTHOR -->">
+	<meta property="og:description" content="<!-- @echo DESCRIPTION -->">
+	<meta property="og:url" content="<!-- @echo HOMEPAGE -->">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="<!-- @echo OG_IMG -->">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- @include icons.html -->
+</head>
+<body>
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation" ng-controller="navigationCtrl">
+        <div class="container" ng-cloak>
+
+            <!-- Language switch -->
+            <div id="language-menu" ng-show="location.path() == '/'">
+                <a href="#" class="translateFrom" ng-click="setLang($event, false, 'From')">
+                    <img ng-src="{{ flag(localeFrom) }}" class="flag" ng-show="localeFrom"> {{ langName(localeFrom, UI.choose) }}
+                </a>
+                <span class="sep"><i class="fa fa-angle-right"></i></span>
+                <a href="#" class="translateTo" ng-click="setLang($event, false, 'To')">
+                    <img ng-src="{{ flag(localeTo) }}" class="flag" ng-show="localeTo"> {{ langName(localeTo, UI.choose) }}
+                </a>
+            </div>
+
+            <!-- Sub pages -->
+            <ul id="secondary-menu" class="nav navbar-nav" ng-show="location.path() != '/'">
+                <li><a href="#" ng-click="back()"><i class="fa fa-arrow-left"></i> {{ UI.back }}</a></li>
+            </ul>
+
+            <!-- Primary menu -->
+            <ul id="primary-menu" class="nav navbar-nav">
+                <li id="fat-menu" class="dropdown pull-right">
+                    <a href="#" ng-click="$event.preventDefault()" id="primary-drop" role="button" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-lg fa-bars"></i></a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="primary-drop">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" ng-click="toggleAudio($event)"><i class="fa fa-fw" ng-class="(audio) ? 'fa-volume-off' : 'fa-volume-up'"></i> {{ (audio) ? UI.audio_off : UI.audio_on }}</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" ng-click="toggleVoice($event)"><i class="fa fa-fw" ng-class="(voice) ? 'fa-microphone-slash' : 'fa-microphone'"></i> {{ (voice) ? UI.voice_off : UI.voice_on }}</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#/translate"><i class="fa fa-fw fa-bolt"></i> {{ UI.help_translating }}</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#/about"><i class="fa fa-fw fa-info-circle"></i> {{ UI.about }}</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="http://hitchwiki.org/contact/" target="_blank"><i class="fa fa-fw fa-comment"></i> {{ UI.contact_us }}</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <div ng-view></div>
+    <!-- @if ENV='prod' -->
+    <script src="assets/js/app.min.js?v=<!-- @echo CACHEBUSTER -->"></script>
+    <!-- @endif -->
+    <!-- @if ENV='dev' -->
+    <script src="assets/js/app.js?v=<!-- @echo CACHEBUSTER -->"></script>
+    <!-- @endif -->
+</body>
+</html>

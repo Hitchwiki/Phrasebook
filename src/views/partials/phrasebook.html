@@ -1,0 +1,36 @@
+<div class="container" id="languageList" ng-show="!localeFrom">TEST
+    <h3 class="text-center">{{ UI.translate_from }}</h3>
+    <div class="list-group" id="chooseLanguage" ng-show="!localeFrom">
+        <a ng-repeat="locale in locales | orderBy:name" href="#" class="list-group-item" ng-click="setLang($event, locale.code, 'From')">
+            <img ng-src="{{flag(locale.code)}}" class="flag"> {{ locale.name }}
+        </a>
+    </div>
+</div>
+
+<div class="container" id="languageList" ng-show="!localeTo && localeFrom != false">
+    <h3 class="text-center">{{ UI.translate_to }}</h3>
+    <div class="list-group" id="chooseLanguage" ng-show="localeTo == false">
+        <a ng-repeat="locale in locales | orderBy:'name'" href="#" class="list-group-item" ng-click="setLang($event, locale.code, 'To')">
+            <img ng-src="{{flag(locale.code)}}" class="flag"> {{ locale.name }}
+        </a>
+    </div>
+</div>
+
+<div class="container" id="translationSet" ng-hide="!localeFrom || !localeTo">
+    <form id="search-form">
+        <input type="search" id="search" ng-model="query" placeholder="Search..." class="form-control input-lg">
+    </form>
+    <div class="list-group">
+        <a ng-href="/translate/{{ localeFrom }}/{{ localeTo }}/{{ key }}" class="list-group-item" ng-repeat="(key, translation) in localeToStrings | filter:query" ng-click="selectTranslationString($event, key)">
+            <h4 class="list-group-item-heading">
+                {{ translationString(localeFromStrings[key]) }}
+                <i class="audio-play fa fa-fw fa-volume-off" ng-show="audio && selectedTranslation == key" ng-click="play(key, localeFrom)"></i>
+            </h4>
+            <p class="list-group-item-text" ng-show="selectedTranslation == key">
+                {{ translationString(translation) }}
+                <i class="audio-play audio fa fa-fw fa-volume-off" ng-show="audio" ng-click="play(key, localeTo)"></i>
+            </p>
+        </a>
+
+    </div>
+</div>
