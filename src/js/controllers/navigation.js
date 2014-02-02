@@ -72,7 +72,7 @@ Phrasebook.controller('navigationCtrl', function($rootScope, $scope, $location, 
         $http({
                 method: 'GET',
                 cache: true,
-                url: '/assets/locale/' + code + '.json'
+                url: 'assets/locale/' + code + '.json'
               })
               .success(function(data, status, headers, config) {
 

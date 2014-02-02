@@ -39,7 +39,7 @@ Running `npm install` in project directory will take care the rest requirements.
 
 ### HTML version
 
-#### Install dependencies and build:
+#### Install dependencies and initial build:
 ```bash
 cd Phrasebook
 npm install
@@ -53,6 +53,11 @@ If you want to do development, run:
 grunt dev
 ```
 It waits for changes in js/less/html files and runs needed tasks after each save.
+
+To produce production version after initial build and development, run:
+```bash
+grunt prod
+```
 
 ### Native mobile apps with Cordova
 #### Requirements

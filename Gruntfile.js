@@ -212,6 +212,13 @@ module.exports = function(grunt) {
                        'clean'
                      ]);
 
+  grunt.registerTask('prod', [
+                       'preprocess:prod',
+                       'less:prod',
+                       'concat',
+                       'uglify'
+                     ]);
+
   grunt.registerTask('dev', [
                        'preprocess:dev',
                        'less:dev',
