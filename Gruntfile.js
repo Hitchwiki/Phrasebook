@@ -4,7 +4,7 @@ module.exports = function(grunt) {
       templates = {
           'build/index.html':                'src/views/index.html',
           'build/partials/about.html':       'src/views/partials/about.html',
-          'build/partials/phrasebook.html':  'src/views/partials/phrasebook.html',
+          'build/partials/list.html':        'src/views/partials/list.html',
           'build/partials/translate.html':   'src/views/partials/translate.html',
         };
 
@@ -205,6 +205,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-preprocess');
+  grunt.loadNpmTasks('grunt-manifest');
   grunt.loadNpmTasks('grunt-favicons');
   grunt.loadNpmTasks('grunt-shell');
 
@@ -234,6 +235,7 @@ module.exports = function(grunt) {
                        'concat',
                        'uglify',
                        'copy'
+                       //'manifest'
                      ]);
 
     // Default task

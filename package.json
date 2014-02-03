@@ -15,12 +15,12 @@
     "grunt-contrib-uglify": "~0.3.2",
     "grunt-contrib-concat": "~0.3.0",
     "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-clean": "~0.5.0",
     "grunt-contrib-less": "~0.9.0",
     "grunt-preprocess": "~4.0.0",
     "grunt-favicons": "~0.6.0",
-    "grunt-shell": "~0.6.4",
     "grunt-manifest": "~0.4.0",
-    "grunt-contrib-clean": "~0.5.0"
+    "grunt-shell": "~0.6.4"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -38,7 +38,11 @@
   ],
   "author": "Hitchwiki.org",
   "contributors": [
-    {"name" : "Mikael", "email" : "mikael@ihminen.org", "url" : "http://www.ihminen.org/"}
+    {
+      "name": "Mikael",
+      "email": "mikael@ihminen.org",
+      "url": "http://www.ihminen.org/"
+    }
   ],
   "license": "MIT",
   "bugs": {
