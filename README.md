@@ -1,6 +1,7 @@
 # Hitchwiki Phrasebook for mobile.
 
-[hitchwiki.org/phrasebook-v2](http://hitchwiki.org/phrasebook-v2/)
+* Live [hitchwiki.org/phrasebook-v2](http://hitchwiki.org/phrasebook-v2/)
+* Docs [hitchwiki.org/phrasebook-v2/docs/](http://hitchwiki.org/phrasebook-v2/docs/)
 
 
 ## Building
