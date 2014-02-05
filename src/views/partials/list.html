@@ -1,4 +1,4 @@
-<div class="container" id="languageList" ng-show="!localeFrom">TEST
+<div class="container" id="languageList" ng-show="!localeFrom">
     <h3 class="text-center">{{ UI.translate_from }}</h3>
     <div class="list-group" id="chooseLanguage" ng-show="!localeFrom">
         <a ng-repeat="locale in locales | orderBy:name" href="#" class="list-group-item" ng-click="setLang($event, locale.code, 'From')">
@@ -21,7 +21,7 @@
         <input type="search" id="search" ng-model="query" placeholder="Search..." class="form-control input-lg">
     </form>
     <div class="list-group">
-        <a ng-href="/translate/{{ localeFrom }}/{{ localeTo }}/{{ key }}" class="list-group-item" ng-repeat="(key, translation) in localeToStrings | filter:query" ng-click="selectTranslationString($event, key)">
+        <a ng-href="/translate/{{ localeFrom }}/{{ localeTo }}/{{ key }}" class="list-group-item" ng-repeat="key in notSorted(localeToStrings)" ng-init="translation = localeToStrings[key]" ng-click="selectTranslationString($event, key)">
             <h4 class="list-group-item-heading">
                 {{ translationString(localeFromStrings[key]) }}
                 <i class="audio-play fa fa-fw fa-volume-off" ng-show="audio && selectedTranslation == key" ng-click="play(key, localeFrom)"></i>

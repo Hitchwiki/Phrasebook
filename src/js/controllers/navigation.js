@@ -8,22 +8,23 @@
 Phrasebook.controller('navigationCtrl', function($rootScope, $scope, $location, $browser, $http, $log, $cookies, $cookieStore) {
 
     $rootScope.locales = locales;
-    $rootScope.localeFrom = ($cookieStore.get('localeFrom')) ? $cookieStore.get('localeFrom') : false;
-    $rootScope.localeTo = ($cookieStore.get('localeTo')) ? $cookieStore.get('localeTo') : false;
+    $rootScope.localeFrom = false;//($cookieStore.get('localeFrom')) ? $cookieStore.get('localeFrom') : false;
+    $rootScope.localeTo = false;//($cookieStore.get('localeTo')) ? $cookieStore.get('localeTo') : false;
     $rootScope.audio = ($cookieStore.get('audio')) ? $cookieStore.get('audio') : false;
     $rootScope.voice = ($cookieStore.get('voice')) ? $cookieStore.get('voice') : false;
     $rootScope.UI = {
                         'phrasebook': 'Phrasebook',
-                        'translate-from': 'Translate from...',
-                        'translate-to': 'Translate to...',
+                        'translate_from': 'Translate from...',
+                        'translate_to': 'Translate to...',
                         'search': 'Search...',
                         'about': 'About',
-                        'contact-us': 'Contact us',
+                        'contact_us': 'Contact us',
+                        'help_translating': "Help translating",
                         'choose': 'Choose',
-                        'audio-off': 'Audio off',
-                        'audio-on': 'Audio on',
-                        'voice-off': 'Voice commands off',
-                        'voice-on': 'Voice commands on'
+                        'audio_off': 'Audio off',
+                        'audio_on': 'Audio on',
+                        'voice_off': 'Voice commands off',
+                        'voice_on': 'Voice commands on'
                     };
     $rootScope.localeFromStrings = {};
     $rootScope.localeToStrings = {};

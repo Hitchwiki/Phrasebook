@@ -59,15 +59,20 @@ To produce production version after initial build and development, run:
 grunt prod
 ```
 
+If [Hitchwiki translation tool](http://hitchwiki.org/translate/) is offline, you can use translations shipped in package by running:
+```bash
+sh scripts/extract-translations.sh
+```
+
 ### Native mobile apps with Cordova
 #### Requirements
 * First build HTML version
 * [Cordova](http://cordova.apache.org/) (wrap html to native app)
 * SDKs for every platform you wish to support
-** *[iOS SDK](http://developer.apple.com/)* with the latest Xcode and Xcode Command Line Tools
-** *[Android SDK](http://developer.android.com/)* - NOTE This tool will not work unless you have the absolute latest updates for all Android SDK components. Also you will need the SDK's tools and platform-tools directories on your system path otherwise Android support will fail.
-** *[BlackBerry 10 WebWorks SDK](http://developer.blackberry.com/html5/download/).* Make sure you have the dependencies/tools/bin folder inside the SDK directory added to your path!
-** *[Windows Phone SDK](http://dev.windowsphone.com/en-us/downloadsdk)* - NOTE This tool will not work unless you have msbuild on your system path otherwise Windows Phone support will fail (msbuild.exe is generally located in C:\Windows\Microsoft.NET\Framework\v4.0.30319).
+  * **[iOS SDK](http://developer.apple.com/)** with the latest Xcode and Xcode Command Line Tools
+  * **[Android SDK](http://developer.android.com/)** - NOTE This tool will not work unless you have the absolute latest updates for all Android SDK components. Also you will need the SDK's tools and platform-tools directories on your system path otherwise Android support will fail.
+  * **[BlackBerry 10 WebWorks SDK](http://developer.blackberry.com/html5/download/).** Make sure you have the dependencies/tools/bin folder inside the SDK directory added to your path!
+  * **[Windows Phone SDK](http://dev.windowsphone.com/en-us/downloadsdk)** - NOTE This tool will not work unless you have msbuild on your system path otherwise Windows Phone support will fail (msbuild.exe is generally located in C:\Windows\Microsoft.NET\Framework\v4.0.30319).
 
 #### Build
 ```bash

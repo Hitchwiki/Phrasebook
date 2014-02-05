@@ -3,6 +3,14 @@
  */
 Phrasebook.controller('listCtrl', function($rootScope, $scope, $browser, $http, $log, $cookies, $cookieStore) {
 
+    // http://stackoverflow.com/questions/19287716/skip-ng-repeat-json-ordering-in-angular-js
+    $scope.notSorted = function(obj){
+        if (!obj) {
+            return [];
+        }
+        return Object.keys(obj);
+    }
+
     $scope.play = function(key, code) {
         $log.log("Obs! No audio yet: " + key + " / " + code);
         alert("Obs! No audio yet...");

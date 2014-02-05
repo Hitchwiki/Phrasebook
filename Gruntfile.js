@@ -6,6 +6,7 @@ module.exports = function(grunt) {
           'build/partials/about.html':       'src/views/partials/about.html',
           'build/partials/list.html':        'src/views/partials/list.html',
           'build/partials/translate.html':   'src/views/partials/translate.html',
+          'build/docs/index.html':           'src/docs/index.html',
         };
 
   grunt.initConfig({
@@ -62,7 +63,9 @@ module.exports = function(grunt) {
           CACHEBUSTER: '<%= grunt.template.today("mdhMs") %>',
           DESCRIPTION: '<%= pkg.description %>',
           OG_IMG: 'assets/img/og_image.png',
-          HOMEPAGE: '<%= pkg.homepage %>'
+          HOMEPAGE: '<%= pkg.homepage %>',
+          GIT: '<%= pkg.repository.url %>',
+          BUGS: '<%= pkg.bugs.url %>',
         }
       },
       prod : {
@@ -141,6 +144,14 @@ module.exports = function(grunt) {
     copy: {
       main: {
         files: [
+            {
+                src: 'README.md',
+                dest: 'build/docs/README.md'
+            },
+            {
+                src: 'LICENSE',
+                dest: 'build/docs/LICENSE'
+            },
             {
                 src: 'src/img/og_image.png',
                 dest: 'build/assets/img/og_image.png'

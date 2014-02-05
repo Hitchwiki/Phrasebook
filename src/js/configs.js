@@ -4,7 +4,7 @@
 Phrasebook.config(function($routeProvider, $locationProvider) {
     $routeProvider.
     when('/', {
-        templateUrl: 'partials/phrasebook.html',
+        templateUrl: 'partials/list.html',
         controller: 'listCtrl'
     }).
     when('/about', {
