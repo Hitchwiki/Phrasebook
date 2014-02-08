@@ -10,9 +10,5 @@ src/locale-json
 src/js/locales.js
 src/views/icons.html
 
-# Cordova
-.cordova
-merges/*
-platforms/*
-plugins/*
-platforms/android/local.properties
+# Cordova/PhoneGap
+phonegap

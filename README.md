@@ -65,45 +65,46 @@ If [Hitchwiki translation tool](http://hitchwiki.org/translate/) is offline, you
 sh scripts/extract-translations.sh
 ```
 
-### Native mobile apps with Cordova
+### Native mobile apps with Cordova-PhoneGap
 #### Requirements
 * First build HTML version
-* [Cordova](http://cordova.apache.org/) (wrap html to native app)
-* SDKs for every platform you wish to support
-  * **[iOS SDK](http://developer.apple.com/)** with the latest Xcode and Xcode Command Line Tools
-  * **[Android SDK](http://developer.android.com/)** - NOTE This tool will not work unless you have the absolute latest updates for all Android SDK components. Also you will need the SDK's tools and platform-tools directories on your system path otherwise Android support will fail.
-  * **[BlackBerry 10 WebWorks SDK](http://developer.blackberry.com/html5/download/).** Make sure you have the dependencies/tools/bin folder inside the SDK directory added to your path!
-  * **[Windows Phone SDK](http://dev.windowsphone.com/en-us/downloadsdk)** - NOTE This tool will not work unless you have msbuild on your system path otherwise Windows Phone support will fail (msbuild.exe is generally located in C:\Windows\Microsoft.NET\Framework\v4.0.30319).
+* [PhoneGap](http://phonegap.com/)
+  * `npm install phonegap -g`
+* SDKs for every platform you wish to support, check [Platform Guides](http://docs.phonegap.com/en/3.3.0/guide_platforms_index.md.html#Platform%20Guides)
+
+Build/run/release with [Grunt PhoneGap](https://npmjs.org/package/grunt-phonegap) tasks:
 
 #### Build
 ```bash
-cordova create Phrasebook com.hitchwiki.phrasebook "Phrasebook"
-cd Phrasebook
-cordova platform add ios
-cordova emulate ios
+phonegap:build[:platform]
 ```
+
+Running `phonegap:build` with no arguments will build both `ios` and `android` versions.
+
+#### Run
+
 ```bash
-cordova platform add android
-cordova emulate android
+phonegap:run[:platform][:device]
 ```
 
-* Follow [instructions from Cordova documentation](http://docs.phonegap.com/en/3.3.0/guide_cli_index.md.html#The%20Command-Line%20Interface):
-* Copy files from this repository to your Cordova Phrasebook project folder (Copy contents from ./build/ to ./www/)
+After a build is complete, the phonegap:run grunt task can be used to launch your app on an emulator or hardware device. It accepts two optional arguments, platform and device.
 
-#### Platforms
-Project is prepared (and tested [x]) for [Cordova](http://cordova.apache.org/) supported platforms:
+Example: `grunt phonegap:run:android:emulator`
 
-- [x] Android
-- [x] iOS
-- [ ] Bada
-- [ ] Blackberry
-- [ ] Mac OS X
-- [ ] QT
-- [ ] Tizen
-- [ ] WebOS
-- [ ] Windows (desktop)
-- [ ] Windows Phone 7
-- [ ] Windows Phone 8
+If you are using the Android platform, you can see the list of connected devices by running `adb devices`.
+
+#### Release
+
+```bash
+phonegap:release[:platform]
+```
+
+Create a releases/ directory containing a signed application package for distribution.
+
+Currently android is the only platform supported by this task.
+
+[Read more](https://npmjs.org/package/grunt-phonegap#tasks)
+
 
 ### Reset
 

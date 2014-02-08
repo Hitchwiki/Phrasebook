@@ -27,20 +27,6 @@ module.exports = function(grunt) {
         'concat',
       ]
     },
-    shell: {
-      fetchtranslations: {
-        command: 'python scripts/fetch-translations.py',
-        options: {
-          stdout: true
-        }
-      },
-      bowerinstall: {
-        command: 'bower install'
-      },
-      gitclone: {
-        command: 'git clone https://github.com/koppi/iso-country-flags-svg-collection.git src/libs/iso-country-flags-svg-collection/'
-      }
-    },
     favicons: {
       options: {
         trueColor: true,
@@ -52,6 +38,35 @@ module.exports = function(grunt) {
       icons: {
         src: 'src/img/icon.png',
         dest: 'build/assets/img/icons'
+      }
+    },
+    shell: {
+      phonegapicons: {
+        command: [
+                'convert build/assets/img/icons/apple-touch-icon-152x152-precomposed.png -resize 29x29 build/assets/img/icons/apple-touch-icon-29x29-precomposed.png',
+                'convert build/assets/img/icons/apple-touch-icon-152x152-precomposed.png -resize 58x58 build/assets/img/icons/apple-touch-icon-58x58-precomposed.png',
+                'convert build/assets/img/icons/apple-touch-icon-152x152-precomposed.png -resize 40x40 build/assets/img/icons/apple-touch-icon-40x40-precomposed.png',
+                'convert build/assets/img/icons/apple-touch-icon-152x152-precomposed.png -resize 80x80 build/assets/img/icons/apple-touch-icon-80x80-precomposed.png',
+                'convert build/assets/img/icons/apple-touch-icon-152x152-precomposed.png -resize 96x96 build/assets/img/icons/apple-touch-icon-96x96-precomposed.png',
+                'convert build/assets/img/icons/apple-touch-icon-152x152-precomposed.png -resize 72x72 build/assets/img/icons/apple-touch-icon-72x72-precomposed.png',
+                'convert build/assets/img/icons/apple-touch-icon-152x152-precomposed.png -resize 48x48 build/assets/img/icons/apple-touch-icon-48x48-precomposed.png',
+                'convert build/assets/img/icons/apple-touch-icon-152x152-precomposed.png -resize 36x36 build/assets/img/icons/apple-touch-icon-36x36-precomposed.png',
+            ].join('&&'),
+        options: {
+          stdout: true
+        }
+      },
+      fetchtranslations: {
+        command: 'python scripts/fetch-translations.py',
+        options: {
+          stdout: true
+        }
+      },
+      bowerinstall: {
+        command: 'bower install'
+      },
+      gitclone: {
+        command: 'git clone https://github.com/koppi/iso-country-flags-svg-collection.git src/libs/iso-country-flags-svg-collection/'
       }
     },
     preprocess : {
@@ -199,6 +214,7 @@ module.exports = function(grunt) {
     clean: {
       reset: [
         "build",
+        "phonegap",
         "src/libs",
         "src/vendor",
         "src/locale",
@@ -207,6 +223,133 @@ module.exports = function(grunt) {
         "src/views/icons.html"
       ]
     },
+
+    phonegap: {
+      config: {
+        root: 'build',
+        config: {
+          template: 'src/_config.xml',
+          data: {
+            id: 'com.hitchwiki.phrasebook',
+            version: '<%= pkg.version %>',
+            name: '<%= pkg.name %>'
+          }
+        },
+        cordova: 'src/.cordova',
+        path: 'phonegap',
+        plugins: [
+            //'/local/path/to/plugin',
+            //'http://example.com/path/to/plugin.git'
+        ],
+        platforms: ['android', 'ios'],
+        maxBuffer: 200, // You may need to raise this for iOS.
+        verbose: true,
+        releases: 'releases',
+        releaseName: function(){
+          var pkg = grunt.file.readJSON('package.json');
+          return(pkg.name + '-' + pkg.version);
+        },
+
+        // Must be set for ios to work.
+        // Should return the app name.
+        name: function(){
+          var pkg = grunt.file.readJSON('package.json');
+          return pkg.name;
+        },
+
+        // Add a key if you plan to use the `release:android` task
+        // See http://developer.android.com/tools/publishing/app-signing.html
+        /*
+        key: {
+          store: 'release.keystore',
+          alias: 'release',
+          aliasPassword: function(){
+            // Prompt, read an environment variable, or just embed as a string literal
+            return('');
+          },
+          storePassword: function(){
+            // Prompt, read an environment variable, or just embed as a string literal
+            return('');
+          }
+        },
+        */
+
+        // Set an app icon at various sizes (optional)
+        icons: {
+          android: {
+            ldpi:  'build/assets/img/icons/icon-36-ldpi.png',
+            mdpi:  'build/assets/img/icons/icon-48-mdpi.png',
+            hdpi:  'build/assets/img/icons/icon-72-hdpi.png',
+            xhdpi: 'build/assets/img/icons/icon-96-xhdpi.png'
+          },
+        //  wp8: {
+        //    app: 'build/assets/img/icons/icon-62-tile.png',
+        //    tile: 'build/assets/img/icons/icon-173-tile.png'
+        //  },
+          ios: {
+            icon29:     'build/assets/img/icons/apple-touch-icon-29x29-precomposed.png',
+            icon29x2:   'build/assets/img/icons/apple-touch-icon-58x58-precomposed.png',
+            icon40:     'build/assets/img/icons/apple-touch-icon-40x40-precomposed.png',
+            icon40x2:   'build/assets/img/icons/apple-touch-icon-80x80-precomposed.png',
+            icon57:     'build/assets/img/icons/apple-touch-icon-precomposed.png',
+            icon57x2:   'build/assets/img/icons/apple-touch-icon-114x114-precomposed.png',
+            icon60x2:   'build/assets/img/icons/apple-touch-icon-120x120-precomposed.png',
+            icon72:     'build/assets/img/icons/apple-touch-icon-72x72-precomposed.png',
+            icon72x2:   'build/assets/img/icons/apple-touch-icon-144x144-precomposed.png',
+            icon76:     'build/assets/img/icons/apple-touch-icon-76x76-precomposed.png',
+            icon76x2:   'build/assets/img/icons/apple-touch-icon-152x152-precomposed.png'
+          }
+        },
+
+        // Set a splash screen at various sizes (optional)
+        // Only works for Android and IOS
+        /*
+        screens: {
+          android: {
+            ldpi: 'screen-ldpi-portrait.png'
+            // landscape version
+            ldpiLand: 'screen-ldpi-landscape.png'
+            mdpi: 'screen-mdpi-portrait.png'
+            // landscape version
+            mdpiLand: 'screen-mdpi-landscape.png'
+            hdpi: 'screen-hdpi-portrait.png'
+            // landscape version
+            hdpiLand: 'screen-hdpi-landscape.png'
+            xhdpi: 'screen-xhdpi-portrait.png'
+            // landscape version
+            xhdpiLand: 'www/screen-xhdpi-landscape.png'
+          },
+          ios: {
+            // ipad landscape
+            ipadLand: 'screen-ipad-landscape.png',
+            ipadLandx2: 'screen-ipad-landscape-2x.png',
+            // ipad portrait
+            ipadPortrait: 'screen-ipad-portrait.png',
+            ipadPortraitx2: 'screen-ipad-portrait-2x.png',
+            // iphone portrait
+            iphonePortrait: 'screen-iphone-portrait.png',
+            iphonePortraitx2: 'screen-iphone-portrait-2x.png',
+            iphone568hx2: 'screen-iphone-568h-2x.png'
+          }
+        },
+        */
+
+        // Android-only integer version to increase with each release.
+        // See http://developer.android.com/tools/publishing/versioning.html
+        versionCode: function(){ return(1) },
+
+        // If you want to use the Phonegap Build service to build one or more
+        // of the platforms specified above, include these options.
+        // See https://build.phonegap.com/
+        //remote: {
+        //  username: 'your_username',
+        //  password: 'your_password',
+        //  platforms: ['android', 'blackberry', 'ios', 'symbian', 'webos', 'wp7']
+        //}
+      }
+    }
+
+
   });
 
   grunt.loadNpmTasks('grunt-contrib-watch');
@@ -218,6 +361,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-preprocess');
   grunt.loadNpmTasks('grunt-manifest');
   grunt.loadNpmTasks('grunt-favicons');
+  grunt.loadNpmTasks('grunt-phonegap');
   grunt.loadNpmTasks('grunt-shell');
 
   grunt.registerTask('reset', [
@@ -239,8 +383,8 @@ module.exports = function(grunt) {
                      ]);
 
   grunt.registerTask('build', [
-                       'shell',
                        'favicons',
+                       'shell',
                        'preprocess:prod',
                        'less:prod',
                        'concat',
