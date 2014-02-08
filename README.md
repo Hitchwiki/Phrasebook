@@ -76,7 +76,7 @@ Build/run/release with [Grunt PhoneGap](https://npmjs.org/package/grunt-phonegap
 
 #### Build
 ```bash
-phonegap:build[:platform]
+grunt phonegap:build[:platform]
 ```
 
 Running `phonegap:build` with no arguments will build both `ios` and `android` versions.
@@ -84,7 +84,7 @@ Running `phonegap:build` with no arguments will build both `ios` and `android` v
 #### Run
 
 ```bash
-phonegap:run[:platform][:device]
+grunt phonegap:run[:platform][:device]
 ```
 
 After a build is complete, the phonegap:run grunt task can be used to launch your app on an emulator or hardware device. It accepts two optional arguments, platform and device.
@@ -96,7 +96,7 @@ If you are using the Android platform, you can see the list of connected devices
 #### Release
 
 ```bash
-phonegap:release[:platform]
+grunt phonegap:release[:platform]
 ```
 
 Create a releases/ directory containing a signed application package for distribution.
