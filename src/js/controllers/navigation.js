@@ -8,28 +8,19 @@
 Phrasebook.controller('navigationCtrl', function($rootScope, $scope, $location, $browser, $http, $log, $cookies, $cookieStore) {
 
     $rootScope.locales = locales;
-    $rootScope.localeFrom = false;//($cookieStore.get('localeFrom')) ? $cookieStore.get('localeFrom') : false;
-    $rootScope.localeTo = false;//($cookieStore.get('localeTo')) ? $cookieStore.get('localeTo') : false;
+    $rootScope.localesStructure = localesStructure;
+    $rootScope.localeFrom = ($cookieStore.get('localeFrom')) ? $cookieStore.get('localeFrom') : false;
+    $rootScope.localeTo = ($cookieStore.get('localeTo')) ? $cookieStore.get('localeTo') : false;
     $rootScope.audio = ($cookieStore.get('audio')) ? $cookieStore.get('audio') : false;
     $rootScope.voice = ($cookieStore.get('voice')) ? $cookieStore.get('voice') : false;
-    $rootScope.UI = {
-                        'phrasebook': 'Phrasebook',
-                        'translate_from': 'Translate from...',
-                        'translate_to': 'Translate to...',
-                        'search': 'Search...',
-                        'about': 'About',
-                        'contact_us': 'Contact us',
-                        'help_translating': "Help translating",
-                        'choose': 'Choose',
-                        'audio_off': 'Audio off',
-                        'audio_on': 'Audio on',
-                        'voice_off': 'Voice commands off',
-                        'voice_on': 'Voice commands on'
-                    };
     $rootScope.localeFromStrings = {};
     $rootScope.localeToStrings = {};
 
     $scope.location = $location;
+
+    $rootScope.translateUI = function(key) {
+        return $rootScope.localeFromStrings.UI[key];
+    };
 
     $rootScope.setLang = function($event, code, direction) {
 
@@ -78,11 +69,6 @@ Phrasebook.controller('navigationCtrl', function($rootScope, $scope, $location, 
               .success(function(data, status, headers, config) {
 
                   $log.log("->loadTranslation->get: " + code + ' ->success');
-
-                  // Don't let UI translations end up to string list, grab them separate
-                  if(direction == 'From') $rootScope.UI = data.UI;
-
-                  delete data.UI;
 
                   if(direction == 'From') $rootScope.localeFromStrings = data;
                   else if(direction == 'To') $rootScope.localeToStrings = data;

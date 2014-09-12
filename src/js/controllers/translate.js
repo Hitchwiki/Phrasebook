@@ -3,6 +3,9 @@
  */
 Phrasebook.controller('translateCtrl', function($scope) {
 
-    // ...
+    $scope.back = function() {
+        //$event.preventDefault();
+        $location.path('/');
+    }
 
 });

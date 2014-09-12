@@ -16,6 +16,11 @@ Phrasebook.controller('listCtrl', function($rootScope, $scope, $browser, $http, 
         alert("Obs! No audio yet...");
     };
 
+    $scope.back = function($event) {
+        $event.preventDefault();
+        $scope.selectedCategory = false;
+    };
+
     // Currently open translation string
     $scope.selectedTranslation = false;
 
@@ -26,6 +31,18 @@ Phrasebook.controller('listCtrl', function($rootScope, $scope, $browser, $http, 
         $event.preventDefault();
     };
 
+
+    // Currently open category
+    $scope.selectedCategory = false;
+
+    // Open category
+    $scope.selectCategory = function($event, category) {
+        $scope.selectedCategory = ($scope.selectedCategory == category) ? false : category;
+        $log.log('Category: ' + category);
+        $event.preventDefault();
+    };
+
+    /*
     $scope.translationString = function(string) {
         if(typeof string == 'object') {
             var formated = '',
@@ -43,5 +60,7 @@ Phrasebook.controller('listCtrl', function($rootScope, $scope, $browser, $http, 
         }
         else return string;
     }
+    */
+
 
 });
