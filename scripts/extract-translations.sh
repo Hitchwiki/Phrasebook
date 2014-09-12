@@ -3,6 +3,7 @@
 # Script will simply extract locale files from locale.zip to correct folders under /src/
 # Use when Glotpress @ http://hitchwiki.org/translate/ is down... ;-)
 # Will overwrite any other files.
+# Good also for offline development and locale.zip works as a backup.
 
 set -e
 

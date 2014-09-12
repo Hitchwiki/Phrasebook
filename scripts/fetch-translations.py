@@ -28,11 +28,15 @@ localeJsonDir = 'src/locale-json/';
 # Where to store language list .js file
 localesListFile = 'src/js/locales.js';
 
+# Where to store phrasebook keys .js file
+localesStructureFile = 'src/js/locales-structure.js';
+
 # Define languages here
 # Make sure you have .mo file in place under ./locale/
 languages = [
 
     # Code     GP-path  English name              Original name            RTL?     # transliteration/phonetic
+    [ "bg_BG", "bg",    "Bulgarian",              "български език",        False,   ],#['transliteration'] ],
     [ "ca_ES", "ca",    "Catalan",                "Català",                False    ],
     [ "cs_CZ", "cs",    "Czech",                  "Čeština",               False    ],
     [ "da_DK", "da",    "Danish",                 "Dansk",                 False    ],
@@ -57,9 +61,10 @@ languages = [
     [ "sk_SK", "sk",    "Slovakian",              "Slovenčina",            False    ],
     [ "sq_AL", "sq",    "Albanian",               "Gjuha shqipe",          False    ],
     [ "sv_SE", "sv",    "Swedish",                "Svenska",               False    ],
-    [ "tr_TR", "tr",    "Turkish",                "Türkçe",                False    ]
+    [ "tr_TR", "tr",    "Turkish",                "Türkçe",                False    ],
+#   [ "mk_MK", "mk",    "Macedonian",             "Makedonski",            False    ],
+#   [ "el_GR", "el",    "Greek",                  "ελληνικά",               False    ['transliteration'] ]
 #   [ "sr_RS", "sr",    "Serbian",                "српски",                False    ['transliteration'] ],
-#   [ "bg_BG", "bg",    "Bulgarian",              "български език",        False    ['transliteration'] ],
 #   [ "ar",    "ar",    "Arabic",                 "العربية",                   True     ['transliteration'] ],
 #   [ "fa_IR", "fa",    "Persian",                "فارسی",                   True     ['transliteration'] ],
 #   [ "sl_SI", "sl",    "Slovenian",              "Slovenščina",           False    ],
@@ -72,6 +77,8 @@ languages = [
 # Language of original strings
 localesOrig = 'en_UK'
 
+
+error_count = 0;
 
 #
 # Function to download and save language files from GlotPress
@@ -111,7 +118,7 @@ def fetchLanguage(language):
 #
 # Returns chunk of translated texts in one langauge as an array
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
-def translateLanguage(language, onlyStrings):
+def translateLanguage(language):
 
     # Prepare gettext for this language
     try:
@@ -127,239 +134,232 @@ def translateLanguage(language, onlyStrings):
     print "Translating..."
 
     strings = {
-                'UI': {
-                    'phrasebook': _("Phrasebook"),
-                    'translate_from': _("Translate from..."),
-                    'translate_to': _("Translate to..."),
-                    'search': _("Search..."),
-                    'about': _("About"),
-                    'choose': _("Choose"),
-                    'contact_us': _("Contact us"),
-                    'help_translating': _("Help translating"),
-                    'audio_off': _("Audio off"),
-                    'audio_on': _("Audio on"),
-                    'voice-off': _("Voice commands off"),
-                    'voice-on': _("Voice commands on")
-                },
-                'hitchhike': _("Hitchhike"),
-                'hitchhiker': _("Hitchhiker"),
-                'hello': _("Hello"),
-                'excuse_me': _("Excuse me..."),
-                'sorry': _("Sorry"),
-                'are_you_going_towards': _("Are you going towards ...?"),
-                'could_get_lift_to': {
-                    'could_get_lift_to': _("Could I get a lift to ...?"),
-                    'just_before': _("just before"),
-                    'just_after': _("just after"),
-                    'petrol_station': _("a petrol station"),
-                    'service_area': _("a service area"),
-                    'rest_area': _("a lay-by"),
-                    'rest_area': _("rest area"),
-                    'along_the_highway': _("along the highway"),
-                    'roundabout': _("roundabout"),
-                    'junction': _("the junction"),
-                    'tjunction': _("the T-junction"),
-                    'crossroads': _("the crossroads"),
-                    'ring_road': _("on the ring road"),
-                    'across_the_road': _("across the road")
-                },
-                'time': {
-                    'hour': _("Hour"),
-                    'day':_("Day"),
-                    'week':_("Week"),
-                    'month':_("Month"),
-                    'year':_("Year")
-                },
-                'kilometre': _("Kilometre"),
-                'leftright': {
-                    'left': _("Left"),
-                    'right': _("Right")
-                },
-                'straight_on': _("Straight on"),
-                'beforeafter': {
-                    'before': _("Before"),
-                    'after': _("After"),
-                },
-                'thisnextlast': {
-                    'this': _("This"),
-                    'next': _("Next"),
-                    'last': _("Last"),
-                },
-                'often': {
-                    'often': _("Often"),
-                    'never': _("Never"),
-                    'sometimes': _("Sometimes"),
-                    'rarely': _("Rarely"),
-                },
-                'long': {
-                    'long': _("Long"),
-                    'short': _("Short"),
-                },
-                'updown': {
-                    'up': _("Up"),
-                    'down': _("Down"),
-                },
-                'overunder': {
-                    'over': _("Over"),
-                    'under': _("Under"),
-                },
-                'how_far': _("How far is it (on foot)?"),
-                'where_are_we': _("Where are we?"),
-                'for_free': _("For free?"),
-                'i_cant_pay': _("I can't pay."),
-                'do_you_speak': _("Do you speak ...?"),
-                'any_other_languages': _("any other languages"),
-                'speak_slower': _("Speak slower, please?"),
-                'i_dont_understand': _("I don't understand"),
-                'i_dont_know': _("I don't know"),
-                'yes': _("Yes"),
-                'no': _("No"),
-                'maybe': _("Maybe"),
-                'no_thanks': _("No thanks"),
-                'thats_great': _("That's great"),
-                'perfect': _("perfect"),
-                'bad': _("bad"),
-                'no_problem': _("no problem"),
-                'ok': _("Okay"),
-                'im_not_in_hurry': _("I'm not in a hurry"),
-                'im_going_to': _("I'm going to ..."),
-                'where_going': _("Where are you going to?"),
-                'my_name_is': _("My name is ..."),
-                'whats_your_name': _("What's your name?"),
-                'im_from': _("I'm from ..."),
-                'where_are_you_from': _("Where are you from?"),
-                'am_years_old': _("I'm ... years old."),
-                'how_old': _("How old are you?"),
-                'i_study': _("I study ..."),
-                'im_in_year': _("I'm in my ... year."),
-                'im_studying': _("I am studying to be a ..."),
-                'im_holiday': _("I'm on holiday."),
-                'im_visiting': _("I'm visiting friends in ..."),
-                'im_hh_around': _("I'm hitchhiking around ..."),
-                'im_will_stay': _("I will stay for ... days/weeks"),
-                'im_going_back': _("I'm going back to ..."),
-                'drop_me_off': _("Can you drop me off here?"),
-                'i_have_friend': _("I have a boy-friend/a girl-friend."),
-                'im_married': _("I'm married."),
-                'texted_my_father': _("I have already texted my father."),
-                'dont_touch_me': _("Don't touch me!"),
-                'let_me_out': _("Let me out!"),
-                'pull_over': _("Pull over I'm going to puke!"),
-                'stop': _("Stop!"),
-                'help': _("Help!"),
-                'thank_you': _("Thank you!"),
-                'have_nice_day': _("Have a nice day/trip!"),
-                'where_can_i_find': {
-                    'where_can_i_find': _("Where can I find ...?"),
-                    'hitchhiking_spot': _("a good hitchhiking spot"),
-                    'highway_to': _("the highway to ..."),
-                    'toll_road_to': _("the toll road to ..."),
-                    'small_road_to': _("the small road to ..."),
-                    'city_centre': _("city centre"),
-                    'tourist_office': _("the tourist office"),
-                    'map': _("a map"),
-                    'toilet': _("a toilet"),
-                    'supermarket': _("a supermarket"),
-                    'fruit_market': _("the fruit market"),
-                    'pharmacy': _("a pharmacy"),
-                    'camp_site': _("a camp-site"),
-                    'internet_cafe': _("an internet café"),
-                    'cash_machine': _("a cash machine"),
-                    'bank': _("a bank"),
-                    'bus_stop': _("a bus stop"),
-                    'metro_station': _("a metro station"),
-                    'bus_station': _("a bus station"),
-                    'train_station': _("a train station"),
-                    'wifi': _("a public Wi-Fi / Internet")
-                },
-                'thirsty': _("I'm thirsty"),
-                'drink': _("Drink"),
-                'water': _("Water"),
-                'tea': _("(Herbal) tea"),
-                'hot_chocolate': _("Hot chocolate"),
-                'coffee': _("Coffee"),
-                'juice': _("Juice"),
-                'beer': _("Beer"),
-                'wine': _("(Red, white) wine"),
-                'cheers': _("Cheers!"),
-                'im_hungry': _("I'm hungry"),
-                'eat': _("Eat"),
-                'bread': _("Bread"),
-                'fruit': _("Fruit"),
-                'meat': _("Meat"),
-                'vegetarian': _("Vegetarian"),
-                'vegan': _("Vegan"),
-                'i_dont_eat_meat': _("I don't eat meat"),
-                'cheap_restaurant': _("A cheap restaurant"),
-                'enjoy_meal': _("Enjoy your meal!"),
-                'dupsterdiving': _("Dumpster diving"),
-                'im_tired': _("I'm tired"),
-                'im_fine': _("I'm fine"),
-                'im_cold': _("I'm cold"),
-                'im_hot': _("I'm hot"),
-                'im_sick': _("I'm sick"),
-                'smoke': _("Smoke"),
-                'what_time': _("What time is it?"),
-                'place_to_sleep': _("I'm looking for a place to sleep."),
-                'tent': _("Tent"),
-                'hostel': _("Hostel"),
-                'room': _("Room"),
-                'hotel': _("Hotel"),
-                'can_leave_my_bag': _("Can I leave my bag here for a while?"),
-                'how_much_cost': _("How much does it cost?"),
-                'who': _("Who?"),
-                'what': _("What?"),
-                'where': _("Where?"),
-                'why': _("Why?"),
-                'when': _("When?"),
-                'how': _("How?"),
-                'how_much': _("How much?"),
-                'how_long': _("How long?"),
-                'which': _("Which?"),
-                'directions': {
-                    'north': _("North"),
-                    'east': _("East"),
-                    'south': _("South"),
-                    'west': _("West")
-                },
-                'days': {
-                    'yesterday': _("Yesterday"),
-                    'today': _("Today"),
-                    'tomorrow': _("Tomorrow")
-                },
-                'where_ticket': _("Where can we buy a ticket?"),
-                'numbers': {
-                    'numbers': "1 2 3 ...",
-                    'n0': _("Zero"),
-                    'n1': _("One"),
-                    'n2': _("Two"),
-                    'n3': _("Three"),
-                    'n4': _("Four"),
-                    'n5': _("Five"),
-                    'n6': _("Six"),
-                    'n7': _("Seven"),
-                    'n8': _("Eight"),
-                    'n9': _("Nine"),
-                    'n10': _("Ten"),
-                    'n11': _("Eleven"),
-                    'n12': _("Twelve"),
-                    'n13': _("Thirteen"),
-                    'n14': _("Fourteen"),
-                    'n15': _("Fifteen"),
-                    'n16': _("Sixteen"),
-                    'n17': _("Seventeen"),
-                    'n18': _("Eighteen"),
-                    'n19': _("Nineteen"),
-                    'n20': _("Twenty"),
-                    'n21': _("Twenty-one"),
-                    'n30': _("Thirty"),
-                    'n100': _("Hundred"),
-                    'n1000': _("Thousand"),
-                    'n1000000': _("Million")
-                },
-                "busking": _("Busking"),
-                "free_hugs": _("Free hugs")
+        'phrasebook': {
+            'hitchhike': _("Hitchhike"),
+            'hitchhiker': _("Hitchhiker"),
+            'hello': _("Hello"),
+            'excuse_me': _("Excuse me..."),
+            'sorry': _("Sorry"),
+            'are_you_going_towards': _("Are you going towards ...?"),
+            'could_get_lift_to': _("Could I get a lift to ...?"),
+            'just_before': _("just before"),
+            'just_after': _("just after"),
+            'petrol_station': _("a petrol station"),
+            'service_area': _("a service area"),
+            'rest_area': _("a lay-by"),
+            'rest_area': _("rest area"),
+            'along_the_highway': _("along the highway"),
+            'roundabout': _("roundabout"),
+            'junction': _("the junction"),
+            'tjunction': _("the T-junction"),
+            'crossroads': _("the crossroads"),
+            'ring_road': _("on the ring road"),
+            'across_the_road': _("across the road"),
+            'hour': _("Hour"),
+            'day':_("Day"),
+            'week':_("Week"),
+            'month':_("Month"),
+            'year':_("Year"),
+            'kilometre': _("Kilometre"),
+            'left': _("Left"),
+            'right': _("Right"),
+            'straight_on': _("Straight on"),
+            'before': _("Before"),
+            'after': _("After"),
+            'this': _("This"),
+            'next': _("Next"),
+            'last': _("Last"),
+            'often': _("Often"),
+            'never': _("Never"),
+            'sometimes': _("Sometimes"),
+            'rarely': _("Rarely"),
+            'long': _("Long"),
+            'short': _("Short"),
+            'up': _("Up"),
+            'down': _("Down"),
+            'over': _("Over"),
+            'under': _("Under"),
+            'how_far': _("How far is it (on foot)?"),
+            'where_are_we': _("Where are we?"),
+            'for_free': _("For free?"),
+            'i_cant_pay': _("I can't pay."),
+            'do_you_speak': _("Do you speak ...?"),
+            'any_other_languages': _("any other languages"),
+            'speak_slower': _("Speak slower, please?"),
+            'i_dont_understand': _("I don't understand"),
+            'i_dont_know': _("I don't know"),
+            'yes': _("Yes"),
+            'no': _("No"),
+            'maybe': _("Maybe"),
+            'no_thanks': _("No thanks"),
+            'thats_great': _("That's great"),
+            'perfect': _("perfect"),
+            'bad': _("bad"),
+            'no_problem': _("no problem"),
+            'ok': _("Okay"),
+            'im_not_in_hurry': _("I'm not in a hurry"),
+            'im_going_to': _("I'm going to ..."),
+            'where_going': _("Where are you going to?"),
+            'my_name_is': _("My name is ..."),
+            'whats_your_name': _("What's your name?"),
+            'im_from': _("I'm from ..."),
+            'where_are_you_from': _("Where are you from?"),
+            'am_years_old': _("I'm ... years old."),
+            'how_old': _("How old are you?"),
+            'i_study': _("I study ..."),
+            'im_in_year': _("I'm in my ... year."),
+            'im_studying': _("I am studying to be a ..."),
+            'im_holiday': _("I'm on holiday."),
+            'im_visiting': _("I'm visiting friends in ..."),
+            'im_hh_around': _("I'm hitchhiking around ..."),
+            'im_will_stay': _("I will stay for ... days/weeks"),
+            'im_going_back': _("I'm going back to ..."),
+            'drop_me_off': _("Can you drop me off here?"),
+            'i_have_friend': _("I have a boy-friend/a girl-friend."),
+            'im_married': _("I'm married."),
+            'texted_my_father': _("I have already texted my father."),
+            'dont_touch_me': _("Don't touch me!"),
+            'let_me_out': _("Let me out!"),
+            'pull_over': _("Pull over I'm going to puke!"),
+            'stop': _("Stop!"),
+            'help': _("Help!"),
+            'thank_you': _("Thank you!"),
+            'have_nice_day': _("Have a nice day/trip!"),
+            'where_can_i_find': _("Where can I find ...?"),
+            'hitchhiking_spot': _("a good hitchhiking spot"),
+            'highway_to': _("the highway to ..."),
+            'toll_road_to': _("the toll road to ..."),
+            'small_road_to': _("the small road to ..."),
+            'city_centre': _("city centre"),
+            'tourist_office': _("the tourist office"),
+            'map': _("a map"),
+            'toilet': _("a toilet"),
+            'supermarket': _("a supermarket"),
+            'fruit_market': _("the fruit market"),
+            'pharmacy': _("a pharmacy"),
+            'camp_site': _("a camp-site"),
+            'internet_cafe': _("an internet café"),
+            'cash_machine': _("a cash machine"),
+            'bank': _("a bank"),
+            'bus_stop': _("a bus stop"),
+            'metro_station': _("a metro station"),
+            'bus_station': _("a bus station"),
+            'train_station': _("a train station"),
+            'wifi': _("a public Wi-Fi / Internet"),
+            'thirsty': _("I'm thirsty"),
+            'drink': _("Drink"),
+            'water': _("Water"),
+            'tea': _("(Herbal) tea"),
+            'hot_chocolate': _("Hot chocolate"),
+            'coffee': _("Coffee"),
+            'juice': _("Juice"),
+            'beer': _("Beer"),
+            'wine': _("(Red, white) wine"),
+            'cheers': _("Cheers!"),
+            'im_hungry': _("I'm hungry"),
+            'eat': _("Eat"),
+            'bread': _("Bread"),
+            'fruit': _("Fruit"),
+            'meat': _("Meat"),
+            'vegetarian': _("Vegetarian"),
+            'vegan': _("Vegan"),
+            'i_dont_eat_meat': _("I don't eat meat"),
+            'cheap_restaurant': _("A cheap restaurant"),
+            'enjoy_meal': _("Enjoy your meal!"),
+            'dupsterdiving': _("Dumpster diving"),
+            'im_tired': _("I'm tired"),
+            'im_fine': _("I'm fine"),
+            'im_cold': _("I'm cold"),
+            'im_hot': _("I'm hot"),
+            'im_sick': _("I'm sick"),
+            'smoke': _("Smoke"),
+            'what_time': _("What time is it?"),
+            'place_to_sleep': _("I'm looking for a place to sleep."),
+            'tent': _("Tent"),
+            'hostel': _("Hostel"),
+            'room': _("Room"),
+            'hotel': _("Hotel"),
+            'can_leave_my_bag': _("Can I leave my bag here for a while?"),
+            'how_much_cost': _("How much does it cost?"),
+            'who': _("Who?"),
+            'what': _("What?"),
+            'where': _("Where?"),
+            'why': _("Why?"),
+            'when': _("When?"),
+            'how': _("How?"),
+            'how_much': _("How much?"),
+            'how_long': _("How long?"),
+            'which': _("Which?"),
+            'north': _("North"),
+            'east': _("East"),
+            'south': _("South"),
+            'west': _("West"),
+            'yesterday': _("Yesterday"),
+            'today': _("Today"),
+            'tomorrow': _("Tomorrow"),
+            'where_can_we_buy_ticket': _("Where can we buy a ticket?"),
+            "busking": _("Busking"),
+            "free_hugs": _("Free hugs"),
+            'n0': _("Zero"),
+            'n1': _("One"),
+            'n2': _("Two"),
+            'n3': _("Three"),
+            'n4': _("Four"),
+            'n5': _("Five"),
+            'n6': _("Six"),
+            'n7': _("Seven"),
+            'n8': _("Eight"),
+            'n9': _("Nine"),
+            'n10': _("Ten"),
+            'n11': _("Eleven"),
+            'n12': _("Twelve"),
+            'n13': _("Thirteen"),
+            'n14': _("Fourteen"),
+            'n15': _("Fifteen"),
+            'n16': _("Sixteen"),
+            'n17': _("Seventeen"),
+            'n18': _("Eighteen"),
+            'n19': _("Nineteen"),
+            'n20': _("Twenty"),
+            'n21': _("Twenty-one"),
+            'n30': _("Thirty"),
+            'n100': _("Hundred"),
+            'n1000': _("Thousand"),
+            'n1000000': _("Million")
+        },
+
+        # Strings are divided into these categories
+        "categories": {
+            "category-other": _("Other"), # Not in use currently, but we might need in future
+            "category-basics": _("Basics"),
+            "category-directions_time": _("Directions & time"),
+            "category-danger": _("Danger"),
+            "category-food": _("Food"),
+            "category-sleep": _("Sleep"),
+            "category-introduction": _("Introduction"),
+            "category-places": _("Places"),
+            "category-questions": _("Questions"),
+            "category-numbers": _("Numbers"),
+        },
+        # User Interface
+        "UI": {
+            "phrasebook": _("Phrasebook"),
+            "translate_from": _("Translate from..."),
+            "translate_to": _("Translate to..."),
+            "search": _("Search..."),
+            "about": _("About"),
+            "choose": _("Choose"),
+            "contact_us": _("Contact us"),
+            "help_translating": _("Help translating"),
+            "audio_off": _("Audio off"),
+            "audio_on": _("Audio on"),
+            "voice_off": _("Voice commands off"),
+            "voice_on": _("Voice commands on"),
+            "visibility_off": _("Hide translations"),
+            "visibility_on": _("Show translations")
+        }
     }
+
 
     # Clear variables for this loop
     del _
@@ -381,7 +381,6 @@ def saveLangJSON(filename, json):
     fp.write(json)
     fp.close()
     return True
-
 
 
 
@@ -407,6 +406,249 @@ fp.write( 'var localesOrig="'+localesOrig+'",localesVer="'+today.strftime('%Y-%m
 fp.close()
 
 
+# Write a model of phrasebook to json
+localesStructure = [
+    [
+        'category-basics',
+        [
+            'hitchhike',
+            'hitchhiker',
+            'hello',
+            'excuse_me',
+            'thank_you',
+            'sorry',
+            'are_you_going_towards',
+            'bad',
+            'no_problem',
+            'ok',
+            'perfect',
+            'no_thanks',
+            'thats_great',
+            'yes',
+            'no',
+            'maybe',
+            'stop',
+            'have_nice_day',
+            'for_free',
+            'i_cant_pay',
+            'do_you_speak',
+            'any_other_languages',
+            'speak_slower',
+            'i_dont_understand',
+            'i_dont_know',
+
+            # Really other but as long as it's not more, keeping it under basics
+            'smoke',
+            'busking',
+            'free_hugs'
+        ]
+    ],
+    [
+        'category-questions',
+        [
+            'could_get_lift_to',
+            'just_before',
+            'just_after',
+            'how_much_cost',
+            'who',
+            'what',
+            'where',
+            'why',
+            'when',
+            'how',
+            'how_much',
+            'how_long',
+            'which',
+            'can_leave_my_bag',
+            'how_far',
+            'where_are_we',
+            'what_time',
+        ]
+    ],
+    [
+        'category-places',
+        [
+            'hitchhiking_spot',
+            'petrol_station',
+            'service_area',
+            'rest_area',
+            'along_the_highway',
+            'roundabout',
+            'junction',
+            'tjunction',
+            'crossroads',
+            'ring_road',
+            'across_the_road',
+            'highway_to',
+            'toll_road_to',
+            'small_road_to',
+            'city_centre',
+            'tourist_office',
+            'map',
+            'toilet',
+            'supermarket',
+            'fruit_market',
+            'pharmacy',
+            'camp_site',
+            'internet_cafe',
+            'cash_machine',
+            'bank',
+            'bus_stop',
+            'metro_station',
+            'bus_station',
+            'train_station',
+            'wifi'
+
+
+        ]
+    ],
+    [
+        'category-introduction',
+        [
+            'im_not_in_hurry',
+            'im_going_to',
+            'where_going',
+            'my_name_is',
+            'whats_your_name',
+            'im_from',
+            'where_are_you_from',
+            'am_years_old',
+            'how_old',
+            'i_study',
+            'im_in_year',
+            'im_studying',
+            'im_holiday',
+            'im_visiting',
+            'im_hh_around',
+            'im_will_stay',
+            'im_going_back',
+            'im_tired',
+            'im_fine',
+            'im_cold',
+            'im_hot',
+            'im_sick',
+        ]
+    ],
+    [
+        'category-sleep',
+        [
+            'place_to_sleep',
+            'tent',
+            'hostel',
+            'room',
+            'hotel',
+        ]
+    ],
+    [
+        'category-food',
+        [
+            'cheers',
+            'thirsty',
+            'drink',
+            'water',
+            'tea',
+            'hot_chocolate',
+            'coffee',
+            'juice',
+            'beer',
+            'wine',
+            'eat',
+            'bread',
+            'fruit',
+            'meat',
+            'vegetarian',
+            'vegan',
+            'i_dont_eat_meat',
+            'cheap_restaurant',
+            'enjoy_meal',
+            'dupsterdiving',
+            'im_hungry'
+        ]
+    ],
+    [
+        'category-danger',
+        [
+            'stop', # twice, also in basics
+            'help', # twice, also in basics
+            'i_have_friend',
+            'im_married',
+            'texted_my_father',
+            'dont_touch_me',
+            'let_me_out',
+            'pull_over',
+            'drop_me_off'
+        ]
+    ],
+    [
+        'category-directions_time',
+        [
+            'today',
+            'tomorrow',
+            'day',
+            'week',
+            'month',
+            'year',
+            'kilometre',
+            'left',
+            'right',
+            'before',
+            'after',
+            'this',
+            'next',
+            'last',
+            'often',
+            'never',
+            'sometimes',
+            'rarely',
+            'long',
+            'short',
+            'up',
+            'down',
+            'over',
+            'under',
+            'north',
+            'east',
+            'south',
+            'west'
+        ]
+    ],
+    [
+        'category-numbers',
+        [
+            'n0',
+            'n1',
+            'n2',
+            'n3',
+            'n4',
+            'n5',
+            'n6',
+            'n7',
+            'n8',
+            'n9',
+            'n10',
+            'n11',
+            'n12',
+            'n13',
+            'n14',
+            'n15',
+            'n16',
+            'n17',
+            'n18',
+            'n19',
+            'n20',
+            'n21',
+            'n30',
+            'n100',
+            'n1000',
+            'n1000000'
+        ]
+    ]
+];
+
+fp = open(localesStructureFile, 'w')
+fp.write( 'var localesStructure='+json.dumps(localesStructure, ensure_ascii=False).replace('\u0000','') )
+fp.close()
+
 
 # If directory for json doesn't exist, create it
 if not os.path.isdir(localeJsonDir):
@@ -418,6 +660,15 @@ if not os.path.isdir(localeJsonDir):
 #
 for language in languages:
 
+    # language is an array, for example:
+    # language[0]:  "bg_BG"
+    # language[1]:  "bg"
+    # language[2]:  "Bulgarian"
+    # language[3]:  "български език"
+    # language[4]:  False
+    # language[5]:  ['transliteration']
+
+
     print
     print language[2]+" ("+language[0]+"):";
 
@@ -426,7 +677,7 @@ for language in languages:
     #
     if not localesOrig == language[0]:
 
-        fetchLanguage(language)
+        #fetchLanguage(language)
 
         # Check if this language has attached transliterations/phonetics
         try:
@@ -434,7 +685,7 @@ for language in languages:
 
             for languageExtra in language[5]:
 
-                fetchLanguage([language[0] + '@' + languageExtra, language[2], language[3]])
+                fetchLanguage([language[0] + '@' + languageExtra, language[1]])
 
         except IndexError:
             pass
@@ -445,7 +696,8 @@ for language in languages:
     #
     if localesOrig == language[0] or os.path.isfile(localeSrcDir+language[0]+'/LC_MESSAGES/'+projectname+'.mo'):
 
-        languageTranslated = translateLanguage(language, False);
+        # Translate language
+        languageTranslated = translateLanguage(language);
 
         # Save This translation to the json
         saveLangJSON(language[0]+'.json', json.dumps(languageTranslated, ensure_ascii=False).replace('\u0000',''));
@@ -457,17 +709,23 @@ for language in languages:
             # Yay, we found transliterations/phonetics. Loop them trough.
             for languageExtra in language[5]:
 
-                languageTranslated = translateLanguage([language[0] + '@' + languageExtra, language[2], language[3]], True);
-                saveLangJSON('locale-'+language[0]+'@'+languageExtra+'.json', json.dumps(languageTranslated, ensure_ascii=False).replace('\u0000',''));
-                #languagesJson[language[0]].update({languageExtra: translateLanguage([language[0] + '@' + languageExtra, language[2], language[3]], True) })
+                # Translate transliteration
+                languageTranslated = translateLanguage(language[0] + '@' + languageExtra);
+
+                # Save transliteration to .json
+                saveLangJSON(language[0]+'@'+languageExtra+'.json', json.dumps(languageTranslated, ensure_ascii=False).replace('\u0000',''));
 
         except IndexError:
             pass
 
     else:
 
-        print "Error: "+language[0]+" ("+language[2]+") - can't file translation file ("+localeSrcDir+language[0]+"/LC_MESSAGES/"+projectname+".mo). Skipping..."
-
+        error_count += 1
+        print "Error: "+language[0]+" ("+language[2]+") - can't find translation file ("+localeSrcDir+language[0]+"/LC_MESSAGES/"+projectname+".mo). Perhaps Glotpress didn't have any translations for this language? Skipping..."
 
 print
-print "Done with translations."
+
+if error_count > 0:
+    print "Done with translations, but with " + str(error_count) + " error(s). Scroll backlog to see more."
+else:
+    print "Done with translations, no errors."
