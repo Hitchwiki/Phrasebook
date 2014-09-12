@@ -35,14 +35,10 @@ Debian:
 apt-get install nodejs python imagemagic
 ```
 
-Running `npm install` in project directory will take care the rest requirements.
-
-
 ### HTML version
 
 #### Install dependencies and initial build:
 ```bash
-cd Phrasebook
 npm install
 grunt build
 ```
@@ -79,7 +75,7 @@ Build/run/release with [Grunt PhoneGap](https://npmjs.org/package/grunt-phonegap
 grunt phonegap:build[:platform]
 ```
 
-Running `phonegap:build` with no arguments will build both `ios` and `android` versions.
+Running `grunt phonegap:build` with no arguments will build both `ios` and `android` versions. See results from `phonegap` folder.
 
 #### Run
 

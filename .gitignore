@@ -8,7 +8,8 @@ src/vendor
 src/locale
 src/locale-json
 src/js/locales.js
-src/views/icons.html
+src/js/locales-structure.js
+src/views/_icons.html
 
 # Cordova/PhoneGap
 phonegap
