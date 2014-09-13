@@ -17,8 +17,8 @@ Phrasebook.controller('mainCtrl', function($scope, $location, $browser, $http, $
 
     $scope.location = $location;
 
-    $scope.translateUI = function(key) {
-        return $scope.localeFromStrings.UI[key];
+    $scope.UI = function(key) {
+        return ( $scope.localeFromStrings.UI[key] ) ? $scope.localeFromStrings.UI[key] : key;
     };
 
     $scope.setLang = function($event, code, direction) {
