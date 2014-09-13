@@ -15,7 +15,6 @@
   "ignore": [
     "**/.*",
     "node_modules",
-    "components",
-    "font-awesome/src"
+    "components"
   ]
 }
