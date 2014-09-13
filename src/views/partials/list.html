@@ -47,11 +47,11 @@
         <a ng-show="selectedCategory != false && localeTo != localeFrom" ng-href="/translate/{{ localeFrom }}/{{ localeTo }}/{{ selectedCategory }}/{{ key }}" class="list-group-item translation-key" ng-class="{ active : (key == selectedTranslation) }" ng-repeat="key in localesStructure[selectedCategory][1]" ng-swipe-left="back($event)" ng-click="selectTranslationString($event, key)">
             <h4 class="list-group-item-heading translation-from">
                 {{ localeFromStrings.phrasebook[key] }}
-                <i class="audio-play icon-volume-off" ng-show="audio && selectedTranslation == key" ng-click="play(key, localeFrom)"></i>
+                <i class="audio-play icon-volume-off" ng-show="audio && selectedTranslation == key" ng-class="{ playing : (playing == key + localeTo) }" ng-click="play(localeFromStrings.phrasebook[key], key, localeFrom, $event)"></i>
             </h4>
             <h4 class="list-group-item-heading translation-to" ng-hide="visibility == false && selectedTranslation != key">
                 {{ localeToStrings.phrasebook[key] }}
-                <i class="audio-play audio icon-volume-off" ng-show="audio && selectedTranslation == key" ng-click="play(key, localeTo)"></i>
+                <i class="audio-play audio icon-volume-off" ng-show="audio && selectedTranslation == key" ng-class="{ playing : (playing == key + localeTo) }" ng-click="play(localeToStrings.phrasebook[key], key, localeTo, $event)"></i>
             </h4>
         </a>
 

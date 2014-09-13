@@ -111,7 +111,7 @@ grunt reset
 
 
 ## Translate
-* [Translation tool](http://hitchwiki.org/translate/projects/phrasebook)
+* [Translation tool](http://hitchwiki.org/translate/projects/phrasebook). You can login with your [Hitchwiki](http://hitchwiki.org) username and password to start translating.
 * Add new languages or text strings directly to fetch-translations.py
 * Produce fresh translation files by typing `python scripts/fetch-translations.py`. Script will download files from GlotPress and write translation source (.po/mo) files under `./src/assets/locale/`, json files to `./src/assets/locale-json/` and the list of locales to `./src/js/locales.js`
 

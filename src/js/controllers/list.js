@@ -11,9 +11,31 @@ Phrasebook.controller('listCtrl', function($scope, $browser, $http, $log, $cooki
         return Object.keys(obj);
     }
 
-    $scope.play = function(key, code) {
-        $log.log("Obs! No audio yet: " + key + " / " + code);
-        alert("Obs! No audio yet...");
+    $scope.playing = false;
+
+    $scope.play = function(string, key, locale, $event) {
+        $event.preventDefault();
+        $event.stopPropagation();
+
+        $scope.playing = key + locale;
+
+        // Initialize speech synthesis, we use polyfill only when speech synthesis is not available
+        var fallbackSpeechSynthesis = window.getSpeechSynthesis();
+        var fallbackSpeechSynthesisUtterance = window.getSpeechSynthesisUtterance();
+
+        // To use polyfill directly call
+        // var fallbackSpeechSynthesis = window.speechSynthesisPolyfill;
+        // var fallbackSpeechSynthesisUtterance = window.SpeechSynthesisUtterancePolyfill;
+
+        var u = new fallbackSpeechSynthesisUtterance( string );
+        u.lang = locale.replace('_','-');
+        u.volume = 1.0;
+        u.rate = 1.0;
+        u.onend = function(event) {
+            $scope.playing = false;
+            $log.log('Finished speech synthesis in ' + event.elapsedTime + ' seconds.');
+        };
+        fallbackSpeechSynthesis.speak(u);
     };
 
     $scope.back = function($event) {
