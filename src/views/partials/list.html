@@ -23,6 +23,7 @@
     <div class="list-group">
 
         <a ng-show="selectedCategory == false" ng-href="/translate/{{ localeFrom }}/{{ localeTo }}/{{ category[0] }}" class="list-group-item" ng-repeat="category in localesStructure" ng-click="selectCategory($event, $index)">
+            <i ng-class="icon icon-cat-{{ category[0] }}"></i>
             <h4 class="list-group-item-heading">
                 {{ localeFromStrings.categories[category[0]] }}
             </h4>
@@ -31,20 +32,20 @@
             </p>
         </a>
 
-        <a ng-show="selectedCategory != false" ng-click="back($event)" ng-href="/translate/{{ localeFrom }}/{{ localeTo }}/" class="list-group-item"><i class="fa fa-arrow-left"></i> {{ UI('back') }}</a>
+        <a ng-show="selectedCategory != false" ng-click="back($event)" ng-href="/translate/{{ localeFrom }}/{{ localeTo }}/" class="list-group-item"><i class="icon-left"></i> {{ UI('back') }}</a>
 
         <a ng-show="selectedCategory != false" ng-href="/translate/{{ localeFrom }}/{{ localeTo }}/{{ selectedCategory }}/{{ key }}" class="list-group-item" ng-repeat="key in localesStructure[selectedCategory][1]" ng-click="selectTranslationString($event, key)">
             <h4 class="list-group-item-heading translation-from">
                 {{ localeFromStrings.phrasebook[key] }}
-                <i class="audio-play fa fa-fw fa-volume-off" ng-show="audio && selectedTranslation == key" ng-click="play(key, localeFrom)"></i>
+                <i class="audio-play icon-volume-off" ng-show="audio && selectedTranslation == key" ng-click="play(key, localeFrom)"></i>
             </h4>
-            <h4 class="list-group-item-heading translation-to" ng-show="selectedTranslation == key">
+            <h4 class="list-group-item-heading translation-to">
                 {{ localeToStrings.phrasebook[key] }}
-                <i class="audio-play audio fa fa-fw fa-volume-off" ng-show="audio" ng-click="play(key, localeTo)"></i>
+                <i class="audio-play audio icon-volume-off" ng-show="audio" ng-click="play(key, localeTo)"></i>
             </h4>
         </a>
 
-        <a ng-show="selectedCategory != false" ng-click="back($event)" ng-href="/translate/{{ localeFrom }}/{{ localeTo }}/" class="list-group-item"><i class="fa fa-arrow-left"></i> {{ UI('back') }}</a>
+        <a ng-show="selectedCategory != false" ng-click="back($event)" ng-href="/translate/{{ localeFrom }}/{{ localeTo }}/" class="list-group-item"><i class="icon-left"></i> {{ UI('back') }}</a>
 
     </div>
 </div>

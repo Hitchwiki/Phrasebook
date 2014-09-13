@@ -135,14 +135,8 @@ module.exports = function(grunt) {
           'src/vendor/angular-cookies/angular-cookies.js',
           'src/vendor/bootstrap/js/button.js',
           'src/vendor/bootstrap/js/dropdown.js',
-          'src/js/locales.js',
-          'src/js/locales-structure.js',
-          'src/js/app.js',
-          'src/js/configs.js',
-          'src/js/controllers/navigation.js',
-          'src/js/controllers/list.js',
-          'src/js/controllers/about.js',
-          'src/js/controllers/translate.js',
+          'src/js/*',
+          'src/js/controllers/*'
         ],
         dest: 'build/assets/js/app.js'
       }
@@ -155,6 +149,18 @@ module.exports = function(grunt) {
       build: {
         src: 'build/assets/js/app.js',
         dest: 'build/assets/js/app.min.js'
+      }
+    },
+    fontello: {
+      dist: {
+        options: {
+            config  : 'src/fontello-config.json',
+            zip     : 'src/vendor/',
+            fonts   : 'build/assets/font',
+            styles  : 'src/vendor/fontello-css/',
+            scss    : false,
+            force   : true
+        }
       }
     },
     copy: {
@@ -189,13 +195,6 @@ module.exports = function(grunt) {
                 filter: 'isFile',
                 src: 'src/locale-json/*',
                 dest: 'build/assets/locale/'
-            },
-            {
-                expand: true,
-                flatten: true,
-                filter: 'isFile',
-                src: 'src/vendor/font-awesome/fonts/*',
-                dest: 'build/assets/fonts/'
             },
             {
                 expand: true,
@@ -364,6 +363,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-manifest');
   grunt.loadNpmTasks('grunt-favicons');
   grunt.loadNpmTasks('grunt-phonegap');
+  grunt.loadNpmTasks('grunt-fontello');
   grunt.loadNpmTasks('grunt-shell');
 
 
@@ -386,6 +386,7 @@ module.exports = function(grunt) {
                      ]);
 
   grunt.registerTask('build', [
+                       'fontello',
                        'favicons',
                        'shell',
                        'preprocess:prod',
