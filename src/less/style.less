@@ -35,8 +35,16 @@
 }
 
 .dropdown-menu > li > a {
-    cursor: pointer; // Also when there's no href
+    // Also when there's no href
+    cursor: pointer;
+
+    // Bigger the Better for mobile
+    padding-top: @padding-base-horizontal;
+    padding-bottom: @padding-base-horizontal;
+    font-size: @font-size-large;
+
 }
+
 
 .flag {
     margin-right: 5px;
