@@ -34,6 +34,10 @@
     }
 }
 
+.dropdown-menu > li > a {
+    cursor: pointer; // Also when there's no href
+}
+
 .flag {
     margin-right: 5px;
     border-radius: 9px;
@@ -86,23 +90,45 @@
 #translationSet {
 
     .translation-from {
-        margin-bottom: 13px;
+        margin-bottom: 10px;
     }
     .translation-to {
 
     }
+    .active {
+        .translation-from {
+            border-bottom: 2px solid #fff;
+            padding-bottom: 10px;
+        }
+    }
 
 }
 
+.translation-category {
+    .list-group-item-text {
+        margin-left: 3.5em;
+    }
+    .icon {
+        color: @gray-light;
+        font-size: 30px;
+        float: left;
+        margin-right: .4em;
+        margin-top: .1em;
+    }
+}
 
 .translation-key {
     .transition(all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.1s);
 }
 .list-group-item.active {
-        margin-right: -10px !important;
-        margin-left: -10px !important;
-        padding-bottom: 20px !important;
-        padding-top: 20px !important;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        margin-right: -10px;
+        margin-left: -10px;
+        @media only screen and (max-width: @screen-xs-max) {
+            margin-right: 0;
+            margin-left: 0;
+        }
         h4 {
             font-size: 33px;
             line-height: 36px;

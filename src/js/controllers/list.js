@@ -18,6 +18,7 @@ Phrasebook.controller('listCtrl', function($scope, $browser, $http, $log, $cooki
 
     $scope.back = function($event) {
         $event.preventDefault();
+        $scope.selectedTranslation = false;
         $scope.selectedCategory = false;
     };
 

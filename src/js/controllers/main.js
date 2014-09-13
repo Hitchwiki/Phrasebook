@@ -6,12 +6,13 @@
  */
 Phrasebook.controller('mainCtrl', function($scope, $location, $browser, $http, $log, $cookies, $cookieStore) {
 
-    $scope.locales = locales;
-    $scope.localesStructure = localesStructure;
+    $scope.locales = locales || {};
+    $scope.localesStructure = localesStructure || {};
     $scope.localeFrom = ($cookieStore.get('localeFrom')) ? $cookieStore.get('localeFrom') : false;
     $scope.localeTo = ($cookieStore.get('localeTo')) ? $cookieStore.get('localeTo') : false;
     $scope.audio = ($cookieStore.get('audio')) ? $cookieStore.get('audio') : false;
     $scope.voice = ($cookieStore.get('voice')) ? $cookieStore.get('voice') : false;
+    $scope.visibility = ($cookieStore.get('visibility')) ? $cookieStore.get('visibility') : true;
     $scope.localeFromStrings = {};
     $scope.localeToStrings = {};
 
@@ -84,14 +85,10 @@ Phrasebook.controller('mainCtrl', function($scope, $location, $browser, $http, $
 
         var code = (direction == 'To') ? $scope.localeTo : $scope.localeFrom;
 
-        var cache = new Date().getTime() / 1000;
-
-        $log.log('cache:' + cache);
-
         $http({
                 method: 'GET',
                 cache: true,
-                url: 'assets/locale/' + code + '.json?c=' + cache
+                url: 'assets/locale/' + code + '.json?ver=' + localesVer
               })
               .success(function(data, status, headers, config) {
 
@@ -106,7 +103,7 @@ Phrasebook.controller('mainCtrl', function($scope, $location, $browser, $http, $
               })
               .error(function(data, status, headers, config) {
                   $log.error("->loadTranslation->get: " + code + ' ->error');
-                  alert("Obs! Something went wrong. Translations couldn't be loaded.");
+                  alert("Obs! Something went wrong. Translations for this language couldn't be loaded.");
               });
     };
 
@@ -151,6 +148,22 @@ Phrasebook.controller('mainCtrl', function($scope, $location, $browser, $http, $
         else {
             $scope.audio = true;
             $cookieStore.put('audio', true);
+        }
+    }
+
+
+    /**
+     * Switch visibility of translations on/off
+     */
+    $scope.toggleVisibility = function($event) {
+        $event.preventDefault();
+        if($scope.visibility) {
+            $scope.visibility = false;
+            $cookieStore.put('visibility', false);
+        }
+        else {
+            $scope.visibility = true;
+            $cookieStore.put('visibility', true);
         }
     }
 
