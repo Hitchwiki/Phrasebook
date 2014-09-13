@@ -36,7 +36,7 @@ Phrasebook.controller('mainCtrl', function($scope, $location, $browser, $http, $
 
     $scope.UI = function(key) {
 
-        if( $scope.localeFromStrings.UI[key] ) {
+        if( $scope.localeFrom != false && $scope.localeFromStrings.UI[key] ) {
             return $scope.localeFromStrings.UI[key];
         }
         else if( $scope.defaultUI[key] ) {
