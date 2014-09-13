@@ -13,19 +13,42 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     templates: templates,
     watch: {
-      files: [
-        'src/less/*',
-        'src/js/*',
-        'src/js/controllers/*',
-        'src/views/*',
-        'src/views/partials/*',
-        'gruntfile.js',
-      ],
-      tasks: [
-        'preprocess:dev',
-        'less:dev',
-        'concat',
-      ]
+      font: {
+        files: [
+          'src/fontello-config.json',
+        ],
+        tasks: [
+          'fontello',
+        ]
+      },
+      less: {
+        files: [
+          'src/less/*',
+          'src/vendor/fontello-css/*',
+        ],
+        tasks: [
+          'less:dev',
+        ]
+      },
+      js: {
+        files: [
+          'gruntfile.js',
+          'src/js/*',
+          'src/js/controllers/*'
+        ],
+        tasks: [
+          'concat'
+        ]
+      },
+      views: {
+        files: [
+          'src/views/*',
+          'src/views/partials/*'
+        ],
+        tasks: [
+          'preprocess:dev'
+        ]
+      },
     },
     favicons: {
       options: {
