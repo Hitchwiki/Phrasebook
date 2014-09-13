@@ -150,6 +150,7 @@ module.exports = function(grunt) {
       dist : {
         src: [
           'src/vendor/jquery/dist/jquery.js',
+          'src/vendor/fastclick/lib/fastclick.js',
           'src/vendor/angular/angular.js',
           'src/vendor/angular-animate/angular-animate.js',
           'src/vendor/angular-resource/angular-resource.js',
