@@ -1,28 +1,27 @@
 /**
- * navigationCtrl Controller
+ * mainCtrl Controller
  *
  * Controller for header menu, UI and much of the app's global behaviour
  *
- * @todo: Separate some of this to mainCtrl or something?
  */
-Phrasebook.controller('navigationCtrl', function($rootScope, $scope, $location, $browser, $http, $log, $cookies, $cookieStore) {
+Phrasebook.controller('mainCtrl', function($scope, $location, $browser, $http, $log, $cookies, $cookieStore) {
 
-    $rootScope.locales = locales;
-    $rootScope.localesStructure = localesStructure;
-    $rootScope.localeFrom = ($cookieStore.get('localeFrom')) ? $cookieStore.get('localeFrom') : false;
-    $rootScope.localeTo = ($cookieStore.get('localeTo')) ? $cookieStore.get('localeTo') : false;
-    $rootScope.audio = ($cookieStore.get('audio')) ? $cookieStore.get('audio') : false;
-    $rootScope.voice = ($cookieStore.get('voice')) ? $cookieStore.get('voice') : false;
-    $rootScope.localeFromStrings = {};
-    $rootScope.localeToStrings = {};
+    $scope.locales = locales;
+    $scope.localesStructure = localesStructure;
+    $scope.localeFrom = ($cookieStore.get('localeFrom')) ? $cookieStore.get('localeFrom') : false;
+    $scope.localeTo = ($cookieStore.get('localeTo')) ? $cookieStore.get('localeTo') : false;
+    $scope.audio = ($cookieStore.get('audio')) ? $cookieStore.get('audio') : false;
+    $scope.voice = ($cookieStore.get('voice')) ? $cookieStore.get('voice') : false;
+    $scope.localeFromStrings = {};
+    $scope.localeToStrings = {};
 
     $scope.location = $location;
 
-    $rootScope.translateUI = function(key) {
-        return $rootScope.localeFromStrings.UI[key];
+    $scope.translateUI = function(key) {
+        return $scope.localeFromStrings.UI[key];
     };
 
-    $rootScope.setLang = function($event, code, direction) {
+    $scope.setLang = function($event, code, direction) {
 
         $log.log("->setLang: " + code + ', ' + direction);
 
@@ -31,8 +30,8 @@ Phrasebook.controller('navigationCtrl', function($rootScope, $scope, $location, 
         if(!direction) return;
 
         // Set it
-        if(direction == 'To') $rootScope.localeTo = code;
-        else if(direction == 'From') $rootScope.localeFrom = code;
+        if(direction == 'To') $scope.localeTo = code;
+        else if(direction == 'From') $scope.localeFrom = code;
 
         if(code == false) {
             // Remove it
@@ -51,7 +50,7 @@ Phrasebook.controller('navigationCtrl', function($rootScope, $scope, $location, 
 
     /**
      * Fetch translation json
-     * Uses $rootScope.localeTo || $rootScope.localeFrom to determine which locale to load
+     * Uses $scope.localeTo || $scope.localeFrom to determine which locale to load
      */
     $scope.loadTranslation = function(direction) {
 
@@ -59,19 +58,26 @@ Phrasebook.controller('navigationCtrl', function($rootScope, $scope, $location, 
 
         if(!direction) return;
 
-        var code = (direction == 'To') ? $rootScope.localeTo : $rootScope.localeFrom;
+        var code = (direction == 'To') ? $scope.localeTo : $scope.localeFrom;
+
+        var cache = new Date().getTime() / 1000;
+
+        $log.log('cache:' + cache);
 
         $http({
                 method: 'GET',
                 cache: true,
-                url: 'assets/locale/' + code + '.json'
+                url: 'assets/locale/' + code + '.json?c=' + cache
               })
               .success(function(data, status, headers, config) {
 
                   $log.log("->loadTranslation->get: " + code + ' ->success');
 
-                  if(direction == 'From') $rootScope.localeFromStrings = data;
-                  else if(direction == 'To') $rootScope.localeToStrings = data;
+
+                  $log.log(data);
+
+                  if(direction == 'From') $scope.localeFromStrings = data;
+                  else if(direction == 'To') $scope.localeToStrings = data;
 
               })
               .error(function(data, status, headers, config) {
@@ -98,12 +104,12 @@ Phrasebook.controller('navigationCtrl', function($rootScope, $scope, $location, 
      */
     $scope.toggleVoice = function($event) {
         $event.preventDefault();
-        if($rootScope.voice) {
-            $rootScope.voice = false;
+        if($scope.voice) {
+            $scope.voice = false;
             $cookieStore.put('voice', false);
         }
         else {
-            $rootScope.voice = true;
+            $scope.voice = true;
             $cookieStore.put('voice', true);
         }
     }
@@ -114,18 +120,18 @@ Phrasebook.controller('navigationCtrl', function($rootScope, $scope, $location, 
      */
     $scope.toggleAudio = function($event) {
         $event.preventDefault();
-        if($rootScope.audio) {
-            $rootScope.audio = false;
+        if($scope.audio) {
+            $scope.audio = false;
             $cookieStore.put('audio', false);
         }
         else {
-            $rootScope.audio = true;
+            $scope.audio = true;
             $cookieStore.put('audio', true);
         }
     }
 
 
-    $rootScope.flag = function(code) {
+    $scope.flag = function(code) {
 
         // Duhh... (uk => gb)
         if(code == 'en_UK') return 'assets/img/flags/gb.svg';
@@ -139,9 +145,9 @@ Phrasebook.controller('navigationCtrl', function($rootScope, $scope, $location, 
     /**
      * Finally, if this is cold start and we had locales set but nothing loaded, just go ang grab em...
      */
-    if($rootScope.localeFrom != false) $scope.loadTranslation('From');
+    if($scope.localeFrom != false) $scope.loadTranslation('From');
 
-    if($rootScope.localeTo != false) $scope.loadTranslation('To');
+    if($scope.localeTo != false) $scope.loadTranslation('To');
 
 });
 
