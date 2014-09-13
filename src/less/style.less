@@ -121,3 +121,13 @@
         text-align: right;
     }
 }
+
+
+/*
+ * Remove 300ms delay on tapping with mobile browsers
+ * http://updates.html5rocks.com/2013/12/300ms-tap-delay-gone-away
+ */
+html {
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
