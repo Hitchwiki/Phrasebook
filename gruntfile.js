@@ -19,6 +19,7 @@ module.exports = function(grunt) {
         ],
         tasks: [
           'fontello',
+          'less:dev'
         ]
       },
       less: {

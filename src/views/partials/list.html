@@ -23,8 +23,8 @@
     <div class="list-group">
 
         <a ng-show="selectedCategory == false" ng-href="/translate/{{ localeFrom }}/{{ localeTo }}/{{ category[0] }}" class="list-group-item" ng-repeat="category in localesStructure" ng-click="selectCategory($event, $index)">
-            <i ng-class="icon icon-cat-{{ category[0] }}"></i>
             <h4 class="list-group-item-heading">
+            <i ng-class="pull-left icon-{{ category[0] }}"></i>
                 {{ localeFromStrings.categories[category[0]] }}
             </h4>
             <p class="list-group-item-text">

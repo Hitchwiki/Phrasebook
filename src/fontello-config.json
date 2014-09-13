@@ -8,7 +8,7 @@
   "glyphs": [
     {
       "uid": "17ebadd1e3f274ff0205601eef7b9cc4",
-      "css": "cat-questions",
+      "css": "category-questions",
       "code": 59408,
       "src": "fontawesome"
     },
@@ -26,13 +26,13 @@
     },
     {
       "uid": "dcedf50ab1ede3283d7a6c70e2fe32f3",
-      "css": "cat-basics",
+      "css": "category-basics",
       "code": 59409,
       "src": "fontawesome"
     },
     {
       "uid": "921e3974e54ff9e8b7cd906a3dc74636",
-      "css": "cat-directions_time",
+      "css": "category-directions_time",
       "code": 59416,
       "src": "fontawesome"
     },
@@ -68,19 +68,19 @@
     },
     {
       "uid": "ecede48deb16179e5ef9a3f8ffae62f4",
-      "css": "cat-places",
+      "css": "category-places",
       "code": 59410,
       "src": "fontawesome"
     },
     {
       "uid": "3a7b6876c1817ce3b801b86c04a9d0af",
-      "css": "cat-numbers",
+      "css": "category-numbers",
       "code": 59417,
       "src": "fontawesome"
     },
     {
       "uid": "30b79160618d99ce798e4bd11cafe3fe",
-      "css": "cat-food",
+      "css": "category-food",
       "code": 59413,
       "src": "fontawesome"
     },
@@ -110,13 +110,13 @@
     },
     {
       "uid": "bbd66ef66bb8fa9edde54d9a90b89150",
-      "css": "cat-introduction",
+      "css": "category-introduction",
       "code": 59414,
       "src": "entypo"
     },
     {
       "uid": "39a5a0d7ce8342d149373b2ce219503a",
-      "css": "cat-danger",
+      "css": "category-danger",
       "code": 59415,
       "src": "entypo"
     },
@@ -158,7 +158,7 @@
     },
     {
       "uid": "c2152732d525871cf35345955854f711",
-      "css": "cat-sleep",
+      "css": "category-sleep",
       "code": 59411,
       "src": "iconic"
     }
