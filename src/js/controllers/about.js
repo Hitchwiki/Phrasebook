@@ -11,6 +11,8 @@ Phrasebook.controller('aboutCtrl', function($scope) {
 
     $scope.device = navigator.userAgent;
 
+    $scope.showLisence = false;
+
     $scope.back = function() {
         //$event.preventDefault();
         $location.path('/');
