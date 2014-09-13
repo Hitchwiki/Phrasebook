@@ -17,9 +17,11 @@
 </div>
 
 <div class="container" id="translationSet" ng-hide="!localeFrom || !localeTo">
-    <form id="search-form">
+    <!--
+    <form id="search-form" ng-show="localeTo != localeFrom">
         <input type="search" id="search" ng-model="query" placeholder="Search..." class="form-control input-lg">
     </form>
+    -->
     <div class="list-group">
 
         <a ng-show="selectedCategory == false" ng-href="/translate/{{ localeFrom }}/{{ localeTo }}/{{ category[0] }}" class="list-group-item" ng-repeat="category in localesStructure" ng-click="selectCategory($event, $index)">
