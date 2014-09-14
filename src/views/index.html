@@ -42,11 +42,11 @@
 
             <!-- Language switch -->
             <div id="language-menu" ng-show="location.path() == '/'">
-                <a href="#" class="translateFrom" ng-click="setLang($event, false, 'From')">
+                <a href="#" class="translateFrom" ng-click="setLang($event, false, 'From')" ng-class="{ active : (localeFrom == false) }">
                     <img ng-src="{{ flag(localeFrom) }}" class="flag" ng-show="localeFrom"> {{ langName(localeFrom, UI('choose')) }}
                 </a>
                 <span class="sep"><i class="icon-right"></i></span>
-                <a href="#" class="translateTo" ng-click="setLang($event, false, 'To')">
+                <a href="#" class="translateTo" ng-click="setLang($event, false, 'To')" ng-class="{ active : (localeFrom != false && localeTo == false) }">
                     <img ng-src="{{ flag(localeTo) }}" class="flag" ng-show="localeTo"> {{ langName(localeTo, UI('choose')) }}
                 </a>
             </div>
