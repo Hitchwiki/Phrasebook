@@ -62,6 +62,8 @@ languages = [
     [ "sq_AL", "sq",    "Albanian",               "Gjuha shqipe",          False    ],
     [ "sv_SE", "sv",    "Swedish",                "Svenska",               False    ],
     [ "tr_TR", "tr",    "Turkish",                "Türkçe",                False    ],
+#   [ "et_EE", "et",    "Estonian",               "Eesti keel",            False    ],
+#   [ "gd_GB", "gd",    "Scottish Gaelic",        "Gàidhlig"               False    ],
 #   [ "mk_MK", "mk",    "Macedonian",             "Makedonski",            False    ],
 #   [ "el_GR", "el",    "Greek",                  "ελληνικά",               False    ['transliteration'] ]
 #   [ "sr_RS", "sr",    "Serbian",                "српски",                False    ['transliteration'] ],
@@ -70,6 +72,7 @@ languages = [
 #   [ "sl_SI", "sl",    "Slovenian",              "Slovenščina",           False    ],
 #   [ "tl_PH", "tl",    "Tagalog",                "Tagalog",               False    ],
 #   [ "ms_MY", "ms",    "Malaysian",              "Bahasa Melayu",         False    ],
+#   [ "ja_JP", "ja",    "Japanese",               "日本語"                  False    ['transliteration'] ],
 #   [ "zh_CN", "zh",    "Chinese",                "中文",                   False,   ['transliteration'] ],
 
 ]
@@ -182,6 +185,7 @@ def translateLanguage(language):
             'how_far': _("How far is it (on foot)?"),
             'where_are_we': _("Where are we?"),
             'for_free': _("For free?"),
+            'money': _("Money"),
             'i_cant_pay': _("I can't pay."),
             'do_you_speak': _("Do you speak ...?"),
             'any_other_languages': _("any other languages"),
@@ -348,6 +352,7 @@ def translateLanguage(language):
             "translate_to": _("Translate to..."),
             "search": _("Search..."),
             "about": _("About"),
+            "back": _("Back"),
             "choose": _("Choose"),
             "contact_us": _("Contact us"),
             "help_translating": _("Help translating"),
@@ -414,8 +419,13 @@ localesStructure = [
             'hitchhike',
             'hitchhiker',
             'hello',
+            'bye',
             'excuse_me',
             'thank_you',
+            'yes',
+            'no',
+            'maybe',
+            'stop',
             'sorry',
             'are_you_going_towards',
             'bad',
@@ -424,10 +434,6 @@ localesStructure = [
             'perfect',
             'no_thanks',
             'thats_great',
-            'yes',
-            'no',
-            'maybe',
-            'stop',
             'have_nice_day',
             'for_free',
             'i_cant_pay',
@@ -438,6 +444,7 @@ localesStructure = [
             'i_dont_know',
 
             # Really other but as long as it's not more, keeping it under basics
+            'money',
             'smoke',
             'busking',
             'free_hugs'

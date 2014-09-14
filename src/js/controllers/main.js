@@ -71,7 +71,8 @@ Phrasebook.controller('mainCtrl', function($scope, $location, $browser, $http, $
         "phrasebook": "Phrasebook",
         "translate_to": "Translate to...",
         "audio_off": "Audio off",
-        "choose": "Choose"
+        "choose": "Choose",
+        "back": "Back"
     };
 
     $scope.UI = function(key) {
