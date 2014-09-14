@@ -4,15 +4,53 @@
  * Controller for header menu, UI and much of the app's global behaviour
  *
  */
-Phrasebook.controller('mainCtrl', function($scope, $location, $browser, $http, $log, $cookies, $cookieStore) {
+Phrasebook.controller('mainCtrl', function($scope, $location, $browser, $http, $log, $cookies, $cookieStore, $routeParams) {
 
     $scope.locales = locales || {};
     $scope.localesStructure = localesStructure || {};
-    $scope.localeFrom = ($cookieStore.get('localeFrom')) ? $cookieStore.get('localeFrom') : false;
-    $scope.localeTo = ($cookieStore.get('localeTo')) ? $cookieStore.get('localeTo') : false;
+
+    /*
+     * Language - from
+     */
+    if($routeParams.localeFrom) {
+        $scope.localeFrom = $routeParams.localeFrom;
+    }
+    else if($cookieStore.get('localeFrom')) {
+        $scope.localeFrom = $cookieStore.get('localeFrom');
+    }
+    else {
+        $scope.localeFrom = false;
+    }
+    $scope.langFrom = ($scope.localeFrom) ? $scope.localeFrom.substr(0,2) : false;
+    $scope.$watch('localeFrom', function(newValue, oldValue) {
+        $scope.langFrom = newValue.substr(0,2) || false;
+    });
+
+
+    /*
+     * Language - to
+     */
+    if($routeParams.localeTo) {
+        $scope.localeFrom = $routeParams.localeTo;
+    }
+    else if($cookieStore.get('localeTo')) {
+        $scope.localeTo = $cookieStore.get('localeTo');
+    }
+    else {
+        $scope.localeTo = false;
+    }
+    $scope.langTo = ($scope.localeTo) ? $scope.localeTo.substr(0,2) : false;
+    $scope.$watch('localeTo', function(newValue, oldValue) {
+        $scope.langTo = newValue.substr(0,2) || false;
+    });
+
+
+    // Menu toggles
     $scope.audio = ($cookieStore.get('audio')) ? $cookieStore.get('audio') : false;
     $scope.voice = ($cookieStore.get('voice')) ? $cookieStore.get('voice') : false;
     $scope.visibility = ($cookieStore.get('visibility')) ? $cookieStore.get('visibility') : true;
+
+    // Translation contrainers
     $scope.localeFromStrings = {};
     $scope.localeToStrings = {};
 

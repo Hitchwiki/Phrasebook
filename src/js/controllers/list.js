@@ -1,7 +1,7 @@
 /**
  * Ctrl for translations / language lists
  */
-Phrasebook.controller('listCtrl', function($scope, $browser, $http, $log, $cookies, $cookieStore) {
+Phrasebook.controller('listCtrl', function($scope, $browser, $http, $log, $cookies, $cookieStore, $routeParams) {
 
     // http://stackoverflow.com/questions/19287716/skip-ng-repeat-json-ordering-in-angular-js
     $scope.notSorted = function(obj){
@@ -45,7 +45,7 @@ Phrasebook.controller('listCtrl', function($scope, $browser, $http, $log, $cooki
     };
 
     // Currently open translation string
-    $scope.selectedTranslation = false;
+    $scope.selectedTranslation = ($routeParams.key) ? $routeParams.key : false;
 
     // Toggle translations open/close
     $scope.selectTranslationString = function($event, key) {
@@ -54,13 +54,11 @@ Phrasebook.controller('listCtrl', function($scope, $browser, $http, $log, $cooki
         $event.preventDefault();
     };
 
-
     // Currently open category
-    $scope.selectedCategory = false;
+    $scope.selectedCategory = ($routeParams.selectedCategory) ? $routeParams.selectedCategory : false;
 
     // Open category
     $scope.selectCategory = function($event, category) {
-
         $scope.selectedCategory = ($scope.selectedCategory == category) ? false : category;
         $log.log('Category: ' + category);
         $event.preventDefault();
