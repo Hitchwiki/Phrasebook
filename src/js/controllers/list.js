@@ -65,7 +65,7 @@ Phrasebook.controller('listCtrl', function($scope, $browser, $http, $log, $cooki
 
     // Open category
     $scope.selectCategory = function($event, category) {
-        $scope.selectedCategory = ($scope.selectedCategory == category) ? false : category;
+        $scope.selectedCategory = ($scope.selectedCategory === category) ? false : category;
         $log.log('Category: ' + category);
         $event.preventDefault();
     };
