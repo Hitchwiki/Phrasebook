@@ -30,7 +30,7 @@
         </a>
 
         <!-- category -->
-        <a ng-show="selectedCategory == false && localeTo != localeFrom" ng-href="/translate/{{ localeFrom }}/{{ localeTo }}/{{ category[0] }}" class="list-group-item translation-category" ng-repeat="category in localesStructure" ng-click="selectCategory($event, $index)">
+        <a ng-show="selectedCategory == false && localeTo != localeFrom" ng-href="/{{ localeFrom }}/{{ localeTo }}/{{ category[0] }}" class="list-group-item translation-category" ng-repeat="category in localesStructure" ng-click="selectCategory($event, $index)">
             <h4 class="list-group-item-heading">
                 <i class="icon icon-{{ category[0] }}"></i>
                 {{ localeFromStrings.categories[category[0]] }}
@@ -44,14 +44,14 @@
         <a ng-show="selectedCategory != false && localeTo != localeFrom" ng-swipe-left="back($event)" ng-click="back($event)" ng-href="/translate/{{ localeFrom }}/{{ localeTo }}/" class="list-group-item"><i class="icon-left"></i> {{ UI('back') }}</a>
 
         <!-- translated string -->
-        <a ng-show="selectedCategory != false && localeTo != localeFrom" ng-href="/translate/{{ localeFrom }}/{{ localeTo }}/{{ selectedCategory }}/{{ key }}" class="list-group-item translation-key" ng-class="{ active : (key == selectedTranslation) }" ng-repeat="key in localesStructure[selectedCategory][1]" ng-swipe-left="back($event)" ng-click="selectTranslationString($event, key)">
+        <a ng-show="selectedCategory != false && localeTo != localeFrom" ng-href="/{{ localeFrom }}/{{ localeTo }}/{{ selectedCategory }}/{{ key }}" class="list-group-item translation-key" ng-class="{ active : (key == selectedTranslation) }" ng-repeat="key in localesStructure[selectedCategory][1]" ng-swipe-left="back($event)" ng-click="selectTranslationString($event, key)">
             <h4 class="list-group-item-heading translation-from">
                 {{ localeFromStrings.phrasebook[key] }}
-                <i class="audio-play icon-volume-off" ng-show="audio && selectedTranslation == key" ng-class="{ playing : (playing == key + localeTo) }" ng-click="play(localeFromStrings.phrasebook[key], key, localeFrom, $event)"></i>
+                <!--<i class="audio-play icon-volume-off" ng-show="audio && selectedTranslation == key && textToSpeechSupported(langFrom)" ng-class="{ playing : (playing == key + localeTo) }" ng-click="play(localeFromStrings.phrasebook[key], key, langFrom, $event)"></i>-->
             </h4>
             <h4 class="list-group-item-heading translation-to" ng-hide="visibility == false && selectedTranslation != key">
                 {{ localeToStrings.phrasebook[key] }}
-                <i class="audio-play audio icon-volume-off" ng-show="audio && selectedTranslation == key" ng-class="{ playing : (playing == key + localeTo) }" ng-click="play(localeToStrings.phrasebook[key], key, localeTo, $event)"></i>
+                <!--<i class="audio-play audio icon-volume-off" ng-show="audio && selectedTranslation == key && textToSpeechSupported(langTo)" ng-class="{ playing : (playing == key + localeTo) }" ng-click="play(localeToStrings.phrasebook[key], key, langTo, $event)"></i>-->
             </h4>
         </a>
 

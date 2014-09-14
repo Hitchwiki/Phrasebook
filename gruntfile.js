@@ -160,7 +160,7 @@ module.exports = function(grunt) {
           'src/vendor/angular-cookies/angular-cookies.js',
           'src/vendor/bootstrap/js/button.js',
           'src/vendor/bootstrap/js/dropdown.js',
-          'src/vendor/speech-synthesis/src/polyfill.js',
+          //'src/vendor/speech-synthesis/src/polyfill.js',
           'src/js/*',
           'src/js/controllers/*'
         ],

@@ -6,6 +6,7 @@
  */
 Phrasebook.controller('mainCtrl', function($scope, $location, $browser, $http, $log, $cookies, $cookieStore, $routeParams) {
 
+    // Language meta
     $scope.locales = locales || {};
     $scope.localesStructure = localesStructure || {};
 
@@ -161,6 +162,7 @@ Phrasebook.controller('mainCtrl', function($scope, $location, $browser, $http, $
     /**
      * Switch voice command support on/off
      */
+     /*
     $scope.toggleVoice = function($event) {
         $event.preventDefault();
         if($scope.voice) {
@@ -172,11 +174,13 @@ Phrasebook.controller('mainCtrl', function($scope, $location, $browser, $http, $
             $cookieStore.put('voice', true);
         }
     }
+    */
 
 
     /**
      * Switch audio support on/off
      */
+     /*
     $scope.toggleAudio = function($event) {
         $event.preventDefault();
         if($scope.audio) {
@@ -188,6 +192,7 @@ Phrasebook.controller('mainCtrl', function($scope, $location, $browser, $http, $
             $cookieStore.put('audio', true);
         }
     }
+    */
 
 
     /**
@@ -223,6 +228,7 @@ Phrasebook.controller('mainCtrl', function($scope, $location, $browser, $http, $
     if($scope.localeFrom != false) $scope.loadTranslation('From');
 
     if($scope.localeTo != false) $scope.loadTranslation('To');
+
 
 });
 
