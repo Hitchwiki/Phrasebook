@@ -90,7 +90,7 @@ Phrasebook.controller('mainCtrl', function($scope, $location, $browser, $http, $
 
         $log.log("->setLang: " + code + ', ' + direction);
 
-        $event.preventDefault();
+        if($event !== false) $event.preventDefault();
 
         if(!direction) return;
 
@@ -134,7 +134,6 @@ Phrasebook.controller('mainCtrl', function($scope, $location, $browser, $http, $
 
                   $log.log("->loadTranslation->get: " + code + ' ->success');
 
-
                   $log.log(data);
 
                   if(direction == 'From') $scope.localeFromStrings = data;
@@ -143,7 +142,8 @@ Phrasebook.controller('mainCtrl', function($scope, $location, $browser, $http, $
               })
               .error(function(data, status, headers, config) {
                   $log.error("->loadTranslation->get: " + code + ' ->error');
-                  alert("Obs! Something went wrong. Translations for this language couldn't be loaded.");
+                  alert("Obs! Something went wrong. Translations for " + $scope.langName(code, 'the chosen language') + " couldn't be loaded. Falling back to English.");
+                  $scope.setLang(false, 'en_UK', direction);
               });
     };
 
@@ -155,7 +155,7 @@ Phrasebook.controller('mainCtrl', function($scope, $location, $browser, $http, $
 
         if(!onFalse) onFalse = '';
 
-        return (code == false) ? onFalse : $scope.locales[code].name;
+        return (!code) ? onFalse : $scope.locales[code].name;
     };
 
 
