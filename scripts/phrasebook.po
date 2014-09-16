@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Phrasebook\n"
-"POT-Creation-Date: 2014-09-15 00:22+0200\n"
-"PO-Revision-Date: 2014-09-15 00:22+0200\n"
+"POT-Creation-Date: 2014-09-16 14:05+0200\n"
+"PO-Revision-Date: 2014-09-16 14:25+0200\n"
 "Last-Translator: Mikael Korpela <mikael@ihminen.org>\n"
 "Language-Team: Hitchwiki <mikael@ihminen.org>\n"
 "Language: en_GB\n"
@@ -16,870 +16,913 @@ msgstr ""
 "X-Poedit-KeywordsList: _\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: fetch-translations.py:141
+#: fetch-translations.py:144
 msgid "Hitchhike"
 msgstr ""
 
-#: fetch-translations.py:142
+#: fetch-translations.py:145
 msgid "Hitchhiker"
 msgstr ""
 
-#: fetch-translations.py:143
+# Formal
+#: fetch-translations.py:146
 msgid "Hello"
 msgstr ""
 
-#: fetch-translations.py:144
+#: fetch-translations.py:147
 msgid "Excuse me..."
 msgstr ""
 
-#: fetch-translations.py:145
+#: fetch-translations.py:148
 msgid "Sorry"
 msgstr ""
 
-#: fetch-translations.py:146
+#: fetch-translations.py:149
 msgid "Are you going towards ...?"
 msgstr ""
 
-#: fetch-translations.py:147
+#: fetch-translations.py:150
 msgid "Could I get a lift to ...?"
 msgstr ""
 
-#: fetch-translations.py:148
+#: fetch-translations.py:151
 msgid "just before"
 msgstr ""
 
-#: fetch-translations.py:149
+#: fetch-translations.py:152
 msgid "just after"
 msgstr ""
 
-#: fetch-translations.py:150
+#: fetch-translations.py:153
 msgid "a petrol station"
 msgstr ""
 
-#: fetch-translations.py:151
+# Fanzy http://en.wikipedia.org/wiki/Rest_area
+#: fetch-translations.py:154
 msgid "a service area"
 msgstr ""
 
-#: fetch-translations.py:152
+#: fetch-translations.py:155
 msgid "a lay-by"
 msgstr ""
 
-#: fetch-translations.py:153
+# http://en.wikipedia.org/wiki/Rest_area
+#: fetch-translations.py:156
 msgid "rest area"
 msgstr ""
 
-#: fetch-translations.py:154
+#: fetch-translations.py:157
 msgid "along the highway"
 msgstr ""
 
-#: fetch-translations.py:155
+# http://en.wikipedia.org/wiki/Roundabout
+#: fetch-translations.py:158
 msgid "roundabout"
 msgstr ""
 
-#: fetch-translations.py:156
+# Crossroads, http://en.wikipedia.org/wiki/Junction_(road)
+#: fetch-translations.py:159
 msgid "the junction"
 msgstr ""
 
-#: fetch-translations.py:157
+# http://en.wikipedia.org/wiki/Three-way_junction
+#: fetch-translations.py:160
 msgid "the T-junction"
 msgstr ""
 
-#: fetch-translations.py:158
+#: fetch-translations.py:161
 msgid "the crossroads"
 msgstr ""
 
-#: fetch-translations.py:159
+# http://en.wikipedia.org/wiki/Ring_road
+#: fetch-translations.py:162
 msgid "on the ring road"
 msgstr ""
 
-#: fetch-translations.py:160
+#: fetch-translations.py:163
 msgid "across the road"
 msgstr ""
 
-#: fetch-translations.py:161
+#: fetch-translations.py:164
 msgid "Hour"
 msgstr ""
 
-#: fetch-translations.py:162
+#: fetch-translations.py:165
 msgid "Day"
 msgstr ""
 
-#: fetch-translations.py:163
+#: fetch-translations.py:166
 msgid "Week"
 msgstr ""
 
-#: fetch-translations.py:164
+#: fetch-translations.py:167
 msgid "Month"
 msgstr ""
 
-#: fetch-translations.py:165
+#: fetch-translations.py:168
 msgid "Year"
 msgstr ""
 
-#: fetch-translations.py:166
+#: fetch-translations.py:169
 msgid "Kilometre"
 msgstr ""
 
-#: fetch-translations.py:167
+#: fetch-translations.py:170
 msgid "Left"
 msgstr ""
 
-#: fetch-translations.py:168
+# Opposite of left, not "correct".
+#: fetch-translations.py:171
 msgid "Right"
 msgstr ""
 
-#: fetch-translations.py:169
+#: fetch-translations.py:172
 msgid "Straight on"
 msgstr ""
 
-#: fetch-translations.py:170
+#: fetch-translations.py:173
 msgid "Before"
 msgstr ""
 
-#: fetch-translations.py:171
+#: fetch-translations.py:174
 msgid "After"
 msgstr ""
 
-#: fetch-translations.py:172
+#: fetch-translations.py:175
 msgid "This"
 msgstr ""
 
-#: fetch-translations.py:173
+#: fetch-translations.py:176
 msgid "Next"
 msgstr ""
 
-#: fetch-translations.py:174
+#: fetch-translations.py:177
 msgid "Last"
 msgstr ""
 
-#: fetch-translations.py:175
+#: fetch-translations.py:178
 msgid "Often"
 msgstr ""
 
-#: fetch-translations.py:176
+#: fetch-translations.py:179
 msgid "Never"
 msgstr ""
 
-#: fetch-translations.py:177
+#: fetch-translations.py:180
 msgid "Sometimes"
 msgstr ""
 
-#: fetch-translations.py:178
+#: fetch-translations.py:181
 msgid "Rarely"
 msgstr ""
 
-#: fetch-translations.py:179
+#: fetch-translations.py:182
 msgid "Long"
 msgstr ""
 
-#: fetch-translations.py:180
+#: fetch-translations.py:183
 msgid "Short"
 msgstr ""
 
-#: fetch-translations.py:181
+#: fetch-translations.py:184
 msgid "Up"
 msgstr ""
 
-#: fetch-translations.py:182
+#: fetch-translations.py:185
 msgid "Down"
 msgstr ""
 
-#: fetch-translations.py:183
+#: fetch-translations.py:186
 msgid "Over"
 msgstr ""
 
-#: fetch-translations.py:184
+#: fetch-translations.py:187
 msgid "Under"
 msgstr ""
 
-#: fetch-translations.py:185
+#: fetch-translations.py:188
 msgid "How far is it (on foot)?"
 msgstr ""
 
-#: fetch-translations.py:186
+#: fetch-translations.py:189
 msgid "Where are we?"
 msgstr ""
 
-#: fetch-translations.py:187
+#: fetch-translations.py:190
 msgid "For free?"
 msgstr ""
 
-#: fetch-translations.py:188
+#: fetch-translations.py:191
 msgid "Money"
 msgstr ""
 
-#: fetch-translations.py:189
+#: fetch-translations.py:192
 msgid "I can't pay."
 msgstr ""
 
-#: fetch-translations.py:190
+#: fetch-translations.py:193
 msgid "Do you speak ...?"
 msgstr ""
 
-#: fetch-translations.py:191
+#: fetch-translations.py:194
 msgid "any other languages"
 msgstr ""
 
-#: fetch-translations.py:192
+#: fetch-translations.py:195
 msgid "Speak slower, please?"
 msgstr ""
 
-#: fetch-translations.py:193
+#: fetch-translations.py:196
 msgid "I don't understand"
 msgstr ""
 
-#: fetch-translations.py:194
+#: fetch-translations.py:197
 msgid "I don't know"
 msgstr ""
 
-#: fetch-translations.py:195
+#: fetch-translations.py:198
 msgid "Yes"
 msgstr ""
 
-#: fetch-translations.py:196
+#: fetch-translations.py:199
 msgid "No"
 msgstr ""
 
-#: fetch-translations.py:197
+#: fetch-translations.py:200
 msgid "Maybe"
 msgstr ""
 
-#: fetch-translations.py:198
+#: fetch-translations.py:201
 msgid "No thanks"
 msgstr ""
 
-#: fetch-translations.py:199
+#: fetch-translations.py:202
 msgid "That's great"
 msgstr ""
 
-#: fetch-translations.py:200
+#: fetch-translations.py:203
 msgid "perfect"
 msgstr ""
 
-#: fetch-translations.py:201
+#: fetch-translations.py:204
 msgid "bad"
 msgstr ""
 
-#: fetch-translations.py:202
+#: fetch-translations.py:205
 msgid "no problem"
 msgstr ""
 
-#: fetch-translations.py:203
+#: fetch-translations.py:206
 msgid "Okay"
 msgstr ""
 
-#: fetch-translations.py:204
+#: fetch-translations.py:207
 msgid "I'm not in a hurry"
 msgstr ""
 
-#: fetch-translations.py:205
+#: fetch-translations.py:208
 msgid "I'm going to ..."
 msgstr ""
 
-#: fetch-translations.py:206
+#: fetch-translations.py:209
 msgid "Where are you going to?"
 msgstr ""
 
-#: fetch-translations.py:207
+#: fetch-translations.py:210
 msgid "My name is ..."
 msgstr ""
 
-#: fetch-translations.py:208
+#: fetch-translations.py:211
 msgid "What's your name?"
 msgstr ""
 
-#: fetch-translations.py:209
+#: fetch-translations.py:212
 msgid "I'm from ..."
 msgstr ""
 
-#: fetch-translations.py:210
+#: fetch-translations.py:213
 msgid "Where are you from?"
 msgstr ""
 
-#: fetch-translations.py:211
+#: fetch-translations.py:214
 msgid "I'm ... years old."
 msgstr ""
 
-#: fetch-translations.py:212
+#: fetch-translations.py:215
 msgid "How old are you?"
 msgstr ""
 
-#: fetch-translations.py:213
+#: fetch-translations.py:216
 msgid "I study ..."
 msgstr ""
 
-#: fetch-translations.py:214
+#: fetch-translations.py:217
 msgid "I'm in my ... year."
 msgstr ""
 
-#: fetch-translations.py:215
+#: fetch-translations.py:218
 msgid "I am studying to be a ..."
 msgstr ""
 
-#: fetch-translations.py:216
+#: fetch-translations.py:219
 msgid "I'm on holiday."
 msgstr ""
 
-#: fetch-translations.py:217
+#: fetch-translations.py:220
 msgid "I'm visiting friends in ..."
 msgstr ""
 
-#: fetch-translations.py:218
+#: fetch-translations.py:221
 msgid "I'm hitchhiking around ..."
 msgstr ""
 
-#: fetch-translations.py:219
+#: fetch-translations.py:222
 msgid "I will stay for ... days/weeks"
 msgstr ""
 
-#: fetch-translations.py:220
+#: fetch-translations.py:223
 msgid "I'm going back to ..."
 msgstr ""
 
-#: fetch-translations.py:221
+#: fetch-translations.py:224
 msgid "Can you drop me off here?"
 msgstr ""
 
-#: fetch-translations.py:222
+#: fetch-translations.py:225
 msgid "I have a boy-friend/a girl-friend."
 msgstr ""
 
-#: fetch-translations.py:223
+#: fetch-translations.py:226
 msgid "I'm married."
 msgstr ""
 
-#: fetch-translations.py:224
+#: fetch-translations.py:227
 msgid "I have already texted my father."
 msgstr ""
 
-#: fetch-translations.py:225
+#: fetch-translations.py:228
 msgid "Don't touch me!"
 msgstr ""
 
-#: fetch-translations.py:226
+#: fetch-translations.py:229
 msgid "Let me out!"
 msgstr ""
 
-#: fetch-translations.py:227
+#: fetch-translations.py:230
 msgid "Pull over I'm going to puke!"
 msgstr ""
 
-#: fetch-translations.py:228
+#: fetch-translations.py:231
 msgid "Stop!"
 msgstr ""
 
-#: fetch-translations.py:229
+#: fetch-translations.py:232
 msgid "Help!"
 msgstr ""
 
-#: fetch-translations.py:230
+#: fetch-translations.py:233
 msgid "Thank you!"
 msgstr ""
 
-#: fetch-translations.py:231
+#: fetch-translations.py:234
 msgid "Have a nice day/trip!"
 msgstr ""
 
-#: fetch-translations.py:232
+#: fetch-translations.py:235
 msgid "Where can I find ...?"
 msgstr ""
 
-#: fetch-translations.py:233
+#: fetch-translations.py:236
 msgid "a good hitchhiking spot"
 msgstr ""
 
-#: fetch-translations.py:234
+#: fetch-translations.py:237
 msgid "the highway to ..."
 msgstr ""
 
-#: fetch-translations.py:235
+#: fetch-translations.py:238
 msgid "the toll road to ..."
 msgstr ""
 
-#: fetch-translations.py:236
+#: fetch-translations.py:239
 msgid "the small road to ..."
 msgstr ""
 
-#: fetch-translations.py:237
+#: fetch-translations.py:240
 msgid "city centre"
 msgstr ""
 
-#: fetch-translations.py:238
+#: fetch-translations.py:241
 msgid "the tourist office"
 msgstr ""
 
-#: fetch-translations.py:239
+#: fetch-translations.py:242
 msgid "a map"
 msgstr ""
 
-#: fetch-translations.py:240
+#: fetch-translations.py:243
 msgid "a toilet"
 msgstr ""
 
-#: fetch-translations.py:241
+#: fetch-translations.py:244
 msgid "a supermarket"
 msgstr ""
 
-#: fetch-translations.py:242
+#: fetch-translations.py:245
 msgid "the fruit market"
 msgstr ""
 
-#: fetch-translations.py:243
+#: fetch-translations.py:246
 msgid "a pharmacy"
 msgstr ""
 
-#: fetch-translations.py:244
+#: fetch-translations.py:247
 msgid "a camp-site"
 msgstr ""
 
-#: fetch-translations.py:245
+#: fetch-translations.py:248
 msgid "an internet café"
 msgstr ""
 
-#: fetch-translations.py:246
+#: fetch-translations.py:249
 msgid "a cash machine"
 msgstr ""
 
-#: fetch-translations.py:247
+#: fetch-translations.py:250
 msgid "a bank"
 msgstr ""
 
-#: fetch-translations.py:248
+#: fetch-translations.py:251
 msgid "a bus stop"
 msgstr ""
 
-#: fetch-translations.py:249
+#: fetch-translations.py:252
 msgid "a metro station"
 msgstr ""
 
-#: fetch-translations.py:250
+#: fetch-translations.py:253
 msgid "a bus station"
 msgstr ""
 
-#: fetch-translations.py:251
+#: fetch-translations.py:254
 msgid "a train station"
 msgstr ""
 
-#: fetch-translations.py:252
+#: fetch-translations.py:255
 msgid "a public Wi-Fi / Internet"
 msgstr ""
 
-#: fetch-translations.py:253
+#: fetch-translations.py:256
 msgid "I'm thirsty"
 msgstr ""
 
-#: fetch-translations.py:254
+#: fetch-translations.py:257
 msgid "Drink"
 msgstr ""
 
-#: fetch-translations.py:255
+#: fetch-translations.py:258
 msgid "Water"
 msgstr ""
 
-#: fetch-translations.py:256
+#: fetch-translations.py:259
 msgid "(Herbal) tea"
 msgstr ""
 
-#: fetch-translations.py:257
+#: fetch-translations.py:260
 msgid "Hot chocolate"
 msgstr ""
 
-#: fetch-translations.py:258
+#: fetch-translations.py:261
 msgid "Coffee"
 msgstr ""
 
-#: fetch-translations.py:259
+#: fetch-translations.py:262
 msgid "Juice"
 msgstr ""
 
-#: fetch-translations.py:260
+#: fetch-translations.py:263
 msgid "Beer"
 msgstr ""
 
-#: fetch-translations.py:261
+#: fetch-translations.py:264
 msgid "(Red, white) wine"
 msgstr ""
 
-#: fetch-translations.py:262
+#: fetch-translations.py:265
 msgid "Cheers!"
 msgstr ""
 
-#: fetch-translations.py:263
+#: fetch-translations.py:266
 msgid "I'm hungry"
 msgstr ""
 
-#: fetch-translations.py:264
+#: fetch-translations.py:267
 msgid "Eat"
 msgstr ""
 
-#: fetch-translations.py:265
+#: fetch-translations.py:268
 msgid "Bread"
 msgstr ""
 
-#: fetch-translations.py:266
+#: fetch-translations.py:269
 msgid "Fruit"
 msgstr ""
 
-#: fetch-translations.py:267
+#: fetch-translations.py:270
 msgid "Meat"
 msgstr ""
 
-#: fetch-translations.py:268
+#: fetch-translations.py:271
 msgid "Vegetarian"
 msgstr ""
 
-#: fetch-translations.py:269
+#: fetch-translations.py:272
 msgid "Vegan"
 msgstr ""
 
-#: fetch-translations.py:270
+#: fetch-translations.py:273
 msgid "I don't eat meat"
 msgstr ""
 
-#: fetch-translations.py:271
+#: fetch-translations.py:274
 msgid "A cheap restaurant"
 msgstr ""
 
-#: fetch-translations.py:272
+#: fetch-translations.py:275
 msgid "Enjoy your meal!"
 msgstr ""
 
-#: fetch-translations.py:273
+# Garbage picking
+# https://en.wikipedia.org/wiki/Garbage_picking
+#: fetch-translations.py:276
 msgid "Dumpster diving"
 msgstr ""
 
-#: fetch-translations.py:274
+#: fetch-translations.py:277
 msgid "I'm tired"
 msgstr ""
 
-#: fetch-translations.py:275
+#: fetch-translations.py:278
 msgid "I'm fine"
 msgstr ""
 
-#: fetch-translations.py:276
+#: fetch-translations.py:279
 msgid "I'm cold"
 msgstr ""
 
-#: fetch-translations.py:277
+#: fetch-translations.py:280
 msgid "I'm hot"
 msgstr ""
 
-#: fetch-translations.py:278
+#: fetch-translations.py:281
 msgid "I'm sick"
 msgstr ""
 
-#: fetch-translations.py:279
+# Smoke is cigarette. Eg. let's have smoke. Might change this to "to smoke" in the future...
+#: fetch-translations.py:282
 msgid "Smoke"
 msgstr ""
 
-#: fetch-translations.py:280
+#: fetch-translations.py:283
 msgid "What time is it?"
 msgstr ""
 
-#: fetch-translations.py:281
+#: fetch-translations.py:284
 msgid "I'm looking for a place to sleep."
 msgstr ""
 
-#: fetch-translations.py:282
+#: fetch-translations.py:285
 msgid "Tent"
 msgstr ""
 
-#: fetch-translations.py:283
+#: fetch-translations.py:286
 msgid "Hostel"
 msgstr ""
 
-#: fetch-translations.py:284
+#: fetch-translations.py:287
 msgid "Room"
 msgstr ""
 
-#: fetch-translations.py:285
+#: fetch-translations.py:288
 msgid "Hotel"
 msgstr ""
 
-#: fetch-translations.py:286
+#: fetch-translations.py:289
 msgid "Can I leave my bag here for a while?"
 msgstr ""
 
-#: fetch-translations.py:287
+#: fetch-translations.py:290
 msgid "How much does it cost?"
 msgstr ""
 
-#: fetch-translations.py:288
+#: fetch-translations.py:291
 msgid "Who?"
 msgstr ""
 
-#: fetch-translations.py:289
+#: fetch-translations.py:292
 msgid "What?"
 msgstr ""
 
-#: fetch-translations.py:290
+#: fetch-translations.py:293
 msgid "Where?"
 msgstr ""
 
-#: fetch-translations.py:291
+#: fetch-translations.py:294
 msgid "Why?"
 msgstr ""
 
-#: fetch-translations.py:292
+#: fetch-translations.py:295
 msgid "When?"
 msgstr ""
 
-#: fetch-translations.py:293
+#: fetch-translations.py:296
 msgid "How?"
 msgstr ""
 
-#: fetch-translations.py:294
+#: fetch-translations.py:297
 msgid "How much?"
 msgstr ""
 
-#: fetch-translations.py:295
+#: fetch-translations.py:298
 msgid "How long?"
 msgstr ""
 
-#: fetch-translations.py:296
+#: fetch-translations.py:299
 msgid "Which?"
 msgstr ""
 
-#: fetch-translations.py:297
+#: fetch-translations.py:300
 msgid "North"
 msgstr ""
 
-#: fetch-translations.py:298
+#: fetch-translations.py:301
 msgid "East"
 msgstr ""
 
-#: fetch-translations.py:299
+#: fetch-translations.py:302
 msgid "South"
 msgstr ""
 
-#: fetch-translations.py:300
+#: fetch-translations.py:303
 msgid "West"
 msgstr ""
 
-#: fetch-translations.py:301
+#: fetch-translations.py:304
 msgid "Yesterday"
 msgstr ""
 
-#: fetch-translations.py:302
+#: fetch-translations.py:305
 msgid "Today"
 msgstr ""
 
-#: fetch-translations.py:303
+#: fetch-translations.py:306
 msgid "Tomorrow"
 msgstr ""
 
-#: fetch-translations.py:304
+#: fetch-translations.py:307
 msgid "Where can we buy a ticket?"
 msgstr ""
 
-#: fetch-translations.py:305
+# Street performance or busking is the practice of performing (like juggling or playing music) in public place and begging/asking money/tip for it.
+# http://en.wikipedia.org/wiki/Busking
+#: fetch-translations.py:308
 msgid "Busking"
 msgstr ""
 
-#: fetch-translations.py:306
+#: fetch-translations.py:309
 msgid "Free hugs"
 msgstr ""
 
-#: fetch-translations.py:307
+#: fetch-translations.py:310
 msgid "Zero"
 msgstr ""
 
-#: fetch-translations.py:308
+#: fetch-translations.py:311
 msgid "One"
 msgstr ""
 
-#: fetch-translations.py:309
+#: fetch-translations.py:312
 msgid "Two"
 msgstr ""
 
-#: fetch-translations.py:310
+#: fetch-translations.py:313
 msgid "Three"
 msgstr ""
 
-#: fetch-translations.py:311
+#: fetch-translations.py:314
 msgid "Four"
 msgstr ""
 
-#: fetch-translations.py:312
+#: fetch-translations.py:315
 msgid "Five"
 msgstr ""
 
-#: fetch-translations.py:313
+#: fetch-translations.py:316
 msgid "Six"
 msgstr ""
 
-#: fetch-translations.py:314
+#: fetch-translations.py:317
 msgid "Seven"
 msgstr ""
 
-#: fetch-translations.py:315
+#: fetch-translations.py:318
 msgid "Eight"
 msgstr ""
 
-#: fetch-translations.py:316
+#: fetch-translations.py:319
 msgid "Nine"
 msgstr ""
 
-#: fetch-translations.py:317
+#: fetch-translations.py:320
 msgid "Ten"
 msgstr ""
 
-#: fetch-translations.py:318
+#: fetch-translations.py:321
 msgid "Eleven"
 msgstr ""
 
-#: fetch-translations.py:319
+#: fetch-translations.py:322
 msgid "Twelve"
 msgstr ""
 
-#: fetch-translations.py:320
+#: fetch-translations.py:323
 msgid "Thirteen"
 msgstr ""
 
-#: fetch-translations.py:321
+#: fetch-translations.py:324
 msgid "Fourteen"
 msgstr ""
 
-#: fetch-translations.py:322
+#: fetch-translations.py:325
 msgid "Fifteen"
 msgstr ""
 
-#: fetch-translations.py:323
+#: fetch-translations.py:326
 msgid "Sixteen"
 msgstr ""
 
-#: fetch-translations.py:324
+#: fetch-translations.py:327
 msgid "Seventeen"
 msgstr ""
 
-#: fetch-translations.py:325
+#: fetch-translations.py:328
 msgid "Eighteen"
 msgstr ""
 
-#: fetch-translations.py:326
+#: fetch-translations.py:329
 msgid "Nineteen"
 msgstr ""
 
-#: fetch-translations.py:327
+#: fetch-translations.py:330
 msgid "Twenty"
 msgstr ""
 
-#: fetch-translations.py:328
+#: fetch-translations.py:331
 msgid "Twenty-one"
 msgstr ""
 
-#: fetch-translations.py:329
+#: fetch-translations.py:332
 msgid "Thirty"
 msgstr ""
 
-#: fetch-translations.py:330
+#: fetch-translations.py:333
 msgid "Hundred"
 msgstr ""
 
-#: fetch-translations.py:331
+#: fetch-translations.py:334
 msgid "Thousand"
 msgstr ""
 
-#: fetch-translations.py:332
+#: fetch-translations.py:335
 msgid "Million"
 msgstr ""
 
-#: fetch-translations.py:337
+# Category name
+#: fetch-translations.py:340
 msgid "Other"
 msgstr ""
 
-#: fetch-translations.py:338
+# Category name
+#: fetch-translations.py:341
 msgid "Basics"
 msgstr ""
 
-#: fetch-translations.py:339
+# Category name
+#: fetch-translations.py:342
 msgid "Directions & time"
 msgstr ""
 
-#: fetch-translations.py:340
+# Category name
+#: fetch-translations.py:343
 msgid "Danger"
 msgstr ""
 
-#: fetch-translations.py:341
+# Category name
+#: fetch-translations.py:344
 msgid "Food"
 msgstr ""
 
-#: fetch-translations.py:342
+# Category name
+#: fetch-translations.py:345
 msgid "Sleep"
 msgstr ""
 
-#: fetch-translations.py:343
+# Category name
+#: fetch-translations.py:346
 msgid "Introduction"
 msgstr ""
 
-#: fetch-translations.py:344
+# Category name
+#: fetch-translations.py:347
 msgid "Places"
 msgstr ""
 
-#: fetch-translations.py:345
+# Category name
+#: fetch-translations.py:348
 msgid "Questions"
 msgstr ""
 
-#: fetch-translations.py:346
+# Category name
+#: fetch-translations.py:349
 msgid "Numbers"
 msgstr ""
 
-#: fetch-translations.py:350
+# Interface text.
+#: fetch-translations.py:353
 msgid "Phrasebook"
 msgstr ""
 
-#: fetch-translations.py:351
+# Interface text.
+#: fetch-translations.py:354
 msgid "Translate from..."
 msgstr ""
 
-#: fetch-translations.py:352
+# Interface text.
+#: fetch-translations.py:355
 msgid "Translate to..."
 msgstr ""
 
-#: fetch-translations.py:353
+# Interface text.
+#: fetch-translations.py:356
 msgid "Search..."
 msgstr ""
 
-#: fetch-translations.py:354
+# "About us", not "approximate". Interface text.
+#: fetch-translations.py:357
 msgid "About"
 msgstr ""
 
-#: fetch-translations.py:355
+# "Return", not "human back" or "behind". Interface text.
+#: fetch-translations.py:358
 msgid "Back"
 msgstr ""
 
-#: fetch-translations.py:356
+# Interface text.
+#: fetch-translations.py:359
 msgid "Choose"
 msgstr ""
 
-#: fetch-translations.py:357
+# Interface text
+#: fetch-translations.py:360
 msgid "Contact us"
 msgstr ""
 
-#: fetch-translations.py:358
+# Interface text
+#: fetch-translations.py:361
 msgid "Help translating"
 msgstr ""
 
-#: fetch-translations.py:359
+# Interface text
+#: fetch-translations.py:362
 msgid "Audio off"
 msgstr ""
 
-#: fetch-translations.py:360
+# Interface text
+#: fetch-translations.py:363
 msgid "Audio on"
 msgstr ""
 
-#: fetch-translations.py:361
+# Interface text
+#: fetch-translations.py:364
 msgid "Voice commands off"
 msgstr ""
 
-#: fetch-translations.py:362
+# Interface text
+#: fetch-translations.py:365
 msgid "Voice commands on"
 msgstr ""
 
-#: fetch-translations.py:363
+# Interface text
+#: fetch-translations.py:366
 msgid "Hide translations"
 msgstr ""
 
-#: fetch-translations.py:364
+# Interface text
+#: fetch-translations.py:367
 msgid "Show translations"
+msgstr ""
+
+# http://en.wikipedia.org/wiki/Pictogram
+#: fetch-translations.py:368
+msgid "Pictograms"
 msgstr ""

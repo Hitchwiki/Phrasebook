@@ -36,11 +36,16 @@ localesStructureFile = 'src/js/locales-structure.js';
 languages = [
 
     # Code     GP-path  English name              Original name            RTL?     # transliteration/phonetic
-    [ "bg_BG", "bg",    "Bulgarian",              "български език",        False,   ],#['transliteration'] ],
+    [ "sq_AL", "sq",    "Albanian",               "Gjuha shqipe",          False    ],
+#   [ "ar",    "ar",    "Arabic",                 "العربية",                   True,    ['transliteration'] ],
+    [ "bg_BG", "bg",    "Bulgarian",              "български език",        False    ],#['transliteration'] ],
     [ "ca_ES", "ca",    "Catalan",                "Català",                False    ],
     [ "cs_CZ", "cs",    "Czech",                  "Čeština",               False    ],
     [ "da_DK", "da",    "Danish",                 "Dansk",                 False    ],
+    [ "nl_NL", "nl",    "Dutch",                  "Nederlands",            False    ],
     [ "de_DE", "de",    "German",                 "Deutch",                False    ],
+    [ "el_GR", "el",    "Greek",                  "ελληνικά",               False,   ['transliteration'] ],
+    [ "et_EE", "et",    "Estonian",               "Eesti keel",            False    ],
     [ "en_UK", "en-gb", "English (UK)",           "English (UK)",          False    ],
     [ "en_US", "en",    "English (US)",           "English (US)",          False    ],
     [ "es_ES", "es",    "Spanish",                "Español",               False    ],
@@ -48,31 +53,32 @@ languages = [
     [ "fr_FR", "fr",    "French",                 "Français",              False    ],
     [ "hr_HR", "hr",    "Croatian",               "Hrvatski",              False    ],
     [ "hu_HU", "hu",    "Hungarian",              "Magyar",                False    ],
+    [ "is_IS", "is",    "Icelandic",              "íslenska",              False    ],
     [ "it_IT", "it",    "Italian",                "Italiano",              False    ],
+    [ "id_ID", "id",    "Indonesian",             "Bahasa Indonesia",      False    ],
+    [ "ja_JP", "ja",    "Japanese",               "日本語",                 False    ],#['transliteration'] ],
     [ "lt_LT", "lt",    "Lithuanian",             "Lietuvių",              False    ],
     [ "lv_LV", "lv",    "Latvian",                "Latviešu",              False    ],
+    [ "ms_MY", "ms",    "Malaysian",              "Bahasa Melayu",         False    ],
+    [ "mt_MT", "mt",    "Maltese",                "Malti",                 False    ],
     [ "nb_NO", "nb",    "Norwegian (Bokmål)",     "Norsk (Bokmål)",        False    ],
-    [ "nl_NL", "nl",    "Dutch",                  "Nederlands",            False    ],
     [ "pl_PL", "pl",    "Polish",                 "Polski",                False    ],
     [ "pt_PT", "pt",    "Portuguese",             "Português",             False    ],
     [ "pt_BR", "pt-br", "Portuguese (Brazil)",    "Português (Brazil)",    False    ],
     [ "ro_RO", "ro",    "Romanian",               "Română",                False    ],
-    [ "ru_RU", "ru",    "Russian",                "Русский",               False    ],# ['transliteration'] ],
+    [ "ru_RU", "ru",    "Russian",                "Русский",               False,   ['transliteration'] ],
+    [ "sr_RS", "sr",    "Serbian",                "српски",                False,   ['transliteration'] ],
     [ "sk_SK", "sk",    "Slovakian",              "Slovenčina",            False    ],
-    [ "sq_AL", "sq",    "Albanian",               "Gjuha shqipe",          False    ],
+    [ "sl_SI", "sl",    "Slovenian",              "Slovenščina",           False    ],
     [ "sv_SE", "sv",    "Swedish",                "Svenska",               False    ],
     [ "tr_TR", "tr",    "Turkish",                "Türkçe",                False    ],
-#   [ "et_EE", "et",    "Estonian",               "Eesti keel",            False    ],
+    [ "uk_UA", "uk",    "Ukrainian",              "Українська мова",       False,   ['transliteration'] ],
 #   [ "gd_GB", "gd",    "Scottish Gaelic",        "Gàidhlig"               False    ],
 #   [ "mk_MK", "mk",    "Macedonian",             "Makedonski",            False    ],
-#   [ "el_GR", "el",    "Greek",                  "ελληνικά",               False    ['transliteration'] ]
-#   [ "sr_RS", "sr",    "Serbian",                "српски",                False    ['transliteration'] ],
-#   [ "ar",    "ar",    "Arabic",                 "العربية",                   True     ['transliteration'] ],
-#   [ "fa_IR", "fa",    "Persian",                "فارسی",                   True     ['transliteration'] ],
-#   [ "sl_SI", "sl",    "Slovenian",              "Slovenščina",           False    ],
+#   [ "th_TH", "th",    "Thai",                   "ภาษาไทย",               False    ['transliteration'] ]
+#   [ "he_IL", "he",    "Hebrew",                 "עברית",                  True,    ['transliteration'] ],
+#   [ "fa_IR", "fa",    "Persian",                "فارسی",                   True,    ['transliteration'] ],
 #   [ "tl_PH", "tl",    "Tagalog",                "Tagalog",               False    ],
-#   [ "ms_MY", "ms",    "Malaysian",              "Bahasa Melayu",         False    ],
-#   [ "ja_JP", "ja",    "Japanese",               "日本語"                  False    ['transliteration'] ],
 #   [ "zh_CN", "zh",    "Chinese",                "中文",                   False,   ['transliteration'] ],
 
 ]
@@ -684,7 +690,7 @@ for language in languages:
     #
     if not localesOrig == language[0]:
 
-        #fetchLanguage(language)
+        fetchLanguage(language)
 
         # Check if this language has attached transliterations/phonetics
         try:
