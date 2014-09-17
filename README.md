@@ -122,6 +122,7 @@ grunt reset
 ## License
 * Program code is licensed under MIT.
 * Translations are lisenced under [Creative Commons Attribution-ShareAlike](http://creativecommons.org/licenses/by-sa/3.0/) license.
+* Some pictograms are by [DownloadFreeVector.com](http://DownloadFreeVector.com): [Travel infographic elements](http://downloadfreevector.com/travel-infographic-elements/).
 
 See [LICENSE](LICENSE) for more info.
 

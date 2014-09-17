@@ -20,7 +20,7 @@
             </a>
         </div>
         <div class="col-xs-12 pictograms-selected" ng-show="pictogramSelected !== false" ng-swipe-right="back($event)" ng-swipe-left="back($event)">
-            <button type="button" class="btn btn-lg btn-link close pull-right" ng-click="pictogramSelected = false"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <button type="button" class="close pull-right" ng-click="pictogramSelected = false"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
             <a href="#/pictograms" ng-click="pictogramSelected = false"><i ng-class="pictogram(pictogramSelected)"></i></a>
         </div>
     </div>

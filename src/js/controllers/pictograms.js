@@ -13,6 +13,7 @@ Phrasebook.controller('pictogramsCtrl', function($scope, $log, $routeParams) {
     $scope.pictogramSize = 3;
 
     $scope.pictograms = [
+        "category-places",
         "category-sleep",
         "category-food",
         "coffee",
