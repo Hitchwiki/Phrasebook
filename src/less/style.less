@@ -76,6 +76,7 @@
 /* Protect content from header */
 #about,
 #translate,
+#pictograms,
 #translationSet,
 #languageList {
     padding-top: (@navbar-height + 7px);
@@ -93,13 +94,11 @@
 /* Users can't choose texts from these blocks
  * (Usually they're clicking these a lot and accidentally choose stuff)
  */
+#pictograms,
 #translationSet,
 #languageList,
 .navbar {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+    .user-select(none);
 }
 
 #translationSet {
@@ -158,6 +157,59 @@
         }
 }
 
+/*
+ * Pictograms
+ */
+.pictograms-selected,
+.pictograms-list {
+    text-align: center;
+    font-weight: normal;
+    a {
+        color: @text-color;
+    }
+}
+.pictograms-selected {
+    margin-top: 30px;
+    font-size: 250px;
+    line-height: 250px;
+    .btn {
+        color: @gray;
+        text-decoration: none;
+    }
+}
+.pictograms-list {
+    margin: 10px 0 50px 0;
+    clear: both;
+    .pictogram-size-1 {
+        font-size: 50px;
+        line-height: 90px;
+    }
+    .pictogram-size-2 {
+        font-size: 70px;
+        line-height: 120px;
+    }
+    .pictogram-size-3 {
+        font-size: 100px;
+        line-height: 150px;
+    }
+    .pictogram-size-4 {
+        font-size: 130px;
+        line-height: 180px;
+    }
+    .pictogram-size-5 {
+        font-size: 190px;
+        line-height: 290px;
+    }
+}
+
+.pictograms-zoom {
+    /*position: fixed;*/
+    .btn {
+        font-weight: bold;
+    }
+}
+
+
 
 /*
  * RTL support
@@ -191,7 +243,7 @@
 
 /*
  * Remove 300ms delay on tapping with mobile browsers
- * http://updates.html5rocks.com/2013/12/300ms-tap-delay-gone-away
+ * @link http://updates.html5rocks.com/2013/12/300ms-tap-delay-gone-away
  */
 html {
     -ms-touch-action: manipulation;

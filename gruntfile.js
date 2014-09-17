@@ -6,6 +6,7 @@ module.exports = function(grunt) {
     'build/partials/about.html':       'src/views/partials/about.html',
     'build/partials/list.html':        'src/views/partials/list.html',
     'build/partials/translate.html':   'src/views/partials/translate.html',
+    'build/partials/pictograms.html':  'src/views/partials/pictograms.html',
     'build/docs/index.html':           'src/docs/index.html',
   };
 
@@ -13,6 +14,17 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     templates: templates,
     watch: {
+      main: {
+        files: [
+          'gruntfile.js'
+        ],
+        tasks: [
+          'copy',
+          'preprocess:dev',
+          'less:dev',
+          'concat',
+        ]
+      },
       font: {
         files: [
           'src/fontello-config.json',
@@ -33,7 +45,6 @@ module.exports = function(grunt) {
       },
       js: {
         files: [
-          'gruntfile.js',
           'src/js/*',
           'src/js/controllers/*'
         ],
@@ -41,13 +52,38 @@ module.exports = function(grunt) {
           'concat'
         ]
       },
+      locales: {
+        files: [
+          'src/locale-json/*'
+        ],
+        tasks: [
+          'copy:locales'
+        ]
+      },
+      fetchlocales: {
+        files: [
+          'scripts/fetch-translations.py'
+        ],
+        tasks: [
+          'shell:fetchtranslations'
+        ]
+      },
       views: {
         files: [
           'src/views/*',
-          'src/views/partials/*'
+          'src/views/partials/*',
+          'src/docs/index.html'
         ],
         tasks: [
           'preprocess:dev'
+        ]
+      },
+      images: {
+        files: [
+          'src/img/*'
+        ],
+        tasks: [
+          'copy:images'
         ]
       },
     },
@@ -190,7 +226,29 @@ module.exports = function(grunt) {
       }
     },
     copy: {
-      main: {
+      images: {
+          files: [
+            {
+                expand: true,
+                flatten: true,
+                filter: 'isFile',
+                src: 'src/img/*',
+                dest: 'build/assets/img'
+            }
+          ]
+      },
+      locales: {
+          files: [
+            {
+                expand: true,
+                flatten: true,
+                filter: 'isFile',
+                src: 'src/locale-json/*',
+                dest: 'build/assets/locale/'
+            }
+          ]
+      },
+      other: {
         files: [
             {
                 src: 'README.md',
@@ -201,39 +259,12 @@ module.exports = function(grunt) {
                 dest: 'build/docs/LICENSE'
             },
             {
-                src: 'src/img/og_image.png',
-                dest: 'build/assets/img/og_image.png'
-            },
-            {
-                src: 'src/img/hitchwiki.png',
-                dest: 'build/assets/img/hitchwiki.png'
-            },/*
-            {
-                expand: true,
-                flatten: true,
-                filter: 'isFile',
-                src: 'src/views/partials/*',
-                dest: 'build/partials'
-            },*/
-            {
-                expand: true,
-                flatten: true,
-                filter: 'isFile',
-                src: 'src/locale-json/*',
-                dest: 'build/assets/locale/'
-            },
-            {
                 expand: true,
                 flatten: true,
                 filter: 'isFile',
                 src: 'src/libs/iso-country-flags-svg-collection/svg/country-squared/*',
                 dest: 'build/assets/img/flags/'
-            }/*,
-            {
-                src: 'src/libs/iso-country-flags-svg-collection/iso-3166-1.json',
-                dest: 'build/assets/locale/iso-3166-1.json',
-            }*/
-
+            }
         ]
       },
     },

@@ -7,15 +7,15 @@ Phrasebook.config(function($routeProvider, $locationProvider) {
         templateUrl: 'partials/list.html',
         controller: 'listCtrl'
     })
-    .when('/:localFrom/:localeTo/', {
+    .when('/:localFrom/:localeTo', {
         templateUrl: 'partials/list.html',
         controller: 'listCtrl'
     })
-    .when('/:localFrom/:localeTo/:selectedCategory/', {
+    .when('/:localFrom/:localeTo/:selectedCategory', {
         templateUrl: 'partials/list.html',
         controller: 'listCtrl'
     })
-    .when('/:localFrom/:localeTo/:selectedCategory/:key/', {
+    .when('/:localFrom/:localeTo/:selectedCategory/:key', {
         templateUrl: 'partials/list.html',
         controller: 'listCtrl'
     })
@@ -26,6 +26,14 @@ Phrasebook.config(function($routeProvider, $locationProvider) {
     .when('/translate', {
         templateUrl: 'partials/translate.html',
         controller: 'translateCtrl'
+    })
+    .when('/pictograms/:pictogram', {
+        templateUrl: 'partials/pictograms.html',
+        controller: 'pictogramsCtrl'
+    })
+    .when('/pictograms', {
+        templateUrl: 'partials/pictograms.html',
+        controller: 'pictogramsCtrl'
     })
     .otherwise({
         redirectTo: '/'

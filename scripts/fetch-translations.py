@@ -367,7 +367,8 @@ def translateLanguage(language):
             "voice_off": _("Voice commands off"),
             "voice_on": _("Voice commands on"),
             "visibility_off": _("Hide translations"),
-            "visibility_on": _("Show translations")
+            "visibility_on": _("Show translations"),
+            "pictograms": _("Pictograms")
         }
     }
 

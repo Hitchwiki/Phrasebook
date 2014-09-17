@@ -1,0 +1,29 @@
+<div class="container" id="pictograms" ng-swipe-left="back()" ng-swipe-right="back()">
+    <div class="row">
+        <div class="col-xs-12">
+
+            <div class="pictograms-zoom btn-group-vertical pull-right" ng-hide="pictogramSelected !== false">
+                <button type="button" class="btn btn-lg btn-default" ng-disabled="pictogramSize >= 5" ng-click="pictogramSize = pictogramSize + 1">
+                    <span aria-hidden="true">+</span><span class="sr-only">Bigger</span>
+                </button>
+                <button type="button" class="btn btn-lg btn-default" ng-disabled="pictogramSize <= 1" ng-click="pictogramSize = pictogramSize - 1">
+                    <span aria-hidden="true">-</span><span class="sr-only">Smaller</span>
+                </button>
+            </div>
+
+            <h3>{{ UI('pictograms') }}</h3>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 pictograms-list" ng-hide="pictogramSelected !== false">
+            <a ng-href="#/pictograms/{{ icon }}" ng-click="pictogramSelect(icon, $event)" ng-repeat="icon in pictograms">
+                <i ng-class="pictogram(icon)"></i>
+            </a>
+        </div>
+        <div class="col-xs-12 pictograms-selected" ng-show="pictogramSelected !== false">
+            <button type="button" class="btn btn-lg btn-link close pull-right" ng-click="pictogramSelected = false"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <a href="#/pictograms" ng-click="pictogramSelected = false"><i ng-class="pictogram(pictogramSelected)"></i></a>
+        </div>
+    </div>
+</div>
