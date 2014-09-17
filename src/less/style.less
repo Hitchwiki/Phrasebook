@@ -1,0 +1,88 @@
+/*
+ * Navigation bar
+ */
+#primary-menu {
+    float: right;
+}
+#secondary-menu,
+#language-menu {
+    float: left;
+}
+#language-menu {
+    height: @navbar-height;
+    overflow: hidden;
+    a,
+    .sep {
+        display: inline-block;
+        float: left;
+        height: @navbar-height;
+        text-align: center;
+        line-height: @navbar-height;
+        padding-left: 15px;
+        padding-right: 15px;
+        color: @navbar-default-color;
+        @media only screen and (max-width: @screen-xs-max) {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    }
+    a {
+        font-size: 16px;
+        text-decoration: none;
+        @media only screen and (max-width: @screen-xs-max) {
+            font-size: 12px;
+        }
+        &.active {
+            background: @navbar-default-link-active-bg;
+            color: @navbar-default-link-active-color;
+        }
+    }
+}
+
+.dropdown-menu > li > a {
+    // Also when there's no href
+    cursor: pointer;
+
+    // Bigger the Better for mobile
+    padding-top: @padding-base-horizontal;
+    padding-bottom: @padding-base-horizontal;
+    font-size: @font-size-large;
+
+}
+
+/* Protect content from header */
+#about,
+#translate,
+#pictograms,
+#translationSet,
+#languageList {
+    padding-top: (@navbar-height + 7px);
+}
+
+.flag {
+    margin-right: 5px;
+    border-radius: 9px;
+    .square(18px);
+    .box-shadow(0 0 3px rgba(0,0,0,0.1));
+}
+
+
+/* Users can't choose texts from these blocks
+ * (Usually they're clicking these a lot and accidentally choose stuff)
+ */
+#pictograms,
+#translationSet,
+#languageList,
+.navbar {
+    .user-select(none);
+}
+
+
+/*
+ * Remove 300ms delay on tapping with mobile browsers
+ * @link http://updates.html5rocks.com/2013/12/300ms-tap-delay-gone-away
+ */
+html {
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
