@@ -57,33 +57,19 @@ Phrasebook.controller('mainCtrl', function($scope, $location, $browser, $http, $
 
     $scope.location = $location;
 
-    $scope.defaultUI = {
-        "translate_from": "Translate from...",
-        "visibility_off": "Hide translations",
-        "about": "About",
-        "contact_us": "Contact us",
-        "help_translating": "Help translating",
-        "voice_off": "Voice commands off",
-        "visibility_on": "Show translations",
-        "search": "Search...",
-        "voice_on": "Voice commands on",
-        "audio_on": "Audio on",
-        "phrasebook": "Phrasebook",
-        "translate_to": "Translate to...",
-        "audio_off": "Audio off",
-        "choose": "Choose",
-        "back": "Back"
-    };
-
     $scope.UI = function(key) {
 
-        if( $scope.localeFrom != false && $scope.localeFromStrings.UI[key] ) {
+        if( $scope.localeFrom !== false && $scope.localeFromStrings.length > 0 && $scope.localeFromStrings.UI[key] ) {
             return $scope.localeFromStrings.UI[key];
         }
-        else if( $scope.defaultUI[key] ) {
-            return $scope.defaultUI[key];
+
+        // Fall back into default UI translations if we don't have language file loaded.
+        // @see scripts/fetch-translations.py and /src/js/locales-default-ui.js for more
+        else if( defaultUI[key] ) {
+            return defaultUI[key];
         }
-        else return key;
+
+        else return '';
     };
 
     $scope.setLang = function($event, code, direction) {

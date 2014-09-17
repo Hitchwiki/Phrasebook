@@ -31,6 +31,8 @@ localesListFile = 'src/js/locales.js';
 # Where to store phrasebook keys .js file
 localesStructureFile = 'src/js/locales-structure.js';
 
+defaultUIFile = 'src/js/locales-default-ui.js';
+
 # Define languages here
 # Make sure you have .mo file in place under ./locale/
 languages = [
@@ -131,7 +133,7 @@ def translateLanguage(language):
 
     # Prepare gettext for this language
     try:
-        translation = gettext.translation(projectname, localeSrcDir, languages=[language[0]], fallback=True)
+        translation = gettext.translation(projectname, localeSrcDir, languages=[language[0]], fallback=False)
     except IOError:
         print "Locale not found. Using default messages."
         translation = gettext.NullTranslations()
@@ -351,6 +353,7 @@ def translateLanguage(language):
             "category-questions": _("Questions"),
             "category-numbers": _("Numbers"),
         },
+
         # User Interface
         "UI": {
             "phrasebook": _("Phrasebook"),
@@ -395,11 +398,17 @@ def saveLangJSON(filename, json):
     return True
 
 
+def saveDefaultUI(UIStrings):
+    print "Saving default UI strings to "+defaultUIFile
+    fp = open(defaultUIFile, 'w')
+    fp.write( 'var defaultUI=' + json.dumps(UIStrings, ensure_ascii=False).replace('\u0000','') )
+    fp.close()
+
 
 #
 # Save locale list
 #
-print "Writing full list of locales and their names to locales.js."
+print "Writing full list of locales and their names to "+localesListFile
 localeList = {}
 for language in languages:
 
@@ -717,6 +726,10 @@ for language in languages:
         # Save This translation to the json
         saveLangJSON(language[0]+'.json', json.dumps(languageTranslated, ensure_ascii=False).replace('\u0000',''));
 
+        # If it was default locale, save UI bit into separate file to be used as UI fallback
+        if language[0] == localesOrig:
+            saveDefaultUI(languageTranslated['UI']);
+
         # Check if this language has attached transliterations/phonetics
         try:
             language[5]
@@ -725,10 +738,10 @@ for language in languages:
             for languageExtra in language[5]:
 
                 # Translate transliteration
-                languageTranslated = translateLanguage(language[0] + '@' + languageExtra);
+                languageTranslatedExtra = translateLanguage(language[0] + '@' + languageExtra);
 
                 # Save transliteration to .json
-                saveLangJSON(language[0]+'@'+languageExtra+'.json', json.dumps(languageTranslated, ensure_ascii=False).replace('\u0000',''));
+                saveLangJSON(language[0]+'@'+languageExtra+'.json', json.dumps(languageTranslatedExtra, ensure_ascii=False).replace('\u0000',''));
 
         except IndexError:
             pass
