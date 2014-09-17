@@ -176,6 +176,10 @@
         color: @gray;
         text-decoration: none;
     }
+    // Fix for wrong size icon
+    .icon-bed {
+        font-size: 140px;
+    }
 }
 .pictograms-list {
     margin: 10px 0 50px 0;
@@ -183,27 +187,48 @@
     .pictogram-size-1 {
         font-size: 50px;
         line-height: 90px;
+        // Fix for wrong size icon
+        &.icon-bed {
+            font-size: 30px;
+        }
     }
     .pictogram-size-2 {
         font-size: 70px;
         line-height: 120px;
+        // Fix for wrong size icon
+        &.icon-bed {
+            font-size: 40px;
+        }
     }
     .pictogram-size-3 {
         font-size: 100px;
         line-height: 150px;
+        // Fix for wrong size icon
+        &.icon-bed {
+            font-size: 60px;
+        }
     }
     .pictogram-size-4 {
         font-size: 130px;
         line-height: 180px;
+        // Fix for wrong size icon
+        &.icon-bed {
+            font-size: 80px;
+        }
     }
     .pictogram-size-5 {
         font-size: 190px;
         line-height: 290px;
+        // Fix for wrong size icon
+        &.icon-bed {
+            font-size: 90px;
+        }
     }
 }
 
 .pictograms-zoom {
-    /*position: fixed;*/
+    margin-top: 20px;
+    margin-bottom: 10px;
     .btn {
         font-weight: bold;
     }

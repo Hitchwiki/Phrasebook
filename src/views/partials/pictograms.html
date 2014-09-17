@@ -1,8 +1,8 @@
 <div class="container" id="pictograms" ng-swipe-left="back()" ng-swipe-right="back()">
     <div class="row">
-        <div class="col-xs-12">
+        <div class="col-xs-12 text-center">
 
-            <div class="pictograms-zoom btn-group-vertical pull-right" ng-hide="pictogramSelected !== false">
+            <div class="pictograms-zoom btn-group" ng-hide="pictogramSelected !== false">
                 <button type="button" class="btn btn-lg btn-default" ng-disabled="pictogramSize >= 5" ng-click="pictogramSize = pictogramSize + 1">
                     <span aria-hidden="true">+</span><span class="sr-only">Bigger</span>
                 </button>
@@ -10,8 +10,6 @@
                     <span aria-hidden="true">-</span><span class="sr-only">Smaller</span>
                 </button>
             </div>
-
-            <h3>{{ UI('pictograms') }}</h3>
 
         </div>
     </div>
