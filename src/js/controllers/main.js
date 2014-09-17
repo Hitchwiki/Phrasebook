@@ -54,7 +54,10 @@ Phrasebook.controller('mainCtrl', function($scope, $location, $browser, $http, $
     // Translation contrainers
     $scope.localeFromStrings = {};
     $scope.localeToStrings = {};
+    $scope.localeToStringsTransliteration = false;
+    $scope.localeToStringsPhonetic = false;
 
+    // Helper for navi
     $scope.location = $location;
 
     $scope.UI = function(key) {
@@ -76,7 +79,7 @@ Phrasebook.controller('mainCtrl', function($scope, $location, $browser, $http, $
 
         $log.log("->setLang: " + code + ', ' + direction);
 
-        if($event !== false) $event.preventDefault();
+        if($event) $event.preventDefault();
 
         if(!direction) return;
 
@@ -84,7 +87,7 @@ Phrasebook.controller('mainCtrl', function($scope, $location, $browser, $http, $
         if(direction == 'To') $scope.localeTo = code;
         else if(direction == 'From') $scope.localeFrom = code;
 
-        if(code == false) {
+        if(!code) {
             // Remove it
             $cookieStore.remove('locale' + direction);
         }
@@ -93,7 +96,27 @@ Phrasebook.controller('mainCtrl', function($scope, $location, $browser, $http, $
             $cookieStore.put('locale' + direction, code);
 
             // Get it!
-            $scope.loadTranslation(direction);
+            $scope.loadTranslation(direction, code);
+
+            // When dealing with 'To' translations
+            // If translation has alternatives, get them, too
+            $log.log($scope.locales[code]);
+            if( $scope.locales[code].alt.length > 0 ) {
+
+                $log.log('Alternative versions detected');
+
+                angular.forEach($scope.locales[code].alt, function(alternative) {
+
+                    $scope.loadTranslation('Alt', code, alternative);
+
+                });
+
+            }
+            else {
+                $scope.localeToStringsTransliteration = false;
+                $scope.localeToStringsPhonetic = false;
+
+            }
         }
 
     };
@@ -103,34 +126,50 @@ Phrasebook.controller('mainCtrl', function($scope, $location, $browser, $http, $
      * Fetch translation json
      * Uses $scope.localeTo || $scope.localeFrom to determine which locale to load
      */
-    $scope.loadTranslation = function(direction) {
+    $scope.loadTranslation = function(direction, code, alternative) {
 
         $log.log("->loadTranslation: " + direction);
 
         if(!direction) return;
 
-        var code = (direction == 'To') ? $scope.localeTo : $scope.localeFrom;
+        //var code = (direction == 'To') ? $scope.localeTo : $scope.localeFrom;
+
+        // Filename?
+        // var localeExtraDivider comes from locales.js
+        var localeFile = (alternative) ? code + (localeExtraDivider || '@') + alternative : code;
+
+        $log.log(localeFile + '.json');
 
         $http({
-                method: 'GET',
-                cache: true,
-                url: 'assets/locale/' + code + '.json?ver=' + localesVer
-              })
-              .success(function(data, status, headers, config) {
+              method: 'GET',
+              cache: true,
+              url: 'assets/locale/' + localeFile + '.json?ver=' + localesVer
+            })
+            .success(function(data, status, headers, config) {
 
-                  $log.log("->loadTranslation->get: " + code + ' ->success');
+                $log.log("->loadTranslation->get: (direction: " + direction + ") " + localeFile + '.json ->success');
 
-                  $log.log(data);
+                $log.log(data);
 
-                  if(direction == 'From') $scope.localeFromStrings = data;
-                  else if(direction == 'To') $scope.localeToStrings = data;
+                if(direction == 'From') {
+                    $scope.localeFromStrings = data;
+                }
+                else if(direction == 'To') {
+                    $scope.localeToStrings = data;
+                }
+                else if(direction == 'Alt' && alternative == 'transliteration') {
+                    $scope.localeToStringsTransliteration = data;
+                }
+                else if(direction == 'Alt' && alternative == 'phonetic') {
+                    $scope.localeToStringsPhonetic = data;
+                }
 
-              })
-              .error(function(data, status, headers, config) {
-                  $log.error("->loadTranslation->get: " + code + ' ->error');
-                  alert("Obs! Something went wrong. Translations for " + $scope.langName(code, 'the chosen language') + " couldn't be loaded. Falling back to English.");
-                  $scope.setLang(false, 'en_UK', direction);
-              });
+            })
+            .error(function(data, status, headers, config) {
+                $log.error("->loadTranslation->get: " + code + ' ->error');
+                alert("Obs! Something went wrong. Translations for " + $scope.langName(code, 'the chosen language') + " couldn't be loaded. Falling back to English.");
+                $scope.setLang(false, 'en_UK', direction);
+            });
     };
 
 
@@ -212,9 +251,9 @@ Phrasebook.controller('mainCtrl', function($scope, $location, $browser, $http, $
     /**
      * Finally, if this is cold start and we had locales set but nothing loaded, just go ang grab em...
      */
-    if($scope.localeFrom != false) $scope.loadTranslation('From');
+    if($scope.localeFrom != false) $scope.setLang(false, $scope.localeFrom, 'From');
 
-    if($scope.localeTo != false) $scope.loadTranslation('To');
+    if($scope.localeTo != false) $scope.setLang(false, $scope.localeTo, 'To');
 
 
 });
