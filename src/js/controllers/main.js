@@ -100,8 +100,7 @@ Phrasebook.controller('mainCtrl', function($scope, $location, $browser, $http, $
 
             // When dealing with 'To' translations
             // If translation has alternatives, get them, too
-            $log.log($scope.locales[code]);
-            if( $scope.locales[code].alt.length > 0 ) {
+            if( direction == "To" && $scope.locales[code].alt.length > 0 ) {
 
                 $log.log('Alternative versions detected');
 
@@ -110,12 +109,10 @@ Phrasebook.controller('mainCtrl', function($scope, $location, $browser, $http, $
                     $scope.loadTranslation('Alt', code, alternative);
 
                 });
-
             }
-            else {
+            else if( direction == "To" ) {
                 $scope.localeToStringsTransliteration = false;
                 $scope.localeToStringsPhonetic = false;
-
             }
         }
 
