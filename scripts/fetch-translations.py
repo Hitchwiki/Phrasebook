@@ -43,7 +43,7 @@ languages = [
     # Code     GP-path  English name              Original name            RTL?     # transliteration/phonetic
     [ "sq_AL", "sq",    "Albanian",               "Gjuha shqipe",          False,   [] ],
 #   [ "ar",    "ar",    "Arabic",                 "العربية",                   True,    ['transliteration'] ],
-    [ "bg_BG", "bg",    "Bulgarian",              "български език",        False,   [] ],#['transliteration'] ],
+    [ "bg_BG", "bg",    "Bulgarian",              "български език",        False,   ['transliteration'] ],
     [ "ca_ES", "ca",    "Catalan",                "Català",                False,   [] ],
     [ "cs_CZ", "cs",    "Czech",                  "Čeština",               False,   [] ],
     [ "da_DK", "da",    "Danish",                 "Dansk",                 False,   [] ],
@@ -57,6 +57,7 @@ languages = [
     [ "fi_FI", "fi",    "Finnish",                "Suomi",                 False,   [] ],
     [ "fr_FR", "fr",    "French",                 "Français",              False,   [] ],
     [ "hr_HR", "hr",    "Croatian",               "Hrvatski",              False,   [] ],
+    [ "he_IL", "he",    "Hebrew",                 "עברית",                  True,    ['transliteration'] ],
     [ "hu_HU", "hu",    "Hungarian",              "Magyar",                False,   [] ],
     [ "is_IS", "is",    "Icelandic",              "íslenska",              False,   [] ],
     [ "it_IT", "it",    "Italian",                "Italiano",              False,   [] ],
@@ -78,10 +79,10 @@ languages = [
     [ "sv_SE", "sv",    "Swedish",                "Svenska",               False,   [] ],
     [ "tr_TR", "tr",    "Turkish",                "Türkçe",                False,   [] ],
     [ "uk_UA", "uk",    "Ukrainian",              "Українська мова",       False,   ['transliteration'] ],
+#   [ "ga_IE", "ga",    "Irish",                  "Gaeilge"                False,   [] ],
 #   [ "gd_GB", "gd",    "Scottish Gaelic",        "Gàidhlig"               False,   [] ],
 #   [ "mk_MK", "mk",    "Macedonian",             "Makedonski",            False,   [] ],
 #   [ "th_TH", "th",    "Thai",                   "ภาษาไทย",               False    ['transliteration'] ]
-#   [ "he_IL", "he",    "Hebrew",                 "עברית",                  True,    ['transliteration'] ],
 #   [ "fa_IR", "fa",    "Persian",                "فارسی",                   True,    ['transliteration'] ],
 #   [ "tl_PH", "tl",    "Tagalog",                "Tagalog",               False,   [] ],
 #   [ "zh_CN", "zh",    "Chinese",                "中文",                   False,   ['transliteration'] ],
