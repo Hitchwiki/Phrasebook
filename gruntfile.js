@@ -277,7 +277,6 @@ module.exports = function(grunt) {
         "src/locale",
         "src/locale-json",
         "src/js/locales.js",
-        "src/js/locales-structure.js",
         "src/js/locales-default-ui.js",
         "src/views/_icons.html"
       ]

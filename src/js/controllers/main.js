@@ -100,15 +100,9 @@ Phrasebook.controller('mainCtrl', function($scope, $location, $browser, $http, $
 
             // When dealing with 'To' translations
             // If translation has alternatives, get them, too
-            if( direction == "To" && $scope.locales[code].alt.length > 0 ) {
-
-                $log.log('Alternative versions detected');
-
-                angular.forEach($scope.locales[code].alt, function(alternative) {
-
-                    $scope.loadTranslation('Alt', code, alternative);
-
-                });
+            if( direction == "To" && $scope.locales[code].transliteration === true ) {
+                $log.log('Transliteration detected');
+                $scope.loadTranslation('Alt', code, 'transliteration');
             }
             else if( direction == "To" ) {
                 $scope.localeToStringsTransliteration = false;
@@ -146,8 +140,6 @@ Phrasebook.controller('mainCtrl', function($scope, $location, $browser, $http, $
 
                 $log.log("->loadTranslation->get: (direction: " + direction + ") " + localeFile + '.json ->success');
 
-                $log.log(data);
-
                 if(direction == 'From') {
                     $scope.localeFromStrings = data;
                 }
@@ -177,7 +169,7 @@ Phrasebook.controller('mainCtrl', function($scope, $location, $browser, $http, $
 
         if(!onFalse) onFalse = '';
 
-        return (!code) ? onFalse : $scope.locales[code].name;
+        return (!code) ? onFalse : $scope.locales[code].name_english;
     };
 
 

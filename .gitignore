@@ -8,8 +8,8 @@ src/vendor
 src/locale
 src/locale-json
 src/js/locales.js
-src/js/locales-structure.js
 src/js/locales-default-ui.js
+src/print/strings.json
 src/views/_icons.html
 
 # Cordova/PhoneGap

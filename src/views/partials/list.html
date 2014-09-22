@@ -1,17 +1,19 @@
+<!-- List of languages to translate From -->
 <div class="container" id="languageList" ng-show="!localeFrom">
     <h3 class="text-center">{{ UI('translate_from') }}</h3>
     <div class="list-group" id="chooseLanguage" ng-show="!localeFrom">
         <a ng-repeat="locale in locales | orderBy:name" href="#" class="list-group-item" ng-click="setLang($event, locale.code, 'From')">
-            <img ng-src="{{flag(locale.code)}}" class="flag"> {{ locale.name }}
+            <img ng-src="{{ flag(locale.code) }}" class="flag"> {{ locale.name_english }}
         </a>
     </div>
 </div>
 
-<div class="container" id="languageList" ng-show="!localeTo && localeFrom != false">
+<!-- List of languages to translate to -->
+<div class="container" id="languageList" ng-show="!localeTo && localeFrom !== false">
     <h3 class="text-center">{{ UI('translate_to') }}</h3>
-    <div class="list-group" id="chooseLanguage" ng-show="localeTo == false">
+    <div class="list-group" id="chooseLanguage" ng-show="localeTo === false">
         <a ng-repeat="locale in locales | orderBy:'name'" href="#" class="list-group-item" ng-click="setLang($event, locale.code, 'To')">
-            <img ng-src="{{flag(locale.code)}}" class="flag"> {{ locale.name }}
+            <img ng-src="{{ flag(locale.code) }}" class="flag"> {{ locale.name_english }}
         </a>
     </div>
 </div>

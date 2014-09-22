@@ -7,14 +7,13 @@ import datetime
 import os
 import urllib2
 
-
 #
 # Configuration
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
 
 # Path to GlotPress
-glotpress = 'http://hitchwiki.org/translate/';
+glotpress_api = 'http://hitchwiki.org/translate/';
 
 # Project name at GlotPress
 projectname = 'phrasebook';
@@ -25,85 +24,37 @@ localeSrcDir = 'src/locale/';
 # Where to store language .json files
 localeJsonDir = 'src/locale-json/';
 
-# Where to store language list .js file
+# Where to store language meta info (.js file)
 localesListFile = 'src/js/locales.js';
 
-# Where to store phrasebook keys .js file
-localesStructureFile = 'src/js/locales-structure.js';
-
+# Where to store default UI strings (.js file)
 defaultUIFile = 'src/js/locales-default-ui.js';
+
+# Where to store default strings to use with pdf printing
+defaultPrintFile = 'src/print/strings.json';
+
+# Where language origin data is stored
+languagesFile = 'src/languages.json';
+structureFile = 'src/structure.json';
 
 # Character dividing dialects,transliterations etc from language code. Eg. "ru_RU@transliteration" or "en_UK@pirate"
 localeExtraDivider = '@';
 
-# Define languages here
-# Make sure you have .mo file in place under ./locale/
-languages = [
-
-    # Code     GP-path  English name              Original name            RTL?     # transliteration/phonetic
-    [ "sq_AL", "sq",    "Albanian",               "Gjuha shqipe",          False,   [] ],
-#   [ "ar",    "ar",    "Arabic",                 "العربية",                   True,    ['transliteration'] ],
-    [ "bg_BG", "bg",    "Bulgarian",              "български език",        False,   ['transliteration'] ],
-    [ "ca_ES", "ca",    "Catalan",                "Català",                False,   [] ],
-    [ "cs_CZ", "cs",    "Czech",                  "Čeština",               False,   [] ],
-    [ "da_DK", "da",    "Danish",                 "Dansk",                 False,   [] ],
-    [ "nl_NL", "nl",    "Dutch",                  "Nederlands",            False,   [] ],
-    [ "de_DE", "de",    "German",                 "Deutch",                False,   [] ],
-    [ "el_GR", "el",    "Greek",                  "ελληνικά",               False,   ['transliteration'] ],
-    [ "et_EE", "et",    "Estonian",               "Eesti keel",            False,   [] ],
-    [ "en_UK", "en-gb", "English (UK)",           "English (UK)",          False,   [] ],
-    [ "en_US", "en",    "English (US)",           "English (US)",          False,   [] ],
-    [ "es_ES", "es",    "Spanish",                "Español",               False,   [] ],
-    [ "fi_FI", "fi",    "Finnish",                "Suomi",                 False,   [] ],
-    [ "fr_FR", "fr",    "French",                 "Français",              False,   [] ],
-    [ "hr_HR", "hr",    "Croatian",               "Hrvatski",              False,   [] ],
-    [ "he_IL", "he",    "Hebrew",                 "עברית",                  True,    ['transliteration'] ],
-    [ "hu_HU", "hu",    "Hungarian",              "Magyar",                False,   [] ],
-    [ "is_IS", "is",    "Icelandic",              "íslenska",              False,   [] ],
-    [ "it_IT", "it",    "Italian",                "Italiano",              False,   [] ],
-    [ "id_ID", "id",    "Indonesian",             "Bahasa Indonesia",      False,   [] ],
-    [ "ja_JP", "ja",    "Japanese",               "日本語",                 False,   [] ], #['transliteration'] ],
-    [ "lt_LT", "lt",    "Lithuanian",             "Lietuvių",              False,   [] ],
-    [ "lv_LV", "lv",    "Latvian",                "Latviešu",              False,   [] ],
-    [ "ms_MY", "ms",    "Malaysian",              "Bahasa Melayu",         False,   [] ],
-    [ "mt_MT", "mt",    "Maltese",                "Malti",                 False,   [] ],
-    [ "nb_NO", "nb",    "Norwegian (Bokmål)",     "Norsk (Bokmål)",        False,   [] ],
-    [ "pl_PL", "pl",    "Polish",                 "Polski",                False,   [] ],
-    [ "pt_PT", "pt",    "Portuguese",             "Português",             False,   [] ],
-    [ "pt_BR", "pt-br", "Portuguese (Brazil)",    "Português (Brazil)",    False,   [] ],
-    [ "ro_RO", "ro",    "Romanian",               "Română",                False,   [] ],
-    [ "ru_RU", "ru",    "Russian",                "Русский",               False,   ['transliteration'] ],
-    [ "sr_RS", "sr",    "Serbian",                "српски",                False,   ['transliteration'] ],
-    [ "sk_SK", "sk",    "Slovakian",              "Slovenčina",            False,   [] ],
-    [ "sl_SI", "sl",    "Slovenian",              "Slovenščina",           False,   [] ],
-    [ "sv_SE", "sv",    "Swedish",                "Svenska",               False,   [] ],
-    [ "tr_TR", "tr",    "Turkish",                "Türkçe",                False,   [] ],
-    [ "uk_UA", "uk",    "Ukrainian",              "Українська мова",       False,   ['transliteration'] ],
-#   [ "ga_IE", "ga",    "Irish",                  "Gaeilge"                False,   [] ],
-#   [ "gd_GB", "gd",    "Scottish Gaelic",        "Gàidhlig"               False,   [] ],
-#   [ "mk_MK", "mk",    "Macedonian",             "Makedonski",            False,   [] ],
-#   [ "th_TH", "th",    "Thai",                   "ภาษาไทย",               False    ['transliteration'] ]
-#   [ "fa_IR", "fa",    "Persian",                "فارسی",                   True,    ['transliteration'] ],
-#   [ "tl_PH", "tl",    "Tagalog",                "Tagalog",               False,   [] ],
-#   [ "zh_CN", "zh",    "Chinese",                "中文",                   False,   ['transliteration'] ],
-
-]
-
 # Language of original strings
 localesOrig = 'en_UK'
 
-
 error_count = 0;
+
 
 #
 # Function to download and save language files from GlotPress
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
-def fetchLanguage(language):
+def fetchLanguage(code, glotpress_code):
 
     print "Downloading..."
 
     # Path where to save files
-    srcDirectory = localeSrcDir+'%s/LC_MESSAGES/' % language[0]
+    srcDirectory = localeSrcDir + code + '/LC_MESSAGES/'
 
     # If language directory doesn't exist, create it
     if not os.path.isdir(srcDirectory):
@@ -111,7 +62,7 @@ def fetchLanguage(language):
         os.makedirs(srcDirectory)
 
     # URL for fetching translation sources
-    fetchURL = glotpress + 'projects/' + projectname + '/' + language[1] + '/' + language[0] + '/export-translations?format='
+    fetchURL = glotpress_api + 'projects/' + projectname + '/' + glotpress_code + '/' + code + '/export-translations?format='
 
     # Download and save files in two formats
     for fileformat in ['po', 'mo']:
@@ -126,8 +77,6 @@ def fetchLanguage(language):
         fp.close()
 
     return True
-
-
 
 
 #
@@ -410,273 +359,59 @@ def saveDefaultUI(UIStrings):
     fp.close()
 
 
+# Save strings for using with pdf printer
+def savePrintStrings(strings):
+    print "Saving default strings to "+defaultPrintFile
+    fp = open(defaultPrintFile, 'w')
+    fp.write( json.dumps(strings, ensure_ascii=False).replace('\u0000','') )
+    fp.close()
+
+
 #
-# Save locale list
+# Save meta info:
+# - Original language
+# - divider between language code and language extensions like transliteration
+# - locale list
+# - version of this export
+# - structure of strings
 #
 print "Writing full list of locales and their names to "+localesListFile
-localeList = {}
-for language in languages:
 
-    localeList.update({language[0]: {
-            'code': language[0],
-            'name': language[2],
-            'orig': language[3],
-            'RTL': language[4],
-            'alt': language[5]
-           #'flag': language[0][-2:].lower(),
+localeList = {}
+
+# Fetch key structure
+fp_structure = open(structureFile)
+structure = json.load(fp_structure)
+fp_structure.close()
+
+# Fetch languages list
+fp_languages = open(languagesFile)
+languages = json.load(fp_languages)
+fp_languages.close()
+
+# Add keys into array for easier use at the app
+for language in languages:
+    localeList.update({language["code"]: {
+            'code': language["code"],
+            'name_english': language["name_english"],
+            'name_original': language["name_original"],
+            'RTL': language["RTL"],
+            'transliteration': language["transliteration"]
+           #'flag': language["code"][-2:].lower(),
     }});
 
 today = datetime.date.today()
 
+jsContent =  'var localesOrig="' + localesOrig + '",'
+jsContent += 'localeExtraDivider="' + localeExtraDivider + '",'
+jsContent += 'localesVer="' + today.strftime('%Y-%m-%d')+'",'
+jsContent += 'locales=' + json.dumps( localeList, ensure_ascii=True ).replace('\u0000','') + ','
+jsContent += 'localesStructure=' + json.dumps( structure, ensure_ascii=True ).replace('\u0000','') + ';'
+
 fp = open(localesListFile, 'w')
-fp.write( 'var localesOrig="'+localesOrig+'",localeExtraDivider="'+localeExtraDivider+'",localesVer="'+today.strftime('%Y-%m-%d')+'",locales='+json.dumps(localeList, ensure_ascii=False).replace('\u0000','') )
+fp.write( jsContent )
 fp.close()
 
-
-# Write a model of phrasebook to json
-localesStructure = [
-    [
-        'category-basics',
-        [
-            'hitchhike',
-            'hitchhiker',
-            'hello',
-            'bye',
-            'excuse_me',
-            'thank_you',
-            'yes',
-            'no',
-            'maybe',
-            'stop',
-            'sorry',
-            'are_you_going_towards',
-            'bad',
-            'no_problem',
-            'ok',
-            'perfect',
-            'no_thanks',
-            'thats_great',
-            'have_nice_day',
-            'for_free',
-            'i_cant_pay',
-            'do_you_speak',
-            'any_other_languages',
-            'speak_slower',
-            'i_dont_understand',
-            'i_dont_know',
-
-            # Really other but as long as it's not more, keeping it under basics
-            'money',
-            'smoke',
-            'busking',
-            'free_hugs'
-        ]
-    ],
-    [
-        'category-questions',
-        [
-            'could_get_lift_to',
-            'just_before',
-            'just_after',
-            'how_much_cost',
-            'who',
-            'what',
-            'where',
-            'why',
-            'when',
-            'how',
-            'how_much',
-            'how_long',
-            'which',
-            'can_leave_my_bag',
-            'how_far',
-            'where_are_we',
-            'what_time',
-        ]
-    ],
-    [
-        'category-places',
-        [
-            'hitchhiking_spot',
-            'petrol_station',
-            'service_area',
-            'rest_area',
-            'along_the_highway',
-            'roundabout',
-            'junction',
-            'tjunction',
-            'crossroads',
-            'ring_road',
-            'across_the_road',
-            'highway_to',
-            'toll_road_to',
-            'small_road_to',
-            'city_centre',
-            'tourist_office',
-            'map',
-            'toilet',
-            'supermarket',
-            'fruit_market',
-            'pharmacy',
-            'camp_site',
-            'internet_cafe',
-            'cash_machine',
-            'bank',
-            'bus_stop',
-            'metro_station',
-            'bus_station',
-            'train_station',
-            'wifi'
-
-
-        ]
-    ],
-    [
-        'category-introduction',
-        [
-            'im_not_in_hurry',
-            'im_going_to',
-            'where_going',
-            'my_name_is',
-            'whats_your_name',
-            'im_from',
-            'where_are_you_from',
-            'am_years_old',
-            'how_old',
-            'i_study',
-            'im_in_year',
-            'im_studying',
-            'im_holiday',
-            'im_visiting',
-            'im_hh_around',
-            'im_will_stay',
-            'im_going_back',
-            'im_tired',
-            'im_fine',
-            'im_cold',
-            'im_hot',
-            'im_sick',
-        ]
-    ],
-    [
-        'category-sleep',
-        [
-            'place_to_sleep',
-            'tent',
-            'hostel',
-            'room',
-            'hotel',
-        ]
-    ],
-    [
-        'category-food',
-        [
-            'cheers',
-            'thirsty',
-            'drink',
-            'water',
-            'tea',
-            'hot_chocolate',
-            'coffee',
-            'juice',
-            'beer',
-            'wine',
-            'eat',
-            'bread',
-            'fruit',
-            'meat',
-            'vegetarian',
-            'vegan',
-            'i_dont_eat_meat',
-            'cheap_restaurant',
-            'enjoy_meal',
-            'dupsterdiving',
-            'im_hungry'
-        ]
-    ],
-    [
-        'category-danger',
-        [
-            'stop', # twice, also in basics
-            'help', # twice, also in basics
-            'i_have_friend',
-            'im_married',
-            'texted_my_father',
-            'dont_touch_me',
-            'let_me_out',
-            'pull_over',
-            'drop_me_off'
-        ]
-    ],
-    [
-        'category-directions_time',
-        [
-            'today',
-            'tomorrow',
-            'day',
-            'week',
-            'month',
-            'year',
-            'kilometre',
-            'left',
-            'right',
-            'before',
-            'after',
-            'this',
-            'next',
-            'last',
-            'often',
-            'never',
-            'sometimes',
-            'rarely',
-            'long',
-            'short',
-            'up',
-            'down',
-            'over',
-            'under',
-            'north',
-            'east',
-            'south',
-            'west'
-        ]
-    ],
-    [
-        'category-numbers',
-        [
-            'n0',
-            'n1',
-            'n2',
-            'n3',
-            'n4',
-            'n5',
-            'n6',
-            'n7',
-            'n8',
-            'n9',
-            'n10',
-            'n11',
-            'n12',
-            'n13',
-            'n14',
-            'n15',
-            'n16',
-            'n17',
-            'n18',
-            'n19',
-            'n20',
-            'n21',
-            'n30',
-            'n100',
-            'n1000',
-            'n1000000'
-        ]
-    ]
-];
-
-fp = open(localesStructureFile, 'w')
-fp.write( 'var localesStructure='+json.dumps(localesStructure, ensure_ascii=False).replace('\u0000','') )
-fp.close()
 
 
 # If directory for json doesn't exist, create it
@@ -690,71 +425,59 @@ if not os.path.isdir(localeJsonDir):
 for language in languages:
 
     # language is an array, for example:
-    # language[0]:  "bg_BG"
-    # language[1]:  "bg"
-    # language[2]:  "Bulgarian"
-    # language[3]:  "български език"
-    # language[4]:  False
-    # language[5]:  ['transliteration']
-
+    # language["code"]:  "bg_BG"
+    # language["glotpress"]:  "bg"
+    # language["name_english"]:  "Bulgarian"
+    # language["name_original"]:  "български език"
+    # language["RTL"]:  "False"
+    # language["transliteration"]:  "True"
 
     print
-    print language[2]+" ("+language[0]+"):";
+    print language['name_english']+" ("+language['code']+"):";
 
     #
     # Download and save .po and .mo files from GlotPress
     #
-    if not localesOrig == language[0]:
+    if not localesOrig == language["code"]:
 
-        fetchLanguage(language)
+        fetchLanguage(language["code"], language["glotpress"])
 
         # Check if this language has attached transliterations/phonetics
-        try:
-            language[5]
-
-            for languageExtra in language[5]:
-
-                fetchLanguage([language[0] + localeExtraDivider + languageExtra, language[1]])
-
-        except IndexError:
-            pass
+        if language["transliteration"] == True:
+            fetchLanguage(language["code"] + localeExtraDivider + 'transliteration', language["glotpress"])
 
 
     #
     # Produce language json with downloaded .mo files and save them to json files
     #
-    if localesOrig == language[0] or os.path.isfile(localeSrcDir+language[0]+'/LC_MESSAGES/'+projectname+'.mo'):
+    if localesOrig == language["code"] or os.path.isfile(localeSrcDir+language["code"]+'/LC_MESSAGES/'+projectname+'.mo'):
 
         # Translate language
-        languageTranslated = translateLanguage(language[0]);
+        languageTranslated = translateLanguage(language["code"]);
 
         # Save This translation to the json
-        saveLangJSON(language[0]+'.json', json.dumps(languageTranslated, ensure_ascii=False).replace('\u0000',''));
+        saveLangJSON(language["code"]+'.json', json.dumps(languageTranslated, ensure_ascii=False).replace('\u0000',''));
 
-        # If it was default locale, save UI bit into a separate file to be used as UI fallback
-        if language[0] == localesOrig:
+        # If it was default locale
+        if language["code"] == localesOrig:
+
+            # save UI bit into a separate file to be used as UI fallback
             saveDefaultUI(languageTranslated['UI']);
 
+            # save strings into a separate file to use for printing pdf
+            savePrintStrings(languageTranslated);
+
         # Check if this language has attached transliterations/phonetics
-        try:
-            language[5]
-
-            # Yay, we found transliterations/phonetics. Loop them trough.
-            for languageExtra in language[5]:
-
-                # Translate transliteration
-                languageTranslatedExtra = translateLanguage(language[0] + localeExtraDivider + languageExtra);
-
-                # Save transliteration to .json
-                saveLangJSON(language[0] + localeExtraDivider + languageExtra+'.json', json.dumps(languageTranslatedExtra, ensure_ascii=False).replace('\u0000',''));
-
-        except IndexError:
-            pass
+        if language["transliteration"] == True:
+            # Yay, we found transliterations
+            print "Including also translation:"
+            transliterationTranslated = translateLanguage(language["code"] + localeExtraDivider + 'transliteration');
+            saveLangJSON(language["code"] + localeExtraDivider + 'transliteration.json', json.dumps(transliterationTranslated, ensure_ascii=False).replace('\u0000',''));
 
     else:
 
         error_count += 1
-        print "Error: "+language[0]+" ("+language[2]+") - can't find translation file ("+localeSrcDir+language[0]+"/LC_MESSAGES/"+projectname+".mo). Perhaps Glotpress didn't have any translations for this language? Skipping..."
+        print "Error: "+language["code"]+" ("+language["name_english"]+") - can't find translation file ("+localeSrcDir+language["code"]+"/LC_MESSAGES/"+projectname+".mo). Perhaps Glotpress didn't have any translations for this language? Skipping..."
 
 print
 
