@@ -1,6 +1,10 @@
 <?php
 /*
  * Produce Phrasebook pdf file
+ *
+ * Requires: to, from GET variable. Valid language code existing in src/languages.json
+ * Optional: dl GET variable, forces browser to download pdf
+ *
  */
 require_once('tcpdf/tcpdf.php');
 

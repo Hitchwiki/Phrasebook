@@ -105,16 +105,21 @@ Currently android is the only platform supported by this task.
 * If you get errors about "Cordova ios-sim" on OSX, try installing it (`brew update && brew install ios-sim` or if you already have it, upgrade it by `brew upgrade ios-sim`.)
 
 
-### Compile printable html & pdf versions
+### Compile script that generates printable pdf versions
 
-Requires [http://phantomjs.org/](PhantomJS), install it first.
+* First build HTML version
+* Requires PHP and PHP-gettext
 
+Then to build/develop run:
 ```bash
-python scripts/print.py
+grunt dev-print
 ```
 
 Now you can open `build/print/index.html`.
 
+Task also starts watching related files.
+
+PDF files are generated on the fly with PHP using [TCPDF](http://www.tcpdf.org/).
 
 ### Reset
 
