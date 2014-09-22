@@ -301,8 +301,8 @@ module.exports = function(grunt) {
             //'http://example.com/path/to/plugin.git'
         ],
         platforms: ['android', 'ios'],
-        maxBuffer: 200, // You may need to raise this for iOS.
-        verbose: true,
+        maxBuffer: 400, // You may need to raise this for iOS. (Did, it was 200)
+        verbose: false,
         releases: 'releases',
         releaseName: function(){
           var pkg = grunt.file.readJSON('package.json');
