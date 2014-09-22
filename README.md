@@ -101,6 +101,20 @@ Currently android is the only platform supported by this task.
 
 [Read more](https://npmjs.org/package/grunt-phonegap#tasks)
 
+#### Troubleshooting
+* If you get errors about "Cordova ios-sim" on OSX, try installing it (`brew update && brew install ios-sim` or if you already have it, upgrade it by `brew upgrade ios-sim`.)
+
+
+### Compile printable html & pdf versions
+
+Requires [http://phantomjs.org/](PhantomJS), install it first.
+
+```bash
+python scripts/print.py
+```
+
+Now you can open `build/print/index.html`.
+
 
 ### Reset
 

@@ -86,6 +86,24 @@ module.exports = function(grunt) {
           'copy:images'
         ]
       },
+      pdfprint: {
+        files: [
+          'src/print/*'
+        ],
+        tasks: [
+          'copy:pdfprint'
+        ]
+      },
+      pdfprintlocales: {
+        files: [
+          'src/locale/*',
+          'src/structure.json',
+          'src/languages.json'
+        ],
+        tasks: [
+          'copy:pdfprintlocales'
+        ]
+      }
     },
     favicons: {
       options: {
@@ -127,6 +145,13 @@ module.exports = function(grunt) {
       },
       gitclone: {
         command: 'git clone https://github.com/koppi/iso-country-flags-svg-collection.git src/libs/iso-country-flags-svg-collection/'
+      },
+      pdfprint: {
+        command: [
+                'git clone http://git.code.sf.net/p/tcpdf/code build/print/tcpdf/',
+                'rm -fR build/print/tcpdf/.git',
+                'rm -fR build/print/tcpdf/examples'
+            ].join('&&')
       }
     },
     preprocess : {
@@ -245,6 +270,36 @@ module.exports = function(grunt) {
                 filter: 'isFile',
                 src: 'src/locale-json/*',
                 dest: 'build/assets/locale/'
+            }
+          ]
+      },
+      pdfprint: {
+          files: [
+            {
+                expand: true,
+                flatten: true,
+                filter: 'isFile',
+                src: 'src/print/*',
+                dest: 'build/print/'
+            }
+          ]
+      },
+      pdfprintlocales: {
+          files: [
+            {
+                expand: true,
+                //flatten: true,
+                cwd: 'src/locale/',
+                src: '**',
+                dest: 'build/print/locale'
+            },
+            {
+                src: 'src/structure.json',
+                dest: 'build/print/structure.json'
+            },
+            {
+                src: 'src/languages.json',
+                dest: 'build/print/languages.json'
             }
           ]
       },
@@ -440,6 +495,13 @@ module.exports = function(grunt) {
                        'less:dev',
                        'concat',
                        'watch'
+                     ]);
+
+  grunt.registerTask('dev-print', [
+                       'copy:pdfprint',
+                       'copy:pdfprintlocales',
+                       'watch:pdfprint',
+                       'watch:pdfprintlocales'
                      ]);
 
   grunt.registerTask('build', [
