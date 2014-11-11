@@ -246,4 +246,3 @@ Phrasebook.controller('mainCtrl', function($scope, $location, $browser, $http, $
 
 
 });
-

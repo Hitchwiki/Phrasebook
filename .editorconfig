@@ -22,7 +22,7 @@ spaces_around_operators = true
 quote_type = auto
 
 [Gruntfile.js]
-indent_size = 2
+indent_size = 4
 
 [*.txt]
 end_of_line = crlf
