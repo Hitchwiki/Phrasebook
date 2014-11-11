@@ -18,5 +18,8 @@
     "**/.*",
     "node_modules",
     "components"
-  ]
+  ],
+  "resolutions": {
+    "angular": "1.2"
+  }
 }
