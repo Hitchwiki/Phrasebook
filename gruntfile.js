@@ -144,7 +144,7 @@ module.exports = function(grunt) {
         command: 'bower install'
       },
       gitclone: {
-        command: 'git clone https://github.com/koppi/iso-country-flags-svg-collection.git src/libs/iso-country-flags-svg-collection/'
+        command: 'git clone https://github.com/lipis/flag-icon-css.git src/libs/flags/'
       },
       pdfprint: {
         command: [
@@ -317,7 +317,7 @@ module.exports = function(grunt) {
                 expand: true,
                 flatten: true,
                 filter: 'isFile',
-                src: 'src/libs/iso-country-flags-svg-collection/svg/country-squared/*',
+                src: 'src/libs/flags/flags/1x1/*',
                 dest: 'build/assets/img/flags/'
             }
         ]
