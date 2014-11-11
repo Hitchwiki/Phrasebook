@@ -32,7 +32,7 @@ brew install imagemagick
 
 Debian:
 ```bash
-apt-get install nodejs python imagemagic
+apt-get install nodejs python imagemagick
 ```
 
 ### HTML version
