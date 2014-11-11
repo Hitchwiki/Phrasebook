@@ -27,7 +27,7 @@ You can install requirements by running —
 OSX with [Homebrew](http://brew.sh/):
 ```bash
 brew install node
-brew install imagemagic
+brew install imagemagick
 ```
 
 Debian:
