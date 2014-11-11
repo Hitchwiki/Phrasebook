@@ -135,7 +135,7 @@ module.exports = function(grunt) {
         }
       },
       fetchtranslations: {
-        command: 'python scripts/fetch-translations.py',
+        command: 'python ./scripts/fetch-translations.py',
         options: {
           stdout: true
         }
@@ -148,7 +148,7 @@ module.exports = function(grunt) {
       },
       pdfprint: {
         command: [
-                'git clone http://git.code.sf.net/p/tcpdf/code build/print/tcpdf/',
+                'git clone --depth=1 http://git.code.sf.net/p/tcpdf/code build/print/tcpdf/',
                 'rm -fR build/print/tcpdf/.git',
                 'rm -fR build/print/tcpdf/examples'
             ].join('&&')
