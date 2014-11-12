@@ -289,7 +289,7 @@ module.exports = function(grunt) {
             {
                 expand: true,
                 //flatten: true,
-                cwd: 'src/locale/',
+                cwd: 'src/locale-json/',
                 src: '**',
                 dest: 'build/print/locale'
             },

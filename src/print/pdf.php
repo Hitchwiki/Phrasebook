@@ -5,17 +5,16 @@
  * Requires: to, from GET variable. Valid language code existing in src/languages.json
  * Optional: dl GET variable, forces browser to download pdf
  *
+ * Sorry for it's not super structured, but hey it's just a simple PHP script giving out pdfs...
  */
 require_once('tcpdf/tcpdf.php');
 
 // Le Data
 $languages = is_file('languages.json') ? json_decode(file_get_contents('languages.json')) : array();
 $structure = is_file('structure.json') ? json_decode(file_get_contents('structure.json')) : array();
-$strings = is_file('structure.json') ? json_decode(file_get_contents('strings.json')) : array();
 
-// Le situations of "no good"
+// Le situations of "this is no good!"
 if( empty($structure) ||
-    empty($strings) ||
     empty($languages) ||
     !isset($_GET['from']) ||
     !isset($_GET['to']) ||
@@ -35,33 +34,17 @@ foreach($languages as $language) {
 // Die out if we didn't find language
 if( !isset($language_from) || !isset($language_to) ) die("Crash boom bang! We don't have that language here, sorry!");
 
-
 /*
- * Gettext
- * Gettext is looking translation from "./locale/LANGUAGE_CODE/LC_MESSAGES/phrasebook.mo"
- * http://www.php.net/manual/en/function.gettext.php
+ * Extract translations from json files
+ * @return array
  */
 function translate($lang) {
-    global $strings;
 
-    putenv('LC_ALL='.$lang);
-    setlocale(LC_ALL, $lang);
+    $lang = ereg_replace('[^A-Za-z0-9@_]', '', $lang);
 
-    // Specify location of translation tables and choose gettext domain
-    bindtextdomain("phrasebook", realpath(dirname(__FILE__)) . "/locale/");
-    bind_textdomain_codeset("phrasebook", 'UTF-8');
-    textdomain("phrasebook");
+    $locale_file = 'locale/'.$lang.'.json';
 
-    $translations = array();
-
-    foreach ( (array)$strings->phrasebook as $key => $string ) {
-        $translations['phrasebook'][$key] = _($string);
-    }
-    foreach ( (array)$strings->categories as $key => $string ) {
-        $translations['categories'][$key] = _($string);
-    }
-
-    return $translations;
+    return is_file($locale_file) ? json_decode(file_get_contents($locale_file), true) : array();
 }
 
 $translations_to = translate($language_to->code);
@@ -71,13 +54,13 @@ $translations_from = translate($language_from->code);
 // Extend the TCPDF class to create custom Footer
 class MYPDF extends TCPDF {
 
-	// Page footer
-	public function Footer() {
-		$this->SetY(0);
-		$this->SetFont('helvetica', 'I', 8);
-		// Page number
-		$this->Cell(0, 10, $this->getAliasNumPage().'/'.$this->getAliasNbPages(), 0, false, 'C', 0, '', 0, false, 'T', 'M');
-	}
+    // Page footer
+    public function Footer() {
+        $this->SetY(0);
+        $this->SetFont('helvetica', 'I', 8);
+        // Page number
+        $this->Cell(0, 10, $this->getAliasNumPage().'/'.$this->getAliasNbPages(), 0, false, 'C', 0, '', 0, false, 'T', 'M');
+    }
 }
 
 
@@ -177,4 +160,3 @@ $pdf->Output(
             'phrasebook-' . preg_replace("/[^A-Za-z0-9?!]/", "", substr($language_from->code, 0, 2)) . '-' . preg_replace("/[^A-Za-z0-9?!]/", "", substr($language_to->code, 0, 2)) . '.pdf',
             ( isset($_GET['dl']) ? 'D' : 'I' )
         );
-
