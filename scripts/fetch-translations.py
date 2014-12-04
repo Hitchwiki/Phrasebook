@@ -223,6 +223,7 @@ def translateLanguage(language):
             'wine': _("(Red, white) wine"),
             'cheers': _("Cheers!"),
             'im_hungry': _("I'm hungry"),
+            'spicy': _("Spicy"),
             'eat': _("Eat"),
             'bread': _("Bread"),
             'fruit': _("Fruit"),
