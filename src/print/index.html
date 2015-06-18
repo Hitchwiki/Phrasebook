@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="PhrasebookPdf" ng-controller="pdfCtrl">
+<head>
+  <meta charset="utf-8">
+  <title>Hitchwiki Phrasebook PDF</title>
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <style>
+    body {
+      margin-bottom: 80px;
+    }
+    a:link,
+    a:visited,
+    a:hover,
+    a:active {
+      color: #a68412;
+    }
+    .list-group-item.active,
+    .list-group-item.active:hover,
+    .list-group-item.active:focus,
+    .navbar-inverse {
+      background-color: #ecc74b;
+      border-color: #ecc74b;
+      color: #66510a;
+    }
+    .btn-success {
+      color: #fff;
+      background-color: #9c6a00;
+      border-color: #9c6a00;
+    }
+    .btn-success:link,
+    .btn-success:visited,
+    .btn-success:active,
+    .btn-success:hover,
+    .btn-success:focus {
+      background-color: #9c6a00;
+      border-color: #9c6a00;
+      color: #fff;
+    }
+  </style>
+  <link href="favicon.png" rel="shortcut icon" type="image/png" />
+  <link href="favicon.png" rel="bookmark icon" type="image/png" />
+  <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-xs-12">
+
+        <h1>Hitchwiki Phrasebook</h1>
+        <p class="lead">Printable PDF versions. At browser and mobile you can <a href="../">use the app</a>.</p>
+
+      </div>
+    </div><!-- row -->
+    <div class="row" ng-cloak>
+
+      <div class="col-xs-6">
+        <h3 ng-hide="language_from">From...</h3>
+        <h3 ng-show="language_from">From {{ language_from['name_english'] }}</h3>
+        <div class="list-group">
+          <a href="#" ng-repeat="language in languages" class="list-group-item" ng-class="{ active : language_from['code'] == language['code'] }" ng-click="setLanguage('from', language, $event)">{{ language['name_english'] }}</a>
+        </div>
+      </div>
+
+      <div class="col-xs-6">
+        <h3 ng-hide="language_to">To...</h3>
+        <h3 ng-show="language_to">To {{ language_to['name_english'] }}</h3>
+        <div class="list-group">
+          <a href="#" ng-repeat="language in languages" class="list-group-item" ng-class="{ active : language_to['code'] == language['code'] }" ng-click="setLanguage('to', language, $event)">{{ language['name_english'] }}</a>
+        </div>
+      </div>
+
+    </div><!-- .row -->
+
+  </div><!-- .container -->
+
+  <nav class="navbar navbar-inverse navbar-fixed-bottom" role="navigation" ng-hide="!language_to || !language_from" ng-cloak>
+    <div class="container text-center">
+    <a ng-href="{{ downloadURL() }}" type="application/pdf" class="btn btn-lg btn-success navbar-btn">Download <i>{{ language_from['name_english'] }}—{{ language_to['name_english'] }}</i> Phrasebook</a>
+    </div>
+  </nav>
+
+  <!-- Le Scripts -->
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-resource.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-touch.min.js"></script>
+  <script>
+
+    var PhrasebookPdf = angular.module('PhrasebookPdf', [
+        'ngResource',
+        'ngTouch'
+      ])
+      .controller('pdfCtrl', function($scope, $http) {
+
+        $scope.language_from = false;
+        $scope.language_to = false;
+        $scope.languages = [];
+
+        // Set language
+        $scope.setLanguage = function(direction, language, $event) {
+          $event.preventDefault();
+          if(direction == 'from') {
+            $scope.language_from = ($scope.language_from['code'] == language['code']) ? false : language;
+          }
+          else if(direction == 'to') {
+            $scope.language_to = ($scope.language_to['code'] == language['code']) ? false : language;
+          }
+        };
+
+        $scope.downloadURL = function() {
+          return 'pdf.php?from=' + $scope.language_from['code'] + '&to=' + $scope.language_to['code'] + '&dl';
+        }
+
+        // Fetch language list
+        $http({method: 'GET', url: 'languages.json'}).
+          success(function(data, status, headers, config) {
+            $scope.languages = data;
+
+            // Find default language and pre select it
+            angular.forEach(data, function(language) {
+              if(language['code'] == 'en_UK') {
+                $scope.language_from = language;
+                //break;
+              }
+            });
+          }).
+          error(function(data, status, headers, config) {
+            alert("Obs! Error occured, check your internet connection and try again.");
+          });
+      });
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<div class="container" id="about" ng-swipe-left="back()" ng-swipe-right="back()">
+  <div class="row">
+    <div class="col-xs-12 text-center">
+		  <img src="assets/img/hitchwiki.png" alt="Hitchwiki" class="img-responsive center-block">
+    </div>
+    <div class="col-xs-12 col-sm-6">
+
+      <h3>Download app from:</h3>
+      <div class="btn-group btn-group-justified">
+        <a ng-href="{{ linkAppleApp }}" class="btn btn-default"><i class="icon-apple"></i> App Store</a>
+        <a ng-href="{{ linkAndroidApp }}" class="btn btn-default"><i class="icon-android"></i> Google Play</a>
+      </div>
+      <h3>Other Hitchwiki apps:</h3>
+      <div class="btn-group">
+        <a ng-href="{{ linkAndroidSearch }}" class="btn btn-default"><i class="icon-android"></i> Google Play</a><br>
+      </div>
+
+      <p>
+      <table class="table">
+        <tbody>
+        <tr>
+          <th>Version</th>
+          <td>{{ ver }}</td>
+        </tr>
+        <tr>
+          <th>Updated</th>
+          <td>{{ day }}</td>
+        </tr>
+        <tr>
+          <th>Translations</th>
+          <td>{{ localesVer }}</td>
+        </tr>
+        <tr>
+          <th>Device</th>
+          <td>{{ device }}</td>
+        </tr>
+        </tbody>
+      </table>
+      </p>
+
+
+      <p><a href="http://hitchwiki.org/contact/" class="btn btn-default"><i class="icon-category-basics"></i> {{ UI('contact_us') }}</a></p>
+
+    </div>
+    <div class="col-xs-12 col-sm-6">
+
+      <h3>Thanks for translators!</h3>
+      <small><!-- @include ../_translators.html --></small>
+
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <h3><i class="icon-github"></i> Open source</h3>
+      <p>App by <a href="http://www.mikaelkorpela.fi/">Mikael Korpela</a>.</p>
+      <p>Grab the code <a href="http://github.com/hitchwiki/phrasebook/">from Github</a> — pull requests welcome!</p>
+
+      <h3><i class="icon-cc"></i> License</h3>
+      <p>
+        Translations are licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike</a> and program code under MIT lisence.
+        <button ng-click="showLisence = true" class="btn btn-xs btn-default" ng-show="!showLisence">Show lisence</button>
+        <br><br>
+        Some of the pictograms are by <a href="http://DownloadFreeVector.com">DownloadFreeVector.com</a>: <a href="http://downloadfreevector.com/travel-infographic-elements/">Travel infographic elements</a>.
+      </p>
+      <pre ng-show="showLisence">
+<!-- @include ../../../LICENSE -->
+      </pre>
+    </div>
+  </div>
+</div>

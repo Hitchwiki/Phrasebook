@@ -1,6 +1,17 @@
 .DS_Store
-.cordova
-merges/*
-platforms/*
-plugins/*
-platforms/android/local.properties
+node_modules
+.log
+
+# Build
+build
+src/libs
+src/vendor
+src/locale
+src/locale-json
+src/js/locales.js
+src/js/locales-default-ui.js
+src/print/strings.json
+src/views/_icons.html
+
+# Cordova/PhoneGap
+phonegap
