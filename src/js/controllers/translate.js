@@ -1,11 +1,21 @@
 /**
  * Controller for community translators
  */
-Phrasebook.controller('translateCtrl', function($scope) {
+(function() {
+  'use strict';
+
+  angular
+    .module('Phrasebook')
+    .controller('translateCtrl', translateCtrl);
+
+  /* @ngInject */
+  function translateCtrl($scope) {
 
     $scope.back = function() {
-        //$event.preventDefault();
-        $location.path('/');
-    }
+      //$event.preventDefault();
+      $location.path('/');
+    };
 
-});
+  }
+
+})();

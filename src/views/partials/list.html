@@ -1,70 +1,70 @@
 <!-- List of languages to translate From -->
-<div class="container" id="languageList" ng-show="!localeFrom">
-    <h3 class="text-center">{{ UI('translate_from') }}</h3>
-    <div class="list-group" id="chooseLanguage" ng-show="!localeFrom">
-        <a ng-repeat="locale in locales | orderBy:name" href="#" class="list-group-item" ng-click="setLang($event, locale.code, 'From')">
-            <img ng-src="{{ flag(locale.code) }}" class="flag"> {{ locale.name_english }}
-        </a>
-    </div>
+<div class="container" id="languageList" ng-if="!localeFrom">
+  <h3 class="text-center">{{ UI('translate_from') }}</h3>
+  <div class="list-group" id="chooseLanguage" ng-if="!localeFrom">
+    <a ng-repeat="locale in locales | orderBy:name" class="list-group-item" ng-click="setLang($event, locale.code, 'From')">
+      <img ng-src="{{ flag(locale.code) }}" class="flag"> {{ locale.name_english }}
+    </a>
+  </div>
 </div>
 
 <!-- List of languages to translate to -->
-<div class="container" id="languageList" ng-show="!localeTo && localeFrom !== false">
-    <h3 class="text-center">{{ UI('translate_to') }}</h3>
-    <div class="list-group" id="chooseLanguage" ng-show="localeTo === false">
-        <a ng-repeat="locale in locales | orderBy:'name'" href="#" class="list-group-item" ng-click="setLang($event, locale.code, 'To')">
-            <img ng-src="{{ flag(locale.code) }}" class="flag"> {{ locale.name_english }}
-        </a>
-    </div>
+<div class="container" id="languageList" ng-if="!localeTo && localeFrom !== false">
+  <h3 class="text-center">{{ UI('translate_to') }}</h3>
+  <div class="list-group" id="chooseLanguage" ng-if="localeTo === false">
+    <a ng-repeat="locale in locales | orderBy:'name'" class="list-group-item" ng-click="setLang($event, locale.code, 'To')">
+      <img ng-src="{{ flag(locale.code) }}" class="flag"> {{ locale.name_english }}
+    </a>
+  </div>
 </div>
 
 <div class="container" id="translationSet" ng-hide="!localeFrom || !localeTo">
-    <!--
-    <form class="search-form" ng-show="localeTo != localeFrom">
-        <input type="search" id="search" ng-model="query" placeholder="Search..." class="form-control input-lg">
-    </form>
-    -->
-    <div class="list-group">
+  <!--
+  <form class="search-form" ng-if="localeTo != localeFrom">
+    <input type="search" id="search" ng-model="query" placeholder="Search..." class="form-control input-lg">
+  </form>
+  -->
+  <div class="list-group">
 
-        <!-- errors -->
-        <a ng-show="localeTo == localeFrom" ng-click="setLang($event, false, 'From')" href="#" class="list-group-item list-group-item-danger">
-            <h4 class="list-group-item-heading text-center">Choose two different languages for translating!</h4>
-        </a>
+    <!-- errors -->
+    <a ng-if="localeTo == localeFrom" ng-click="setLang($event, false, 'From')" class="list-group-item list-group-item-danger">
+      <h4 class="list-group-item-heading text-center">Choose two different languages for translating!</h4>
+    </a>
 
-        <!-- category -->
-        <a ng-show="selectedCategory === false && localeTo != localeFrom" ng-href="/{{ localeFrom }}/{{ localeTo }}/{{ category[0] }}" class="list-group-item translation-category" ng-repeat="category in localesStructure" ng-click="selectCategory($event, $index)" ng-class="{ 'translation-category-translation-hidden' : !visibility }">
-            <h4 class="list-group-item-heading">
-                <i class="icon icon-{{ category[0] }}"></i>
-                {{ localeFromStrings.categories[category[0]] }}
-            </h4>
-            <p class="list-group-item-text" ng-hide="visibility == false">
-                {{ localeToStrings.categories[category[0]] }}
-            </p>
-        </a>
+    <!-- category -->
+    <a ng-if="selectedCategory === false && localeTo != localeFrom" class="list-group-item translation-category" ng-repeat="category in localesStructure" ng-click="selectCategory($event, $index)" ng-class="{ 'translation-category-translation-hidden' : !visibility }">
+      <h4 class="list-group-item-heading">
+        <i class="icon icon-{{ category[0] }}"></i>
+        {{ localeFromStrings.categories[category[0]] }}
+      </h4>
+      <p class="list-group-item-text" ng-hide="visibility == false">
+        {{ localeToStrings.categories[category[0]] }}
+      </p>
+    </a>
 
-        <!-- back btn -->
-        <a ng-show="selectedCategory !== false && localeTo != localeFrom" ng-swipe-right="back($event)" ng-swipe-left="back($event)" ng-click="back($event)" ng-href="/translate/{{ localeFrom }}/{{ localeTo }}/" class="list-group-item"><i class="icon-left"></i> {{ UI('back') }}</a>
+    <!-- back btn -->
+    <a ng-if="selectedCategory !== false && localeTo != localeFrom" ng-swipe-right="back($event)" ng-swipe-left="back($event)" ng-click="back($event)" class="list-group-item"><i class="icon-left"></i> {{ UI('back') }}</a>
 
-        <!-- translated string -->
-        <a ng-show="selectedCategory !== false && localeTo != localeFrom" ng-href="/{{ localeFrom }}/{{ localeTo }}/{{ selectedCategory }}/{{ key }}" class="list-group-item translation-key" ng-class="{ active : (key == selectedTranslation) }" ng-repeat="key in localesStructure[selectedCategory][1]" ng-swipe-right="back($event)" ng-swipe-left="back($event)" ng-click="selectTranslationString($event, key)">
+    <!-- translated string -->
+    <a ng-if="selectedCategory !== false && localeTo != localeFrom" class="list-group-item translation-key" ng-class="{ active : (key == selectedTranslation) }" ng-repeat="key in localesStructure[selectedCategory][1]" ng-swipe-right="back($event)" ng-swipe-left="back($event)" ng-click="selectTranslationString($event, key)">
 
-            <h4 class="list-group-item-heading translation-from">
-                {{ localeFromStrings.phrasebook[key] }}
-                <!--<i class="audio-play icon-volume-off" ng-show="audio && selectedTranslation == key && textToSpeechSupported(langFrom)" ng-class="{ playing : (playing == key + localeTo) }" ng-click="play(localeFromStrings.phrasebook[key], key, langFrom, $event)"></i>-->
-            </h4>
-            <div ng-hide="visibility == false && selectedTranslation != key">
-                <h4 class="list-group-item-heading translation-to-transliteration" ng-show="localeToStringsTransliteration">
-                    {{ localeToStringsTransliteration.phrasebook[key] }}
-                </h4>
-                <h4 class="list-group-item-heading translation-to">
-                    {{ localeToStrings.phrasebook[key] }}
-                    <!--<i class="audio-play audio icon-volume-off" ng-show="audio && selectedTranslation == key && textToSpeechSupported(langTo)" ng-class="{ playing : (playing == key + localeTo) }" ng-click="play(localeToStrings.phrasebook[key], key, langTo, $event)"></i>-->
-                </h4>
-            </div>
-        </a>
+      <h4 class="list-group-item-heading translation-from">
+        {{ localeFromStrings.phrasebook[key] }}
+        <!--<i class="audio-play icon-volume-off" ng-if="audio && selectedTranslation == key && textToSpeechSupported(langFrom)" ng-class="{ playing : (playing == key + localeTo) }" ng-click="play(localeFromStrings.phrasebook[key], key, langFrom, $event)"></i>-->
+      </h4>
+      <div ng-hide="visibility == false && selectedTranslation != key">
+        <h4 class="list-group-item-heading translation-to-transliteration" ng-if="localeToStringsTransliteration">
+          {{ localeToStringsTransliteration.phrasebook[key] }}
+        </h4>
+        <h4 class="list-group-item-heading translation-to">
+          {{ localeToStrings.phrasebook[key] }}
+          <!--<i class="audio-play audio icon-volume-off" ng-if="audio && selectedTranslation == key && textToSpeechSupported(langTo)" ng-class="{ playing : (playing == key + localeTo) }" ng-click="play(localeToStrings.phrasebook[key], key, langTo, $event)"></i>-->
+        </h4>
+      </div>
+    </a>
 
-        <!-- back btn -->
-        <a ng-show="selectedCategory !== false && localeTo != localeFrom" ng-swipe-right="back($event)" ng-swipe-left="back($event)" ng-click="back($event)" ng-href="/translate/{{ localeFrom }}/{{ localeTo }}/" class="list-group-item"><i class="icon-left"></i> {{ UI('back') }}</a>
+    <!-- back btn -->
+    <a ng-if="selectedCategory !== false && localeTo != localeFrom" ng-swipe-right="back($event)" ng-swipe-left="back($event)" ng-click="back($event)" class="list-group-item"><i class="icon-left"></i> {{ UI('back') }}</a>
 
-    </div>
+  </div>
 </div>

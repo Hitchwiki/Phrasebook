@@ -1,298 +1,298 @@
 [
-    {
-        "code": "sq_AL",
-        "glotpress": "sq",
-        "name_english": "Albanian",
-        "name_original": "Gjuha shqipe",
-        "RTL": false,
-        "transliteration": false
-    },
-    {
-        "code": "bg_BG",
-        "glotpress": "bg",
-        "name_english": "Bulgarian",
-        "name_original": "български език",
-        "RTL": false,
-        "transliteration": true
-    },
-    {
-        "code": "ca_ES",
-        "glotpress": "ca",
-        "name_english": "Catalan",
-        "name_original": "Català",
-        "RTL": false,
-        "transliteration": false
-    },
-    {
-        "code": "cs_CZ",
-        "glotpress": "cs",
-        "name_english": "Czech",
-        "name_original": "Čeština",
-        "RTL": false,
-        "transliteration": false
-    },
-    {
-        "code": "da_DK",
-        "glotpress": "da",
-        "name_english": "Danish",
-        "name_original": "Dansk",
-        "RTL": false,
-        "transliteration": false
-    },
-    {
-        "code": "nl_NL",
-        "glotpress": "nl",
-        "name_english": "Dutch",
-        "name_original": "Nederlands",
-        "RTL": false,
-        "transliteration": false
-    },
-    {
-        "code": "de_DE",
-        "glotpress": "de",
-        "name_english": "German",
-        "name_original": "Deutch",
-        "RTL": false,
-        "transliteration": false
-    },
-    {
-        "code": "el_GR",
-        "glotpress": "el",
-        "name_english": "Greek",
-        "name_original": "ελληνικά",
-        "RTL": false,
-        "transliteration": true
-    },
-    {
-        "code": "et_EE",
-        "glotpress": "et",
-        "name_english": "Estonian",
-        "name_original": "Eesti keel",
-        "RTL": false,
-        "transliteration": false
-    },
-    {
-        "code": "en_UK",
-        "glotpress": "en-gb",
-        "name_english": "English (UK)",
-        "name_original": "English (UK)",
-        "RTL": false,
-        "transliteration": false
-    },
-    {
-        "code": "en_US",
-        "glotpress": "en",
-        "name_english": "English (US)",
-        "name_original": "English (US)",
-        "RTL": false,
-        "transliteration": false
-    },
-    {
-        "code": "es_ES",
-        "glotpress": "es",
-        "name_english": "Spanish",
-        "name_original": "Español",
-        "RTL": false,
-        "transliteration": false
-    },
-    {
-        "code": "fi_FI",
-        "glotpress": "fi",
-        "name_english": "Finnish",
-        "name_original": "Suomi",
-        "RTL": false,
-        "transliteration": false
-    },
-    {
-        "code": "fr_FR",
-        "glotpress": "fr",
-        "name_english": "French",
-        "name_original": "Français",
-        "RTL": false,
-        "transliteration": false
-    },
-    {
-        "code": "hr_HR",
-        "glotpress": "hr",
-        "name_english": "Croatian",
-        "name_original": "Hrvatski",
-        "RTL": false,
-        "transliteration": false
-    },
-    {
-        "code": "he_IL",
-        "glotpress": "he",
-        "name_english": "Hebrew",
-        "name_original": "עברית",
-        "RTL": true,
-        "transliteration": true
-    },
-    {
-        "code": "hu_HU",
-        "glotpress": "hu",
-        "name_english": "Hungarian",
-        "name_original": "Magyar",
-        "RTL": false,
-        "transliteration": false
-    },
-    {
-        "code": "is_IS",
-        "glotpress": "is",
-        "name_english": "Icelandic",
-        "name_original": "íslenska",
-        "RTL": false,
-        "transliteration": false
-    },
-    {
-        "code": "it_IT",
-        "glotpress": "it",
-        "name_english": "Italian",
-        "name_original": "Italiano",
-        "RTL": false,
-        "transliteration": false
-    },
-    {
-        "code": "id_ID",
-        "glotpress": "id",
-        "name_english": "Indonesian",
-        "name_original": "Bahasa Indonesia",
-        "RTL": false,
-        "transliteration": false
-    },
-    {
-        "code": "ja_JP",
-        "glotpress": "ja",
-        "name_english": "Japanese",
-        "name_original": "日本語",
-        "RTL": false,
-        "transliteration": false
-    },
-    {
-        "code": "lt_LT",
-        "glotpress": "lt",
-        "name_english": "Lithuanian",
-        "name_original": "Lietuvių",
-        "RTL": false,
-        "transliteration": false
-    },
-    {
-        "code": "lv_LV",
-        "glotpress": "lv",
-        "name_english": "Latvian",
-        "name_original": "Latviešu",
-        "RTL": false,
-        "transliteration": false
-    },
-    {
-        "code": "ms_MY",
-        "glotpress": "ms",
-        "name_english": "Malaysian",
-        "name_original": "Bahasa Melayu",
-        "RTL": false,
-        "transliteration": false
-    },
-    {
-        "code": "mt_MT",
-        "glotpress": "mt",
-        "name_english": "Maltese",
-        "name_original": "Malti",
-        "RTL": false,
-        "transliteration": false
-    },
-    {
-        "code": "nb_NO",
-        "glotpress": "nb",
-        "name_english": "Norwegian (Bokmål)",
-        "name_original": "Norsk (Bokmål)",
-        "RTL": false,
-        "transliteration": false
-    },
-    {
-        "code": "pl_PL",
-        "glotpress": "pl",
-        "name_english": "Polish",
-        "name_original": "Polski",
-        "RTL": false,
-        "transliteration": false
-    },
-    {
-        "code": "pt_PT",
-        "glotpress": "pt",
-        "name_english": "Portuguese",
-        "name_original": "Português",
-        "RTL": false,
-        "transliteration": false
-    },
-    {
-        "code": "pt_BR",
-        "glotpress": "pt-br",
-        "name_english": "Portuguese (Brazil)",
-        "name_original": "Português (Brazil)",
-        "RTL": false,
-        "transliteration": false
-    },
-    {
-        "code": "ro_RO",
-        "glotpress": "ro",
-        "name_english": "Romanian",
-        "name_original": "Română",
-        "RTL": false,
-        "transliteration": false
-    },
-    {
-        "code": "ru_RU",
-        "glotpress": "ru",
-        "name_english": "Russian",
-        "name_original": "Русский",
-        "RTL": false,
-        "transliteration": true
-    },
-    {
-        "code": "sr_RS",
-        "glotpress": "sr",
-        "name_english": "Serbian",
-        "name_original": "српски",
-        "RTL": false,
-        "transliteration": true
-    },
-    {
-        "code": "sk_SK",
-        "glotpress": "sk",
-        "name_english": "Slovakian",
-        "name_original": "Slovenčina",
-        "RTL": false,
-        "transliteration": false
-    },
-    {
-        "code": "sl_SI",
-        "glotpress": "sl",
-        "name_english": "Slovenian",
-        "name_original": "Slovenščina",
-        "RTL": false,
-        "transliteration": false
-    },
-    {
-        "code": "sv_SE",
-        "glotpress": "sv",
-        "name_english": "Swedish",
-        "name_original": "Svenska",
-        "RTL": false,
-        "transliteration": false
-    },
-    {
-        "code": "tr_TR",
-        "glotpress": "tr",
-        "name_english": "Turkish",
-        "name_original": "Türkçe",
-        "RTL": false,
-        "transliteration": false
-    },
-    {
-        "code": "uk_UA",
-        "glotpress": "uk",
-        "name_english": "Ukrainian",
-        "name_original": "Українська мова",
-        "RTL": false,
-        "transliteration": true
-    }
+  {
+    "code": "sq_AL",
+    "glotpress": "sq",
+    "name_english": "Albanian",
+    "name_original": "Gjuha shqipe",
+    "RTL": false,
+    "transliteration": false
+  },
+  {
+    "code": "bg_BG",
+    "glotpress": "bg",
+    "name_english": "Bulgarian",
+    "name_original": "български език",
+    "RTL": false,
+    "transliteration": true
+  },
+  {
+    "code": "ca_ES",
+    "glotpress": "ca",
+    "name_english": "Catalan",
+    "name_original": "Català",
+    "RTL": false,
+    "transliteration": false
+  },
+  {
+    "code": "cs_CZ",
+    "glotpress": "cs",
+    "name_english": "Czech",
+    "name_original": "Čeština",
+    "RTL": false,
+    "transliteration": false
+  },
+  {
+    "code": "da_DK",
+    "glotpress": "da",
+    "name_english": "Danish",
+    "name_original": "Dansk",
+    "RTL": false,
+    "transliteration": false
+  },
+  {
+    "code": "nl_NL",
+    "glotpress": "nl",
+    "name_english": "Dutch",
+    "name_original": "Nederlands",
+    "RTL": false,
+    "transliteration": false
+  },
+  {
+    "code": "de_DE",
+    "glotpress": "de",
+    "name_english": "German",
+    "name_original": "Deutch",
+    "RTL": false,
+    "transliteration": false
+  },
+  {
+    "code": "el_GR",
+    "glotpress": "el",
+    "name_english": "Greek",
+    "name_original": "ελληνικά",
+    "RTL": false,
+    "transliteration": true
+  },
+  {
+    "code": "et_EE",
+    "glotpress": "et",
+    "name_english": "Estonian",
+    "name_original": "Eesti keel",
+    "RTL": false,
+    "transliteration": false
+  },
+  {
+    "code": "en_UK",
+    "glotpress": "en-gb",
+    "name_english": "English (UK)",
+    "name_original": "English (UK)",
+    "RTL": false,
+    "transliteration": false
+  },
+  {
+    "code": "en_US",
+    "glotpress": "en",
+    "name_english": "English (US)",
+    "name_original": "English (US)",
+    "RTL": false,
+    "transliteration": false
+  },
+  {
+    "code": "es_ES",
+    "glotpress": "es",
+    "name_english": "Spanish",
+    "name_original": "Español",
+    "RTL": false,
+    "transliteration": false
+  },
+  {
+    "code": "fi_FI",
+    "glotpress": "fi",
+    "name_english": "Finnish",
+    "name_original": "Suomi",
+    "RTL": false,
+    "transliteration": false
+  },
+  {
+    "code": "fr_FR",
+    "glotpress": "fr",
+    "name_english": "French",
+    "name_original": "Français",
+    "RTL": false,
+    "transliteration": false
+  },
+  {
+    "code": "hr_HR",
+    "glotpress": "hr",
+    "name_english": "Croatian",
+    "name_original": "Hrvatski",
+    "RTL": false,
+    "transliteration": false
+  },
+  {
+    "code": "he_IL",
+    "glotpress": "he",
+    "name_english": "Hebrew",
+    "name_original": "עברית",
+    "RTL": true,
+    "transliteration": true
+  },
+  {
+    "code": "hu_HU",
+    "glotpress": "hu",
+    "name_english": "Hungarian",
+    "name_original": "Magyar",
+    "RTL": false,
+    "transliteration": false
+  },
+  {
+    "code": "is_IS",
+    "glotpress": "is",
+    "name_english": "Icelandic",
+    "name_original": "íslenska",
+    "RTL": false,
+    "transliteration": false
+  },
+  {
+    "code": "it_IT",
+    "glotpress": "it",
+    "name_english": "Italian",
+    "name_original": "Italiano",
+    "RTL": false,
+    "transliteration": false
+  },
+  {
+    "code": "id_ID",
+    "glotpress": "id",
+    "name_english": "Indonesian",
+    "name_original": "Bahasa Indonesia",
+    "RTL": false,
+    "transliteration": false
+  },
+  {
+    "code": "ja_JP",
+    "glotpress": "ja",
+    "name_english": "Japanese",
+    "name_original": "日本語",
+    "RTL": false,
+    "transliteration": false
+  },
+  {
+    "code": "lt_LT",
+    "glotpress": "lt",
+    "name_english": "Lithuanian",
+    "name_original": "Lietuvių",
+    "RTL": false,
+    "transliteration": false
+  },
+  {
+    "code": "lv_LV",
+    "glotpress": "lv",
+    "name_english": "Latvian",
+    "name_original": "Latviešu",
+    "RTL": false,
+    "transliteration": false
+  },
+  {
+    "code": "ms_MY",
+    "glotpress": "ms",
+    "name_english": "Malaysian",
+    "name_original": "Bahasa Melayu",
+    "RTL": false,
+    "transliteration": false
+  },
+  {
+    "code": "mt_MT",
+    "glotpress": "mt",
+    "name_english": "Maltese",
+    "name_original": "Malti",
+    "RTL": false,
+    "transliteration": false
+  },
+  {
+    "code": "nb_NO",
+    "glotpress": "nb",
+    "name_english": "Norwegian (Bokmål)",
+    "name_original": "Norsk (Bokmål)",
+    "RTL": false,
+    "transliteration": false
+  },
+  {
+    "code": "pl_PL",
+    "glotpress": "pl",
+    "name_english": "Polish",
+    "name_original": "Polski",
+    "RTL": false,
+    "transliteration": false
+  },
+  {
+    "code": "pt_PT",
+    "glotpress": "pt",
+    "name_english": "Portuguese",
+    "name_original": "Português",
+    "RTL": false,
+    "transliteration": false
+  },
+  {
+    "code": "pt_BR",
+    "glotpress": "pt-br",
+    "name_english": "Portuguese (Brazil)",
+    "name_original": "Português (Brazil)",
+    "RTL": false,
+    "transliteration": false
+  },
+  {
+    "code": "ro_RO",
+    "glotpress": "ro",
+    "name_english": "Romanian",
+    "name_original": "Română",
+    "RTL": false,
+    "transliteration": false
+  },
+  {
+    "code": "ru_RU",
+    "glotpress": "ru",
+    "name_english": "Russian",
+    "name_original": "Русский",
+    "RTL": false,
+    "transliteration": true
+  },
+  {
+    "code": "sr_RS",
+    "glotpress": "sr",
+    "name_english": "Serbian",
+    "name_original": "српски",
+    "RTL": false,
+    "transliteration": true
+  },
+  {
+    "code": "sk_SK",
+    "glotpress": "sk",
+    "name_english": "Slovakian",
+    "name_original": "Slovenčina",
+    "RTL": false,
+    "transliteration": false
+  },
+  {
+    "code": "sl_SI",
+    "glotpress": "sl",
+    "name_english": "Slovenian",
+    "name_original": "Slovenščina",
+    "RTL": false,
+    "transliteration": false
+  },
+  {
+    "code": "sv_SE",
+    "glotpress": "sv",
+    "name_english": "Swedish",
+    "name_original": "Svenska",
+    "RTL": false,
+    "transliteration": false
+  },
+  {
+    "code": "tr_TR",
+    "glotpress": "tr",
+    "name_english": "Turkish",
+    "name_original": "Türkçe",
+    "RTL": false,
+    "transliteration": false
+  },
+  {
+    "code": "uk_UA",
+    "glotpress": "uk",
+    "name_english": "Ukrainian",
+    "name_original": "Українська мова",
+    "RTL": false,
+    "transliteration": true
+  }
 ]

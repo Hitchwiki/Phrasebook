@@ -434,7 +434,10 @@ for language in languages:
     # language["transliteration"]:  "True"
 
     print
-    print language['name_english']+" ("+language['code']+"):";
+    print language['code'] + ":"
+    # This line gives unicode error when run via Grunt (works well alone)
+    # ("'ascii' codec can't encode character")
+    #print language['name_english'] + " (" + language['code'] + "):");
 
     #
     # Download and save .po and .mo files from GlotPress

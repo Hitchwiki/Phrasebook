@@ -1,12 +1,15 @@
 /**
  * Controller for pictograms
  */
-Phrasebook.controller('pictogramsCtrl', function($scope, $log, $routeParams) {
+(function() {
+  'use strict';
 
-    $scope.back = function() {
-        //$event.preventDefault();
-        $location.path('/');
-    };
+  angular
+    .module('Phrasebook')
+    .controller('pictogramsCtrl', pictogramsCtrl);
+
+  /* @ngInject */
+  function pictogramsCtrl($scope, $log, $routeParams, $location) {
 
     $scope.pictogramSelected = ($routeParams.pictogram) ? $routeParams.pictogram : false;
 
@@ -52,14 +55,25 @@ Phrasebook.controller('pictogramsCtrl', function($scope, $log, $routeParams) {
         "bed", // Keep this last, it's a bit wider than others
     ];
 
+    $scope.back = function() {
+      if($scope.pictogramSelected === false) {
+        $log.log('back to list');
+        $location.path('/');
+      }
+      else {
+        $log.log('close picto');
+        $scope.pictogramSelected = false;
+      }
+    };
 
     $scope.pictogram = function(icon) {
         return 'icon-' + icon + ' ' + 'pictogram-size-' + $scope.pictogramSize;
-    }
+    };
 
     $scope.pictogramSelect = function(icon, $event) {
         $event.preventDefault();
         $scope.pictogramSelected = icon;
     };
 
-});
+  }
+})();

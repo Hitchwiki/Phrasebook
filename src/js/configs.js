@@ -1,43 +1,55 @@
 /**
  * Route configuration
  */
-Phrasebook.config(function($routeProvider, $locationProvider) {
-    $routeProvider
-    .when('/', {
+(function() {
+  'use strict';
+
+  angular
+    .module('Phrasebook')
+    .config(PhrasebookRoutesConfig);
+
+  /* @ngInject */
+  function PhrasebookRoutesConfig($routeProvider, $locationProvider) {
+
+      $locationProvider.html5Mode(false);
+
+      $routeProvider
+      .when('/', {
         templateUrl: 'partials/list.html',
         controller: 'listCtrl'
-    })
-    .when('/:localFrom/:localeTo', {
+      })
+      .when('/:localFrom/:localeTo', {
         templateUrl: 'partials/list.html',
         controller: 'listCtrl'
-    })
-    .when('/:localFrom/:localeTo/:selectedCategory', {
+      })
+      .when('/:localFrom/:localeTo/:selectedCategory', {
         templateUrl: 'partials/list.html',
         controller: 'listCtrl'
-    })
-    .when('/:localFrom/:localeTo/:selectedCategory/:key', {
+      })
+      .when('/:localFrom/:localeTo/:selectedCategory/:key', {
         templateUrl: 'partials/list.html',
         controller: 'listCtrl'
-    })
-    .when('/about', {
+      })
+      .when('/about', {
         templateUrl: 'partials/about.html',
         controller: 'aboutCtrl'
-    })
-    .when('/translate', {
+      })
+      .when('/translate', {
         templateUrl: 'partials/translate.html',
         controller: 'translateCtrl'
-    })
-    .when('/pictograms/:pictogram', {
+      })
+      .when('/pictograms/:pictogram', {
         templateUrl: 'partials/pictograms.html',
         controller: 'pictogramsCtrl'
-    })
-    .when('/pictograms', {
+      })
+      .when('/pictograms', {
         templateUrl: 'partials/pictograms.html',
         controller: 'pictogramsCtrl'
-    })
-    .otherwise({
+      })
+      .otherwise({
         redirectTo: '/'
-    });
+      });
 
-    $locationProvider.html5Mode(false);
-});
+  }
+
+})();

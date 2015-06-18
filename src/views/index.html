@@ -1,87 +1,94 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="Phrasebook" ng-controller="mainCtrl">
 <head>
-    <meta charset="utf-8">
-    <title><!-- @echo NAME --></title>
-    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
-    <!-- @if ENV='prod' -->
-    <link href="assets/css/app.min.css?v=<!-- @echo CACHEBUSTER -->" rel="stylesheet">
-    <!-- @endif -->
-    <!-- @if ENV='dev' -->
-    <link href="assets/css/app.css?v=<!-- @echo CACHEBUSTER -->" rel="stylesheet">
-    <!-- @endif -->
-    <link href="assets/img/icons/favicon.png" rel="shortcut icon" type="image/png" />
-    <link href="assets/img/icons/favicon.png" rel="bookmark icon" type="image/png" />
-    <meta name="fragment" content="!">
-    <meta name="viewport" content="minimal-ui">
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
-    <meta name="format-detection" content="telephone=no">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-itunes-app" content="app-id=679023494">
-	<meta name="description" content="<!-- @echo DESCRIPTION -->">
-    <meta name="author" content="<!-- @echo AUTHOR -->">
-    <meta name="twitter:title" content="<!-- @echo NAME -->">
-    <meta name="twitter:description" content="<!-- @echo DESCRIPTION -->">
-	<meta property="og:title" content="<!-- @echo NAME -->">
-	<meta property="og:site_name" content="<!-- @echo AUTHOR -->">
-	<meta property="og:description" content="<!-- @echo DESCRIPTION -->">
-	<meta property="og:url" content="<!-- @echo HOMEPAGE -->">
-	<meta property="og:type" content="website">
-	<meta property="og:image" content="<!-- @echo OG_IMG -->">
-    <!-- @include _icons.html -->
-    <!--[if lt IE 9]>
-      <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-      <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <![endif]-->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title><!-- @echo NAME --></title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <!-- @if ENV='prod' -->
+  <link href="assets/css/app.min.css?v=<!-- @echo CACHEBUSTER -->" rel="stylesheet">
+  <!-- @endif -->
+  <!-- @if ENV='dev' -->
+  <link href="assets/css/app.css?v=<!-- @echo CACHEBUSTER -->" rel="stylesheet">
+  <!-- @endif -->
+  <link href="assets/img/icons/favicon.png" rel="shortcut icon" type="image/png" />
+  <link href="assets/img/icons/favicon.png" rel="bookmark icon" type="image/png" />
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-itunes-app" content="app-id=679023494">
+  <meta name="description" content="<!-- @echo DESCRIPTION -->">
+  <meta name="author" content="<!-- @echo AUTHOR -->">
+  <meta name="twitter:title" content="<!-- @echo NAME -->">
+  <meta name="twitter:description" content="<!-- @echo DESCRIPTION -->">
+  <meta property="og:title" content="<!-- @echo NAME -->">
+  <meta property="og:site_name" content="<!-- @echo AUTHOR -->">
+  <meta property="og:description" content="<!-- @echo DESCRIPTION -->">
+  <meta property="og:url" content="<!-- @echo HOMEPAGE -->">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="<!-- @echo OG_IMG -->">
+  <!-- @include _icons.html -->
+  <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <![endif]-->
 </head>
 <body>
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container" ng-cloak>
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container" ng-cloak>
 
-            <!-- Language switch -->
-            <div id="language-menu" ng-show="location.path() == '/'">
-                <a href="#" class="translateFrom" ng-click="setLang($event, false, 'From')" ng-class="{ active : (localeFrom == false) }">
-                    <img ng-src="{{ flag(localeFrom) }}" class="flag" ng-show="localeFrom"> {{ langName(localeFrom, UI('choose')) }}
-                </a>
-                <span class="sep"><i class="icon-right"></i></span>
-                <a href="#" class="translateTo" ng-click="setLang($event, false, 'To')" ng-class="{ active : (localeFrom != false && localeTo == false) }">
-                    <img ng-src="{{ flag(localeTo) }}" class="flag" ng-show="localeTo"> {{ langName(localeTo, UI('choose')) }}
-                </a>
-            </div>
+      <!-- Language switch -->
+      <div id="language-menu" ng-show="location.path() == '/'">
+        <a class="translateFrom" ng-click="setLang($event, false, 'From')" ng-class="{ active : (localeFrom == false) }">
+          <img ng-src="{{ flag(localeFrom) }}" class="flag" ng-if="localeFrom">
+          <span class="hidden-xs" ng-bind="langName(localeFrom)"></span>
+          <span ng-if="localeFrom" class="visible-xs-inline" ng-bind="localeFrom | limitTo:2"></span>
+          <span ng-if="localeFrom == false" ng-bind="UI('choose')"></span>
+        </a>
+        <span class="sep"><i class="icon-right"></i></span>
+        <a class="translateTo" ng-click="setLang($event, false, 'To')" ng-class="{ active : (localeFrom != false && localeTo == false) }">
+          <img ng-src="{{ flag(localeTo) }}" class="flag" ng-if="localeTo">
+          <span class="hidden-xs" ng-bind="langName(localeTo)"></span>
+          <span ng-if="localeTo" class="visible-xs-inline" ng-bind="localeTo | limitTo:2"></span>
+          <span ng-if="localeTo == false" ng-bind="UI('choose')"></span>
+        </a>
+      </div>
 
-            <!-- Sub pages -->
-            <ul id="secondary-menu" class="nav navbar-nav" ng-show="location.path() != '/'">
-                <li><a href="#" ng-click="back()"><i class="icon-left"></i> {{ UI('back') }}</a></li>
-            </ul>
+      <!-- Sub pages -->
+      <ul id="secondary-menu" class="nav navbar-nav" ng-show="location.path() != '/'">
+        <li><a ng-href="/"><i class="icon-left"></i> {{ UI('back') }}</a></li>
+      </ul>
 
-            <!-- Primary menu -->
-            <ul id="primary-menu" class="nav navbar-nav">
-                <!--<li ng-show="voice"><a href="#"><i class="icon-mic"></i></a></li>-->
-                <li id="fat-menu" class="dropdown pull-right">
-                    <a href="#" ng-click="$event.preventDefault()" id="primary-drop" role="button" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-menu"></i></a>
-                    <ul class="dropdown-menu" role="menu" aria-labelledby="primary-drop">
-                        <!--<li role="presentation"><a role="menuitem" tabindex="-1" href="#" ng-click="toggleAudio($event)"><i ng-class="(audio) ? 'icon-volume-off' : 'icon-volume-up'"></i> {{ (audio) ? UI('audio_off') : UI('audio_on') }}</a></li>-->
-                        <!--<li role="presentation"><a role="menuitem" tabindex="-1" href="#" ng-click="toggleVoice($event)"><i ng-class="(voice) ? 'icon-mute' : 'icon-mic'"></i> {{ (voice) ? UI('voice_off') : UI('voice_on') }}</a></li>-->
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#/pictograms"><i class="icon-coffee"></i> {{ UI('pictograms') }}</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#" ng-click="toggleVisibility($event)"><i ng-class="(visibility) ? 'icon-eye-off' : 'icon-eye'"></i> {{ (visibility) ? UI('visibility_off') : UI('visibility_on') }}</a></li>
-                        <li role="presentation" class="divider"></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#/translate"><i class="icon-language"></i> {{ UI('help_translating') }}</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#/about"><i class="icon-thumb"></i> {{ UI('about') }}</a></li>
-                    </ul>
-                </li>
-            </ul>
+      <!-- Primary menu -->
+      <ul id="primary-menu" class="nav navbar-nav">
+        <!--<li ng-if="voice"><a><i class="icon-mic"></i></a></li>-->
+        <li id="fat-menu" class="dropdown pull-right">
+          <a id="primary-drop" role="button" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-menu"></i></a>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="primary-drop">
+            <!--<li role="presentation"><a role="menuitem" tabindex="-1" ng-click="toggleAudio($event)"><i class="icon-fw" ng-class="(audio) ? 'icon-volume-off' : 'icon-volume-up'"></i> {{ (audio) ? UI('audio_off') : UI('audio_on') }}</a></li>-->
+            <!--<li role="presentation"><a role="menuitem" tabindex="-1" ng-click="toggleVoice($event)"><i class="icon-fw" ng-class="(voice) ? 'icon-mute' : 'icon-mic'"></i> {{ (voice) ? UI('voice_off') : UI('voice_on') }}</a></li>-->
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#/pictograms"><i class="icon-fw icon-coffee"></i> {{ UI('pictograms') }}</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" ng-click="toggleVisibility($event)"><i class="icon-fw" ng-class="(visibility) ? 'icon-eye-off' : 'icon-eye'"></i> {{ (visibility) ? UI('visibility_off') : UI('visibility_on') }}</a></li>
+            <li role="presentation" class="divider"></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#/translate"><i class="icon-fw icon-language"></i> {{ UI('help_translating') }}</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#/about"><i class="icon-fw icon-thumb"></i> {{ UI('about') }}</a></li>
+          </ul>
+        </li>
+      </ul>
 
-        </div>
     </div>
-    <div ng-view></div>
-    <!-- @if ENV='prod' -->
-    <script src="assets/js/app.min.js?v=<!-- @echo CACHEBUSTER -->"></script>
-    <!-- @endif -->
-    <!-- @if ENV='dev' -->
-    <script src="assets/js/app.js?v=<!-- @echo CACHEBUSTER -->"></script>
-    <!-- @endif -->
+  </div>
+  <div ng-view></div>
+  <!-- @if ENV='prod' -->
+  <script src="assets/js/app.min.js?v=<!-- @echo CACHEBUSTER -->"></script>
+  <!-- @endif -->
+  <!-- @if ENV='dev' -->
+  <script src="assets/js/app.js?v=<!-- @echo CACHEBUSTER -->"></script>
+  <!-- @endif -->
 </body>
 </html>

@@ -1,19 +1,10 @@
-# Hitchwiki Phrasebook for mobile.
+# Hitchwiki Phrasebook
 
-* Live [hitchwiki.org/phrasebook-v2](http://hitchwiki.org/phrasebook-v2/)
-* Docs [hitchwiki.org/phrasebook-v2/docs/](http://hitchwiki.org/phrasebook-v2/docs/)
+* Live [hitchwiki.org/phrasebook](http://hitchwiki.org/phrasebook/)
+* Docs [hitchwiki.org/phrasebook/docs/](http://hitchwiki.org/phrasebook/docs/)
 
 
 ## Building
-
-Tested on OSX, it should work on Linux and it just might work on Windows as well.
-
-Clone repository (you need to have [git](http://git-scm.com/) on your path.)
-```bash
-git clone https://github.com/Hitchwiki/Phrasebook.git
-```
-
-Note that currently THIS version is in branch `v2`.
 
 #### Requirements
 * [NodeJS](http://nodejs.org/) & [NPM](https://npmjs.org/)
@@ -43,13 +34,15 @@ npm install
 grunt build
 ```
 
-You'll get an optimized, production-ready version of the app to run in browser. Point your server to `./build/`.
+You'll get an optimized, production-ready version of the app to run in browser at `build` folder.
 
 If you want to do development, run:
 ```bash
 grunt dev
 ```
 It waits for changes in js/less/html files and runs needed tasks after each save.
+
+It serves files at [http://localhost:3000/](http://localhost:3000/)
 
 To produce production version after initial build and development, run:
 ```bash
@@ -147,4 +140,4 @@ See [LICENSE](LICENSE) for more info.
 
 ## Contacts
 * [Hitchwiki](http://hitchwiki.org/contact/)
-* [Mikael](https://github.com/simison)
+* [Mikael](http://www.mikaelkorpela.fi/)

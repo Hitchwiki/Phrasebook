@@ -10,6 +10,35 @@ module.exports = function(grunt) {
     'build/docs/index.html':           'src/docs/index.html',
   };
 
+  var clientJSData = [
+    'src/js/locales-default-ui.js',
+    'src/js/locales.js',
+  ];
+  var clientJS = [
+    'src/js/app.js',
+    'src/js/configs.js',
+    'src/js/controllers/about.js',
+    'src/js/controllers/list.js',
+    'src/js/controllers/main.js',
+    'src/js/controllers/pictograms.js',
+    'src/js/controllers/translate.js'
+  ];
+
+  var clientJSLib = [
+    'src/vendor/jquery/dist/jquery.js',
+    'src/vendor/fastclick/lib/fastclick.js',
+    'src/vendor/angular/angular.js',
+    'src/vendor/angular-animate/angular-animate.js',
+    'src/vendor/angular-resource/angular-resource.js',
+    'src/vendor/angular-route/angular-route.js',
+    'src/vendor/angular-sanitize/angular-sanitize.js',
+    'src/vendor/angular-touch/angular-touch.js',
+    'src/vendor/angular-cookies/angular-cookies.js',
+    'src/vendor/bootstrap/js/button.js',
+    'src/vendor/bootstrap/js/dropdown.js'
+  ];
+
+
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     templates: templates,
@@ -44,11 +73,10 @@ module.exports = function(grunt) {
         ]
       },
       js: {
-        files: [
-          'src/js/*',
-          'src/js/controllers/*'
-        ],
+        files: clientJS,
         tasks: [
+          'jshint',
+          'ngAnnotate',
           'concat'
         ]
       },
@@ -121,15 +149,15 @@ module.exports = function(grunt) {
     shell: {
       phonegapicons: {
         command: [
-                'convert build/assets/img/icons/apple-touch-icon-152x152-precomposed.png -resize 29x29 build/assets/img/icons/apple-touch-icon-29x29-precomposed.png',
-                'convert build/assets/img/icons/apple-touch-icon-152x152-precomposed.png -resize 58x58 build/assets/img/icons/apple-touch-icon-58x58-precomposed.png',
-                'convert build/assets/img/icons/apple-touch-icon-152x152-precomposed.png -resize 40x40 build/assets/img/icons/apple-touch-icon-40x40-precomposed.png',
-                'convert build/assets/img/icons/apple-touch-icon-152x152-precomposed.png -resize 80x80 build/assets/img/icons/apple-touch-icon-80x80-precomposed.png',
-                'convert build/assets/img/icons/apple-touch-icon-152x152-precomposed.png -resize 96x96 build/assets/img/icons/apple-touch-icon-96x96-precomposed.png',
-                'convert build/assets/img/icons/apple-touch-icon-152x152-precomposed.png -resize 72x72 build/assets/img/icons/apple-touch-icon-72x72-precomposed.png',
-                'convert build/assets/img/icons/apple-touch-icon-152x152-precomposed.png -resize 48x48 build/assets/img/icons/apple-touch-icon-48x48-precomposed.png',
-                'convert build/assets/img/icons/apple-touch-icon-152x152-precomposed.png -resize 36x36 build/assets/img/icons/apple-touch-icon-36x36-precomposed.png',
-            ].join('&&'),
+          'convert build/assets/img/icons/apple-touch-icon-152x152-precomposed.png -resize 29x29 build/assets/img/icons/apple-touch-icon-29x29-precomposed.png',
+          'convert build/assets/img/icons/apple-touch-icon-152x152-precomposed.png -resize 58x58 build/assets/img/icons/apple-touch-icon-58x58-precomposed.png',
+          'convert build/assets/img/icons/apple-touch-icon-152x152-precomposed.png -resize 40x40 build/assets/img/icons/apple-touch-icon-40x40-precomposed.png',
+          'convert build/assets/img/icons/apple-touch-icon-152x152-precomposed.png -resize 80x80 build/assets/img/icons/apple-touch-icon-80x80-precomposed.png',
+          'convert build/assets/img/icons/apple-touch-icon-152x152-precomposed.png -resize 96x96 build/assets/img/icons/apple-touch-icon-96x96-precomposed.png',
+          'convert build/assets/img/icons/apple-touch-icon-152x152-precomposed.png -resize 72x72 build/assets/img/icons/apple-touch-icon-72x72-precomposed.png',
+          'convert build/assets/img/icons/apple-touch-icon-152x152-precomposed.png -resize 48x48 build/assets/img/icons/apple-touch-icon-48x48-precomposed.png',
+          'convert build/assets/img/icons/apple-touch-icon-152x152-precomposed.png -resize 36x36 build/assets/img/icons/apple-touch-icon-36x36-precomposed.png',
+        ].join('&&'),
         options: {
           stdout: true
         }
@@ -204,33 +232,35 @@ module.exports = function(grunt) {
         }
       }
     },
+    jshint: {
+      all: ['Gruntfile.js'].concat(clientJS)
+    },
+    ngAnnotate: {
+      options: {
+        singleQuotes: true,
+      },
+      build: {
+        files: {
+          'build/assets/js/annotated.js': clientJS
+        }
+      }
+    },
     concat: {
       options: {
         banner: 'var phrasebookVer="<%= pkg.version %>",phrasebookDay="<%= grunt.template.today("yyyy-mm-dd") %>";\n'
       },
       dist : {
         src: [
-          'src/vendor/jquery/dist/jquery.js',
-          'src/vendor/fastclick/lib/fastclick.js',
-          'src/vendor/angular/angular.js',
-          'src/vendor/angular-animate/angular-animate.js',
-          'src/vendor/angular-resource/angular-resource.js',
-          'src/vendor/angular-route/angular-route.js',
-          'src/vendor/angular-sanitize/angular-sanitize.js',
-          'src/vendor/angular-touch/angular-touch.js',
-          'src/vendor/angular-cookies/angular-cookies.js',
-          'src/vendor/bootstrap/js/button.js',
-          'src/vendor/bootstrap/js/dropdown.js',
-          //'src/vendor/speech-synthesis/src/polyfill.js',
-          'src/js/*',
-          'src/js/controllers/*'
+          clientJSLib
+            .concat(clientJSData)
+            .concat(['build/assets/js/annotated.js'])
         ],
         dest: 'build/assets/js/app.js'
       }
     },
     uglify: {
       options: {
-        mangle: false, // Angular doesn't like mangling...
+        mangle: true,
         banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
       },
       build: {
@@ -252,26 +282,26 @@ module.exports = function(grunt) {
     },
     copy: {
       images: {
-          files: [
-            {
-                expand: true,
-                flatten: true,
-                filter: 'isFile',
-                src: 'src/img/*',
-                dest: 'build/assets/img'
-            }
-          ]
+        files: [
+          {
+            expand: true,
+            flatten: true,
+            filter: 'isFile',
+            src: 'src/img/*',
+            dest: 'build/assets/img'
+          }
+        ]
       },
       locales: {
-          files: [
-            {
-                expand: true,
-                flatten: true,
-                filter: 'isFile',
-                src: 'src/locale-json/*',
-                dest: 'build/assets/locale/'
-            }
-          ]
+        files: [
+          {
+            expand: true,
+            flatten: true,
+            filter: 'isFile',
+            src: 'src/locale-json/*',
+            dest: 'build/assets/locale/'
+          }
+        ]
       },
       pdfprint: {
           files: [
@@ -285,41 +315,41 @@ module.exports = function(grunt) {
           ]
       },
       pdfprintlocales: {
-          files: [
-            {
-                expand: true,
-                //flatten: true,
-                cwd: 'src/locale-json/',
-                src: '**',
-                dest: 'build/print/locale'
-            },
-            {
-                src: 'src/structure.json',
-                dest: 'build/print/structure.json'
-            },
-            {
-                src: 'src/languages.json',
-                dest: 'build/print/languages.json'
-            }
-          ]
+        files: [
+          {
+            expand: true,
+            //flatten: true,
+            cwd: 'src/locale-json/',
+            src: '**',
+            dest: 'build/print/locale'
+          },
+          {
+            src: 'src/structure.json',
+            dest: 'build/print/structure.json'
+          },
+          {
+            src: 'src/languages.json',
+            dest: 'build/print/languages.json'
+          }
+        ]
       },
       other: {
         files: [
-            {
-                src: 'README.md',
-                dest: 'build/docs/README.md'
-            },
-            {
-                src: 'LICENSE',
-                dest: 'build/docs/LICENSE'
-            },
-            {
-                expand: true,
-                flatten: true,
-                filter: 'isFile',
-                src: 'src/libs/flags/flags/1x1/*',
-                dest: 'build/assets/img/flags/'
-            }
+          {
+            src: 'README.md',
+            dest: 'build/docs/README.md'
+          },
+          {
+            src: 'LICENSE',
+            dest: 'build/docs/LICENSE'
+          },
+          {
+            expand: true,
+            flatten: true,
+            filter: 'isFile',
+            src: 'src/libs/flags/flags/1x1/*',
+            dest: 'build/assets/img/flags/'
+          }
         ]
       },
     },
@@ -336,7 +366,15 @@ module.exports = function(grunt) {
         "src/views/_icons.html"
       ]
     },
-
+    connect: {
+      server: {
+        options: {
+          port: 3000,
+          base: 'build',
+          index: 'index.html'
+        }
+      }
+    },
     phonegap: {
       config: {
         root: 'build',
@@ -351,8 +389,8 @@ module.exports = function(grunt) {
         cordova: 'src/.cordova',
         path: 'phonegap',
         plugins: [
-            //'/local/path/to/plugin',
-            //'http://example.com/path/to/plugin.git'
+          //'/local/path/to/plugin',
+          //'http://example.com/path/to/plugin.git'
         ],
         platforms: ['android', 'ios'],
         maxBuffer: 400, // You may need to raise this for iOS. (Did, it was 200)
@@ -449,7 +487,7 @@ module.exports = function(grunt) {
 
         // Android-only integer version to increase with each release.
         // See http://developer.android.com/tools/publishing/versioning.html
-        versionCode: function(){ return(1) },
+        versionCode: function(){ return(1); },
 
         // If you want to use the Phonegap Build service to build one or more
         // of the platforms specified above, include these options.
@@ -467,10 +505,13 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-ng-annotate');
   grunt.loadNpmTasks('grunt-preprocess');
   grunt.loadNpmTasks('grunt-manifest');
   grunt.loadNpmTasks('grunt-favicons');
@@ -486,6 +527,8 @@ module.exports = function(grunt) {
   grunt.registerTask('prod', [
                        'preprocess:prod',
                        'less:prod',
+                       'jshint',
+                       'ngAnnotate',
                        'concat',
                        'uglify'
                      ]);
@@ -493,7 +536,10 @@ module.exports = function(grunt) {
   grunt.registerTask('dev', [
                        'preprocess:dev',
                        'less:dev',
+                       'jshint',
+                       'ngAnnotate',
                        'concat',
+                       'connect',
                        'watch'
                      ]);
 
@@ -510,6 +556,8 @@ module.exports = function(grunt) {
                        'shell',
                        'preprocess:prod',
                        'less:prod',
+                       'jshint',
+                       'ngAnnotate',
                        'concat',
                        'uglify',
                        'copy'

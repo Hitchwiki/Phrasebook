@@ -1,23 +1,30 @@
 /**
  * Controller for about page
  */
-Phrasebook.controller('aboutCtrl', function($scope) {
+(function() {
+  'use strict';
 
-    $scope.localesVer = localesVer;
+  angular
+    .module('Phrasebook')
+    .controller('aboutCtrl', aboutCtrl);
 
-    $scope.ver = phrasebookVer;
+  /* @ngInject */
+  function aboutCtrl($scope, $window) {
 
-    $scope.day = phrasebookDay;
+    $scope.localesVer = $window.localesVer;
+
+    $scope.ver = $window.phrasebookVer;
+
+    $scope.day = $window.phrasebookDay;
 
     $scope.device = navigator.userAgent;
 
     $scope.showLisence = false;
 
     $scope.back = function() {
-        //$event.preventDefault();
-        $location.path('/');
-    }
-
+      //$event.preventDefault();
+      $location.path('/');
+    };
 
     /*
      * Different link depending on environment
@@ -29,4 +36,5 @@ Phrasebook.controller('aboutCtrl', function($scope) {
     $scope.linkAndroidApp = 'https://play.google.com/store/apps/details?id=com.hitchwiki.phrasebook';
     $scope.linkAndroidSearch = 'https://play.google.com/store/search?q=hitchwiki';
 
-});
+  }
+})();

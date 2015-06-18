@@ -1,15 +1,23 @@
 /**
  * Ctrl for translations / language lists
  */
-Phrasebook.controller('listCtrl', function($scope, $browser, $http, $log, $cookies, $cookieStore, $routeParams) {
+(function() {
+  'use strict';
+
+  angular
+    .module('Phrasebook')
+    .controller('listCtrl', listCtrl);
+
+  /* @ngInject */
+  function listCtrl($scope, $browser, $http, $log, $cookies, $cookieStore, $routeParams) {
 
     // http://stackoverflow.com/questions/19287716/skip-ng-repeat-json-ordering-in-angular-js
     $scope.notSorted = function(obj){
-        if (!obj) {
-            return [];
-        }
-        return Object.keys(obj);
-    }
+      if (!obj) {
+        return [];
+      }
+      return Object.keys(obj);
+    };
 
     /*
     $scope.playing = false;
@@ -45,9 +53,9 @@ Phrasebook.controller('listCtrl', function($scope, $browser, $http, $log, $cooki
     */
 
     $scope.back = function($event) {
-        $event.preventDefault();
-        $scope.selectedTranslation = false;
-        $scope.selectedCategory = false;
+      $event.preventDefault();
+      $scope.selectedTranslation = false;
+      $scope.selectedCategory = false;
     };
 
     // Currently open translation string
@@ -55,9 +63,9 @@ Phrasebook.controller('listCtrl', function($scope, $browser, $http, $log, $cooki
 
     // Toggle translations open/close
     $scope.selectTranslationString = function($event, key) {
-        $scope.selectedTranslation = ($scope.selectedTranslation == key) ? false : key;
-        $log.log(key);
-        $event.preventDefault();
+      $scope.selectedTranslation = ($scope.selectedTranslation == key) ? false : key;
+      //$log.log(key);
+      $event.preventDefault();
     };
 
     // Currently open category
@@ -65,9 +73,9 @@ Phrasebook.controller('listCtrl', function($scope, $browser, $http, $log, $cooki
 
     // Open category
     $scope.selectCategory = function($event, category) {
-        $scope.selectedCategory = ($scope.selectedCategory === category) ? false : category;
-        $log.log('Category: ' + category);
-        $event.preventDefault();
+      $scope.selectedCategory = ($scope.selectedCategory === category) ? false : category;
+      //$log.log('Category: ' + category);
+      $event.preventDefault();
     };
 
     /*
@@ -156,4 +164,5 @@ Phrasebook.controller('listCtrl', function($scope, $browser, $http, $log, $cooki
     }
     */
 
-});
+  }
+})();

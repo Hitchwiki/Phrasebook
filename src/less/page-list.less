@@ -1,88 +1,88 @@
 
 #translationSet {
 
+  .translation-from {
+    margin-bottom: 10px;
+  }
+  .translation-to-transliteration,
+  .translation-to-phonetic,
+  .translation-to {
+    font-weight: normal;
+  }
+  .active {
     .translation-from {
-        margin-bottom: 10px;
+      border-bottom: 2px solid #fff;
+      padding-bottom: 10px;
     }
     .translation-to-transliteration,
     .translation-to-phonetic,
     .translation-to {
-        font-weight: normal;
+      letter-spacing: 1px;
     }
-    .active {
-        .translation-from {
-            border-bottom: 2px solid #fff;
-            padding-bottom: 10px;
-        }
-        .translation-to-transliteration,
-        .translation-to-phonetic,
-        .translation-to {
-            letter-spacing: 1px;
-        }
-    }
+  }
 
 }
 
 .translation-category {
-    .list-group-item-text {
-        margin-left: 3.5em;
+  .list-group-item-text {
+    margin-left: 3.5em;
+  }
+  .icon {
+    color: @gray-light;
+    font-size: 30px;
+    float: left;
+    margin-right: .4em;
+    margin-top: .1em;
+  }
+  &.translation-category-translation-hidden {
+    .list-group-item-heading {
+      margin-top: 5px;
     }
     .icon {
-        color: @gray-light;
-        font-size: 30px;
-        float: left;
-        margin-right: .4em;
-        margin-top: .1em;
+      margin-top: -.2em;
     }
-    &.translation-category-translation-hidden {
-        .list-group-item-heading {
-            margin-top: 5px;
-        }
-        .icon {
-            margin-top: -.2em;
-        }
-    }
+  }
 }
 
 .translation-key {
-    .transition(all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.1s);
+  .transition(all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.1s);
 }
 .list-group-item.active {
-        padding-bottom: 20px;
-        padding-top: 20px;
-        margin-right: -10px;
-        margin-left: -10px;
-        @media only screen and (max-width: @screen-xs-max) {
-            margin-right: 0;
-            margin-left: 0;
-        }
-        h4 {
-            font-size: 33px;
-            line-height: 36px;
-        }
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-right: -10px;
+    margin-left: -10px;
+    @media only screen and (max-width: @screen-xs-max) {
+      margin-right: 0;
+      margin-left: 0;
+    }
+    h4 {
+      font-size: 33px;
+      line-height: 36px;
+    }
 }
 
 /* No space around lists on small screens */
 #translationSet,
 #languageList {
-    @media only screen and (max-width: @screen-xs-max) {
-        padding-left: 0;
-        padding-right: 0;
-    }
+  @media only screen and (max-width: @screen-xs-max) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .audio-play {
-    color: @gray-light;
-    cursor: pointer;
-    &:hover,
-    &:active {
-        color: @gray;
-    }
-    &.playing {
-        color: #000;
-    }
+  color: @gray-light;
+  cursor: pointer;
+  &:hover,
+  &:active {
+    color: @gray;
+  }
+  &.playing {
+    color: #000;
+  }
 }
 
 .search-form {
-    margin-bottom: 3px;
+  margin-bottom: 3px;
 }

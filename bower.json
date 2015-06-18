@@ -1,17 +1,17 @@
 {
   "name": "Phrasebook",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "dependencies": {
-    "bootstrap": "3.2",
-    "jquery": "2",
-    "angular": "1.2",
-    "angular-animate": "latest",
-    "angular-route": "latest",
-    "angular-resource": "latest",
-    "angular-touch": "latest",
-    "angular-cookies": "latest",
-    "speech-synthesis": "latest",
-    "fastclick": "latest"
+    "bootstrap": "~3.3.5",
+    "jquery": "~2.1",
+    "angular": "~1.4",
+    "angular-animate": "~1.4",
+    "angular-route": "~1.4",
+    "angular-resource": "~1.4",
+    "angular-touch": "~1.4",
+    "angular-cookies": "~1.4",
+    "speech-synthesis": "~0.4.0",
+    "fastclick": "~1.0.6"
   },
   "devDependencies": {},
   "ignore": [
@@ -20,6 +20,6 @@
     "components"
   ],
   "resolutions": {
-    "angular": "1.2"
+    "angular": "1.4"
   }
 }
